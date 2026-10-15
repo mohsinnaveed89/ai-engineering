@@ -31,6 +31,11 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 from pathlib import Path
 
+try:
+    from content import NEWS, annual_report, news_lang
+except ImportError:  # imported as a module
+    from .content import NEWS, annual_report, news_lang
+
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data" / "generated"
 DOCS = ROOT / "data" / "documents"
@@ -281,7 +286,7 @@ class Gen:
                 return legal, base, None
             suffix = r.choice(["LTDA", "LTDA", "S.A."]) if not holding else "LTDA"
             legal = strip_accents(f"{base} {suffix}").upper()
-            trading = f"{stem} {SECTORS[sector][3] if not holding else 'Participações'}"
+            trading = base  # nome fantasia: unique, like the base name
             return legal, trading, trading
         raise RuntimeError("ran out of names")
 
@@ -342,6 +347,7 @@ class Gen:
         if "holding_chain" in cases:
             offshore = "offshore" in cases
             holding = self.make_holding(country, offshore=offshore)
+            holding.subsidiary = c
             pct = r.choice([100, 100, 80, 75])
             c.shareholders.append({"kind": "company", "ref": holding, "pct": pct})
             if pct < 100:
@@ -357,7 +363,13 @@ class Gen:
         if "no_annual_report" not in cases:
             c.financials = self.financials(country, REPORT_YEAR, loss=loss)
             if r.random() < 0.4:
-                c.prior_financials = self.financials(country, REPORT_YEAR - 1, scale=None)
+                f = c.financials
+                g = r.uniform(0.82, 1.18)
+                c.prior_financials = {**f, "year": REPORT_YEAR - 1, "going_concern_uncertainty": False,
+                                      "revenue": int(f["revenue"] / g) // 1000 * 1000,
+                                      "net_profit": int(abs(f["net_profit"]) / g * r.uniform(0.7, 1.3)) // 1000 * 1000,
+                                      "total_assets": int(f["total_assets"] / r.uniform(0.9, 1.1)) // 1000 * 1000,
+                                      "employees": max(3, int(f["employees"] / r.uniform(0.9, 1.15)))}
         if "missing_address" in cases:
             c.address = None
         return c
@@ -438,93 +450,54 @@ class Gen:
         self.make_bank()
 
     # ---------------- news ----------------
+    def news_name(self, c: Company) -> str:
+        """How the press refers to the company: varies between legal, short and trading names."""
+        r = self.rng
+        options = [c.input_name, c.input_name, c.legal_name]
+        if c.trading_name:
+            options.append(c.trading_name)
+        short = " ".join(c.input_name.split()[:2])
+        if short != c.input_name and len(short) > 6 and self._short_unique(short, c):
+            options.append(short)
+        return r.choice(options)
+
+    def _short_unique(self, short: str, c: Company) -> bool:
+        key = strip_accents(short).lower()
+        for o in self.companies + self.holdings:
+            if o is not c and strip_accents(o.input_name).lower().startswith(key):
+                return False
+        return True
+
     def article(self, c: Company, kind: str, about_name: str | None = None) -> dict:
         r = self.rng
         country = c.country
         outlet, domain = r.choice(OUTLETS[country])
-        name = about_name or (c.trading_name if c.trading_name and r.random() < 0.5 else c.input_name)
-        days_ago = r.randint(10, 700)
-        published = TODAY - timedelta(days=days_ago)
+        name = about_name or self.news_name(c)
+        published = TODAY - timedelta(days=r.randint(10, 700))
         lang = LANG[country]
-        severity = None
-        category = None
-        if lang == "en":
-            if kind == "positive":
-                title, body = r.choice([
-                    (f"{name} wins multi-year contract", f"{name} has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its {c.address['city'] if c.address else 'main'} site."),
-                    (f"{name} reports steady growth", f"{name} said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment."),
-                    (f"{name} opens new facility", f"{name} has opened a new facility, creating around {r.randint(10, 80)} jobs. The company described the investment as a long-term commitment to the region."),
-                ])
-            elif kind == "neutral":
-                title, body = r.choice([
-                    (f"{name} appoints new finance director", f"{name} announced the appointment of a new finance director, effective next month. The previous holder of the role is retiring."),
-                    (f"{name} attends industry trade fair", f"Representatives of {name} presented the company's latest services at an industry trade fair in Birmingham this week."),
-                ])
-            elif kind == "adverse_medium":
-                category = r.choice(["lawsuit", "regulatory_fine", "labour_dispute"])
-                severity = "medium"
-                title, body = {
-                    "lawsuit": (f"Supplier sues {name} over unpaid invoices", f"A former supplier has filed a claim against {name} in the High Court, alleging unpaid invoices of around £{r.randint(200, 900)}k. {name} said it would defend the claim."),
-                    "regulatory_fine": (f"{name} fined by regulator", f"{name} has been fined £{r.randint(40, 400)}k by a regulator over record-keeping failures. The company said it had since strengthened its controls."),
-                    "labour_dispute": (f"Workers at {name} vote to strike", f"Staff at {name} have voted to strike in a dispute over pay. The company said talks with the union were continuing."),
-                }[category]
-            else:  # adverse_high
-                category = "sanctions" if "sanctions" in c.cases else r.choice(["fraud_investigation", "money_laundering"])
-                severity = "high"
-                title, body = {
-                    "fraud_investigation": (f"Police investigate {name} over alleged invoice fraud", f"Police have opened an investigation into alleged invoice fraud at {name}. Two people have been interviewed under caution. {name} said it was cooperating fully."),
-                    "money_laundering": (f"{name} named in money laundering probe", f"{name} has been named in a money laundering investigation led by the National Crime Agency, according to court documents seen by this newspaper."),
-                    "sanctions": (f"{name} linked to sanctioned entity", f"Documents reviewed by this newspaper show that {name} made repeated payments to a company designated under UK financial sanctions. {name} declined to comment."),
-                }[category]
+        tpl = NEWS[news_lang(country)]
+        severity = category = None
+        if kind in ("positive", "neutral", "victim"):
+            title, body = r.choice(tpl[kind])
+        elif kind == "adverse_medium":
+            category = r.choice(sorted(tpl["adverse_medium"]))
+            severity = "medium"
+            title, body = r.choice(tpl["adverse_medium"][category])
         else:
-            br = country == "BR"
-            if kind == "positive":
-                title, body = r.choice([
-                    (f"{name} fecha contrato plurianual", f"A {name} assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de {c.address['city'] if c.address else 'origem'}."),
-                    (f"{name} regista crescimento sólido" if not br else f"{name} registra crescimento sólido", f"A {name} afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior." if not br else f"A {name} informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior."),
-                ])
-            elif kind == "neutral":
-                title, body = r.choice([
-                    (f"{name} nomeia novo diretor financeiro", f"A {name} anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês." if not br else f"A {name} anunciou um novo diretor financeiro, que assume no próximo mês."),
-                    (f"{name} participa em feira do setor" if not br else f"{name} participa de feira do setor", f"Representantes da {name} apresentaram os seus serviços numa feira do setor esta semana." if not br else f"Representantes da {name} apresentaram seus serviços em uma feira do setor nesta semana."),
-                ])
-            elif kind == "adverse_medium":
-                category = r.choice(["lawsuit", "regulatory_fine", "labour_dispute"])
-                severity = "medium"
-                if not br:
-                    title, body = {
-                        "lawsuit": (f"Fornecedor processa {name} por faturas em atraso", f"Um antigo fornecedor intentou uma ação judicial contra a {name}, alegando faturas por pagar de cerca de {r.randint(150, 800)} mil euros. A empresa diz que vai contestar."),
-                        "regulatory_fine": (f"{name} multada pelo regulador", f"A {name} foi multada em {r.randint(30, 300)} mil euros por falhas no registo de operações. A empresa afirma ter reforçado os controlos internos."),
-                        "labour_dispute": (f"Trabalhadores da {name} anunciam greve", f"Os trabalhadores da {name} aprovaram uma greve por aumentos salariais. A administração diz que as negociações continuam."),
-                    }[category]
-                else:
-                    title, body = {
-                        "lawsuit": (f"Fornecedor processa {name} por dívida", f"Um ex-fornecedor entrou com ação contra a {name} cobrando cerca de R$ {r.randint(1, 9)} milhões em notas não pagas. A empresa disse que vai recorrer."),
-                        "regulatory_fine": (f"{name} é multada por órgão regulador", f"A {name} recebeu multa de R$ {r.randint(200, 2000)} mil por falhas em registros obrigatórios. A empresa afirma que já corrigiu os processos."),
-                        "labour_dispute": (f"Funcionários da {name} entram em greve", f"Funcionários da {name} cruzaram os braços em protesto por reajuste salarial. A empresa diz que segue negociando com o sindicato."),
-                    }[category]
-            else:
-                category = "sanctions" if "sanctions" in c.cases else r.choice(["fraud_investigation", "money_laundering"])
-                severity = "high"
-                if not br:
-                    title, body = {
-                        "fraud_investigation": (f"Polícia Judiciária investiga {name} por suspeitas de fraude", f"A Polícia Judiciária realizou buscas nas instalações da {name} no âmbito de uma investigação por fraude fiscal qualificada. A empresa diz estar a colaborar com as autoridades."),
-                        "money_laundering": (f"{name} visada em inquérito por branqueamento de capitais", f"A {name} é visada num inquérito do Ministério Público por suspeitas de branqueamento de capitais, segundo documentos consultados por este jornal."),
-                        "sanctions": (f"{name} ligada a entidade sob sanções internacionais", f"Documentos consultados por este jornal mostram pagamentos da {name} a uma entidade sujeita a sanções financeiras da União Europeia. A empresa não comentou."),
-                    }[category]
-                else:
-                    title, body = {
-                        "fraud_investigation": (f"Polícia Federal investiga {name} por fraude em licitações", f"A Polícia Federal cumpriu mandados de busca na sede da {name} em operação que apura fraude em licitações. A empresa afirma colaborar com as investigações."),
-                        "money_laundering": (f"{name} é alvo de investigação por lavagem de dinheiro", f"A {name} é investigada pelo Ministério Público por suspeita de lavagem de dinheiro, segundo documentos obtidos pela reportagem."),
-                        "sanctions": (f"{name} teria ligação com entidade sancionada", f"Documentos obtidos pela reportagem indicam pagamentos da {name} a empresa incluída em lista de sanções internacionais. A empresa não se manifestou."),
-                    }[category]
+            options = sorted(k for k in tpl["adverse_high"] if k != "sanctions")
+            category = "sanctions" if ("sanctions" in c.cases and about_name is None) else r.choice(options)
+            severity = "high"
+            title, body = r.choice(tpl["adverse_high"][category])
+        city = c.address["city"] if c.address else {"UK": "Leeds", "PT": "Porto", "BR": "Campinas"}[country]
+        vals = {"name": name, "city": city, "n": r.randint(10, 120), "k": r.randint(40, 900), "m": r.randint(2, 40)}
+        title, body = title.format(**vals), body.format(**vals)
         if country == "BR" and r.random() < 0.35 and about_name is None:
             body += f" (CNPJ {c.reg_no})"
         aid = f"news-{len(self.articles) + 1:04d}"
         slug = strip_accents(title).lower().replace(" ", "-")
         slug = "".join(ch for ch in slug if ch.isalnum() or ch == "-")[:70]
         art = {"id": aid, "title": title, "body": body, "source": outlet,
-               "url": f"https://{domain}/{published.year}/{published.month:02d}/{slug}",
+               "url": f"https://{domain}/{published.year}/{published.month:02d}/{slug}-{r.randint(1000, 9999)}",
                "published_at": published.isoformat(), "language": lang, "country": country}
         self.articles.append(art)
         return {"article": art, "kind": kind, "severity": severity, "category": category}
@@ -533,6 +506,9 @@ class Gen:
         r = self.rng
         for _ in range(r.randint(0, 2)):
             c.news.append(self.article(c, r.choice(["positive", "neutral", "positive"])))
+        # Stories that sound alarming but are not adverse for the company (it is the victim, or was cleared)
+        if r.random() < 0.25:
+            c.news.append(self.article(c, "victim"))
         if "negative_news" in c.cases:
             if "sanctions" in c.cases or r.random() < 0.45:
                 c.news.append(self.article(c, "adverse_high"))
@@ -838,97 +814,6 @@ def br_record(c: Company, rng: random.Random) -> dict:
 # --------------------------------------------------------------------------
 # Documents
 # --------------------------------------------------------------------------
-def report_md(c: Company, f: dict) -> str:
-    cur = c.country
-    m = lambda v: fmt_money(v, cur)
-    if cur == "UK":
-        gc = ("\n\n## Going concern\n\nThe directors have identified a material uncertainty that may cast significant doubt on the "
-              "company's ability to continue as a going concern, related to the renewal of its banking facilities.") if f["going_concern_uncertainty"] else (
-              "\n\n## Going concern\n\nThe directors have a reasonable expectation that the company has adequate resources to continue in operational existence for the foreseeable future.")
-        return f"""# {c.legal_name}
-## Annual Report and Financial Statements for the year ended 31 December {f['year']}
-
-Company registration number: {c.reg_no}
-
-## Strategic report
-
-{c.legal_name} operates in {SECTORS.get(c.sector, ('', '', '', '', '', '', '', 'investment holding'))[7].lower()}. During {f['year']} the company served customers across the United Kingdom and employed an average of {f['employees']} people.
-
-## Key financial highlights
-
-| Measure | {f['year']} |
-|---|---|
-| Turnover | {m(f['revenue'])} |
-| Profit/(loss) for the financial year | {m(f['net_profit'])} |
-| Total assets | {m(f['total_assets'])} |
-| Average number of employees | {f['employees']} |
-{gc}
-
-## Independent auditor's report
-
-We have audited the financial statements of {c.legal_name}. In our opinion the financial statements give a true and fair view of the state of the company's affairs as at 31 December {f['year']}.
-
-{f['auditor']}, Statutory Auditor
-"""
-    if cur == "PT":
-        gc = ("\n\n## Continuidade\n\nO órgão de gestão identificou uma incerteza material que pode suscitar dúvidas significativas sobre a "
-              "capacidade da empresa de prosseguir em continuidade, relacionada com a renegociação do financiamento bancário.") if f["going_concern_uncertainty"] else (
-              "\n\n## Continuidade\n\nAs demonstrações financeiras foram preparadas no pressuposto da continuidade das operações.")
-        return f"""# {c.legal_name}
-## Relatório e Contas do exercício de {f['year']}
-
-NIPC: {c.reg_no}
-
-## Relatório de gestão
-
-A {c.legal_name} desenvolve a sua atividade na área de {SECTORS.get(c.sector, ('',) * 8 + ('gestão de participações sociais',))[8].lower()}. Em {f['year']}, a empresa contou com uma média de {f['employees']} trabalhadores.
-
-## Principais indicadores
-
-| Indicador | {f['year']} |
-|---|---|
-| Volume de negócios | {m(f['revenue'])} |
-| Resultado líquido do período | {m(f['net_profit'])} |
-| Total do ativo | {m(f['total_assets'])} |
-| Número médio de trabalhadores | {f['employees']} |
-{gc}
-
-## Certificação legal das contas
-
-Auditámos as demonstrações financeiras anexas da {c.legal_name}. Em nossa opinião, as demonstrações financeiras apresentam de forma verdadeira e apropriada a posição financeira em 31 de dezembro de {f['year']}.
-
-{f['auditor']}
-"""
-    gc = ("\n\n## Continuidade operacional\n\nA administração identificou incerteza relevante relacionada à continuidade operacional, "
-          "em razão da renegociação de dívidas bancárias em andamento.") if f["going_concern_uncertainty"] else (
-          "\n\n## Continuidade operacional\n\nAs demonstrações financeiras foram elaboradas com base no pressuposto de continuidade operacional.")
-    return f"""# {c.legal_name}
-## Demonstrações Financeiras do exercício de {f['year']}
-
-CNPJ: {c.reg_no}
-
-## Relatório da administração
-
-A {c.trading_name or c.legal_name} atua no segmento de {SECTORS.get(c.sector, ('',) * 8 + ('participações societárias',))[8].lower()}. Em {f['year']}, a companhia contou com média de {f['employees']} colaboradores.
-
-## Destaques financeiros
-
-| Indicador | {f['year']} |
-|---|---|
-| Receita operacional líquida | {m(f['revenue'])} |
-| Lucro (prejuízo) líquido do exercício | {m(f['net_profit'])} |
-| Ativo total | {m(f['total_assets'])} |
-| Número médio de colaboradores | {f['employees']} |
-{gc}
-
-## Relatório do auditor independente
-
-Examinamos as demonstrações financeiras da {c.legal_name}. Em nossa opinião, as demonstrações apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira em 31 de dezembro de {f['year']}.
-
-{f['auditor']}
-"""
-
-
 # --------------------------------------------------------------------------
 # Main
 # --------------------------------------------------------------------------
@@ -972,20 +857,51 @@ def main():
     (OUT / "companies.json").write_text(json.dumps({"companies": test_set}, ensure_ascii=False, indent=2))
     (OUT / "answers.json").write_text(json.dumps({"seed": args.seed, "answers": answers}, ensure_ascii=False, indent=2))
 
-    # documents
+    # documents: annual-report extracts with opaque ids; some index entries lack the registration number
     index = []
+    doc_rng = random.Random(args.seed + 2)
+    used_ids: set[str] = set()
+
+    def doc_id(country: str) -> str:
+        while True:
+            d = f"AR-{country}-{doc_rng.randint(10000, 99999)}"
+            if d not in used_ids:
+                used_ids.add(d)
+                return d
+
+    def add_report(c: Company, f: dict, prior: dict | None, group_of=None):
+        folder = DOCS / "annual_reports" / c.country.lower()
+        folder.mkdir(parents=True, exist_ok=True)
+        did = doc_id(c.country)
+        display = c.trading_name or c.input_name
+        sector_desc = SECTORS[c.sector][7 if c.country == "UK" else 8] if c.sector in SECTORS else (
+            "investment holding" if c.country == "UK" else "gestão de participações sociais")
+        if group_of:
+            sector_desc = SECTORS[group_of[2]][7 if c.country == "UK" else 8]
+        text = annual_report(doc_rng, c.country, c.legal_name, c.reg_no, display, sector_desc, f, prior,
+                             group_of=(group_of[0], group_of[1]) if group_of else None)
+        path = folder / f"{did}.md"
+        path.write_text(text)
+        index.append({"doc_id": did, "type": "annual_report", "country": c.country,
+                      "company_name": doc_rng.choice([c.legal_name, display]),
+                      "registration_number": c.reg_no if doc_rng.random() < 0.7 else None,
+                      "year": f["year"], "language": LANG[c.country], "consolidated": bool(group_of),
+                      "path": str(path.relative_to(DOCS))})
+
     for c in everyone:
-        for f in [c.financials, c.prior_financials]:
-            if not f:
-                continue
-            folder = DOCS / "annual_reports" / c.country.lower()
-            folder.mkdir(parents=True, exist_ok=True)
-            doc_id = f"{c.cid}-AR{f['year']}"
-            path = folder / f"{doc_id}.md"
-            path.write_text(report_md(c, f))
-            index.append({"doc_id": doc_id, "type": "annual_report", "country": c.country, "company_name": c.legal_name,
-                          "registration_number": c.reg_no, "year": f["year"], "language": LANG[c.country],
-                          "path": str(path.relative_to(DOCS))})
+        if c.financials:
+            add_report(c, c.financials, c.prior_financials)
+        if c.prior_financials:
+            add_report(c, c.prior_financials, None)
+        sub = getattr(c, "subsidiary", None)
+        if c.is_holding and sub is not None and sub.financials:
+            gf = dict(sub.financials)
+            scale = doc_rng.uniform(1.2, 1.7)
+            for k in ("revenue", "net_profit", "total_assets"):
+                gf[k] = int(gf[k] * scale) // 1000 * 1000
+            gf["employees"] = int(gf["employees"] * scale)
+            add_report(c, gf, None, group_of=(sub.legal_name, sub.financials["revenue"], sub.sector))
+    doc_rng.shuffle(index)
     for p in sorted((DOCS / "policies").glob("*.md")):
         index.append({"doc_id": p.stem, "type": "policy", "country": None, "company_name": None, "registration_number": None,
                       "year": None, "language": "pt" if p.stem.startswith("procedimentos") else "en", "path": str(p.relative_to(DOCS))})

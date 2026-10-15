@@ -14,6 +14,9 @@ Examples
   # Score pack JSON files saved in a folder (file name = company_id.json, e.g. UK-001.json)
   python scoring/score.py --packs-dir my_packs/
 
+  # Compare with an earlier report (prompt optimisation: one change at a time, measure the delta)
+  python scoring/score.py --api http://localhost:8000 --run-all --label prompt-v2 --compare scoring/reports/report-...-baseline.json
+
 Reports are written to scoring/reports/ as Markdown and JSON.
 """
 from __future__ import annotations
@@ -57,10 +60,10 @@ def f1(expected: set, got: set) -> float:
     return 2 * p * r / (p + r)
 
 
-def score_pack(answer: dict, raw: dict | None, error: str | None = None) -> dict:
+def score_pack(answer: dict, raw: dict | None, error: str | None = None, metrics: dict | None = None) -> dict:
     exp = answer["expected"]
     out = {"company_id": answer["company_id"], "country": answer["input"]["country"], "difficulty": answer["difficulty"],
-           "cases": answer["cases"], "fields": {}, "notes": []}
+           "cases": answer["cases"], "fields": {}, "notes": [], "metrics": metrics or {}}
     if raw is None:
         out["fields"] = {f: 0.0 for f in FIELDS}
         out["notes"].append(error or "no pack")
@@ -130,9 +133,9 @@ def load_answers() -> list[dict]:
     return json.loads((DATA / "generated" / "answers.json").read_text())["answers"]
 
 
-async def run_all(api: str, answers: list[dict], concurrency: int, timeout: int) -> dict[str, tuple[dict | None, str | None]]:
+async def run_all(api: str, answers: list[dict], concurrency: int, timeout: int) -> dict[str, tuple]:
     sem = asyncio.Semaphore(concurrency)
-    results: dict[str, tuple[dict | None, str | None]] = {}
+    results: dict[str, tuple] = {}
     started = time.time()
 
     async with httpx.AsyncClient(base_url=api.rstrip("/"), timeout=30) as client:
@@ -146,34 +149,34 @@ async def run_all(api: str, answers: list[dict], concurrency: int, timeout: int)
                     await asyncio.sleep(1.5)
                     run = (await client.get(f"/runs/{rid}")).json()
                     if run["status"] in DONE:
-                        results[a["company_id"]] = (run.get("pack"), run.get("error"))
+                        results[a["company_id"]] = (run.get("pack"), run.get("error"), run.get("metrics"))
                         print(f"  {a['company_id']:<7} {run['status']:<16} {time.time() - started:6.0f}s", flush=True)
                         return
-                results[a["company_id"]] = (None, f"timed out after {timeout}s")
+                results[a["company_id"]] = (None, f"timed out after {timeout}s", None)
                 print(f"  {a['company_id']:<7} timed out", flush=True)
 
         await asyncio.gather(*(one(a) for a in answers))
     return results
 
 
-def latest(api: str, answers: list[dict]) -> dict[str, tuple[dict | None, str | None]]:
+def latest(api: str, answers: list[dict]) -> dict[str, tuple]:
     out = {}
     with httpx.Client(base_url=api.rstrip("/"), timeout=30) as client:
         for a in answers:
             items = client.get("/runs", params={"company_name": a["input"]["name"], "country": a["input"]["country"], "limit": 1}).json()["items"]
             if not items:
-                out[a["company_id"]] = (None, "no run found")
+                out[a["company_id"]] = (None, "no run found", None)
                 continue
             run = client.get(f"/runs/{items[0]['id']}").json()
-            out[a["company_id"]] = (run.get("pack"), run.get("error"))
+            out[a["company_id"]] = (run.get("pack"), run.get("error"), run.get("metrics"))
     return out
 
 
-def from_dir(folder: Path, answers: list[dict]) -> dict[str, tuple[dict | None, str | None]]:
+def from_dir(folder: Path, answers: list[dict]) -> dict[str, tuple]:
     out = {}
     for a in answers:
         p = folder / f"{a['company_id']}.json"
-        out[a["company_id"]] = (json.loads(p.read_text()), None) if p.exists() else (None, f"missing {p.name}")
+        out[a["company_id"]] = (json.loads(p.read_text()), None, None) if p.exists() else (None, f"missing {p.name}", None)
     return out
 
 
@@ -190,16 +193,52 @@ def summarise(rows: list[dict]) -> dict:
             groups[("case", case)].append(r)
     happy = [r for r in rows if r["difficulty"] == "straightforward"]
     happy_ok = [r for r in happy if all(r["fields"].get(f) == 1.0 for f in ("schema", "sourcing", "legal_name", "registration_number", "status"))]
+    lat = [r["metrics"]["latency_s"] for r in rows if isinstance(r["metrics"].get("latency_s"), (int, float))]
+    cost = [r["metrics"]["cost_usd"] for r in rows if isinstance(r["metrics"].get("cost_usd"), (int, float))]
+    toks = [r["metrics"].get("input_tokens", 0) + r["metrics"].get("output_tokens", 0) for r in rows
+            if isinstance(r["metrics"].get("input_tokens"), (int, float))]
+    usage = {"runs_with_latency": len(lat), "avg_latency_s": round(mean(lat), 2) if lat else None,
+             "max_latency_s": max(lat) if lat else None,
+             "runs_with_cost": len(cost), "total_cost_usd": round(sum(cost), 4) if cost else None,
+             "avg_cost_usd": round(mean(cost), 4) if cost else None,
+             "avg_tokens": round(mean(toks)) if toks else None}
     return {"overall": agg(rows),
             "by": {f"{k}:{v}": agg(g) for (k, v), g in sorted(groups.items())},
-            "happy_path": {"straightforward_companies": len(happy), "correct_and_sourced_identity": len(happy_ok)}}
+            "happy_path": {"straightforward_companies": len(happy), "correct_and_sourced_identity": len(happy_ok)},
+            "usage": usage}
 
 
-def write_report(rows: list[dict], summary: dict, label: str) -> Path:
+def compare(rows: list[dict], summary: dict, baseline_path: Path) -> dict:
+    """Per-field and per-company deltas against an earlier JSON report."""
+    base = json.loads(Path(baseline_path).read_text())
+    ids = {r["company_id"] for r in rows}
+    brows = [r for r in base["companies"] if r["company_id"] in ids]   # compare like with like
+    bscore = {r["company_id"]: r["score"] for r in brows}
+    common = [r for r in rows if r["company_id"] in bscore]
+    if not common:
+        return {"baseline": str(baseline_path), "error": "no companies in common"}
+    b_overall = round(mean(r["score"] for r in brows), 4)
+    a_overall = round(mean(r["score"] for r in common), 4)
+    fields = {}
+    for f in FIELDS:
+        bf = round(mean(r["fields"].get(f, 0) for r in brows), 4)
+        af = round(mean(r["fields"].get(f, 0) for r in common), 4)
+        fields[f] = {"before": bf, "after": af, "delta": round(af - bf, 4)}
+    return {
+        "baseline": str(baseline_path), "companies_compared": len(common),
+        "overall": {"before": b_overall, "after": a_overall, "delta": round(a_overall - b_overall, 4)},
+        "fields": fields,
+        "improved": sorted(r["company_id"] for r in common if r["score"] > bscore[r["company_id"]] + 1e-9),
+        "regressed": sorted(r["company_id"] for r in common if r["score"] < bscore[r["company_id"]] - 1e-9),
+        "usage_before": base["summary"].get("usage"), "usage_after": summary.get("usage"),
+    }
+
+
+def write_report(rows: list[dict], summary: dict, label: str, comparison: dict | None = None) -> Path:
     REPORTS.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     base = REPORTS / f"report-{stamp}{('-' + label) if label else ''}"
-    base.with_suffix(".json").write_text(json.dumps({"summary": summary, "companies": rows}, indent=2))
+    base.with_suffix(".json").write_text(json.dumps({"summary": summary, "comparison": comparison, "companies": rows}, indent=2))
     o = summary["overall"]
     lines = [f"# KYC scoring report ({stamp})", "",
              f"Companies scored: **{o['companies']}** · Overall score: **{o['score']:.1%}**", "",
@@ -207,10 +246,30 @@ def write_report(rows: list[dict], summary: dict, label: str) -> Path:
              "straightforward companies have a valid, fully sourced pack with the correct name, number and status.", "",
              "## Accuracy per field", "", "| Field | Score |", "|---|---|"]
     lines += [f"| {f} | {v:.1%} |" for f, v in o["fields"].items()]
+    u = summary["usage"]
+    lines += ["", "## Cost and latency", ""]
+    if u["runs_with_latency"] or u["runs_with_cost"]:
+        lines += [f"- Average latency: {u['avg_latency_s']} s (max {u['max_latency_s']} s) over {u['runs_with_latency']} runs",
+                  f"- Cost: {('$' + format(u['total_cost_usd'], '.4f') + ' total, $' + format(u['avg_cost_usd'], '.4f') + ' per run') if u['runs_with_cost'] else 'not recorded (call ctx.record_metrics(cost_usd=...) in your pipeline)'}",
+                  f"- Average tokens per run: {u['avg_tokens'] if u['avg_tokens'] is not None else 'not recorded'}"]
+    else:
+        lines += ["Not available (scoring from files, or the API did not return metrics)."]
+    if comparison and "error" not in comparison:
+        c = comparison
+        lines += ["", f"## Compared with `{Path(c['baseline']).name}` ({c['companies_compared']} companies in both)", "",
+                  f"Overall: {c['overall']['before']:.1%} → {c['overall']['after']:.1%} (**{c['overall']['delta']:+.1%}**)", "",
+                  "| Field | Before | After | Change |", "|---|---|---|---|"]
+        lines += [f"| {f} | {(d['before'] or 0):.1%} | {d['after']:.1%} | {d['delta']:+.1%} |" for f, d in c["fields"].items()]
+        lines += ["", f"Improved companies ({len(c['improved'])}): {', '.join(c['improved']) or 'none'}",
+                  "", f"Regressed companies ({len(c['regressed'])}): {', '.join(c['regressed']) or 'none'}"]
     lines += ["", "## By segment", "", "| Segment | Companies | Score |", "|---|---|---|"]
     lines += [f"| {k} | {g['companies']} | {g['score']:.1%} |" for k, g in summary["by"].items()]
-    lines += ["", "## Per company", "", "| Company | Country | Difficulty | Score | Notes |", "|---|---|---|---|---|"]
-    lines += [f"| {r['company_id']} | {r['country']} | {r['difficulty']}{(' (' + ', '.join(r['cases']) + ')') if r['cases'] else ''} | {r['score']:.0%} | {'; '.join(r['notes'])[:160]} |" for r in rows]
+    def fmt_metric(r, k, f):
+        v = r["metrics"].get(k)
+        return f.format(v) if isinstance(v, (int, float)) else ""
+    lines += ["", "## Per company", "", "| Company | Country | Difficulty | Score | Latency (s) | Cost ($) | Notes |", "|---|---|---|---|---|---|---|"]
+    lines += [f"| {r['company_id']} | {r['country']} | {r['difficulty']}{(' (' + ', '.join(r['cases']) + ')') if r['cases'] else ''} | {r['score']:.0%} | "
+              f"{fmt_metric(r, 'latency_s', '{:.1f}')} | {fmt_metric(r, 'cost_usd', '{:.4f}')} | {'; '.join(r['notes'])[:160]} |" for r in rows]
     base.with_suffix(".md").write_text("\n".join(lines) + "\n")
     return base
 
@@ -228,6 +287,7 @@ def main():
     ap.add_argument("--concurrency", type=int, default=4)
     ap.add_argument("--timeout", type=int, default=900, help="seconds to wait for each run")
     ap.add_argument("--label", default="", help="added to the report file name, e.g. 'baseline' or 'prompt-v2'")
+    ap.add_argument("--compare", type=Path, help="an earlier JSON report to compare against")
     args = ap.parse_args()
 
     answers = load_answers()
@@ -248,15 +308,24 @@ def main():
     else:
         packs = from_dir(args.packs_dir, answers)
 
-    rows = [score_pack(a, *packs.get(a["company_id"], (None, "not run"))) for a in answers]
+    rows = [score_pack(a, *packs.get(a["company_id"], (None, "not run", None))) for a in answers]
     summary = summarise(rows)
-    path = write_report(rows, summary, args.label)
+    comparison = compare(rows, summary, args.compare) if args.compare else None
+    path = write_report(rows, summary, args.label, comparison)
     o = summary["overall"]
     print(f"\nOverall score: {o['score']:.1%} across {o['companies']} companies")
     for f, v in o["fields"].items():
         print(f"  {f:<20} {v:6.1%}")
     hp = summary["happy_path"]
     print(f"\nHappy path: {hp['correct_and_sourced_identity']}/{hp['straightforward_companies']} straightforward companies with a valid, sourced, correct identity")
+    u = summary["usage"]
+    if u["runs_with_latency"]:
+        print(f"Latency: {u['avg_latency_s']} s average, {u['max_latency_s']} s max")
+    if u["runs_with_cost"]:
+        print(f"Cost: ${u['total_cost_usd']:.4f} total, ${u['avg_cost_usd']:.4f} per run")
+    if comparison and "error" not in comparison:
+        print(f"Compared with {args.compare.name}: {comparison['overall']['delta']:+.1%} overall, "
+              f"{len(comparison['improved'])} companies improved, {len(comparison['regressed'])} regressed")
     print(f"Report: {path.with_suffix('.md')}")
 
 

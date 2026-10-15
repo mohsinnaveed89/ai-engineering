@@ -14,6 +14,10 @@ class Settings:
     claude_model: str = field(default_factory=lambda: os.getenv("CLAUDE_MODEL", "claude-sonnet-5-5"))
     tavily_api_key: str | None = field(default_factory=lambda: os.getenv("TAVILY_API_KEY") or None)
     langfuse_host: str | None = field(default_factory=lambda: os.getenv("LANGFUSE_HOST") or None)
+    langfuse_public_key: str | None = field(default_factory=lambda: os.getenv("LANGFUSE_PUBLIC_KEY") or None)
+    langfuse_secret_key: str | None = field(default_factory=lambda: os.getenv("LANGFUSE_SECRET_KEY") or None)
+    ollama_url: str = field(default_factory=lambda: os.getenv("OLLAMA_URL", "http://localhost:11434"))
+    data_dir: str = field(default_factory=lambda: os.getenv("DATA_DIR", "/data"))
 
 
 settings = Settings()

@@ -84,6 +84,7 @@ async def get_run(run_id: str):
     run = await db.get_run(run_id)
     if not run:
         raise HTTPException(404, "Run not found")
+    run["metrics"] = runs.summarise_metrics(run["events"] or [])
     return run
 
 

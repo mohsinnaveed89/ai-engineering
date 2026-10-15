@@ -17,6 +17,7 @@ class PipelineContext:
     version: int = 1                  # 1 for the first pack; +1 each time the human sends it back
     feedback: str | None = None       # the reviewer's comments when the pack was sent back
     previous_pack: KycPack | None = None
+    review_history: list[dict[str, Any]] = field(default_factory=list)  # every earlier human decision on this run
     settings: Settings = field(default_factory=lambda: default_settings)
     _emit: Callable[[dict[str, Any]], Awaitable[None]] | None = None
 
@@ -27,3 +28,13 @@ class PipelineContext:
         """
         if self._emit:
             await self._emit({"type": "progress", "step": step, "message": message, "data": data or None})
+
+    async def record_metrics(self, **metrics: Any) -> None:
+        """Record usage for this run, e.g. input_tokens=..., output_tokens=..., cost_usd=..., model="...".
+
+        Call it as often as you like (for example once per agent): numbers are added up across calls,
+        text values keep the latest. The API adds latency_s itself. The scoring report shows cost and
+        latency per company, so you can trade quality against cost on Day 6.
+        """
+        if self._emit:
+            await self._emit({"type": "metrics", "step": "metrics", "message": "Usage recorded", "data": metrics})

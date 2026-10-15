@@ -1,0 +1,11 @@
+---
+name: kyc-uk
+description: KYC procedure for companies registered in the United Kingdom. Use when researching a UK company for onboarding.
+---
+
+# KYC procedure: United Kingdom
+
+1. Search the register by name; confirm the match with the registered address and the declared company number.
+2. ...
+
+Rename this file to SKILL.md inside a folder named after the skill (e.g. .claude/skills/kyc-uk/SKILL.md).

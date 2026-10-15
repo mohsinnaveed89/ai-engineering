@@ -2,145 +2,53 @@
   "source": "Registo comercial simulado (Portugal)",
   "entidades": [
     {
-      "nipc": "518635449",
-      "denominacao": "Barroso Câmbios, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "1998-10-26",
-      "cae": {
-        "codigo": "66190",
-        "descricao": "Serviços de câmbio e pagamentos"
-      },
-      "sede": {
-        "morada": "Rua das Flores, 197",
-        "codigo_postal": "3000-787",
-        "localidade": "Coimbra",
-        "distrito": "Coimbra"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Teresa Costa Rodrigues",
-          "cargo": "Administrador",
-          "data_designacao": "2006-11-22"
-        },
-        {
-          "nome": "Raquel Teixeira Martins",
-          "cargo": "Administrador",
-          "data_designacao": "2000-03-01"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Teresa Costa Rodrigues",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 70
-        },
-        {
-          "nome": "Raquel Teixeira Martins",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 20
-        },
-        {
-          "nome": "Nuno Monteiro",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 10
-        }
-      ]
-    },
-    {
-      "nipc": "575260580",
-      "denominacao": "Tejo Ibérica Engenharia, Lda",
+      "nipc": "567763447",
+      "denominacao": "Caramulo Lux Têxteis, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "2005-03-03",
-      "cae": {
-        "codigo": "71120",
-        "descricao": "Atividades de engenharia"
-      },
-      "sede": {
-        "morada": "Rua das Flores, 124",
-        "codigo_postal": "2900-508",
-        "localidade": "Setúbal",
-        "distrito": "Setúbal"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Teresa Vieira Nunes",
-          "cargo": "Gerente",
-          "data_designacao": "2010-12-29"
-        },
-        {
-          "nome": "Joana Teixeira",
-          "cargo": "Administrador",
-          "data_designacao": "2005-08-02"
-        },
-        {
-          "nome": "João Ribeiro Ferreira",
-          "cargo": "Administrador",
-          "data_designacao": "2005-09-11"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Lusitânia Prime SGPS, S.A.",
-          "tipo": "pessoa coletiva",
-          "nipc": "564479780",
-          "pais": "Portugal",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "571252044",
-      "denominacao": "Tâmega Global Têxteis, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1989-06-18",
+      "data_constituicao": "2017-06-09",
       "cae": {
         "codigo": "13920",
         "descricao": "Fabricação de têxteis"
       },
       "sede": {
-        "morada": "Avenida Central, 44",
-        "codigo_postal": "2900-970",
-        "localidade": "Setúbal",
-        "distrito": "Setúbal"
+        "morada": "Avenida Central, 229",
+        "codigo_postal": "2400-794",
+        "localidade": "Leiria",
+        "distrito": "Leiria"
       },
       "orgaos_sociais": [
         {
-          "nome": "Rita Monteiro Rocha",
-          "cargo": "Administrador",
-          "data_designacao": "1991-06-24"
-        },
-        {
-          "nome": "Raquel Neves Pinto",
+          "nome": "Teresa Costa",
           "cargo": "Gerente",
-          "data_designacao": "1991-06-13"
+          "data_designacao": "2021-05-08"
         },
         {
-          "nome": "André Pinto Mendes",
+          "nome": "Maria Moreira",
           "cargo": "Administrador",
-          "data_designacao": "1993-06-06"
+          "data_designacao": "2020-11-03"
+        },
+        {
+          "nome": "Ricardo Sousa",
+          "cargo": "Gerente",
+          "data_designacao": "2019-05-23"
         }
       ],
       "socios": [
         {
-          "nome": "Rita Monteiro Rocha",
+          "nome": "Teresa Costa",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 40
         },
         {
-          "nome": "Raquel Neves Pinto",
+          "nome": "Maria Moreira",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 35
         },
         {
-          "nome": "André Pinto Mendes",
+          "nome": "Ricardo Sousa",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 25
@@ -148,184 +56,53 @@
       ]
     },
     {
-      "nipc": "529035758",
-      "denominacao": "Algarvia Energia, Lda",
+      "nipc": "576125393",
+      "denominacao": "Belém Norte Prime Construções, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "1993-01-03",
-      "cae": {
-        "codigo": "35112",
-        "descricao": "Produção de eletricidade"
-      },
-      "sede": {
-        "morada": "Avenida da Liberdade, 114",
-        "codigo_postal": "4800-274",
-        "localidade": "Guimarães",
-        "distrito": "Braga"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Joana Almeida",
-          "cargo": "Administrador",
-          "data_designacao": "2000-10-15"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Joana Almeida",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        },
-        {
-          "nome": "Catarina Rocha Ferreira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        }
-      ]
-    },
-    {
-      "nipc": "521277922",
-      "denominacao": "Sado Ibérica Jogos, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "1995-09-24",
-      "cae": {
-        "codigo": "92000",
-        "descricao": "Jogos de fortuna e azar e apostas"
-      },
-      "sede": {
-        "morada": "Avenida Central, 54",
-        "codigo_postal": "3800-182",
-        "localidade": "Aveiro",
-        "distrito": "Aveiro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Duarte Ribeiro Ferreira",
-          "cargo": "Administrador",
-          "data_designacao": "1998-07-24"
-        },
-        {
-          "nome": "Helena Costa",
-          "cargo": "Gerente",
-          "data_designacao": "1999-12-06"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Duarte Ribeiro Ferreira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 70
-        },
-        {
-          "nome": "Helena Costa",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 20
-        },
-        {
-          "nome": "Catarina Cardoso Ferreira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 10
-        }
-      ]
-    },
-    {
-      "nipc": "574113975",
-      "denominacao": "Atlântica Logística, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1987-10-25",
-      "cae": {
-        "codigo": "49410",
-        "descricao": "Transportes rodoviários de mercadorias"
-      },
-      "sede": {
-        "morada": "Rua do Comércio, 228",
-        "codigo_postal": "3800-157",
-        "localidade": "Aveiro",
-        "distrito": "Aveiro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Beatriz Silva",
-          "cargo": "Gerente",
-          "data_designacao": "1989-03-05"
-        },
-        {
-          "nome": "Mariana Almeida Fernandes",
-          "cargo": "Administrador",
-          "data_designacao": "1995-09-14"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Beatriz Silva",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 40
-        },
-        {
-          "nome": "Mariana Almeida Fernandes",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 35
-        },
-        {
-          "nome": "Beatriz Costa Sousa",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 25
-        }
-      ]
-    },
-    {
-      "nipc": "572995849",
-      "denominacao": "Douro Nova Construções, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "2012-05-18",
+      "data_constituicao": "2005-12-25",
       "cae": {
         "codigo": "41200",
         "descricao": "Construção de edifícios"
       },
       "sede": {
-        "morada": "Rua de Santa Catarina, 140",
-        "codigo_postal": "3500-429",
-        "localidade": "Viseu",
-        "distrito": "Viseu"
+        "morada": "Largo do Rossio, 56",
+        "codigo_postal": "4000-893",
+        "localidade": "Porto",
+        "distrito": "Porto"
       },
       "orgaos_sociais": [
         {
-          "nome": "Leonor Martins Marques",
+          "nome": "Joana Gonçalves",
           "cargo": "Gerente",
-          "data_designacao": "2015-04-22"
+          "data_designacao": "2014-02-20"
         },
         {
-          "nome": "Pedro Marques Gomes",
+          "nome": "Gonçalo Santos Ribeiro",
           "cargo": "Administrador",
-          "data_designacao": "2019-02-16"
+          "data_designacao": "2007-09-27"
+        },
+        {
+          "nome": "Ana Cardoso Oliveira",
+          "cargo": "Administrador",
+          "data_designacao": "2007-10-06"
         }
       ],
       "socios": [
         {
-          "nome": "Leonor Martins Marques",
+          "nome": "Joana Gonçalves",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 70
         },
         {
-          "nome": "Pedro Marques Gomes",
+          "nome": "Gonçalo Santos Ribeiro",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 20
         },
         {
-          "nome": "Joana Correia",
+          "nome": "Ana Cardoso Oliveira",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 10
@@ -333,199 +110,42 @@
       ]
     },
     {
-      "nipc": "595100546",
-      "denominacao": "Sado Logística, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2002-09-20",
-      "cae": {
-        "codigo": "49410",
-        "descricao": "Transportes rodoviários de mercadorias"
-      },
-      "sede": {
-        "morada": "Avenida da Liberdade, 154",
-        "codigo_postal": "4800-600",
-        "localidade": "Guimarães",
-        "distrito": "Braga"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Gonçalo Gonçalves Vieira",
-          "cargo": "Administrador",
-          "data_designacao": "2010-04-09"
-        },
-        {
-          "nome": "Ana Monteiro Gomes",
-          "cargo": "Gerente",
-          "data_designacao": "2004-12-07"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Gonçalo Gonçalves Vieira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 60
-        },
-        {
-          "nome": "Ana Monteiro Gomes",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 40
-        }
-      ]
-    },
-    {
-      "nipc": "592434265",
-      "denominacao": "Lusitânia Ibérica Logística, Lda",
+      "nipc": "587713275",
+      "denominacao": "Estrela Global Construções, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "dissolvida",
-      "data_constituicao": "1995-05-26",
+      "data_constituicao": "1990-03-25",
       "cae": {
-        "codigo": "49410",
-        "descricao": "Transportes rodoviários de mercadorias"
+        "codigo": "41200",
+        "descricao": "Construção de edifícios"
       },
       "sede": {
-        "morada": "Rua Augusta, 220",
-        "codigo_postal": "4000-707",
-        "localidade": "Porto",
-        "distrito": "Porto"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "João Oliveira Martins",
-          "cargo": "Gerente",
-          "data_designacao": "1995-05-26"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "João Oliveira Martins",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "573667470",
-      "denominacao": "Serra Alta Ibérica Farmacêutica, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1992-06-19",
-      "cae": {
-        "codigo": "21201",
-        "descricao": "Fabricação de medicamentos"
-      },
-      "sede": {
-        "morada": "Rua Direita, 163",
-        "codigo_postal": "3000-626",
-        "localidade": "Coimbra",
-        "distrito": "Coimbra"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Vasco Rodrigues Oliveira",
-          "cargo": "Administrador",
-          "data_designacao": "1996-08-13"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Mondego Lux SGPS, S.A.",
-          "tipo": "pessoa coletiva",
-          "nipc": "574404309",
-          "pais": "Portugal",
-          "participacao_pct": 80
-        },
-        {
-          "nome": "Vasco Rodrigues Oliveira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 20
-        }
-      ]
-    },
-    {
-      "nipc": "599995963",
-      "denominacao": "Ferreira Global Engenharia, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2011-02-08",
-      "cae": {
-        "codigo": "71120",
-        "descricao": "Atividades de engenharia"
-      },
-      "sede": {
-        "morada": "Avenida da República, 179",
-        "codigo_postal": "3800-921",
+        "morada": "Rua das Flores, 35",
+        "codigo_postal": "3800-885",
         "localidade": "Aveiro",
         "distrito": "Aveiro"
       },
       "orgaos_sociais": [
         {
-          "nome": "Pedro Oliveira",
+          "nome": "Teresa Martins",
           "cargo": "Administrador",
-          "data_designacao": "2014-09-29"
+          "data_designacao": "1993-05-09"
         },
         {
-          "nome": "Diogo Gonçalves",
-          "cargo": "Administrador",
-          "data_designacao": "2014-02-05"
+          "nome": "Hugo Fernandes",
+          "cargo": "Gerente",
+          "data_designacao": "1991-08-07"
         }
       ],
       "socios": [
         {
-          "nome": "Pedro Oliveira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 60
-        },
-        {
-          "nome": "Diogo Gonçalves",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 40
-        }
-      ]
-    },
-    {
-      "nipc": "527172243",
-      "denominacao": "Lusitânia Ibérica Logística, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "1998-08-20",
-      "cae": {
-        "codigo": "49410",
-        "descricao": "Transportes rodoviários de mercadorias"
-      },
-      "sede": null,
-      "orgaos_sociais": [
-        {
-          "nome": "Vasco Rocha Carvalho",
-          "cargo": "Gerente",
-          "data_designacao": "2001-09-30"
-        },
-        {
-          "nome": "Marta Ferreira Mendes",
-          "cargo": "Gerente",
-          "data_designacao": "1999-08-30"
-        },
-        {
-          "nome": "Leonor Silva",
-          "cargo": "Gerente",
-          "data_designacao": "2003-06-05"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Vasco Rocha Carvalho",
+          "nome": "Teresa Martins",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 50
         },
         {
-          "nome": "Marta Ferreira Mendes",
+          "nome": "Hugo Fernandes",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 50
@@ -533,153 +153,83 @@
       ]
     },
     {
-      "nipc": "525240683",
-      "denominacao": "Marão Nova Farmacêutica, Lda",
+      "nipc": "577483641",
+      "denominacao": "Dão Vivo Nova Media, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "1987-05-01",
-      "cae": {
-        "codigo": "21201",
-        "descricao": "Fabricação de medicamentos"
-      },
-      "sede": {
-        "morada": "Avenida da Liberdade, 136",
-        "codigo_postal": "2900-571",
-        "localidade": "Setúbal",
-        "distrito": "Setúbal"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Gonçalo Soares Martins",
-          "cargo": "Administrador",
-          "data_designacao": "1991-01-25"
-        },
-        {
-          "nome": "Vasco Pinto Silva",
-          "cargo": "Gerente",
-          "data_designacao": "1989-07-01"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Gonçalo Soares Martins",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        },
-        {
-          "nome": "Vasco Pinto Silva",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        }
-      ]
-    },
-    {
-      "nipc": "554626853",
-      "denominacao": "Douro Nova SGPS, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "2018-11-23",
-      "cae": {
-        "codigo": "64202",
-        "descricao": "Atividades das sociedades gestoras de participações sociais"
-      },
-      "sede": {
-        "morada": "Avenida da República, 74",
-        "codigo_postal": "2900-952",
-        "localidade": "Setúbal",
-        "distrito": "Setúbal"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Mariana Pereira Rodrigues",
-          "cargo": "Administrador",
-          "data_designacao": "2018-11-23"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Tidewater Trust Inc",
-          "tipo": "pessoa coletiva",
-          "numero_registo_estrangeiro": "BVI-957125",
-          "pais": "British Virgin Islands",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "564479780",
-      "denominacao": "Lusitânia Prime SGPS, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "2002-08-14",
-      "cae": {
-        "codigo": "64202",
-        "descricao": "Atividades das sociedades gestoras de participações sociais"
-      },
-      "sede": {
-        "morada": "Avenida Central, 226",
-        "codigo_postal": "4800-594",
-        "localidade": "Guimarães",
-        "distrito": "Braga"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Joana Soares",
-          "cargo": "Administrador",
-          "data_designacao": "2002-08-14"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Tidewater Ventures Ltd",
-          "tipo": "pessoa coletiva",
-          "numero_registo_estrangeiro": "SC-403162",
-          "pais": "Seychelles",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "545222508",
-      "denominacao": "Zêzere Global Media, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2001-10-22",
+      "data_constituicao": "2010-03-09",
       "cae": {
         "codigo": "59110",
         "descricao": "Produção de conteúdos"
       },
       "sede": {
-        "morada": "Largo do Rossio, 170",
-        "codigo_postal": "4700-862",
-        "localidade": "Braga",
-        "distrito": "Braga"
+        "morada": "Largo do Rossio, 117",
+        "codigo_postal": "3800-169",
+        "localidade": "Aveiro",
+        "distrito": "Aveiro"
       },
       "orgaos_sociais": [
         {
-          "nome": "Teresa Neves Gonçalves",
-          "cargo": "Administrador",
-          "data_designacao": "2006-07-19"
-        },
-        {
-          "nome": "Marta Ferreira Fernandes",
-          "cargo": "Administrador",
-          "data_designacao": "2003-07-23"
-        },
-        {
-          "nome": "Beatriz Monteiro Rodrigues",
-          "cargo": "Administrador",
-          "data_designacao": "2007-07-31"
+          "nome": "Nuno Almeida Ferreira",
+          "cargo": "Gerente",
+          "data_designacao": "2017-02-07"
         }
       ],
       "socios": [
         {
-          "nome": "Teresa Neves Gonçalves",
+          "nome": "Nuno Almeida Ferreira",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "534230407",
+      "denominacao": "Marão Nova Energia, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2002-10-21",
+      "cae": {
+        "codigo": "35112",
+        "descricao": "Produção de eletricidade"
+      },
+      "sede": {
+        "morada": "Rua das Flores, 1",
+        "codigo_postal": "3500-725",
+        "localidade": "Viseu",
+        "distrito": "Viseu"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Maria Alves",
+          "cargo": "Administrador",
+          "data_designacao": "2009-10-20"
+        },
+        {
+          "nome": "Nuno Ferreira Fernandes",
+          "cargo": "Gerente",
+          "data_designacao": "2004-06-13"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Maria Alves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 70
+        },
+        {
+          "nome": "Nuno Ferreira Fernandes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 20
+        },
+        {
+          "nome": "Miguel Santos Marques",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 10
         }
       ]
     },
@@ -732,232 +282,48 @@
       ]
     },
     {
-      "nipc": "576125393",
-      "denominacao": "Caramulo Lux Logística, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "2011-01-11",
-      "cae": {
-        "codigo": "49410",
-        "descricao": "Transportes rodoviários de mercadorias"
-      },
-      "sede": {
-        "morada": "Largo do Rossio, 56",
-        "codigo_postal": "4000-893",
-        "localidade": "Porto",
-        "distrito": "Porto"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Joana Gonçalves",
-          "cargo": "Gerente",
-          "data_designacao": "2019-03-09"
-        },
-        {
-          "nome": "Gonçalo Santos Ribeiro",
-          "cargo": "Administrador",
-          "data_designacao": "2012-10-13"
-        },
-        {
-          "nome": "Ana Cardoso Oliveira",
-          "cargo": "Administrador",
-          "data_designacao": "2012-10-22"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Joana Gonçalves",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 70
-        },
-        {
-          "nome": "Gonçalo Santos Ribeiro",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 20
-        },
-        {
-          "nome": "Ana Cardoso Oliveira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 10
-        }
-      ]
-    },
-    {
-      "nipc": "557612659",
-      "denominacao": "Mondego Ibérica Engenharia, Lda",
+      "nipc": "507411390",
+      "denominacao": "Barroso Farmacêutica, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "2016-11-24",
-      "cae": {
-        "codigo": "71120",
-        "descricao": "Atividades de engenharia"
-      },
-      "sede": {
-        "morada": "Avenida da Liberdade, 65",
-        "codigo_postal": "1250-519",
-        "localidade": "Lisboa",
-        "distrito": "Lisboa"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Gonçalo Correia Ferreira",
-          "cargo": "Gerente",
-          "data_designacao": "2018-04-07"
-        },
-        {
-          "nome": "Carolina Lopes",
-          "cargo": "Gerente",
-          "data_designacao": "2017-05-23"
-        },
-        {
-          "nome": "Diogo Moreira Neves",
-          "cargo": "Gerente",
-          "data_designacao": "2024-02-17"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Gonçalo Correia Ferreira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 60
-        },
-        {
-          "nome": "Carolina Lopes",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 40
-        }
-      ]
-    },
-    {
-      "nipc": "509057470",
-      "denominacao": "Lusitânia SGPS, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "1998-10-14",
-      "cae": {
-        "codigo": "64202",
-        "descricao": "Atividades das sociedades gestoras de participações sociais"
-      },
-      "sede": {
-        "morada": "Avenida da Liberdade, 128",
-        "codigo_postal": "3000-963",
-        "localidade": "Coimbra",
-        "distrito": "Coimbra"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Duarte Correia Pereira",
-          "cargo": "Administrador",
-          "data_designacao": "1998-10-14"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Duarte Correia Pereira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 60
-        },
-        {
-          "nome": "Ana Neves",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 40
-        }
-      ]
-    },
-    {
-      "nipc": "569518350",
-      "denominacao": "Tâmega Farmacêutica, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2014-09-12",
+      "data_constituicao": "2004-01-28",
       "cae": {
         "codigo": "21201",
         "descricao": "Fabricação de medicamentos"
       },
       "sede": {
-        "morada": "Avenida da República, 38",
-        "codigo_postal": "4800-254",
+        "morada": "Rua do Comércio, 161",
+        "codigo_postal": "4800-394",
         "localidade": "Guimarães",
         "distrito": "Braga"
       },
       "orgaos_sociais": [
         {
-          "nome": "Raquel Vieira",
+          "nome": "Beatriz Moreira Soares",
           "cargo": "Gerente",
-          "data_designacao": "2020-05-04"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Raquel Vieira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 70
+          "data_designacao": "2005-06-08"
         },
         {
-          "nome": "Carolina Mendes Monteiro",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 20
-        },
-        {
-          "nome": "Duarte Oliveira Fernandes",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 10
-        }
-      ]
-    },
-    {
-      "nipc": "553519042",
-      "denominacao": "Tejo Têxteis, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "2012-01-16",
-      "cae": {
-        "codigo": "13920",
-        "descricao": "Fabricação de têxteis"
-      },
-      "sede": {
-        "morada": "Avenida da República, 137",
-        "codigo_postal": "2900-533",
-        "localidade": "Setúbal",
-        "distrito": "Setúbal"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "André Marques Rocha",
-          "cargo": "Gerente",
-          "data_designacao": "2020-03-02"
-        },
-        {
-          "nome": "Helena Vieira Santos",
+          "nome": "Mariana Almeida Fernandes",
           "cargo": "Administrador",
-          "data_designacao": "2019-10-25"
+          "data_designacao": "2011-12-18"
         }
       ],
       "socios": [
         {
-          "nome": "André Marques Rocha",
+          "nome": "Beatriz Moreira Soares",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 40
         },
         {
-          "nome": "Helena Vieira Santos",
+          "nome": "Mariana Almeida Fernandes",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 35
         },
         {
-          "nome": "Duarte Lopes Correia",
+          "nome": "Beatriz Costa Sousa",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 25
@@ -965,316 +331,85 @@
       ]
     },
     {
-      "nipc": "524787530",
-      "denominacao": "Alvorada Energia, Lda",
+      "nipc": "568416856",
+      "denominacao": "Alcoa Prime Farmacêutica, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "2001-09-04",
-      "cae": {
-        "codigo": "35112",
-        "descricao": "Produção de eletricidade"
-      },
-      "sede": {
-        "morada": "Avenida da República, 235",
-        "codigo_postal": "1250-432",
-        "localidade": "Lisboa",
-        "distrito": "Lisboa"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Helena Costa",
-          "cargo": "Administrador",
-          "data_designacao": "2008-09-17"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Helena Costa",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 70
-        },
-        {
-          "nome": "Miguel Carvalho Ribeiro",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 20
-        },
-        {
-          "nome": "Rui Ferreira Silva",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 10
-        }
-      ]
-    },
-    {
-      "nipc": "507613422",
-      "denominacao": "Quinta Nova Prime SGPS, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "1995-08-28",
-      "cae": {
-        "codigo": "64202",
-        "descricao": "Atividades das sociedades gestoras de participações sociais"
-      },
-      "sede": {
-        "morada": "Largo do Rossio, 200",
-        "codigo_postal": "3800-961",
-        "localidade": "Aveiro",
-        "distrito": "Aveiro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Catarina Mendes Carvalho",
-          "cargo": "Administrador",
-          "data_designacao": "1995-08-28"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Catarina Mendes Carvalho",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        },
-        {
-          "nome": "Filipa Sousa Ribeiro",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        }
-      ]
-    },
-    {
-      "nipc": "574404309",
-      "denominacao": "Mondego Lux SGPS, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "2013-07-09",
-      "cae": {
-        "codigo": "64202",
-        "descricao": "Atividades das sociedades gestoras de participações sociais"
-      },
-      "sede": {
-        "morada": "Avenida da Liberdade, 58",
-        "codigo_postal": "2400-277",
-        "localidade": "Leiria",
-        "distrito": "Leiria"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Hugo Fernandes",
-          "cargo": "Administrador",
-          "data_designacao": "2013-07-09"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Halcyon Investments Ltd",
-          "tipo": "pessoa coletiva",
-          "numero_registo_estrangeiro": "PA-306420",
-          "pais": "Panama",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "512282226",
-      "denominacao": "Alcoa Nova Engenharia, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2015-05-26",
-      "cae": {
-        "codigo": "71120",
-        "descricao": "Atividades de engenharia"
-      },
-      "sede": {
-        "morada": "Rua das Flores, 13",
-        "codigo_postal": "3500-954",
-        "localidade": "Viseu",
-        "distrito": "Viseu"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Ricardo Mendes Santos",
-          "cargo": "Gerente",
-          "data_designacao": "2018-04-02"
-        },
-        {
-          "nome": "Vasco Santos Costa",
-          "cargo": "Gerente",
-          "data_designacao": "2019-03-28"
-        },
-        {
-          "nome": "Ana Mendes Pinto",
-          "cargo": "Administrador",
-          "data_designacao": "2021-12-29"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Ricardo Mendes Santos",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "585304270",
-      "denominacao": "Nogueira Global Construções, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "2009-04-15",
-      "cae": {
-        "codigo": "41200",
-        "descricao": "Construção de edifícios"
-      },
-      "sede": {
-        "morada": "Rua Direita, 61",
-        "codigo_postal": "2900-554",
-        "localidade": "Setúbal",
-        "distrito": "Setúbal"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Nuno Moreira",
-          "cargo": "Gerente",
-          "data_designacao": "2014-01-20"
-        },
-        {
-          "nome": "Miguel Gomes Silva",
-          "cargo": "Administrador",
-          "data_designacao": "2016-10-19"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Nuno Moreira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "555565173",
-      "denominacao": "Quinta Nova Nova Alimentar, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2015-06-03",
-      "cae": {
-        "codigo": "10893",
-        "descricao": "Fabricação de produtos alimentares"
-      },
-      "sede": {
-        "morada": "Rua Direita, 176",
-        "codigo_postal": "4700-262",
-        "localidade": "Braga",
-        "distrito": "Braga"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Pedro Marques",
-          "cargo": "Gerente",
-          "data_designacao": "2016-12-25"
-        },
-        {
-          "nome": "Joana Rodrigues Costa",
-          "cargo": "Administrador",
-          "data_designacao": "2017-10-02"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Pedro Marques",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 70
-        },
-        {
-          "nome": "Joana Rodrigues Costa",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 20
-        },
-        {
-          "nome": "Helena Lopes",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 10
-        }
-      ]
-    },
-    {
-      "nipc": "540574449",
-      "denominacao": "Nogueira Nova Farmacêutica, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2021-03-10",
+      "data_constituicao": "1988-03-26",
       "cae": {
         "codigo": "21201",
         "descricao": "Fabricação de medicamentos"
       },
       "sede": {
-        "morada": "Rua Augusta, 144",
-        "codigo_postal": "4000-112",
-        "localidade": "Porto",
-        "distrito": "Porto"
+        "morada": "Rua Direita, 29",
+        "codigo_postal": "2900-669",
+        "localidade": "Setúbal",
+        "distrito": "Setúbal"
       },
       "orgaos_sociais": [
         {
-          "nome": "Miguel Almeida",
+          "nome": "Joana Santos Mendes",
           "cargo": "Administrador",
-          "data_designacao": "2024-03-18"
+          "data_designacao": "1993-12-31"
         },
         {
-          "nome": "Tiago Martins Soares",
-          "cargo": "Administrador",
-          "data_designacao": "2025-03-23"
+          "nome": "Miguel Gonçalves Teixeira",
+          "cargo": "Gerente",
+          "data_designacao": "1988-06-22"
         },
         {
-          "nome": "Ana Nunes",
+          "nome": "Gonçalo Gonçalves",
           "cargo": "Administrador",
-          "data_designacao": "2023-09-27"
+          "data_designacao": "1991-12-25"
         }
       ],
       "socios": [
         {
-          "nome": "Miguel Almeida",
+          "nome": "Joana Santos Mendes",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Miguel Gonçalves Teixeira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Gonçalo Gonçalves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
         }
       ]
     },
     {
-      "nipc": "564456918",
+      "nipc": "594083931",
       "denominacao": "Zêzere Prime Engenharia, S.A.",
       "forma_juridica": "Sociedade Anónima",
       "estado": "dissolvida",
-      "data_constituicao": "1995-08-19",
+      "data_constituicao": "1993-12-18",
       "cae": {
         "codigo": "71120",
         "descricao": "Atividades de engenharia"
       },
       "sede": {
-        "morada": "Rua Direita, 109",
-        "codigo_postal": "4000-674",
-        "localidade": "Porto",
-        "distrito": "Porto"
+        "morada": "Rua Augusta, 120",
+        "codigo_postal": "4800-161",
+        "localidade": "Guimarães",
+        "distrito": "Braga"
       },
       "orgaos_sociais": [
         {
-          "nome": "Leonor Costa Ribeiro",
+          "nome": "Vasco Neves Gonçalves",
           "cargo": "Gerente",
-          "data_designacao": "1995-08-19"
+          "data_designacao": "1993-12-18"
         }
       ],
       "socios": [
         {
-          "nome": "Leonor Costa Ribeiro",
+          "nome": "Vasco Neves Gonçalves",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 100
@@ -1282,42 +417,91 @@
       ]
     },
     {
-      "nipc": "546432107",
-      "denominacao": "Espinhaço Prime Energia, S.A.",
-      "forma_juridica": "Sociedade Anónima",
+      "nipc": "554579103",
+      "denominacao": "Quinta Nova Ibérica Têxteis, Lda",
+      "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "2016-10-19",
+      "data_constituicao": "2005-09-02",
       "cae": {
-        "codigo": "35112",
-        "descricao": "Produção de eletricidade"
+        "codigo": "13920",
+        "descricao": "Fabricação de têxteis"
       },
       "sede": {
-        "morada": "Avenida da Liberdade, 118",
-        "codigo_postal": "8000-679",
-        "localidade": "Faro",
-        "distrito": "Faro"
+        "morada": "Rua Direita, 120",
+        "codigo_postal": "2400-618",
+        "localidade": "Leiria",
+        "distrito": "Leiria"
       },
       "orgaos_sociais": [
         {
-          "nome": "Beatriz Almeida Monteiro",
-          "cargo": "Administrador",
-          "data_designacao": "2024-06-13"
-        },
-        {
-          "nome": "Gonçalo Santos",
+          "nome": "Ricardo Costa",
           "cargo": "Gerente",
-          "data_designacao": "2017-03-20"
+          "data_designacao": "2007-03-31"
         }
       ],
       "socios": [
         {
-          "nome": "Beatriz Almeida Monteiro",
+          "nome": "Ricardo Costa",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 70
+        },
+        {
+          "nome": "Tiago Soares Neves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 20
+        },
+        {
+          "nome": "Teresa Gonçalves Cardoso",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 10
+        }
+      ]
+    },
+    {
+      "nipc": "546134394",
+      "denominacao": "Mondego Lux Logística, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2007-03-03",
+      "cae": {
+        "codigo": "49410",
+        "descricao": "Transportes rodoviários de mercadorias"
+      },
+      "sede": {
+        "morada": "Rua de Santa Catarina, 24",
+        "codigo_postal": "2900-376",
+        "localidade": "Setúbal",
+        "distrito": "Setúbal"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Duarte Cardoso",
+          "cargo": "Administrador",
+          "data_designacao": "2010-12-19"
+        },
+        {
+          "nome": "Pedro Oliveira",
+          "cargo": "Administrador",
+          "data_designacao": "2010-10-22"
+        },
+        {
+          "nome": "Diogo Gonçalves",
+          "cargo": "Administrador",
+          "data_designacao": "2010-02-28"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Duarte Cardoso",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 60
         },
         {
-          "nome": "Gonçalo Santos",
+          "nome": "Pedro Oliveira",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 40
@@ -1325,14 +509,846 @@
       ]
     },
     {
-      "nipc": "532501780",
-      "denominacao": "Atlântica Câmbios, Lda",
+      "nipc": "520340760",
+      "denominacao": "Caramulo Energia, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "2021-12-27",
+      "data_constituicao": "1987-04-21",
       "cae": {
-        "codigo": "66190",
-        "descricao": "Serviços de câmbio e pagamentos"
+        "codigo": "35112",
+        "descricao": "Produção de eletricidade"
+      },
+      "sede": {
+        "morada": "Avenida Central, 135",
+        "codigo_postal": "3800-380",
+        "localidade": "Aveiro",
+        "distrito": "Aveiro"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Joana Cardoso Fernandes",
+          "cargo": "Gerente",
+          "data_designacao": "1991-01-23"
+        },
+        {
+          "nome": "Vasco Mendes Gonçalves",
+          "cargo": "Gerente",
+          "data_designacao": "1987-12-21"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Joana Cardoso Fernandes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "502292008",
+      "denominacao": "Tâmega Nova Media, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2020-04-14",
+      "cae": {
+        "codigo": "59110",
+        "descricao": "Produção de conteúdos"
+      },
+      "sede": {
+        "morada": "Rua de Santa Catarina, 215",
+        "codigo_postal": "2900-768",
+        "localidade": "Setúbal",
+        "distrito": "Setúbal"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Beatriz Ferreira Almeida",
+          "cargo": "Administrador",
+          "data_designacao": "2025-08-31"
+        },
+        {
+          "nome": "André Ferreira Mendes",
+          "cargo": "Gerente",
+          "data_designacao": "2022-06-02"
+        },
+        {
+          "nome": "Maria Ribeiro Gomes",
+          "cargo": "Gerente",
+          "data_designacao": "2025-06-27"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Beatriz Ferreira Almeida",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "557104246",
+      "denominacao": "Gerês SGPS, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2014-02-18",
+      "cae": {
+        "codigo": "64202",
+        "descricao": "Atividades das sociedades gestoras de participações sociais"
+      },
+      "sede": {
+        "morada": "Avenida da Liberdade, 124",
+        "codigo_postal": "3000-649",
+        "localidade": "Coimbra",
+        "distrito": "Coimbra"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Nuno Correia Ribeiro",
+          "cargo": "Administrador",
+          "data_designacao": "2014-02-18"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Meridian Bay Capital S.A.",
+          "tipo": "pessoa coletiva",
+          "numero_registo_estrangeiro": "PA-448886",
+          "pais": "Panama",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "585401560",
+      "denominacao": "Lusitânia Prime SGPS, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2009-03-04",
+      "cae": {
+        "codigo": "64202",
+        "descricao": "Atividades das sociedades gestoras de participações sociais"
+      },
+      "sede": {
+        "morada": "Rua Direita, 178",
+        "codigo_postal": "3500-243",
+        "localidade": "Viseu",
+        "distrito": "Viseu"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Marta Pereira Cardoso",
+          "cargo": "Administrador",
+          "data_designacao": "2009-03-04"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Tidewater Investments Inc",
+          "tipo": "pessoa coletiva",
+          "numero_registo_estrangeiro": "BVI-467387",
+          "pais": "British Virgin Islands",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "571848079",
+      "denominacao": "Arrábida Prime Ativos Digitais, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "1993-05-12",
+      "cae": {
+        "codigo": "64991",
+        "descricao": "Negociação de ativos digitais"
+      },
+      "sede": {
+        "morada": "Rua Augusta, 12",
+        "codigo_postal": "4800-359",
+        "localidade": "Guimarães",
+        "distrito": "Braga"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Pedro Gomes Teixeira",
+          "cargo": "Administrador",
+          "data_designacao": "1995-10-13"
+        },
+        {
+          "nome": "Sofia Oliveira Sousa",
+          "cargo": "Gerente",
+          "data_designacao": "1994-06-24"
+        },
+        {
+          "nome": "Gonçalo Martins Almeida",
+          "cargo": "Administrador",
+          "data_designacao": "1996-11-18"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Serra Alta Ibérica SGPS, S.A.",
+          "tipo": "pessoa coletiva",
+          "nipc": "547087616",
+          "pais": "Portugal",
+          "participacao_pct": 75
+        },
+        {
+          "nome": "Pedro Gomes Teixeira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "525240683",
+      "denominacao": "Marão Nova Farmacêutica, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "1987-05-01",
+      "cae": {
+        "codigo": "21201",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "sede": {
+        "morada": "Avenida da Liberdade, 136",
+        "codigo_postal": "2900-571",
+        "localidade": "Setúbal",
+        "distrito": "Setúbal"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Gonçalo Soares Martins",
+          "cargo": "Administrador",
+          "data_designacao": "1991-01-25"
+        },
+        {
+          "nome": "Vasco Pinto Silva",
+          "cargo": "Gerente",
+          "data_designacao": "1989-07-01"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Gonçalo Soares Martins",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        },
+        {
+          "nome": "Vasco Pinto Silva",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        }
+      ]
+    },
+    {
+      "nipc": "554834472",
+      "denominacao": "Atlântica Prime Têxteis, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "1993-03-26",
+      "cae": {
+        "codigo": "13920",
+        "descricao": "Fabricação de têxteis"
+      },
+      "sede": {
+        "morada": "Rua das Flores, 84",
+        "codigo_postal": "2400-338",
+        "localidade": "Leiria",
+        "distrito": "Leiria"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Hugo Ferreira",
+          "cargo": "Administrador",
+          "data_designacao": "2001-05-31"
+        },
+        {
+          "nome": "Carolina Rodrigues",
+          "cargo": "Gerente",
+          "data_designacao": "1999-12-03"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Hugo Ferreira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Carolina Rodrigues",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Duarte Soares",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "561881448",
+      "denominacao": "Zêzere Media, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2002-06-28",
+      "cae": {
+        "codigo": "59110",
+        "descricao": "Produção de conteúdos"
+      },
+      "sede": null,
+      "orgaos_sociais": [
+        {
+          "nome": "Pedro Vieira",
+          "cargo": "Gerente",
+          "data_designacao": "2004-04-18"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Pedro Vieira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "515743895",
+      "denominacao": "Marão SGPS, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "1996-04-06",
+      "cae": {
+        "codigo": "64202",
+        "descricao": "Atividades das sociedades gestoras de participações sociais"
+      },
+      "sede": {
+        "morada": "Rua do Comércio, 196",
+        "codigo_postal": "4700-943",
+        "localidade": "Braga",
+        "distrito": "Braga"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Marta Sousa Teixeira",
+          "cargo": "Administrador",
+          "data_designacao": "1996-04-06"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Orion Capital S.A.",
+          "tipo": "pessoa coletiva",
+          "numero_registo_estrangeiro": "BVI-983740",
+          "pais": "British Virgin Islands",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "582857295",
+      "denominacao": "Quinta Nova Jogos, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2019-04-19",
+      "cae": {
+        "codigo": "92000",
+        "descricao": "Jogos de fortuna e azar e apostas"
+      },
+      "sede": {
+        "morada": "Rua do Comércio, 142",
+        "codigo_postal": "2900-743",
+        "localidade": "Setúbal",
+        "distrito": "Setúbal"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Filipa Monteiro",
+          "cargo": "Gerente",
+          "data_designacao": "2021-01-21"
+        },
+        {
+          "nome": "Ana Martins",
+          "cargo": "Administrador",
+          "data_designacao": "2026-07-28"
+        },
+        {
+          "nome": "Pedro Almeida",
+          "cargo": "Administrador",
+          "data_designacao": "2026-01-17"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Filipa Monteiro",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 70
+        },
+        {
+          "nome": "Ana Martins",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 20
+        },
+        {
+          "nome": "Pedro Almeida",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 10
+        }
+      ]
+    },
+    {
+      "nipc": "502662794",
+      "denominacao": "Portela Global Alimentar, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "1993-12-14",
+      "cae": {
+        "codigo": "10893",
+        "descricao": "Fabricação de produtos alimentares"
+      },
+      "sede": {
+        "morada": "Rua Augusta, 22",
+        "codigo_postal": "1250-242",
+        "localidade": "Lisboa",
+        "distrito": "Lisboa"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Mariana Neves Correia",
+          "cargo": "Administrador",
+          "data_designacao": "1994-10-07"
+        },
+        {
+          "nome": "Miguel Almeida",
+          "cargo": "Administrador",
+          "data_designacao": "1997-01-02"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Mariana Neves Correia",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Miguel Almeida",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Raquel Ribeiro",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "545222508",
+      "denominacao": "Zêzere Global Media, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2001-10-22",
+      "cae": {
+        "codigo": "59110",
+        "descricao": "Produção de conteúdos"
+      },
+      "sede": {
+        "morada": "Largo do Rossio, 170",
+        "codigo_postal": "4700-862",
+        "localidade": "Braga",
+        "distrito": "Braga"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Teresa Neves Gonçalves",
+          "cargo": "Administrador",
+          "data_designacao": "2006-07-19"
+        },
+        {
+          "nome": "Marta Ferreira Fernandes",
+          "cargo": "Administrador",
+          "data_designacao": "2003-07-23"
+        },
+        {
+          "nome": "Beatriz Monteiro Rodrigues",
+          "cargo": "Administrador",
+          "data_designacao": "2007-07-31"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Teresa Neves Gonçalves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "597699810",
+      "denominacao": "Barroso SGPS, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2018-12-04",
+      "cae": {
+        "codigo": "64202",
+        "descricao": "Atividades das sociedades gestoras de participações sociais"
+      },
+      "sede": {
+        "morada": "Largo do Rossio, 90",
+        "codigo_postal": "4000-298",
+        "localidade": "Porto",
+        "distrito": "Porto"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Joana Ferreira",
+          "cargo": "Administrador",
+          "data_designacao": "2018-12-04"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Joana Ferreira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 60
+        },
+        {
+          "nome": "Vasco Pereira Moreira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        }
+      ]
+    },
+    {
+      "nipc": "583000711",
+      "denominacao": "Bairrada Prime SGPS, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2004-07-11",
+      "cae": {
+        "codigo": "64202",
+        "descricao": "Atividades das sociedades gestoras de participações sociais"
+      },
+      "sede": {
+        "morada": "Rua das Flores, 89",
+        "codigo_postal": "1250-195",
+        "localidade": "Lisboa",
+        "distrito": "Lisboa"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Ricardo Costa Soares",
+          "cargo": "Administrador",
+          "data_designacao": "2004-07-11"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Ricardo Costa Soares",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        },
+        {
+          "nome": "Nuno Soares Neves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        }
+      ]
+    },
+    {
+      "nipc": "565338234",
+      "denominacao": "Galeão Farmacêutica, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2002-04-06",
+      "cae": {
+        "codigo": "21201",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "sede": {
+        "morada": "Rua do Comércio, 72",
+        "codigo_postal": "4000-425",
+        "localidade": "Porto",
+        "distrito": "Porto"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Diogo Monteiro Almeida",
+          "cargo": "Administrador",
+          "data_designacao": "2002-10-25"
+        },
+        {
+          "nome": "Carolina Costa Ribeiro",
+          "cargo": "Administrador",
+          "data_designacao": "2008-11-06"
+        },
+        {
+          "nome": "João Vieira",
+          "cargo": "Administrador",
+          "data_designacao": "2007-02-21"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Diogo Monteiro Almeida",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        },
+        {
+          "nome": "Carolina Costa Ribeiro",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        }
+      ]
+    },
+    {
+      "nipc": "566745372",
+      "denominacao": "Tâmega Ibérica Alimentar, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "insolvente",
+      "data_constituicao": "1996-02-13",
+      "cae": {
+        "codigo": "10893",
+        "descricao": "Fabricação de produtos alimentares"
+      },
+      "sede": {
+        "morada": "Rua do Comércio, 52",
+        "codigo_postal": "4700-864",
+        "localidade": "Braga",
+        "distrito": "Braga"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Inês Santos Costa",
+          "cargo": "Administrador",
+          "data_designacao": "1998-01-12"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Inês Santos Costa",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Ricardo Marques",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Catarina Correia Almeida",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "517760347",
+      "denominacao": "Algarvia Lux Ativos Digitais, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2013-09-08",
+      "cae": {
+        "codigo": "64991",
+        "descricao": "Negociação de ativos digitais"
+      },
+      "sede": {
+        "morada": "Avenida Central, 130",
+        "codigo_postal": "2400-694",
+        "localidade": "Leiria",
+        "distrito": "Leiria"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Catarina Nunes Mendes",
+          "cargo": "Gerente",
+          "data_designacao": "2015-09-17"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Catarina Nunes Mendes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 70
+        },
+        {
+          "nome": "Ana Almeida Gonçalves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 20
+        },
+        {
+          "nome": "Ricardo Rodrigues Almeida",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 10
+        }
+      ]
+    },
+    {
+      "nipc": "510804055",
+      "denominacao": "Lusitânia Global Têxteis, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "1994-10-08",
+      "cae": {
+        "codigo": "13920",
+        "descricao": "Fabricação de têxteis"
+      },
+      "sede": {
+        "morada": "Rua da Boavista, 46",
+        "codigo_postal": "1250-391",
+        "localidade": "Lisboa",
+        "distrito": "Lisboa"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Diogo Neves",
+          "cargo": "Administrador",
+          "data_designacao": "1994-12-26"
+        },
+        {
+          "nome": "André Almeida Lopes",
+          "cargo": "Gerente",
+          "data_designacao": "1995-12-25"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Diogo Neves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "André Almeida Lopes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Duarte Nunes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "513435441",
+      "denominacao": "Lusitânia Energia, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "dissolvida",
+      "data_constituicao": "2000-07-21",
+      "cae": {
+        "codigo": "35112",
+        "descricao": "Produção de eletricidade"
+      },
+      "sede": {
+        "morada": "Avenida Central, 54",
+        "codigo_postal": "3500-134",
+        "localidade": "Viseu",
+        "distrito": "Viseu"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Gonçalo Marques",
+          "cargo": "Gerente",
+          "data_designacao": "2000-07-21"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Gonçalo Marques",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "527172243",
+      "denominacao": "Lusitânia Ibérica Logística, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "1998-08-20",
+      "cae": {
+        "codigo": "49410",
+        "descricao": "Transportes rodoviários de mercadorias"
+      },
+      "sede": {
+        "morada": "Rua Augusta, 25",
+        "codigo_postal": "4000-563",
+        "localidade": "Porto",
+        "distrito": "Porto"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Vasco Rocha Carvalho",
+          "cargo": "Gerente",
+          "data_designacao": "2001-09-30"
+        },
+        {
+          "nome": "Marta Ferreira Mendes",
+          "cargo": "Gerente",
+          "data_designacao": "1999-08-30"
+        },
+        {
+          "nome": "Leonor Silva",
+          "cargo": "Gerente",
+          "data_designacao": "2003-06-05"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Vasco Rocha Carvalho",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        },
+        {
+          "nome": "Marta Ferreira Mendes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        }
+      ]
+    },
+    {
+      "nipc": "532501780",
+      "denominacao": "Gerês Logística, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "1991-04-19",
+      "cae": {
+        "codigo": "49410",
+        "descricao": "Transportes rodoviários de mercadorias"
       },
       "sede": {
         "morada": "Rua do Comércio, 26",
@@ -1344,539 +1360,27 @@
         {
           "nome": "Duarte Rodrigues Nunes",
           "cargo": "Administrador",
-          "data_designacao": "2026-09-01"
+          "data_designacao": "1997-07-18"
         }
       ],
       "socios": [
-        {
-          "nome": "Quinta Nova Prime SGPS, S.A.",
-          "tipo": "pessoa coletiva",
-          "nipc": "507613422",
-          "pais": "Portugal",
-          "participacao_pct": 75
-        },
         {
           "nome": "Duarte Rodrigues Nunes",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 25
-        }
-      ]
-    },
-    {
-      "nipc": "571786561",
-      "denominacao": "Quinta Nova Nova Câmbios, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2006-04-04",
-      "cae": {
-        "codigo": "66190",
-        "descricao": "Serviços de câmbio e pagamentos"
-      },
-      "sede": {
-        "morada": "Avenida da República, 11",
-        "codigo_postal": "4000-483",
-        "localidade": "Porto",
-        "distrito": "Porto"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Ricardo Soares Marques",
-          "cargo": "Gerente",
-          "data_designacao": "2009-06-05"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Ricardo Soares Marques",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        },
-        {
-          "nome": "Vasco Costa",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        }
-      ]
-    },
-    {
-      "nipc": "542046873",
-      "denominacao": "Atlântica Ibérica Farmacêutica, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2002-06-18",
-      "cae": {
-        "codigo": "21201",
-        "descricao": "Fabricação de medicamentos"
-      },
-      "sede": {
-        "morada": "Rua de Santa Catarina, 207",
-        "codigo_postal": "4800-108",
-        "localidade": "Guimarães",
-        "distrito": "Braga"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Tiago Gonçalves Nunes",
-          "cargo": "Administrador",
-          "data_designacao": "2007-10-26"
-        },
-        {
-          "nome": "Teresa Moreira",
-          "cargo": "Administrador",
-          "data_designacao": "2008-02-05"
-        },
-        {
-          "nome": "Filipa Costa",
-          "cargo": "Gerente",
-          "data_designacao": "2008-09-13"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Tiago Gonçalves Nunes",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 70
         },
         {
-          "nome": "Teresa Moreira",
+          "nome": "Vasco Fernandes",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 20
         },
         {
-          "nome": "Filipa Costa",
+          "nome": "Leonor Lopes",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 10
-        }
-      ]
-    },
-    {
-      "nipc": "512376280",
-      "denominacao": "Costa Verde Nova Engenharia, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2012-06-26",
-      "cae": {
-        "codigo": "71120",
-        "descricao": "Atividades de engenharia"
-      },
-      "sede": {
-        "morada": "Rua Direita, 224",
-        "codigo_postal": "3800-611",
-        "localidade": "Aveiro",
-        "distrito": "Aveiro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Sofia Fernandes Costa",
-          "cargo": "Gerente",
-          "data_designacao": "2014-09-29"
-        },
-        {
-          "nome": "Vasco Sousa Ribeiro",
-          "cargo": "Administrador",
-          "data_designacao": "2014-09-16"
-        },
-        {
-          "nome": "Pedro Vieira",
-          "cargo": "Gerente",
-          "data_designacao": "2014-04-17"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Sofia Fernandes Costa",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "530226545",
-      "denominacao": "Dão Vivo Lux Têxteis, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1995-04-28",
-      "cae": {
-        "codigo": "13920",
-        "descricao": "Fabricação de têxteis"
-      },
-      "sede": {
-        "morada": "Largo do Rossio, 138",
-        "codigo_postal": "3800-635",
-        "localidade": "Aveiro",
-        "distrito": "Aveiro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Diogo Martins Ribeiro",
-          "cargo": "Administrador",
-          "data_designacao": "1997-08-30"
-        },
-        {
-          "nome": "João Monteiro Vieira",
-          "cargo": "Administrador",
-          "data_designacao": "1996-08-08"
-        },
-        {
-          "nome": "Maria Gonçalves Vieira",
-          "cargo": "Administrador",
-          "data_designacao": "1998-10-24"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Vouga Global SGPS, S.A.",
-          "tipo": "pessoa coletiva",
-          "nipc": "551995599",
-          "pais": "Portugal",
-          "participacao_pct": 75
-        },
-        {
-          "nome": "Diogo Martins Ribeiro",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 25
-        }
-      ]
-    },
-    {
-      "nipc": "572108354",
-      "denominacao": "Tejo Farmacêutica, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2000-02-26",
-      "cae": {
-        "codigo": "21201",
-        "descricao": "Fabricação de medicamentos"
-      },
-      "sede": {
-        "morada": "Rua das Flores, 121",
-        "codigo_postal": "3000-847",
-        "localidade": "Coimbra",
-        "distrito": "Coimbra"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Tiago Neves",
-          "cargo": "Administrador",
-          "data_designacao": "2002-04-29"
-        },
-        {
-          "nome": "Hugo Pereira Gonçalves",
-          "cargo": "Gerente",
-          "data_designacao": "2001-01-28"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Tiago Neves",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "595989322",
-      "denominacao": "Zêzere Ibérica Farmacêutica, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1995-12-22",
-      "cae": {
-        "codigo": "21201",
-        "descricao": "Fabricação de medicamentos"
-      },
-      "sede": {
-        "morada": "Largo do Rossio, 86",
-        "codigo_postal": "4700-292",
-        "localidade": "Braga",
-        "distrito": "Braga"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Beatriz Moreira Rodrigues",
-          "cargo": "Gerente",
-          "data_designacao": "2003-05-25"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Beatriz Moreira Rodrigues",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "503642703",
-      "denominacao": "Sado Farmacêutica, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "2018-12-20",
-      "cae": {
-        "codigo": "21201",
-        "descricao": "Fabricação de medicamentos"
-      },
-      "sede": {
-        "morada": "Largo do Rossio, 108",
-        "codigo_postal": "2900-580",
-        "localidade": "Setúbal",
-        "distrito": "Setúbal"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Raquel Ferreira Sousa",
-          "cargo": "Administrador",
-          "data_designacao": "2018-12-31"
-        },
-        {
-          "nome": "Rui Cardoso Soares",
-          "cargo": "Gerente",
-          "data_designacao": "2025-06-10"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Lusitânia SGPS, S.A.",
-          "tipo": "pessoa coletiva",
-          "nipc": "509057470",
-          "pais": "Portugal",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "537531335",
-      "denominacao": "Tâmega Global Têxteis, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "dissolvida",
-      "data_constituicao": "1996-09-28",
-      "cae": {
-        "codigo": "13920",
-        "descricao": "Fabricação de têxteis"
-      },
-      "sede": {
-        "morada": "Rua das Flores, 132",
-        "codigo_postal": "3800-878",
-        "localidade": "Aveiro",
-        "distrito": "Aveiro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "André Sousa Carvalho",
-          "cargo": "Gerente",
-          "data_designacao": "1996-09-28"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "André Sousa Carvalho",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "510340750",
-      "denominacao": "Lusitânia Global Têxteis, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "1998-09-04",
-      "cae": {
-        "codigo": "13920",
-        "descricao": "Fabricação de têxteis"
-      },
-      "sede": {
-        "morada": "Rua da Boavista, 104",
-        "codigo_postal": "8000-378",
-        "localidade": "Faro",
-        "distrito": "Faro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Beatriz Soares Moreira",
-          "cargo": "Administrador",
-          "data_designacao": "2005-09-22"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Douro Nova SGPS, S.A.",
-          "tipo": "pessoa coletiva",
-          "nipc": "554626853",
-          "pais": "Portugal",
-          "participacao_pct": 80
-        },
-        {
-          "nome": "Beatriz Soares Moreira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 20
-        }
-      ]
-    },
-    {
-      "nipc": "575721626",
-      "denominacao": "Foz Nova Prime Engenharia, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "1992-06-04",
-      "cae": {
-        "codigo": "71120",
-        "descricao": "Atividades de engenharia"
-      },
-      "sede": {
-        "morada": "Rua das Flores, 7",
-        "codigo_postal": "2400-831",
-        "localidade": "Leiria",
-        "distrito": "Leiria"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Joana Neves",
-          "cargo": "Administrador",
-          "data_designacao": "1996-02-15"
-        },
-        {
-          "nome": "Nuno Almeida Correia",
-          "cargo": "Gerente",
-          "data_designacao": "1992-11-14"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Joana Neves",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        },
-        {
-          "nome": "Nuno Almeida Correia",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        }
-      ]
-    },
-    {
-      "nipc": "552003468",
-      "denominacao": "Espinhaço Nova Logística, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1987-02-19",
-      "cae": {
-        "codigo": "49410",
-        "descricao": "Transportes rodoviários de mercadorias"
-      },
-      "sede": {
-        "morada": "Rua da Boavista, 201",
-        "codigo_postal": "4000-498",
-        "localidade": "Porto",
-        "distrito": "Porto"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Vasco Santos Neves",
-          "cargo": "Administrador",
-          "data_designacao": "1991-06-02"
-        },
-        {
-          "nome": "André Ribeiro Oliveira",
-          "cargo": "Administrador",
-          "data_designacao": "1987-05-25"
-        },
-        {
-          "nome": "Rita Oliveira Lopes",
-          "cargo": "Gerente",
-          "data_designacao": "1987-10-21"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Vasco Santos Neves",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "550602135",
-      "denominacao": "Vouga Têxteis, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1991-08-11",
-      "cae": {
-        "codigo": "13920",
-        "descricao": "Fabricação de têxteis"
-      },
-      "sede": null,
-      "orgaos_sociais": [
-        {
-          "nome": "André Moreira Sousa",
-          "cargo": "Administrador",
-          "data_designacao": "1995-04-03"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "André Moreira Sousa",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 40
-        },
-        {
-          "nome": "Inês Alves Pereira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 35
-        },
-        {
-          "nome": "Catarina Silva",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 25
-        }
-      ]
-    },
-    {
-      "nipc": "554344254",
-      "denominacao": "Alvorada Engenharia, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1996-12-09",
-      "cae": {
-        "codigo": "71120",
-        "descricao": "Atividades de engenharia"
-      },
-      "sede": {
-        "morada": "Avenida Central, 84",
-        "codigo_postal": "8000-103",
-        "localidade": "Faro",
-        "distrito": "Faro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Duarte Pereira",
-          "cargo": "Administrador",
-          "data_designacao": "2004-03-07"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Duarte Pereira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
         }
       ]
     },
@@ -1915,335 +1419,89 @@
       ],
       "socios": [
         {
-          "nome": "Miguel Silva Cardoso",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "597331219",
-      "denominacao": "Tâmega Construções, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "1993-09-26",
-      "cae": {
-        "codigo": "41200",
-        "descricao": "Construção de edifícios"
-      },
-      "sede": {
-        "morada": "Rua Direita, 37",
-        "codigo_postal": "8000-310",
-        "localidade": "Faro",
-        "distrito": "Faro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Hugo Gonçalves Rodrigues",
-          "cargo": "Administrador",
-          "data_designacao": "1999-03-23"
-        },
-        {
-          "nome": "Ana Gomes Ribeiro",
-          "cargo": "Administrador",
-          "data_designacao": "1994-05-25"
-        },
-        {
-          "nome": "Joana Gomes Alves",
-          "cargo": "Administrador",
-          "data_designacao": "2001-12-05"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Hugo Gonçalves Rodrigues",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        },
-        {
-          "nome": "Ana Gomes Ribeiro",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        }
-      ]
-    },
-    {
-      "nipc": "533374367",
-      "denominacao": "Portela Ibérica Software, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2014-05-04",
-      "cae": {
-        "codigo": "62010",
-        "descricao": "Desenvolvimento de software"
-      },
-      "sede": {
-        "morada": "Rua do Comércio, 127",
-        "codigo_postal": "8000-587",
-        "localidade": "Faro",
-        "distrito": "Faro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Marta Cardoso Rodrigues",
-          "cargo": "Administrador",
-          "data_designacao": "2017-03-21"
-        },
-        {
-          "nome": "Diogo Monteiro Neves",
-          "cargo": "Gerente",
-          "data_designacao": "2016-09-14"
-        },
-        {
-          "nome": "Beatriz Costa",
-          "cargo": "Administrador",
-          "data_designacao": "2014-06-03"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Marta Cardoso Rodrigues",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        },
-        {
-          "nome": "Diogo Monteiro Neves",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        }
-      ]
-    },
-    {
-      "nipc": "542564939",
-      "denominacao": "Estrela Alimentar, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "dissolvida",
-      "data_constituicao": "2016-02-03",
-      "cae": {
-        "codigo": "10893",
-        "descricao": "Fabricação de produtos alimentares"
-      },
-      "sede": {
-        "morada": "Rua de Santa Catarina, 160",
-        "codigo_postal": "2400-824",
-        "localidade": "Leiria",
-        "distrito": "Leiria"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Mariana Gomes",
-          "cargo": "Gerente",
-          "data_designacao": "2016-02-26"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Mariana Gomes",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 70
-        },
-        {
-          "nome": "Rui Moreira Sousa",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 20
-        },
-        {
-          "nome": "André Teixeira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 10
-        }
-      ]
-    },
-    {
-      "nipc": "592640884",
-      "denominacao": "Belém Norte Prime Alimentar, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "dissolvida",
-      "data_constituicao": "2007-04-24",
-      "cae": {
-        "codigo": "10893",
-        "descricao": "Fabricação de produtos alimentares"
-      },
-      "sede": {
-        "morada": "Avenida da República, 87",
-        "codigo_postal": "2900-416",
-        "localidade": "Setúbal",
-        "distrito": "Setúbal"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Filipa Fernandes Neves",
-          "cargo": "Administrador",
-          "data_designacao": "2015-06-26"
-        },
-        {
-          "nome": "Inês Almeida",
-          "cargo": "Administrador",
-          "data_designacao": "2009-01-06"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Filipa Fernandes Neves",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 60
-        },
-        {
-          "nome": "Inês Almeida",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 40
-        }
-      ]
-    },
-    {
-      "nipc": "574962247",
-      "denominacao": "Alcoa Global Alimentar, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1998-12-25",
-      "cae": {
-        "codigo": "10893",
-        "descricao": "Fabricação de produtos alimentares"
-      },
-      "sede": {
-        "morada": "Rua da Boavista, 177",
-        "codigo_postal": "2400-945",
-        "localidade": "Leiria",
-        "distrito": "Leiria"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Gonçalo Vieira Sousa",
-          "cargo": "Administrador",
-          "data_designacao": "2006-03-19"
-        },
-        {
-          "nome": "Marta Marques Vieira",
-          "cargo": "Administrador",
-          "data_designacao": "2003-01-01"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Gonçalo Vieira Sousa",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "551995599",
-      "denominacao": "Vouga Global SGPS, S.A.",
-      "forma_juridica": "Sociedade Anónima",
-      "estado": "ativa",
-      "data_constituicao": "2015-04-24",
-      "cae": {
-        "codigo": "64202",
-        "descricao": "Atividades das sociedades gestoras de participações sociais"
-      },
-      "sede": {
-        "morada": "Rua Direita, 69",
-        "codigo_postal": "3800-415",
-        "localidade": "Aveiro",
-        "distrito": "Aveiro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Gonçalo Rocha",
-          "cargo": "Administrador",
-          "data_designacao": "2015-04-24"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Gonçalo Rocha",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 100
-        }
-      ]
-    },
-    {
-      "nipc": "516112112",
-      "denominacao": "Mondego Ibérica Construções, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "1987-02-23",
-      "cae": {
-        "codigo": "41200",
-        "descricao": "Construção de edifícios"
-      },
-      "sede": {
-        "morada": "Avenida Central, 119",
-        "codigo_postal": "8000-287",
-        "localidade": "Faro",
-        "distrito": "Faro"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Duarte Correia Gomes",
-          "cargo": "Administrador",
-          "data_designacao": "1994-04-02"
-        },
-        {
-          "nome": "Ricardo Vieira Almeida",
-          "cargo": "Administrador",
-          "data_designacao": "1987-06-21"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Cávado Nova SGPS, S.A.",
+          "nome": "Barroso SGPS, S.A.",
           "tipo": "pessoa coletiva",
-          "nipc": "594911907",
+          "nipc": "597699810",
           "pais": "Portugal",
           "participacao_pct": 100
         }
       ]
     },
     {
-      "nipc": "514861240",
-      "denominacao": "Quinta Nova Prime Farmacêutica, S.A.",
-      "forma_juridica": "Sociedade Anónima",
+      "nipc": "517405547",
+      "denominacao": "Sado Têxteis, Lda",
+      "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "2019-07-01",
+      "data_constituicao": "2006-05-10",
       "cae": {
-        "codigo": "21201",
-        "descricao": "Fabricação de medicamentos"
+        "codigo": "13920",
+        "descricao": "Fabricação de têxteis"
       },
       "sede": {
-        "morada": "Rua Augusta, 184",
-        "codigo_postal": "3800-770",
-        "localidade": "Aveiro",
-        "distrito": "Aveiro"
+        "morada": "Rua de Santa Catarina, 22",
+        "codigo_postal": "4000-913",
+        "localidade": "Porto",
+        "distrito": "Porto"
       },
       "orgaos_sociais": [
         {
-          "nome": "Duarte Martins",
+          "nome": "Rita Costa Vieira",
           "cargo": "Gerente",
-          "data_designacao": "2021-11-17"
+          "data_designacao": "2009-05-22"
+        },
+        {
+          "nome": "Miguel Teixeira",
+          "cargo": "Gerente",
+          "data_designacao": "2007-11-05"
         }
       ],
       "socios": [
         {
-          "nome": "Duarte Martins",
+          "nome": "Rita Costa Vieira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        },
+        {
+          "nome": "Miguel Teixeira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        }
+      ]
+    },
+    {
+      "nipc": "588781010",
+      "denominacao": "Ribeira Têxteis, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "dissolvida",
+      "data_constituicao": "2016-11-27",
+      "cae": {
+        "codigo": "13920",
+        "descricao": "Fabricação de têxteis"
+      },
+      "sede": {
+        "morada": "Rua das Flores, 116",
+        "codigo_postal": "2400-414",
+        "localidade": "Leiria",
+        "distrito": "Leiria"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Rui Oliveira",
+          "cargo": "Gerente",
+          "data_designacao": "2023-10-07"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Rui Oliveira",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 60
         },
         {
-          "nome": "Marta Sousa Teixeira",
+          "nome": "Carolina Almeida Vieira",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 40
@@ -2251,182 +1509,165 @@
       ]
     },
     {
-      "nipc": "559489358",
-      "denominacao": "Cávado Ibérica Media, Lda",
+      "nipc": "527125202",
+      "denominacao": "Arrábida Ibérica Alimentar, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "1986-09-18",
-      "cae": {
-        "codigo": "59110",
-        "descricao": "Produção de conteúdos"
-      },
-      "sede": {
-        "morada": "Largo do Rossio, 63",
-        "codigo_postal": "4700-253",
-        "localidade": "Braga",
-        "distrito": "Braga"
-      },
-      "orgaos_sociais": [
-        {
-          "nome": "Rui Marques",
-          "cargo": "Administrador",
-          "data_designacao": "1992-05-13"
-        },
-        {
-          "nome": "Maria Marques Soares",
-          "cargo": "Gerente",
-          "data_designacao": "1992-12-14"
-        }
-      ],
-      "socios": [
-        {
-          "nome": "Rui Marques",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        },
-        {
-          "nome": "Maria Marques Soares",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 50
-        }
-      ]
-    },
-    {
-      "nipc": "563678003",
-      "denominacao": "Serra Alta Ibérica Alimentar, Lda",
-      "forma_juridica": "Sociedade por Quotas",
-      "estado": "ativa",
-      "data_constituicao": "2004-10-26",
+      "data_constituicao": "2003-05-03",
       "cae": {
         "codigo": "10893",
         "descricao": "Fabricação de produtos alimentares"
       },
       "sede": {
-        "morada": "Avenida Central, 205",
-        "codigo_postal": "3000-659",
-        "localidade": "Coimbra",
-        "distrito": "Coimbra"
+        "morada": "Largo do Rossio, 98",
+        "codigo_postal": "8000-504",
+        "localidade": "Faro",
+        "distrito": "Faro"
       },
       "orgaos_sociais": [
         {
-          "nome": "Sofia Martins",
+          "nome": "Miguel Ferreira Lopes",
           "cargo": "Administrador",
-          "data_designacao": "2008-04-22"
+          "data_designacao": "2005-05-08"
         },
         {
-          "nome": "Diogo Lopes",
+          "nome": "Raquel Neves Pinto",
           "cargo": "Gerente",
-          "data_designacao": "2012-05-30"
+          "data_designacao": "2005-04-27"
+        },
+        {
+          "nome": "André Pinto Mendes",
+          "cargo": "Administrador",
+          "data_designacao": "2007-04-21"
         }
       ],
       "socios": [
         {
-          "nome": "Sofia Martins",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 40
-        },
-        {
-          "nome": "Diogo Lopes",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 35
-        },
-        {
-          "nome": "Rita Alves Oliveira",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 25
+          "nome": "Bairrada Prime SGPS, S.A.",
+          "tipo": "pessoa coletiva",
+          "nipc": "583000711",
+          "pais": "Portugal",
+          "participacao_pct": 100
         }
       ]
     },
     {
-      "nipc": "568583426",
-      "denominacao": "Lezíria Ibérica Energia, Lda",
+      "nipc": "557612659",
+      "denominacao": "Nogueira Software, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "2018-07-10",
+      "data_constituicao": "1986-08-22",
+      "cae": {
+        "codigo": "62010",
+        "descricao": "Desenvolvimento de software"
+      },
+      "sede": {
+        "morada": "Avenida da Liberdade, 65",
+        "codigo_postal": "1250-519",
+        "localidade": "Lisboa",
+        "distrito": "Lisboa"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Gonçalo Correia Ferreira",
+          "cargo": "Gerente",
+          "data_designacao": "1988-01-03"
+        },
+        {
+          "nome": "Carolina Lopes",
+          "cargo": "Gerente",
+          "data_designacao": "1987-02-18"
+        },
+        {
+          "nome": "Diogo Moreira Neves",
+          "cargo": "Gerente",
+          "data_designacao": "1993-11-14"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Gonçalo Correia Ferreira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 60
+        },
+        {
+          "nome": "Carolina Lopes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        }
+      ]
+    },
+    {
+      "nipc": "585834270",
+      "denominacao": "Espinhaço Nova Energia, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2010-05-18",
       "cae": {
         "codigo": "35112",
         "descricao": "Produção de eletricidade"
       },
       "sede": {
-        "morada": "Rua de Santa Catarina, 49",
-        "codigo_postal": "3500-586",
-        "localidade": "Viseu",
-        "distrito": "Viseu"
+        "morada": "Avenida da República, 122",
+        "codigo_postal": "4700-534",
+        "localidade": "Braga",
+        "distrito": "Braga"
       },
       "orgaos_sociais": [
         {
-          "nome": "Ricardo Santos",
+          "nome": "Vasco Soares",
           "cargo": "Administrador",
-          "data_designacao": "2025-02-10"
+          "data_designacao": "2016-12-19"
         },
         {
           "nome": "Ricardo Neves",
           "cargo": "Administrador",
-          "data_designacao": "2020-03-22"
+          "data_designacao": "2012-01-29"
         }
       ],
       "socios": [
         {
-          "nome": "Ricardo Santos",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 40
-        },
-        {
-          "nome": "Ricardo Neves",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 35
-        },
-        {
-          "nome": "Beatriz Carvalho Martins",
-          "tipo": "pessoa singular",
-          "nacionalidade": "Portuguesa",
-          "participacao_pct": 25
+          "nome": "Gerês SGPS, S.A.",
+          "tipo": "pessoa coletiva",
+          "nipc": "557104246",
+          "pais": "Portugal",
+          "participacao_pct": 100
         }
       ]
     },
     {
-      "nipc": "502292008",
-      "denominacao": "Bairrada Engenharia, S.A.",
+      "nipc": "564270571",
+      "denominacao": "Belém Norte Prime Engenharia, S.A.",
       "forma_juridica": "Sociedade Anónima",
-      "estado": "dissolvida",
-      "data_constituicao": "2020-04-14",
+      "estado": "ativa",
+      "data_constituicao": "2018-07-16",
       "cae": {
         "codigo": "71120",
         "descricao": "Atividades de engenharia"
       },
       "sede": {
-        "morada": "Rua de Santa Catarina, 215",
-        "codigo_postal": "2900-768",
-        "localidade": "Setúbal",
-        "distrito": "Setúbal"
+        "morada": "Avenida da República, 168",
+        "codigo_postal": "1250-911",
+        "localidade": "Lisboa",
+        "distrito": "Lisboa"
       },
       "orgaos_sociais": [
         {
-          "nome": "Beatriz Ferreira Almeida",
+          "nome": "Duarte Moreira Pinto",
           "cargo": "Administrador",
-          "data_designacao": "2025-08-31"
+          "data_designacao": "2018-07-27"
         },
         {
-          "nome": "André Ferreira Mendes",
+          "nome": "Rui Cardoso Soares",
           "cargo": "Gerente",
-          "data_designacao": "2022-06-02"
-        },
-        {
-          "nome": "Maria Ribeiro Gomes",
-          "cargo": "Gerente",
-          "data_designacao": "2025-06-27"
+          "data_designacao": "2025-01-04"
         }
       ],
       "socios": [
         {
-          "nome": "Beatriz Ferreira Almeida",
+          "nome": "Duarte Moreira Pinto",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 100
@@ -2434,14 +1675,134 @@
       ]
     },
     {
-      "nipc": "594911907",
-      "denominacao": "Cávado Nova SGPS, S.A.",
+      "nipc": "501973370",
+      "denominacao": "Tâmega Nova Media, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "dissolvida",
+      "data_constituicao": "2003-10-05",
+      "cae": {
+        "codigo": "59110",
+        "descricao": "Produção de conteúdos"
+      },
+      "sede": {
+        "morada": "Rua Augusta, 46",
+        "codigo_postal": "2400-595",
+        "localidade": "Leiria",
+        "distrito": "Leiria"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Joana Ribeiro Santos",
+          "cargo": "Gerente",
+          "data_designacao": "2003-10-05"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Joana Ribeiro Santos",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "551794640",
+      "denominacao": "Algarvia Prime Engenharia, S.A.",
       "forma_juridica": "Sociedade Anónima",
       "estado": "ativa",
-      "data_constituicao": "2010-01-03",
+      "data_constituicao": "2007-12-27",
       "cae": {
-        "codigo": "64202",
-        "descricao": "Atividades das sociedades gestoras de participações sociais"
+        "codigo": "71120",
+        "descricao": "Atividades de engenharia"
+      },
+      "sede": {
+        "morada": "Rua Direita, 147",
+        "codigo_postal": "2900-696",
+        "localidade": "Setúbal",
+        "distrito": "Setúbal"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Rui Almeida Santos",
+          "cargo": "Administrador",
+          "data_designacao": "2013-06-02"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Caramulo Ibérica SGPS, S.A.",
+          "tipo": "pessoa coletiva",
+          "nipc": "583034543",
+          "pais": "Portugal",
+          "participacao_pct": 80
+        },
+        {
+          "nome": "Rui Almeida Santos",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 20
+        }
+      ]
+    },
+    {
+      "nipc": "540457655",
+      "denominacao": "Serra Alta Nova Construções, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "1994-02-20",
+      "cae": {
+        "codigo": "41200",
+        "descricao": "Construção de edifícios"
+      },
+      "sede": {
+        "morada": "Rua Augusta, 20",
+        "codigo_postal": "2900-298",
+        "localidade": "Setúbal",
+        "distrito": "Setúbal"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Pedro Sousa",
+          "cargo": "Administrador",
+          "data_designacao": "1999-07-27"
+        },
+        {
+          "nome": "Marta Soares Gomes",
+          "cargo": "Administrador",
+          "data_designacao": "1995-05-23"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Pedro Sousa",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Marta Soares Gomes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Joana Teixeira Fernandes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "594911907",
+      "denominacao": "Algarvia Software, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2019-04-24",
+      "cae": {
+        "codigo": "62010",
+        "descricao": "Desenvolvimento de software"
       },
       "sede": {
         "morada": "Rua do Comércio, 57",
@@ -2451,14 +1812,19 @@
       },
       "orgaos_sociais": [
         {
-          "nome": "Bruno Teixeira Sousa",
-          "cargo": "Administrador",
-          "data_designacao": "2010-01-03"
+          "nome": "Teresa Fernandes Sousa",
+          "cargo": "Gerente",
+          "data_designacao": "2019-09-10"
+        },
+        {
+          "nome": "Teresa Fernandes",
+          "cargo": "Gerente",
+          "data_designacao": "2025-03-08"
         }
       ],
       "socios": [
         {
-          "nome": "Bruno Teixeira Sousa",
+          "nome": "Teresa Fernandes Sousa",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 100
@@ -2466,42 +1832,712 @@
       ]
     },
     {
-      "nipc": "520765362",
-      "denominacao": "Barroso Global Jogos, Lda",
+      "nipc": "550602135",
+      "denominacao": "Vouga Têxteis, Lda",
       "forma_juridica": "Sociedade por Quotas",
       "estado": "ativa",
-      "data_constituicao": "2012-05-26",
+      "data_constituicao": "1991-08-11",
       "cae": {
-        "codigo": "92000",
-        "descricao": "Jogos de fortuna e azar e apostas"
+        "codigo": "13920",
+        "descricao": "Fabricação de têxteis"
       },
       "sede": {
-        "morada": "Avenida da Liberdade, 183",
-        "codigo_postal": "3800-318",
-        "localidade": "Aveiro",
-        "distrito": "Aveiro"
+        "morada": "Avenida da Liberdade, 31",
+        "codigo_postal": "4800-873",
+        "localidade": "Guimarães",
+        "distrito": "Braga"
       },
       "orgaos_sociais": [
         {
-          "nome": "Mariana Nunes Ribeiro",
-          "cargo": "Gerente",
-          "data_designacao": "2017-10-11"
-        },
-        {
-          "nome": "Hugo Vieira",
-          "cargo": "Gerente",
-          "data_designacao": "2019-04-26"
+          "nome": "André Moreira Sousa",
+          "cargo": "Administrador",
+          "data_designacao": "1995-04-03"
         }
       ],
       "socios": [
         {
-          "nome": "Mariana Nunes Ribeiro",
+          "nome": "André Moreira Sousa",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Inês Alves Pereira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Catarina Silva",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "541554867",
+      "denominacao": "Zêzere Têxteis, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "1990-08-08",
+      "cae": {
+        "codigo": "13920",
+        "descricao": "Fabricação de têxteis"
+      },
+      "sede": {
+        "morada": "Rua de Santa Catarina, 24",
+        "codigo_postal": "2900-612",
+        "localidade": "Setúbal",
+        "distrito": "Setúbal"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Hugo Neves",
+          "cargo": "Gerente",
+          "data_designacao": "1992-07-23"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Hugo Neves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 60
+        },
+        {
+          "nome": "Beatriz Alves Sousa",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        }
+      ]
+    },
+    {
+      "nipc": "569518350",
+      "denominacao": "Tâmega Lux Engenharia, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2007-11-26",
+      "cae": {
+        "codigo": "71120",
+        "descricao": "Atividades de engenharia"
+      },
+      "sede": {
+        "morada": "Avenida da República, 38",
+        "codigo_postal": "4800-254",
+        "localidade": "Guimarães",
+        "distrito": "Braga"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Raquel Vieira",
+          "cargo": "Gerente",
+          "data_designacao": "2013-07-18"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Raquel Vieira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 70
+        },
+        {
+          "nome": "Carolina Mendes Monteiro",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 20
+        },
+        {
+          "nome": "Duarte Oliveira Fernandes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 10
+        }
+      ]
+    },
+    {
+      "nipc": "555127206",
+      "denominacao": "Lusitânia Energia, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2009-07-06",
+      "cae": {
+        "codigo": "35112",
+        "descricao": "Produção de eletricidade"
+      },
+      "sede": null,
+      "orgaos_sociais": [
+        {
+          "nome": "Pedro Ribeiro Oliveira",
+          "cargo": "Administrador",
+          "data_designacao": "2012-09-16"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Pedro Ribeiro Oliveira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "576752606",
+      "denominacao": "Mondego Ativos Digitais, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "1991-06-05",
+      "cae": {
+        "codigo": "64991",
+        "descricao": "Negociação de ativos digitais"
+      },
+      "sede": {
+        "morada": "Avenida Central, 166",
+        "codigo_postal": "4000-446",
+        "localidade": "Porto",
+        "distrito": "Porto"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Leonor Pinto Ferreira",
+          "cargo": "Administrador",
+          "data_designacao": "1997-06-22"
+        },
+        {
+          "nome": "Teresa Martins",
+          "cargo": "Gerente",
+          "data_designacao": "1996-06-08"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Leonor Pinto Ferreira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 70
+        },
+        {
+          "nome": "Teresa Martins",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 20
+        },
+        {
+          "nome": "Joana Martins",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 10
+        }
+      ]
+    },
+    {
+      "nipc": "563184760",
+      "denominacao": "Marão Ibérica Farmacêutica, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2006-09-07",
+      "cae": {
+        "codigo": "21201",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "sede": {
+        "morada": "Rua do Comércio, 200",
+        "codigo_postal": "4700-340",
+        "localidade": "Braga",
+        "distrito": "Braga"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Beatriz Ferreira Costa",
+          "cargo": "Gerente",
+          "data_designacao": "2014-10-05"
+        },
+        {
+          "nome": "Catarina Silva",
+          "cargo": "Gerente",
+          "data_designacao": "2014-04-21"
+        },
+        {
+          "nome": "Helena Costa Pereira",
+          "cargo": "Administrador",
+          "data_designacao": "2008-04-23"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Beatriz Ferreira Costa",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 50
         },
         {
+          "nome": "Catarina Silva",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        }
+      ]
+    },
+    {
+      "nipc": "510136273",
+      "denominacao": "Zêzere Nova Jogos, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2016-11-22",
+      "cae": {
+        "codigo": "92000",
+        "descricao": "Jogos de fortuna e azar e apostas"
+      },
+      "sede": {
+        "morada": "Rua Augusta, 239",
+        "codigo_postal": "4700-583",
+        "localidade": "Braga",
+        "distrito": "Braga"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Marta Soares Neves",
+          "cargo": "Gerente",
+          "data_designacao": "2024-10-03"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Marta Soares Neves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Marta Lopes Fernandes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "André Neves Soares",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "505404915",
+      "denominacao": "Galeão Energia, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2017-04-07",
+      "cae": {
+        "codigo": "35112",
+        "descricao": "Produção de eletricidade"
+      },
+      "sede": {
+        "morada": "Rua Direita, 138",
+        "codigo_postal": "4000-288",
+        "localidade": "Porto",
+        "distrito": "Porto"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Filipa Marques",
+          "cargo": "Gerente",
+          "data_designacao": "2022-07-03"
+        },
+        {
+          "nome": "Ricardo Mendes Fernandes",
+          "cargo": "Gerente",
+          "data_designacao": "2022-05-11"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Filipa Marques",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 60
+        },
+        {
+          "nome": "Ricardo Mendes Fernandes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        }
+      ]
+    },
+    {
+      "nipc": "547087616",
+      "denominacao": "Serra Alta Ibérica SGPS, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2018-04-16",
+      "cae": {
+        "codigo": "64202",
+        "descricao": "Atividades das sociedades gestoras de participações sociais"
+      },
+      "sede": {
+        "morada": "Rua da Boavista, 225",
+        "codigo_postal": "4000-147",
+        "localidade": "Porto",
+        "distrito": "Porto"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Filipa Carvalho Soares",
+          "cargo": "Administrador",
+          "data_designacao": "2018-04-16"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Filipa Carvalho Soares",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 60
+        },
+        {
+          "nome": "Rui Costa",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        }
+      ]
+    },
+    {
+      "nipc": "572108354",
+      "denominacao": "Bairrada Farmacêutica, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2002-04-04",
+      "cae": {
+        "codigo": "21201",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "sede": {
+        "morada": "Rua das Flores, 121",
+        "codigo_postal": "3000-847",
+        "localidade": "Coimbra",
+        "distrito": "Coimbra"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Tiago Neves",
+          "cargo": "Administrador",
+          "data_designacao": "2004-06-05"
+        },
+        {
+          "nome": "Hugo Pereira Gonçalves",
+          "cargo": "Gerente",
+          "data_designacao": "2003-03-07"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Lusitânia Prime SGPS, S.A.",
+          "tipo": "pessoa coletiva",
+          "nipc": "585401560",
+          "pais": "Portugal",
+          "participacao_pct": 80
+        },
+        {
+          "nome": "Tiago Neves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 20
+        }
+      ]
+    },
+    {
+      "nipc": "534769861",
+      "denominacao": "Nogueira Lux Software, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2005-04-18",
+      "cae": {
+        "codigo": "62010",
+        "descricao": "Desenvolvimento de software"
+      },
+      "sede": {
+        "morada": "Rua de Santa Catarina, 158",
+        "codigo_postal": "4000-515",
+        "localidade": "Porto",
+        "distrito": "Porto"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Tiago Moreira",
+          "cargo": "Administrador",
+          "data_designacao": "2011-01-13"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Marão SGPS, S.A.",
+          "tipo": "pessoa coletiva",
+          "nipc": "515743895",
+          "pais": "Portugal",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "527462217",
+      "denominacao": "Tejo Energia, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2005-05-16",
+      "cae": {
+        "codigo": "35112",
+        "descricao": "Produção de eletricidade"
+      },
+      "sede": {
+        "morada": "Avenida da Liberdade, 221",
+        "codigo_postal": "2400-869",
+        "localidade": "Leiria",
+        "distrito": "Leiria"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Carolina Teixeira",
+          "cargo": "Administrador",
+          "data_designacao": "2011-05-28"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Carolina Teixeira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Gonçalo Pinto Gomes",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Marta Oliveira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "568636783",
+      "denominacao": "Quinta Nova Logística, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2008-04-24",
+      "cae": {
+        "codigo": "49410",
+        "descricao": "Transportes rodoviários de mercadorias"
+      },
+      "sede": {
+        "morada": "Rua da Boavista, 201",
+        "codigo_postal": "3800-354",
+        "localidade": "Aveiro",
+        "distrito": "Aveiro"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Sofia Correia Pereira",
+          "cargo": "Administrador",
+          "data_designacao": "2011-10-20"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Sofia Correia Pereira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Tiago Monteiro",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Rita Alves Ferreira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "556903633",
+      "denominacao": "Costa Verde Lux Farmacêutica, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "1991-03-05",
+      "cae": {
+        "codigo": "21201",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "sede": {
+        "morada": "Rua Augusta, 136",
+        "codigo_postal": "3500-837",
+        "localidade": "Viseu",
+        "distrito": "Viseu"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Diogo Marques Monteiro",
+          "cargo": "Administrador",
+          "data_designacao": "1999-05-11"
+        },
+        {
+          "nome": "Mariana Pereira Rodrigues",
+          "cargo": "Gerente",
+          "data_designacao": "1995-09-27"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Diogo Marques Monteiro",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 70
+        },
+        {
+          "nome": "Mariana Pereira Rodrigues",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 20
+        },
+        {
+          "nome": "Mariana Gonçalves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 10
+        }
+      ]
+    },
+    {
+      "nipc": "573374597",
+      "denominacao": "Sado Nova Farmacêutica, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2001-06-12",
+      "cae": {
+        "codigo": "21201",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "sede": {
+        "morada": "Rua de Santa Catarina, 2",
+        "codigo_postal": "2900-881",
+        "localidade": "Setúbal",
+        "distrito": "Setúbal"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "André Teixeira",
+          "cargo": "Gerente",
+          "data_designacao": "2005-03-31"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "André Teixeira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 40
+        },
+        {
+          "nome": "Beatriz Rocha Gonçalves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 35
+        },
+        {
+          "nome": "Ana Marques Moreira",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 25
+        }
+      ]
+    },
+    {
+      "nipc": "583034543",
+      "denominacao": "Caramulo Ibérica SGPS, S.A.",
+      "forma_juridica": "Sociedade Anónima",
+      "estado": "ativa",
+      "data_constituicao": "2013-04-11",
+      "cae": {
+        "codigo": "64202",
+        "descricao": "Atividades das sociedades gestoras de participações sociais"
+      },
+      "sede": {
+        "morada": "Rua da Boavista, 15",
+        "codigo_postal": "1250-132",
+        "localidade": "Lisboa",
+        "distrito": "Lisboa"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Joana Almeida Gonçalves",
+          "cargo": "Administrador",
+          "data_designacao": "2013-04-11"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Joana Almeida Gonçalves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 100
+        }
+      ]
+    },
+    {
+      "nipc": "584164416",
+      "denominacao": "Minhoto Nova Têxteis, Lda",
+      "forma_juridica": "Sociedade por Quotas",
+      "estado": "ativa",
+      "data_constituicao": "2019-11-08",
+      "cae": {
+        "codigo": "13920",
+        "descricao": "Fabricação de têxteis"
+      },
+      "sede": {
+        "morada": "Rua da Boavista, 201",
+        "codigo_postal": "4800-128",
+        "localidade": "Guimarães",
+        "distrito": "Braga"
+      },
+      "orgaos_sociais": [
+        {
+          "nome": "Maria Correia Alves",
+          "cargo": "Administrador",
+          "data_designacao": "2022-09-26"
+        },
+        {
+          "nome": "Mariana Nunes Ribeiro",
+          "cargo": "Gerente",
+          "data_designacao": "2025-03-25"
+        },
+        {
           "nome": "Hugo Vieira",
+          "cargo": "Gerente",
+          "data_designacao": "2026-09-01"
+        }
+      ],
+      "socios": [
+        {
+          "nome": "Maria Correia Alves",
+          "tipo": "pessoa singular",
+          "nacionalidade": "Portuguesa",
+          "participacao_pct": 50
+        },
+        {
+          "nome": "Mariana Nunes Ribeiro",
           "tipo": "pessoa singular",
           "nacionalidade": "Portuguesa",
           "participacao_pct": 50

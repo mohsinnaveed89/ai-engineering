@@ -147,6 +147,8 @@ async def build_placeholder_pack(ctx: PipelineContext) -> KycPack:
         await asyncio.sleep(0.3)
 
         await ctx.emit("risk", "Placeholder risk assessment: no analysis performed")
+        # Report model usage like this from your agents (the placeholder uses no model).
+        await ctx.record_metrics(input_tokens=0, output_tokens=0, cost_usd=0.0, model="none")
 
     note_parts = []
     if notes:

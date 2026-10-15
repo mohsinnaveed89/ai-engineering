@@ -37,21 +37,42 @@ async def set_status(run_id: str, status: str, **extra: Any) -> None:
     await publish(run_id, {"type": "status", "status": status})
 
 
+def summarise_metrics(events: list[dict]) -> dict[str, Any]:
+    """Usage and latency for the latest version of a run, from its events."""
+    start_idx = max((i for i, e in enumerate(events) if e.get("type") == "status" and e.get("status") == "running"), default=None)
+    if start_idx is None:
+        return {}
+    latest = events[start_idx:]
+    out: dict[str, Any] = {}
+    for e in latest:
+        if e.get("type") == "metrics":
+            for k, v in (e.get("data") or {}).items():
+                if isinstance(v, (int, float)) and not isinstance(v, bool):
+                    out[k] = round(out.get(k, 0) + v, 6)
+                else:
+                    out[k] = v
+    done = next((e for e in latest if e.get("type") == "done"), None)
+    if done:
+        t0 = datetime.fromisoformat(latest[0]["ts"])
+        out["latency_s"] = round((datetime.fromisoformat(done["ts"]) - t0).total_seconds(), 2)
+    return out
+
+
 def start(run_id: str, company_name: str, country: str, version: int = 1,
-          feedback: str | None = None, previous_pack: dict | None = None) -> None:
-    task = asyncio.create_task(_execute(run_id, company_name, country, version, feedback, previous_pack))
+          feedback: str | None = None, previous_pack: dict | None = None, review_history: list | None = None) -> None:
+    task = asyncio.create_task(_execute(run_id, company_name, country, version, feedback, previous_pack, review_history or []))
     _tasks.add(task)
     task.add_done_callback(_tasks.discard)
 
 
 async def _execute(run_id: str, company_name: str, country: str, version: int,
-                   feedback: str | None, previous_pack: dict | None) -> None:
+                   feedback: str | None, previous_pack: dict | None, review_history: list) -> None:
     async with _slots:
         await set_status(run_id, "running", version=version)
         ctx = PipelineContext(
             run_id=run_id, company_name=company_name, country=country, version=version, feedback=feedback,
             previous_pack=KycPack.model_validate(previous_pack) if previous_pack else None,
-            _emit=lambda e: publish(run_id, e))
+            review_history=review_history, _emit=lambda e: publish(run_id, e))
         try:
             result = await asyncio.wait_for(run_pipeline(ctx), timeout=settings.pipeline_timeout_s)
             pack = result if isinstance(result, KycPack) else KycPack.model_validate(result)
@@ -102,7 +123,8 @@ async def review(run_id: str, decision: str, comments: str | None, reviewer: str
                            "data": {"decision": status, "comments": comments}})
     if decision == "send_back":
         await set_status(run_id, "sent_back")
-        start(run_id, run["company_name"], run["country"], version=run["version"] + 1, feedback=comments, previous_pack=pack)
+        start(run_id, run["company_name"], run["country"], version=run["version"] + 1, feedback=comments,
+              previous_pack=pack, review_history=reviews)
     else:
         await set_status(run_id, status)
     return await db.get_run(run_id)

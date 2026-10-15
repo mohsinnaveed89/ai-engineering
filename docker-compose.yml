@@ -2,9 +2,11 @@
 #
 #   docker compose up                          core stack: web app, API, mock data, MCP server, Postgres + pgvector
 #   docker compose --profile tracing up        core stack + Langfuse (tracing, Day 6)
+#   docker compose --profile embeddings up     core stack + Ollama for local embeddings (Day 4)
 #   docker compose run --rm scoring --run-all  score every company in the test set
+#   docker compose exec api python -m app.cli "Company name" UK   run and score one company
 #
-# Ports: web 3000 · API 8000 · mock data 8001 · MCP 8100 · Postgres 5432 · Langfuse 3001
+# Ports: web 3000 · API 8000 · mock data 8001 · MCP 8100 · Postgres 5432 · Langfuse 3001 · Ollama 11434
 
 name: ai-academy
 
@@ -58,9 +60,11 @@ services:
       MCP_URL: http://mcp:8100/mcp
       DATA_DIR: /data
       LANGFUSE_HOST: ${LANGFUSE_HOST:-http://langfuse-web:3000}
+      OLLAMA_URL: http://ollama:11434
     volumes:
       - ./services/api/app:/srv/app      # edit your pipeline without rebuilding
-      - ./data:/data:ro                  # documents for RAG ingestion
+      - ./data:/data:ro                  # documents for RAG ingestion; answers.json is for the scoring tool only
+      - ./scoring:/srv/scoring:ro        # lets `python -m app.cli` score a single company
     ports:
       - "8000:8000"
     depends_on:
@@ -73,6 +77,9 @@ services:
     build:
       context: .
       dockerfile: services/mcp/Dockerfile
+    env_file:
+      - path: .env
+        required: false     # e.g. TAVILY_API_KEY for a web search tool
     environment:
       MOCKDATA_URL: http://mockdata:8001
     volumes:
@@ -107,6 +114,17 @@ services:
       - ./scoring/reports:/app/scoring/reports
     depends_on:
       - api
+
+  # ------------------------------------------------------------------ embeddings (optional, Day 4)
+  # Local, offline embeddings. After starting: docker compose exec ollama ollama pull bge-m3
+  # (multilingual, 1024 dimensions). Call http://ollama:11434/api/embed from the API container.
+  ollama:
+    profiles: ["embeddings"]
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
 
   # ------------------------------------------------------------------ tracing (Langfuse, Day 6)
   # Self-hosted Langfuse, adapted from https://github.com/langfuse/langfuse/blob/main/docker-compose.yml
@@ -248,6 +266,7 @@ services:
 
 volumes:
   academy_db:
+  ollama_models:
   langfuse_db:
   langfuse_clickhouse_data:
   langfuse_clickhouse_logs:
