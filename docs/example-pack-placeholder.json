@@ -1,0 +1,191 @@
+{
+  "news": [
+    {
+      "url": "https://cityledger.example/2025/06/davenport-vector-software-wins-multi-year-contract",
+      "title": "Davenport Vector Software wins multi-year contract",
+      "sources": [
+        "src-4"
+      ],
+      "summary": "Not analysed by the placeholder.",
+      "language": "en",
+      "severity": "none",
+      "sentiment": "neutral",
+      "published_at": "2025-06-08"
+    },
+    {
+      "url": "https://tiweekly.example/2024/11/davenport-vector-software-opens-new-facility",
+      "title": "Davenport Vector Software opens new facility",
+      "sources": [
+        "src-5"
+      ],
+      "summary": "Not analysed by the placeholder.",
+      "language": "en",
+      "severity": "none",
+      "sentiment": "neutral",
+      "published_at": "2024-11-03"
+    }
+  ],
+  "risk": {
+    "rating": "medium",
+    "factors": [],
+    "rationale": "Placeholder pipeline: no analysis was performed. Replace run_pipeline() in services/api/app/pipeline.py with your agents.",
+    "recommendation": "investigate_further"
+  },
+  "flags": [],
+  "notes": "Annual reports available but not read: UK-050-AR2025",
+  "query": {
+    "country": "UK",
+    "company_name": "Davenport Vector Software"
+  },
+  "owners": [
+    {
+      "via": [],
+      "name": "Callum Williams",
+      "type": "person",
+      "sources": [
+        "src-3"
+      ],
+      "jurisdiction": null,
+      "ownership_pct": null,
+      "is_ultimate_beneficial_owner": false
+    },
+    {
+      "via": [],
+      "name": "William Taylor",
+      "type": "person",
+      "sources": [
+        "src-3"
+      ],
+      "jurisdiction": null,
+      "ownership_pct": null,
+      "is_ultimate_beneficial_owner": false
+    },
+    {
+      "via": [],
+      "name": "Zara Evans",
+      "type": "person",
+      "sources": [
+        "src-3"
+      ],
+      "jurisdiction": null,
+      "ownership_pct": null,
+      "is_ultimate_beneficial_owner": false
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "comments": null,
+    "reviewer": null,
+    "reviewed_at": null
+  },
+  "company": {
+    "sector": {
+      "value": "62012",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "status": {
+      "value": "active",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "address": {
+      "value": "131 Station Road, Glasgow, G2 1TQ, Scotland",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "legal_name": {
+      "value": "DAVENPORT VECTOR SOFTWARE LIMITED",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "incorporation_date": {
+      "value": "2008-05-24",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "registration_number": {
+      "value": "SC500860",
+      "sources": [
+        "src-1"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "type": "registry",
+      "title": "UK register: company profile",
+      "excerpt": null,
+      "reference": "http://localhost:8001/uk/company/SC500860",
+      "retrieved_at": "2026-10-15T10:04:38.577003Z"
+    },
+    {
+      "id": "src-2",
+      "type": "registry",
+      "title": "UK register: officers",
+      "excerpt": null,
+      "reference": "http://localhost:8001/uk/company/SC500860/officers",
+      "retrieved_at": "2026-10-15T10:04:38.596142Z"
+    },
+    {
+      "id": "src-3",
+      "type": "registry",
+      "title": "UK register: persons with significant control",
+      "excerpt": null,
+      "reference": "http://localhost:8001/uk/company/SC500860/persons-with-significant-control",
+      "retrieved_at": "2026-10-15T10:04:38.618784Z"
+    },
+    {
+      "id": "src-4",
+      "type": "news",
+      "title": "The City Ledger: Davenport Vector Software wins multi-year contract",
+      "excerpt": null,
+      "reference": "https://cityledger.example/2025/06/davenport-vector-software-wins-multi-year-contract",
+      "retrieved_at": "2026-10-15T10:04:38.950419Z"
+    },
+    {
+      "id": "src-5",
+      "type": "news",
+      "title": "Trade & Industry Weekly: Davenport Vector Software opens new facility",
+      "excerpt": null,
+      "reference": "https://tiweekly.example/2024/11/davenport-vector-software-opens-new-facility",
+      "retrieved_at": "2026-10-15T10:04:38.950428Z"
+    }
+  ],
+  "officers": [
+    {
+      "name": "WILLIAMS, Callum",
+      "role": "director",
+      "sources": [
+        "src-2"
+      ],
+      "appointed_on": "2016-03-19"
+    },
+    {
+      "name": "TAYLOR, William",
+      "role": "director",
+      "sources": [
+        "src-2"
+      ],
+      "appointed_on": "2008-07-15"
+    },
+    {
+      "name": "WILLIAMS, Niamh",
+      "role": "secretary",
+      "sources": [
+        "src-2"
+      ],
+      "appointed_on": "2010-04-04"
+    }
+  ],
+  "generated_at": "2026-10-15T10:04:39.596510Z",
+  "generated_by": "placeholder",
+  "schema_version": "1.0",
+  "financial_summary": null
+}

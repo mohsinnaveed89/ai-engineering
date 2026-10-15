@@ -1,0 +1,2034 @@
+{
+  "documents": [
+    {
+      "doc_id": "PT-036-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Barroso Câmbios, S.A.",
+      "registration_number": "518635449",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-036-AR2025.md"
+    },
+    {
+      "doc_id": "PT-036-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Barroso Câmbios, S.A.",
+      "registration_number": "518635449",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-036-AR2024.md"
+    },
+    {
+      "doc_id": "UK-033-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Penrose Software Ltd",
+      "registration_number": "02991439",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-033-AR2025.md"
+    },
+    {
+      "doc_id": "PT-006-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Tejo Ibérica Engenharia, Lda",
+      "registration_number": "575260580",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-006-AR2025.md"
+    },
+    {
+      "doc_id": "UK-006-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Hollins Anchor Textiles Ltd",
+      "registration_number": "09065933",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-006-AR2025.md"
+    },
+    {
+      "doc_id": "PT-003-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Tâmega Global Têxteis, Lda",
+      "registration_number": "571252044",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-003-AR2025.md"
+    },
+    {
+      "doc_id": "PT-003-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Tâmega Global Têxteis, Lda",
+      "registration_number": "571252044",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-003-AR2024.md"
+    },
+    {
+      "doc_id": "BR-028-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "COQUEIRAL NORTE SOFTWARE LTDA",
+      "registration_number": "08.645.633/0001-69",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-028-AR2025.md"
+    },
+    {
+      "doc_id": "BR-038-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "TROPEIRO ENERGIA LTDA",
+      "registration_number": "13.982.658/0001-98",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-038-AR2025.md"
+    },
+    {
+      "doc_id": "PT-001-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Algarvia Energia, Lda",
+      "registration_number": "529035758",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-001-AR2025.md"
+    },
+    {
+      "doc_id": "PT-001-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Algarvia Energia, Lda",
+      "registration_number": "529035758",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-001-AR2024.md"
+    },
+    {
+      "doc_id": "PT-030-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Sado Ibérica Jogos, S.A.",
+      "registration_number": "521277922",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-030-AR2025.md"
+    },
+    {
+      "doc_id": "PT-030-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Sado Ibérica Jogos, S.A.",
+      "registration_number": "521277922",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-030-AR2024.md"
+    },
+    {
+      "doc_id": "PT-043-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Atlântica Logística, Lda",
+      "registration_number": "574113975",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-043-AR2025.md"
+    },
+    {
+      "doc_id": "UK-038-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Ashford Anchor Construction Ltd",
+      "registration_number": "10128074",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-038-AR2025.md"
+    },
+    {
+      "doc_id": "BR-015-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "GUANABARA PRIME ALIMENTOS S.A.",
+      "registration_number": "77.432.988/0001-92",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-015-AR2025.md"
+    },
+    {
+      "doc_id": "BR-015-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "GUANABARA PRIME ALIMENTOS S.A.",
+      "registration_number": "77.432.988/0001-92",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-015-AR2024.md"
+    },
+    {
+      "doc_id": "UK-045-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Langley Lumen Logistics Limited",
+      "registration_number": "03230719",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-045-AR2025.md"
+    },
+    {
+      "doc_id": "BR-014-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "XINGU VERDE SUL TEXTIL LTDA",
+      "registration_number": "49.980.835/0001-44",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-014-AR2025.md"
+    },
+    {
+      "doc_id": "PT-044-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Douro Nova Construções, S.A.",
+      "registration_number": "572995849",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-044-AR2025.md"
+    },
+    {
+      "doc_id": "UK-003-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Netherby Construction Limited",
+      "registration_number": "SC906908",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-003-AR2025.md"
+    },
+    {
+      "doc_id": "UK-003-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Netherby Construction Limited",
+      "registration_number": "SC906908",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-003-AR2024.md"
+    },
+    {
+      "doc_id": "UK-036-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Dunmore Beacon Engineering Ltd",
+      "registration_number": "06612969",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-036-AR2025.md"
+    },
+    {
+      "doc_id": "UK-036-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Dunmore Beacon Engineering Ltd",
+      "registration_number": "06612969",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-036-AR2024.md"
+    },
+    {
+      "doc_id": "BR-046-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "CARNAUBA NOVA ALIMENTOS S.A.",
+      "registration_number": "86.390.578/0001-17",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-046-AR2025.md"
+    },
+    {
+      "doc_id": "UK-008-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Oakridge Harbour Media Ltd",
+      "registration_number": "12997195",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-008-AR2025.md"
+    },
+    {
+      "doc_id": "BR-012-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "VALE AZUL PRIME CONSTRUTORA LTDA",
+      "registration_number": "63.197.321/0001-48",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-012-AR2025.md"
+    },
+    {
+      "doc_id": "BR-012-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "VALE AZUL PRIME CONSTRUTORA LTDA",
+      "registration_number": "63.197.321/0001-48",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-012-AR2024.md"
+    },
+    {
+      "doc_id": "UK-007-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Ashford Summit Textiles Ltd",
+      "registration_number": "12625950",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-007-AR2025.md"
+    },
+    {
+      "doc_id": "PT-027-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Sado Logística, Lda",
+      "registration_number": "595100546",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-027-AR2025.md"
+    },
+    {
+      "doc_id": "UK-022-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Northcote Anchor Foods PLC",
+      "registration_number": "10154804",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-022-AR2025.md"
+    },
+    {
+      "doc_id": "UK-022-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Northcote Anchor Foods PLC",
+      "registration_number": "10154804",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-022-AR2024.md"
+    },
+    {
+      "doc_id": "UK-025-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Fairholme Foods Ltd",
+      "registration_number": "04049335",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-025-AR2025.md"
+    },
+    {
+      "doc_id": "BR-039-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "ITAPUA NORTE ENERGIA LTDA",
+      "registration_number": "06.397.327/0001-25",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-039-AR2025.md"
+    },
+    {
+      "doc_id": "PT-002-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Serra Alta Ibérica Farmacêutica, Lda",
+      "registration_number": "573667470",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-002-AR2025.md"
+    },
+    {
+      "doc_id": "UK-014-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Oakridge Textiles PLC",
+      "registration_number": "10228898",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-014-AR2025.md"
+    },
+    {
+      "doc_id": "UK-014-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Oakridge Textiles PLC",
+      "registration_number": "10228898",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-014-AR2024.md"
+    },
+    {
+      "doc_id": "PT-023-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Ferreira Global Engenharia, Lda",
+      "registration_number": "599995963",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-023-AR2025.md"
+    },
+    {
+      "doc_id": "PT-023-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Ferreira Global Engenharia, Lda",
+      "registration_number": "599995963",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-023-AR2024.md"
+    },
+    {
+      "doc_id": "BR-036-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "BURITI PRIME TEXTIL LTDA",
+      "registration_number": "11.168.312/0001-25",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-036-AR2025.md"
+    },
+    {
+      "doc_id": "UK-011-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Elmstead Harbour Digital Assets PLC",
+      "registration_number": "03072388",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-011-AR2025.md"
+    },
+    {
+      "doc_id": "BR-048-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "UBATUBA FARMA LTDA",
+      "registration_number": "68.335.719/0001-17",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-048-AR2025.md"
+    },
+    {
+      "doc_id": "BR-048-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "UBATUBA FARMA LTDA",
+      "registration_number": "68.335.719/0001-17",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-048-AR2024.md"
+    },
+    {
+      "doc_id": "BR-006-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "TROPEIRO SUL ATIVOS DIGITAIS S.A.",
+      "registration_number": "32.794.744/0001-11",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-006-AR2025.md"
+    },
+    {
+      "doc_id": "PT-018-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Lusitânia Ibérica Logística, S.A.",
+      "registration_number": "527172243",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-018-AR2025.md"
+    },
+    {
+      "doc_id": "PT-018-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Lusitânia Ibérica Logística, S.A.",
+      "registration_number": "527172243",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-018-AR2024.md"
+    },
+    {
+      "doc_id": "BR-010-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "BURITI SOFTWARE LTDA",
+      "registration_number": "90.527.174/0001-08",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-010-AR2025.md"
+    },
+    {
+      "doc_id": "BR-010-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "BURITI SOFTWARE LTDA",
+      "registration_number": "90.527.174/0001-08",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-010-AR2024.md"
+    },
+    {
+      "doc_id": "PT-041-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Marão Nova Farmacêutica, Lda",
+      "registration_number": "525240683",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-041-AR2025.md"
+    },
+    {
+      "doc_id": "BR-047-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "CERRADO SUL SOFTWARE S.A.",
+      "registration_number": "48.599.545/0001-92",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-047-AR2025.md"
+    },
+    {
+      "doc_id": "BR-026-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "AURORA SOFTWARE LTDA",
+      "registration_number": "97.931.996/0001-90",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-026-AR2025.md"
+    },
+    {
+      "doc_id": "BR-032-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "BANDEIRANTES SUL APOSTAS LTDA",
+      "registration_number": "79.915.109/0001-09",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-032-AR2025.md"
+    },
+    {
+      "doc_id": "BR-032-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "BANDEIRANTES SUL APOSTAS LTDA",
+      "registration_number": "79.915.109/0001-09",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-032-AR2024.md"
+    },
+    {
+      "doc_id": "BR-037-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "JATOBA SUL SOFTWARE LTDA",
+      "registration_number": "85.034.513/0001-76",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-037-AR2025.md"
+    },
+    {
+      "doc_id": "BR-013-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "IPE ROXO ATIVOS DIGITAIS S.A.",
+      "registration_number": "22.654.341/0001-13",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-013-AR2025.md"
+    },
+    {
+      "doc_id": "BR-013-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "IPE ROXO ATIVOS DIGITAIS S.A.",
+      "registration_number": "22.654.341/0001-13",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-013-AR2024.md"
+    },
+    {
+      "doc_id": "BR-031-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "SERRA GAUCHA SOFTWARE LTDA",
+      "registration_number": "72.404.933/0001-55",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-031-AR2025.md"
+    },
+    {
+      "doc_id": "BR-018-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "MARACANA SUL SOFTWARE LTDA",
+      "registration_number": "95.977.338/0001-04",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-018-AR2025.md"
+    },
+    {
+      "doc_id": "BR-023-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "SERTAO NOVO PRIME ALIMENTOS LTDA",
+      "registration_number": "77.996.933/0001-05",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-023-AR2025.md"
+    },
+    {
+      "doc_id": "PT-042-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Zêzere Prime Engenharia, Lda",
+      "registration_number": "533755786",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-042-AR2025.md"
+    },
+    {
+      "doc_id": "PT-042-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Zêzere Prime Engenharia, Lda",
+      "registration_number": "533755786",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-042-AR2024.md"
+    },
+    {
+      "doc_id": "PT-005-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Caramulo Lux Logística, S.A.",
+      "registration_number": "576125393",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-005-AR2025.md"
+    },
+    {
+      "doc_id": "PT-005-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Caramulo Lux Logística, S.A.",
+      "registration_number": "576125393",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-005-AR2024.md"
+    },
+    {
+      "doc_id": "PT-014-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Mondego Ibérica Engenharia, Lda",
+      "registration_number": "557612659",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-014-AR2025.md"
+    },
+    {
+      "doc_id": "PT-014-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Mondego Ibérica Engenharia, Lda",
+      "registration_number": "557612659",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-014-AR2024.md"
+    },
+    {
+      "doc_id": "UK-040-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Netherby Digital Assets Ltd",
+      "registration_number": "12001837",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-040-AR2025.md"
+    },
+    {
+      "doc_id": "BR-034-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "ARAUCARIA SUL CONSTRUTORA LTDA",
+      "registration_number": "05.467.768/0001-93",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-034-AR2025.md"
+    },
+    {
+      "doc_id": "BR-034-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "ARAUCARIA SUL CONSTRUTORA LTDA",
+      "registration_number": "05.467.768/0001-93",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-034-AR2024.md"
+    },
+    {
+      "doc_id": "UK-013-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Ivybridge Beacon Energy Ltd",
+      "registration_number": "09653080",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-013-AR2025.md"
+    },
+    {
+      "doc_id": "BR-049-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "MANDACARU NOVA ALIMENTOS LTDA",
+      "registration_number": "49.782.686/0001-09",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-049-AR2025.md"
+    },
+    {
+      "doc_id": "BR-016-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "SABIA SUL MIDIA LTDA",
+      "registration_number": "21.852.213/0001-11",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-016-AR2025.md"
+    },
+    {
+      "doc_id": "BR-016-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "SABIA SUL MIDIA LTDA",
+      "registration_number": "21.852.213/0001-11",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-016-AR2024.md"
+    },
+    {
+      "doc_id": "BR-024-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "IPE ROXO NOVA TEXTIL LTDA",
+      "registration_number": "29.696.663/0001-74",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-024-AR2025.md"
+    },
+    {
+      "doc_id": "UK-034-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Marlow Vector Textiles Ltd",
+      "registration_number": "05278808",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-034-AR2025.md"
+    },
+    {
+      "doc_id": "UK-034-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Marlow Vector Textiles Ltd",
+      "registration_number": "05278808",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-034-AR2024.md"
+    },
+    {
+      "doc_id": "BR-001-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "ANHUMAS PRIME ENERGIA LTDA",
+      "registration_number": "41.157.763/0001-28",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-001-AR2025.md"
+    },
+    {
+      "doc_id": "BR-001-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "ANHUMAS PRIME ENERGIA LTDA",
+      "registration_number": "41.157.763/0001-28",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-001-AR2024.md"
+    },
+    {
+      "doc_id": "PT-045-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Tâmega Farmacêutica, Lda",
+      "registration_number": "569518350",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-045-AR2025.md"
+    },
+    {
+      "doc_id": "UK-031-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Netherby Software Ltd",
+      "registration_number": "SC816190",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-031-AR2025.md"
+    },
+    {
+      "doc_id": "UK-035-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Blackwater Lumen Construction Ltd",
+      "registration_number": "03941739",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-035-AR2025.md"
+    },
+    {
+      "doc_id": "UK-035-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Blackwater Lumen Construction Ltd",
+      "registration_number": "03941739",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-035-AR2024.md"
+    },
+    {
+      "doc_id": "BR-008-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "JEQUITIBA SUL TEXTIL S.A.",
+      "registration_number": "21.475.531/0001-00",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-008-AR2025.md"
+    },
+    {
+      "doc_id": "UK-024-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Yarrow Digital Assets Ltd",
+      "registration_number": "SC298716",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-024-AR2025.md"
+    },
+    {
+      "doc_id": "UK-024-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Yarrow Digital Assets Ltd",
+      "registration_number": "SC298716",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-024-AR2024.md"
+    },
+    {
+      "doc_id": "BR-040-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "VALE AZUL ENERGIA LTDA",
+      "registration_number": "20.595.174/0001-51",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-040-AR2025.md"
+    },
+    {
+      "doc_id": "BR-040-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "VALE AZUL ENERGIA LTDA",
+      "registration_number": "20.595.174/0001-51",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-040-AR2024.md"
+    },
+    {
+      "doc_id": "UK-049-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Calder Beacon Software Ltd",
+      "registration_number": "03563719",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-049-AR2025.md"
+    },
+    {
+      "doc_id": "UK-027-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Yarrow Energy Ltd",
+      "registration_number": "01905627",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-027-AR2025.md"
+    },
+    {
+      "doc_id": "PT-010-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Tejo Têxteis, S.A.",
+      "registration_number": "553519042",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-010-AR2025.md"
+    },
+    {
+      "doc_id": "BR-042-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "TAPAJOS SUL SOFTWARE LTDA",
+      "registration_number": "91.306.162/0001-08",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-042-AR2025.md"
+    },
+    {
+      "doc_id": "BR-042-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "TAPAJOS SUL SOFTWARE LTDA",
+      "registration_number": "91.306.162/0001-08",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-042-AR2024.md"
+    },
+    {
+      "doc_id": "UK-037-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Cheviot Beacon Foods PLC",
+      "registration_number": "SC860077",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-037-AR2025.md"
+    },
+    {
+      "doc_id": "UK-037-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Cheviot Beacon Foods PLC",
+      "registration_number": "SC860077",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-037-AR2024.md"
+    },
+    {
+      "doc_id": "UK-048-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Thornbury Construction PLC",
+      "registration_number": "09635854",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-048-AR2025.md"
+    },
+    {
+      "doc_id": "PT-032-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Alcoa Nova Engenharia, Lda",
+      "registration_number": "512282226",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-032-AR2025.md"
+    },
+    {
+      "doc_id": "UK-043-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Hollins Construction Ltd",
+      "registration_number": "SC507579",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-043-AR2025.md"
+    },
+    {
+      "doc_id": "UK-043-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Hollins Construction Ltd",
+      "registration_number": "SC507579",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-043-AR2024.md"
+    },
+    {
+      "doc_id": "BR-027-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "AURORA SUL MIDIA LTDA",
+      "registration_number": "83.532.501/0001-46",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-027-AR2025.md"
+    },
+    {
+      "doc_id": "BR-027-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "AURORA SUL MIDIA LTDA",
+      "registration_number": "83.532.501/0001-46",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-027-AR2024.md"
+    },
+    {
+      "doc_id": "UK-001-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Hawksmoor Meridian Textiles Ltd",
+      "registration_number": "09885499",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-001-AR2025.md"
+    },
+    {
+      "doc_id": "BR-005-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "CARNAUBA BRASIL LOGISTICA LTDA",
+      "registration_number": "69.757.973/0001-76",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-005-AR2025.md"
+    },
+    {
+      "doc_id": "BR-005-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "CARNAUBA BRASIL LOGISTICA LTDA",
+      "registration_number": "69.757.973/0001-76",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-005-AR2024.md"
+    },
+    {
+      "doc_id": "PT-050-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Nogueira Global Construções, S.A.",
+      "registration_number": "585304270",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-050-AR2025.md"
+    },
+    {
+      "doc_id": "UK-002-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Stanmore Summit Gaming PLC",
+      "registration_number": "15842580",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-002-AR2025.md"
+    },
+    {
+      "doc_id": "UK-002-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Stanmore Summit Gaming PLC",
+      "registration_number": "15842580",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-002-AR2024.md"
+    },
+    {
+      "doc_id": "PT-008-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Quinta Nova Nova Alimentar, Lda",
+      "registration_number": "555565173",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-008-AR2025.md"
+    },
+    {
+      "doc_id": "UK-044-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Ashford Logistics Limited",
+      "registration_number": "09327666",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-044-AR2025.md"
+    },
+    {
+      "doc_id": "UK-017-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Elmstead Software Ltd",
+      "registration_number": "05679679",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-017-AR2025.md"
+    },
+    {
+      "doc_id": "BR-025-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "VALE AZUL SUL LOGISTICA LTDA",
+      "registration_number": "50.485.550/0001-16",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-025-AR2025.md"
+    },
+    {
+      "doc_id": "BR-025-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "VALE AZUL SUL LOGISTICA LTDA",
+      "registration_number": "50.485.550/0001-16",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-025-AR2024.md"
+    },
+    {
+      "doc_id": "BR-041-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "JACARANDA CAMBIO S.A.",
+      "registration_number": "05.465.076/0001-06",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-041-AR2025.md"
+    },
+    {
+      "doc_id": "BR-011-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "BURITI NOVA ALIMENTOS S.A.",
+      "registration_number": "93.489.927/0001-18",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-011-AR2025.md"
+    },
+    {
+      "doc_id": "PT-025-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Nogueira Nova Farmacêutica, Lda",
+      "registration_number": "540574449",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-025-AR2025.md"
+    },
+    {
+      "doc_id": "PT-019-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Espinhaço Prime Energia, S.A.",
+      "registration_number": "546432107",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-019-AR2025.md"
+    },
+    {
+      "doc_id": "PT-019-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Espinhaço Prime Energia, S.A.",
+      "registration_number": "546432107",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-019-AR2024.md"
+    },
+    {
+      "doc_id": "UK-012-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Marlow Harbour Pharma Limited",
+      "registration_number": "11706862",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-012-AR2025.md"
+    },
+    {
+      "doc_id": "PT-035-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Atlântica Câmbios, Lda",
+      "registration_number": "532501780",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-035-AR2025.md"
+    },
+    {
+      "doc_id": "BR-021-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "ITAPUA LOGISTICA S.A.",
+      "registration_number": "51.938.261/0001-98",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-021-AR2025.md"
+    },
+    {
+      "doc_id": "PT-047-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Quinta Nova Nova Câmbios, Lda",
+      "registration_number": "571786561",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-047-AR2025.md"
+    },
+    {
+      "doc_id": "PT-047-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Quinta Nova Nova Câmbios, Lda",
+      "registration_number": "571786561",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-047-AR2024.md"
+    },
+    {
+      "doc_id": "BR-044-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "PANTANAL BRASIL APOSTAS LTDA",
+      "registration_number": "57.202.382/0001-53",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-044-AR2025.md"
+    },
+    {
+      "doc_id": "PT-026-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Atlântica Ibérica Farmacêutica, Lda",
+      "registration_number": "542046873",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-026-AR2025.md"
+    },
+    {
+      "doc_id": "UK-039-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Davenport Energy Ltd",
+      "registration_number": "13798885",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-039-AR2025.md"
+    },
+    {
+      "doc_id": "UK-039-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Davenport Energy Ltd",
+      "registration_number": "13798885",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-039-AR2024.md"
+    },
+    {
+      "doc_id": "UK-015-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Kingsmere Pharma Ltd",
+      "registration_number": "05836045",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-015-AR2025.md"
+    },
+    {
+      "doc_id": "UK-015-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Kingsmere Pharma Ltd",
+      "registration_number": "05836045",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-015-AR2024.md"
+    },
+    {
+      "doc_id": "UK-005-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Carrick Meridian Energy Ltd",
+      "registration_number": "04552863",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-005-AR2025.md"
+    },
+    {
+      "doc_id": "UK-005-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Carrick Meridian Energy Ltd",
+      "registration_number": "04552863",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-005-AR2024.md"
+    },
+    {
+      "doc_id": "UK-030-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Brockley Vector Foods PLC",
+      "registration_number": "02582379",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-030-AR2025.md"
+    },
+    {
+      "doc_id": "PT-013-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Costa Verde Nova Engenharia, Lda",
+      "registration_number": "512376280",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-013-AR2025.md"
+    },
+    {
+      "doc_id": "PT-013-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Costa Verde Nova Engenharia, Lda",
+      "registration_number": "512376280",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-013-AR2024.md"
+    },
+    {
+      "doc_id": "UK-009-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Stanmore Harbour Foods Ltd",
+      "registration_number": "13399069",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-009-AR2025.md"
+    },
+    {
+      "doc_id": "PT-004-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Dão Vivo Lux Têxteis, Lda",
+      "registration_number": "530226545",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-004-AR2025.md"
+    },
+    {
+      "doc_id": "PT-004-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Dão Vivo Lux Têxteis, Lda",
+      "registration_number": "530226545",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-004-AR2024.md"
+    },
+    {
+      "doc_id": "BR-033-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "COQUEIRAL NOVA MIDIA LTDA",
+      "registration_number": "57.934.274/0001-75",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-033-AR2025.md"
+    },
+    {
+      "doc_id": "BR-045-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "PANTANAL SOFTWARE LTDA",
+      "registration_number": "07.569.422/0001-21",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-045-AR2025.md"
+    },
+    {
+      "doc_id": "PT-022-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Zêzere Ibérica Farmacêutica, Lda",
+      "registration_number": "595989322",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-022-AR2025.md"
+    },
+    {
+      "doc_id": "PT-029-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Sado Farmacêutica, S.A.",
+      "registration_number": "503642703",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-029-AR2025.md"
+    },
+    {
+      "doc_id": "UK-019-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Thornbury Meridian Media Ltd",
+      "registration_number": "01523192",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-019-AR2025.md"
+    },
+    {
+      "doc_id": "PT-020-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Lusitânia Global Têxteis, S.A.",
+      "registration_number": "510340750",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-020-AR2025.md"
+    },
+    {
+      "doc_id": "UK-023-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Cheviot Lumen Pharma Ltd",
+      "registration_number": "10956275",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-023-AR2025.md"
+    },
+    {
+      "doc_id": "PT-049-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Foz Nova Prime Engenharia, S.A.",
+      "registration_number": "575721626",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-049-AR2025.md"
+    },
+    {
+      "doc_id": "BR-007-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "PANTANAL ENGENHARIA LTDA",
+      "registration_number": "01.258.348/0001-46",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-007-AR2025.md"
+    },
+    {
+      "doc_id": "BR-007-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "PANTANAL ENGENHARIA LTDA",
+      "registration_number": "01.258.348/0001-46",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-007-AR2024.md"
+    },
+    {
+      "doc_id": "UK-026-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Oakridge Harbour Foods PLC",
+      "registration_number": "10433490",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-026-AR2025.md"
+    },
+    {
+      "doc_id": "BR-035-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "IGUACU SUL TEXTIL S.A.",
+      "registration_number": "87.848.299/0001-17",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-035-AR2025.md"
+    },
+    {
+      "doc_id": "BR-035-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "IGUACU SUL TEXTIL S.A.",
+      "registration_number": "87.848.299/0001-17",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-035-AR2024.md"
+    },
+    {
+      "doc_id": "PT-017-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Espinhaço Nova Logística, Lda",
+      "registration_number": "552003468",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-017-AR2025.md"
+    },
+    {
+      "doc_id": "BR-022-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "JEQUITIBA ENERGIA LTDA",
+      "registration_number": "02.167.309/0001-04",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-022-AR2025.md"
+    },
+    {
+      "doc_id": "BR-022-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "JEQUITIBA ENERGIA LTDA",
+      "registration_number": "02.167.309/0001-04",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-022-AR2024.md"
+    },
+    {
+      "doc_id": "PT-034-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Vouga Têxteis, Lda",
+      "registration_number": "550602135",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-034-AR2025.md"
+    },
+    {
+      "doc_id": "PT-034-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Vouga Têxteis, Lda",
+      "registration_number": "550602135",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-034-AR2024.md"
+    },
+    {
+      "doc_id": "UK-050-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Davenport Vector Software Limited",
+      "registration_number": "SC500860",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-050-AR2025.md"
+    },
+    {
+      "doc_id": "UK-032-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Elmstead Lumen Pharma PLC",
+      "registration_number": "16368174",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-032-AR2025.md"
+    },
+    {
+      "doc_id": "PT-031-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Alvorada Engenharia, Lda",
+      "registration_number": "554344254",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-031-AR2025.md"
+    },
+    {
+      "doc_id": "PT-031-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Alvorada Engenharia, Lda",
+      "registration_number": "554344254",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-031-AR2024.md"
+    },
+    {
+      "doc_id": "PT-046-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Portela Prime Construções, Lda",
+      "registration_number": "522567215",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-046-AR2025.md"
+    },
+    {
+      "doc_id": "PT-046-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Portela Prime Construções, Lda",
+      "registration_number": "522567215",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-046-AR2024.md"
+    },
+    {
+      "doc_id": "BR-020-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "MARACANA SUL FARMA LTDA",
+      "registration_number": "49.031.083/0001-75",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-020-AR2025.md"
+    },
+    {
+      "doc_id": "UK-042-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Kingsmere Vector Engineering Ltd",
+      "registration_number": "08410272",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-042-AR2025.md"
+    },
+    {
+      "doc_id": "UK-042-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Kingsmere Vector Engineering Ltd",
+      "registration_number": "08410272",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-042-AR2024.md"
+    },
+    {
+      "doc_id": "PT-048-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Tâmega Construções, S.A.",
+      "registration_number": "597331219",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-048-AR2025.md"
+    },
+    {
+      "doc_id": "BR-017-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "SERRA GAUCHA NOVA FARMA LTDA",
+      "registration_number": "02.575.988/0001-42",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-017-AR2025.md"
+    },
+    {
+      "doc_id": "BR-002-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "PITANGA NORTE ALIMENTOS LTDA",
+      "registration_number": "85.970.294/0001-37",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-002-AR2025.md"
+    },
+    {
+      "doc_id": "BR-002-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "PITANGA NORTE ALIMENTOS LTDA",
+      "registration_number": "85.970.294/0001-37",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-002-AR2024.md"
+    },
+    {
+      "doc_id": "PT-007-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Portela Ibérica Software, Lda",
+      "registration_number": "533374367",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-007-AR2025.md"
+    },
+    {
+      "doc_id": "PT-007-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Portela Ibérica Software, Lda",
+      "registration_number": "533374367",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-007-AR2024.md"
+    },
+    {
+      "doc_id": "PT-039-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Estrela Alimentar, S.A.",
+      "registration_number": "542564939",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-039-AR2025.md"
+    },
+    {
+      "doc_id": "PT-039-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Estrela Alimentar, S.A.",
+      "registration_number": "542564939",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-039-AR2024.md"
+    },
+    {
+      "doc_id": "PT-037-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Belém Norte Prime Alimentar, Lda",
+      "registration_number": "592640884",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-037-AR2025.md"
+    },
+    {
+      "doc_id": "UK-041-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Cheviot Anchor Media Ltd",
+      "registration_number": "13214702",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-041-AR2025.md"
+    },
+    {
+      "doc_id": "PT-009-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Alcoa Global Alimentar, Lda",
+      "registration_number": "574962247",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-009-AR2025.md"
+    },
+    {
+      "doc_id": "BR-030-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "CAATINGA NORTE TEXTIL LTDA",
+      "registration_number": "21.393.392/0001-76",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-030-AR2025.md"
+    },
+    {
+      "doc_id": "BR-009-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "TROPEIRO BRASIL FARMA LTDA",
+      "registration_number": "59.835.409/0001-70",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-009-AR2025.md"
+    },
+    {
+      "doc_id": "PT-016-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Mondego Ibérica Construções, Lda",
+      "registration_number": "516112112",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-016-AR2025.md"
+    },
+    {
+      "doc_id": "UK-018-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Millbrook Media Ltd",
+      "registration_number": "13837953",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-018-AR2025.md"
+    },
+    {
+      "doc_id": "PT-028-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Quinta Nova Prime Farmacêutica, S.A.",
+      "registration_number": "514861240",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-028-AR2025.md"
+    },
+    {
+      "doc_id": "PT-038-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Cávado Ibérica Media, Lda",
+      "registration_number": "559489358",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-038-AR2025.md"
+    },
+    {
+      "doc_id": "PT-038-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Cávado Ibérica Media, Lda",
+      "registration_number": "559489358",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-038-AR2024.md"
+    },
+    {
+      "doc_id": "UK-020-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Millbrook Vector Engineering Ltd",
+      "registration_number": "12925554",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-020-AR2025.md"
+    },
+    {
+      "doc_id": "PT-024-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Serra Alta Ibérica Alimentar, Lda",
+      "registration_number": "563678003",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-024-AR2025.md"
+    },
+    {
+      "doc_id": "PT-024-AR2024",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Serra Alta Ibérica Alimentar, Lda",
+      "registration_number": "563678003",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-024-AR2024.md"
+    },
+    {
+      "doc_id": "PT-021-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Lezíria Ibérica Energia, Lda",
+      "registration_number": "568583426",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-021-AR2025.md"
+    },
+    {
+      "doc_id": "UK-046-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Thornbury Pharma Ltd",
+      "registration_number": "10345089",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-046-AR2025.md"
+    },
+    {
+      "doc_id": "UK-046-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Thornbury Pharma Ltd",
+      "registration_number": "10345089",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-046-AR2024.md"
+    },
+    {
+      "doc_id": "PT-040-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Bairrada Engenharia, S.A.",
+      "registration_number": "502292008",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-040-AR2025.md"
+    },
+    {
+      "doc_id": "BR-003-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "SERRA GAUCHA PRIME TEXTIL LTDA",
+      "registration_number": "41.537.418/0001-10",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-003-AR2025.md"
+    },
+    {
+      "doc_id": "BR-003-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "SERRA GAUCHA PRIME TEXTIL LTDA",
+      "registration_number": "41.537.418/0001-10",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-003-AR2024.md"
+    },
+    {
+      "doc_id": "UK-047-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Stanmore Meridian Pharma Ltd",
+      "registration_number": "06368151",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-047-AR2025.md"
+    },
+    {
+      "doc_id": "BR-004-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "TAQUARI BRASIL FARMA S.A.",
+      "registration_number": "35.035.161/0001-03",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-004-AR2025.md"
+    },
+    {
+      "doc_id": "BR-004-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "TAQUARI BRASIL FARMA S.A.",
+      "registration_number": "35.035.161/0001-03",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-004-AR2024.md"
+    },
+    {
+      "doc_id": "PT-033-AR2025",
+      "type": "annual_report",
+      "country": "PT",
+      "company_name": "Barroso Global Jogos, Lda",
+      "registration_number": "520765362",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/pt/PT-033-AR2025.md"
+    },
+    {
+      "doc_id": "UK-004-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Glenrothes Harbour Gaming Ltd",
+      "registration_number": "11481104",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-004-AR2025.md"
+    },
+    {
+      "doc_id": "UK-021-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Netherby Harbour Logistics Limited",
+      "registration_number": "15707650",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-021-AR2025.md"
+    },
+    {
+      "doc_id": "UK-021-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Netherby Harbour Logistics Limited",
+      "registration_number": "15707650",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-021-AR2024.md"
+    },
+    {
+      "doc_id": "BR-019-AR2025",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "XINGU VERDE CONSTRUTORA LTDA",
+      "registration_number": "96.928.635/0001-22",
+      "year": 2025,
+      "language": "pt",
+      "path": "annual_reports/br/BR-019-AR2025.md"
+    },
+    {
+      "doc_id": "BR-019-AR2024",
+      "type": "annual_report",
+      "country": "BR",
+      "company_name": "XINGU VERDE CONSTRUTORA LTDA",
+      "registration_number": "96.928.635/0001-22",
+      "year": 2024,
+      "language": "pt",
+      "path": "annual_reports/br/BR-019-AR2024.md"
+    },
+    {
+      "doc_id": "UK-028-AR2025",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Davenport Software PLC",
+      "registration_number": "07976005",
+      "year": 2025,
+      "language": "en",
+      "path": "annual_reports/uk/UK-028-AR2025.md"
+    },
+    {
+      "doc_id": "UK-028-AR2024",
+      "type": "annual_report",
+      "country": "UK",
+      "company_name": "Davenport Software PLC",
+      "registration_number": "07976005",
+      "year": 2024,
+      "language": "en",
+      "path": "annual_reports/uk/UK-028-AR2024.md"
+    },
+    {
+      "doc_id": "kyc_policy",
+      "type": "policy",
+      "country": null,
+      "company_name": null,
+      "registration_number": null,
+      "year": null,
+      "language": "en",
+      "path": "policies/kyc_policy.md"
+    },
+    {
+      "doc_id": "procedimentos_br",
+      "type": "policy",
+      "country": null,
+      "company_name": null,
+      "registration_number": null,
+      "year": null,
+      "language": "pt",
+      "path": "policies/procedimentos_br.md"
+    },
+    {
+      "doc_id": "procedimentos_pt",
+      "type": "policy",
+      "country": null,
+      "company_name": null,
+      "registration_number": null,
+      "year": null,
+      "language": "pt",
+      "path": "policies/procedimentos_pt.md"
+    },
+    {
+      "doc_id": "procedures_uk",
+      "type": "policy",
+      "country": null,
+      "company_name": null,
+      "registration_number": null,
+      "year": null,
+      "language": "en",
+      "path": "policies/procedures_uk.md"
+    }
+  ]
+}

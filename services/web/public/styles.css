@@ -1,0 +1,77 @@
+:root{--dark:#1c1d2f;--blue:#3a58ee;--blue-h:#2c45c8;--sky:#699bfb;--lav:#dedaf4;--aqua:#aae2e5;--soft:#f6f5fc;
+--ink2:rgba(28,29,47,.72);--ink3:rgba(28,29,47,.55);--line:rgba(28,29,47,.12);--line2:rgba(28,29,47,.07);
+--ok:#16a34a;--warn:#d97706;--bad:#dc2626;--r:10px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--dark);background:#fff;font-size:15px;line-height:1.5}
+a{color:var(--blue);text-decoration:none}a:hover{color:var(--blue-h)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.mono,code{font-family:"Roboto Mono",ui-monospace,monospace}
+code{font-size:.85em;background:rgba(58,88,238,.08);padding:1px 5px;border-radius:4px}
+header.top{background:var(--dark);color:#fff;position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;gap:16px;height:58px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:600}
+.brand:hover{color:#fff}
+.mark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--blue),var(--sky))}
+.tag{font-family:"Roboto Mono",monospace;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 10px;color:rgba(255,255,255,.75)}
+.health{margin-left:auto;font-family:"Roboto Mono",monospace;font-size:.72rem;color:rgba(255,255,255,.75)}
+.health .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+main{padding:28px 20px 60px}
+h1{font-size:1.7rem;margin:0 0 4px;font-weight:600;letter-spacing:-.01em}
+h2{font-size:1.1rem;margin:0;font-weight:600}
+.sub{color:var(--ink2)}
+.grid{display:grid;grid-template-columns:360px 1fr;gap:24px;align-items:start;margin-top:22px}
+.grid.run{grid-template-columns:1fr 340px}
+@media(max-width:960px){.grid,.grid.run{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:var(--r);background:#fff}
+.card>.h{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line2)}
+.card>.b{padding:16px 18px}
+.card.dark{background:var(--dark);color:#fff;border:none}
+label{display:block;font-size:.82rem;font-weight:500;margin:12px 0 6px}
+input,select,textarea{width:100%;font:inherit;border:1px solid var(--line);border-radius:8px;padding:9px 11px;background:#fff;color:var(--dark)}
+textarea{min-height:90px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);outline-offset:0;border-color:transparent}
+.btn{font:inherit;font-weight:500;border:1px solid transparent;border-radius:8px;padding:9px 16px;cursor:pointer;background:var(--blue);color:#fff}
+.btn:hover{background:var(--blue-h)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.line{background:#fff;color:var(--dark);border-color:var(--line)}.btn.line:hover{background:var(--lav)}
+.btn.ok{background:var(--ok)}.btn.bad{background:var(--bad)}.btn.warn{background:#fff;color:var(--dark);border-color:var(--dark)}
+.btn.full{width:100%;margin-top:16px}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-family:"Roboto Mono",monospace;font-weight:400;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:10px;border-bottom:1px solid var(--line2);vertical-align:top}
+tr.click{cursor:pointer}tr.click:hover td{background:var(--soft)}
+.pill{display:inline-block;font-family:"Roboto Mono",monospace;font-size:.68rem;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.s-queued,.s-running,.s-sent_back{background:#eef1ff;border-color:#c9d2ff;color:#2c3fb0}
+.s-awaiting_review{background:#fff6e5;border-color:#f3d39b;color:#8a5300}
+.s-approved{background:#e9f8ef;border-color:#a9e0bf;color:#11753a}
+.s-declined,.s-failed{background:#fdeceb;border-color:#f3b4b0;color:#a3201a}
+.r-low{background:#e9f8ef;color:#11753a;border-color:#a9e0bf}.r-medium{background:#fff6e5;color:#8a5300;border-color:#f3d39b}.r-high{background:#fdeceb;color:#a3201a;border-color:#f3b4b0}
+.sev-high{color:var(--bad)}.sev-medium{color:var(--warn)}
+.empty{color:var(--ink3);padding:20px 0;text-align:center}
+.kv{display:grid;grid-template-columns:170px 1fr;gap:6px 14px}
+.kv dt{color:var(--ink3);font-size:.85rem}
+.kv dd{margin:0}
+.src{display:inline-block;font-family:"Roboto Mono",monospace;font-size:.64rem;background:var(--lav);color:var(--dark);border-radius:4px;padding:0 5px;margin-left:4px;cursor:pointer;vertical-align:1px}
+.src.missing{background:#fdeceb;color:var(--bad)}
+.section{margin-top:18px}
+.list>div{padding:10px 0;border-bottom:1px solid var(--line2)}.list>div:last-child{border-bottom:none}
+.muted{color:var(--ink3);font-size:.85rem}
+.flag{display:flex;gap:10px;padding:10px 12px;border-radius:8px;background:#fff6e5;margin-top:8px}
+.flag.high{background:#fdeceb}.flag.low{background:var(--soft)}
+.flag b{font-family:"Roboto Mono",monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em}
+.timeline{max-height:320px;overflow:auto;font-size:.86rem}
+.ev{display:grid;grid-template-columns:72px 1fr;gap:8px;padding:6px 0;border-bottom:1px dashed var(--line2)}
+.ev .t{font-family:"Roboto Mono",monospace;font-size:.7rem;color:var(--ink3);padding-top:2px}
+.ev.warning{color:#8a5300}.ev.error{color:var(--bad)}
+.risk{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.risk .big{font-size:1.6rem;font-weight:600;text-transform:capitalize}
+.hl{animation:hl 1.6s ease}
+@keyframes hl{0%{background:#fff3b0}100%{background:transparent}}
+.foot{color:var(--ink3);font-size:.8rem;padding-bottom:30px}
+.warnbox{background:#fff6e5;border:1px solid #f3d39b;border-radius:8px;padding:10px 12px;font-size:.86rem;margin-top:12px}
+.warnbox ul{margin:6px 0 0;padding-left:18px}
+.rowflex{display:flex;gap:8px;flex-wrap:wrap}
+.spinner{display:inline-block;width:12px;height:12px;border:2px solid var(--lav);border-top-color:var(--blue);border-radius:50%;animation:spin 1s linear infinite;vertical-align:-1px;margin-right:6px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+#runs{max-height:640px;overflow:auto}

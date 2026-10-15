@@ -1,0 +1,2044 @@
+{
+  "articles": [
+    {
+      "id": "news-0008",
+      "title": "Carrick Meridian Energy Ltd named in money laundering probe",
+      "body": "Carrick Meridian Energy Ltd has been named in a money laundering investigation led by the National Crime Agency, according to court documents seen by this newspaper.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2026/09/carrick-meridian-energy-ltd-named-in-money-laundering-probe",
+      "published_at": "2026-09-16",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0069",
+      "title": "Calder Beacon Software appoints new finance director",
+      "body": "Calder Beacon Software announced the appointment of a new finance director, effective next month. The previous holder of the role is retiring.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2026/09/calder-beacon-software-appoints-new-finance-director",
+      "published_at": "2026-09-16",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0182",
+      "title": "Buriti Têxtil participa de feira do setor",
+      "body": "Representantes da Buriti Têxtil apresentaram seus serviços em uma feira do setor nesta semana.",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2026/09/buriti-textil-participa-de-feira-do-setor",
+      "published_at": "2026-09-13",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0103",
+      "title": "Espinhaço Prime Energia multada pelo regulador",
+      "body": "A Espinhaço Prime Energia foi multada em 300 mil euros por falhas no registo de operações. A empresa afirma ter reforçado os controlos internos.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2026/09/espinhaco-prime-energia-multada-pelo-regulador",
+      "published_at": "2026-09-02",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0013",
+      "title": "Ashford Summit Textiles Ltd wins multi-year contract",
+      "body": "Ashford Summit Textiles Ltd has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Leeds site.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2026/09/ashford-summit-textiles-ltd-wins-multi-year-contract",
+      "published_at": "2026-09-01",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0064",
+      "title": "Ashford Logistics Limited opens new facility",
+      "body": "Ashford Logistics Limited has opened a new facility, creating around 11 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2026/09/ashford-logistics-limited-opens-new-facility",
+      "published_at": "2026-09-01",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0180",
+      "title": "Iguaçu Têxtil registra crescimento sólido",
+      "body": "A Iguaçu Têxtil informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2026/08/iguacu-textil-registra-crescimento-solido",
+      "published_at": "2026-08-25",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0114",
+      "title": "Sado Farmacêutica nomeia novo diretor financeiro",
+      "body": "A Sado Farmacêutica anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/08/sado-farmaceutica-nomeia-novo-diretor-financeiro",
+      "published_at": "2026-08-19",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0137",
+      "title": "Tâmega Construções participa em feira do setor",
+      "body": "Representantes da Tâmega Construções apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/08/tamega-construcoes-participa-em-feira-do-setor",
+      "published_at": "2026-08-05",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0172",
+      "title": "Aurora Incorporadora é alvo de investigação por lavagem de dinheiro",
+      "body": "A Aurora Incorporadora é investigada pelo Ministério Público por suspeita de lavagem de dinheiro, segundo documentos obtidos pela reportagem.",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2026/08/aurora-incorporadora-e-alvo-de-investigacao-por-lavagem-de-dinheiro",
+      "published_at": "2026-08-03",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0131",
+      "title": "Douro Nova Construções regista crescimento sólido",
+      "body": "A Douro Nova Construções afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2026/08/douro-nova-construcoes-regista-crescimento-solido",
+      "published_at": "2026-08-02",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0130",
+      "title": "Atlântica Logística participa em feira do setor",
+      "body": "Representantes da Atlântica Logística apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2026/07/atlantica-logistica-participa-em-feira-do-setor",
+      "published_at": "2026-07-31",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0162",
+      "title": "Maracanã Sul Software fecha contrato plurianual",
+      "body": "A Maracanã Sul Software assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Belo Horizonte.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2026/07/maracana-sul-software-fecha-contrato-plurianual",
+      "published_at": "2026-07-28",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0119",
+      "title": "Barroso Global Jogos regista crescimento sólido",
+      "body": "A Barroso Global Jogos afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/07/barroso-global-jogos-regista-crescimento-solido",
+      "published_at": "2026-07-24",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0037",
+      "title": "Thornbury Meridian Media reports steady growth",
+      "body": "Thornbury Meridian Media said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2026/07/thornbury-meridian-media-reports-steady-growth",
+      "published_at": "2026-07-15",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0063",
+      "title": "Hollins Construction wins multi-year contract",
+      "body": "Hollins Construction has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Glasgow site.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2026/07/hollins-construction-wins-multi-year-contract",
+      "published_at": "2026-07-13",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0058",
+      "title": "Ashford Anchor Construction Ltd opens new facility",
+      "body": "Ashford Anchor Construction Ltd has opened a new facility, creating around 59 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2026/07/ashford-anchor-construction-ltd-opens-new-facility",
+      "published_at": "2026-07-12",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0006",
+      "title": "Netherby Group Services named in money laundering probe",
+      "body": "Netherby Group Services has been named in a money laundering investigation led by the National Crime Agency, according to court documents seen by this newspaper.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2026/07/netherby-group-services-named-in-money-laundering-probe",
+      "published_at": "2026-07-11",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0072",
+      "title": "Algarvia Energia participa em feira do setor",
+      "body": "Representantes da Algarvia Energia apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/07/algarvia-energia-participa-em-feira-do-setor",
+      "published_at": "2026-07-07",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0152",
+      "title": "Buriti Alimentos fecha contrato plurianual",
+      "body": "A Buriti Alimentos assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Salvador.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2026/07/buriti-alimentos-fecha-contrato-plurianual",
+      "published_at": "2026-07-07",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0183",
+      "title": "Polícia Federal investiga Buriti Têxtil por fraude em licitações",
+      "body": "A Polícia Federal cumpriu mandados de busca na sede da Buriti Têxtil em operação que apura fraude em licitações. A empresa afirma colaborar com as investigações.",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2026/07/policia-federal-investiga-buriti-textil-por-fraude-em-licitacoes",
+      "published_at": "2026-07-02",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0039",
+      "title": "Millbrook Vector Engineering Ltd opens new facility",
+      "body": "Millbrook Vector Engineering Ltd has opened a new facility, creating around 42 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2026/06/millbrook-vector-engineering-ltd-opens-new-facility",
+      "published_at": "2026-06-23",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0015",
+      "title": "Supplier sues Ashford Summit Textiles Ltd over unpaid invoices",
+      "body": "A former supplier has filed a claim against Ashford Summit Textiles Ltd in the High Court, alleging unpaid invoices of around £478k. Ashford Summit Textiles Ltd said it would defend the claim.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2026/06/supplier-sues-ashford-summit-textiles-ltd-over-unpaid-invoices",
+      "published_at": "2026-06-19",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0187",
+      "title": "Itapuã Energia participa de feira do setor",
+      "body": "Representantes da Itapuã Energia apresentaram seus serviços em uma feira do setor nesta semana.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2026/06/itapua-energia-participa-de-feira-do-setor",
+      "published_at": "2026-06-17",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0147",
+      "title": "Fornecedor processa Pantanal Engenharia por dívida",
+      "body": "Um ex-fornecedor entrou com ação contra a Pantanal Engenharia cobrando cerca de R$ 2 milhões em notas não pagas. A empresa disse que vai recorrer. (CNPJ 01.258.348/0001-46)",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2026/06/fornecedor-processa-pantanal-engenharia-por-divida",
+      "published_at": "2026-06-16",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0067",
+      "title": "Thornbury Pharma Ltd opens new facility",
+      "body": "Thornbury Pharma Ltd has opened a new facility, creating around 58 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2026/06/thornbury-pharma-ltd-opens-new-facility",
+      "published_at": "2026-06-12",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0080",
+      "title": "Quinta Nova Nova Alimentar fecha contrato plurianual",
+      "body": "A Quinta Nova Nova Alimentar assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Braga.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/06/quinta-nova-nova-alimentar-fecha-contrato-plurianual",
+      "published_at": "2026-06-07",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0024",
+      "title": "Marlow Harbour Pharma linked to sanctioned entity",
+      "body": "Documents reviewed by this newspaper show that Marlow Harbour Pharma made repeated payments to a company designated under UK financial sanctions. Marlow Harbour Pharma declined to comment.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2026/06/marlow-harbour-pharma-linked-to-sanctioned-entity",
+      "published_at": "2026-06-04",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0101",
+      "title": "Lusitânia Ibérica Logística fecha contrato plurianual",
+      "body": "A Lusitânia Ibérica Logística assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de origem.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/05/lusitania-iberica-logistica-fecha-contrato-plurianual",
+      "published_at": "2026-05-29",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0068",
+      "title": "Calder Beacon Software opens new facility",
+      "body": "Calder Beacon Software has opened a new facility, creating around 37 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2026/05/calder-beacon-software-opens-new-facility",
+      "published_at": "2026-05-26",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0057",
+      "title": "Cheviot Beacon Foods appoints new finance director",
+      "body": "Cheviot Beacon Foods announced the appointment of a new finance director, effective next month. The previous holder of the role is retiring.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2026/05/cheviot-beacon-foods-appoints-new-finance-director",
+      "published_at": "2026-05-20",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0082",
+      "title": "Alcoa Global Alimentar multada pelo regulador",
+      "body": "A Alcoa Global Alimentar foi multada em 296 mil euros por falhas no registo de operações. A empresa afirma ter reforçado os controlos internos.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/05/alcoa-global-alimentar-multada-pelo-regulador",
+      "published_at": "2026-05-17",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0149",
+      "title": "Tropeiro Farma fecha contrato plurianual",
+      "body": "A Tropeiro Farma assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de São Paulo.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2026/05/tropeiro-farma-fecha-contrato-plurianual",
+      "published_at": "2026-05-15",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0127",
+      "title": "Zêzere Prime Engenharia participa em feira do setor",
+      "body": "Representantes da Zêzere Prime Engenharia apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/05/zezere-prime-engenharia-participa-em-feira-do-setor",
+      "published_at": "2026-05-11",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0023",
+      "title": "Marlow Harbour Pharma reports steady growth",
+      "body": "Marlow Harbour Pharma said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2026/05/marlow-harbour-pharma-reports-steady-growth",
+      "published_at": "2026-05-04",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0144",
+      "title": "Carnaúba Logística é multada por órgão regulador",
+      "body": "A Carnaúba Logística recebeu multa de R$ 1106 mil por falhas em registros obrigatórios. A empresa afirma que já corrigiu os processos.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2026/05/carnauba-logistica-e-multada-por-orgao-regulador",
+      "published_at": "2026-05-01",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0203",
+      "title": "Mantiqueira Logística fecha contrato plurianual",
+      "body": "A Mantiqueira Logística assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Curitiba.",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2026/05/mantiqueira-logistica-fecha-contrato-plurianual",
+      "published_at": "2026-05-01",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0106",
+      "title": "Zêzere Ibérica Farmacêutica regista crescimento sólido",
+      "body": "A Zêzere Ibérica Farmacêutica afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/04/zezere-iberica-farmaceutica-regista-crescimento-solido",
+      "published_at": "2026-04-30",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0138",
+      "title": "Foz Nova Prime Engenharia participa em feira do setor",
+      "body": "Representantes da Foz Nova Prime Engenharia apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/04/foz-nova-prime-engenharia-participa-em-feira-do-setor",
+      "published_at": "2026-04-30",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0195",
+      "title": "Pantanal Software nomeia novo diretor financeiro",
+      "body": "A Pantanal Software anunciou um novo diretor financeiro, que assume no próximo mês. (CNPJ 07.569.422/0001-21)",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2026/04/pantanal-software-nomeia-novo-diretor-financeiro",
+      "published_at": "2026-04-19",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0045",
+      "title": "Cheviot Lumen Pharma Ltd wins multi-year contract",
+      "body": "Cheviot Lumen Pharma Ltd has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Leeds site.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2026/04/cheviot-lumen-pharma-ltd-wins-multi-year-contract",
+      "published_at": "2026-04-04",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0154",
+      "title": "Funcionários da Buriti Alimentos entram em greve",
+      "body": "Funcionários da Buriti Alimentos cruzaram os braços em protesto por reajuste salarial. A empresa diz que segue negociando com o sindicato.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2026/03/funcionarios-da-buriti-alimentos-entram-em-greve",
+      "published_at": "2026-03-30",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0056",
+      "title": "Supplier sues Blackwater Lumen Construction over unpaid invoices",
+      "body": "A former supplier has filed a claim against Blackwater Lumen Construction in the High Court, alleging unpaid invoices of around £460k. Blackwater Lumen Construction said it would defend the claim.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2026/03/supplier-sues-blackwater-lumen-construction-over-unpaid-invoices",
+      "published_at": "2026-03-28",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0107",
+      "title": "Serra Alta Ibérica Alimentar regista crescimento sólido",
+      "body": "A Serra Alta Ibérica Alimentar afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2026/03/serra-alta-iberica-alimentar-regista-crescimento-solido",
+      "published_at": "2026-03-24",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0188",
+      "title": "Polícia Federal investiga Itapuã Energia por fraude em licitações",
+      "body": "A Polícia Federal cumpriu mandados de busca na sede da Itapuã Energia em operação que apura fraude em licitações. A empresa afirma colaborar com as investigações.",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2026/03/policia-federal-investiga-itapua-energia-por-fraude-em-licitacoes",
+      "published_at": "2026-03-21",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0142",
+      "title": "Carnaúba Logística nomeia novo diretor financeiro",
+      "body": "A Carnaúba Logística anunciou um novo diretor financeiro, que assume no próximo mês. (CNPJ 69.757.973/0001-76)",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2026/03/carnauba-logistica-nomeia-novo-diretor-financeiro",
+      "published_at": "2026-03-20",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0157",
+      "title": "Xingu Verde Têxtil fecha contrato plurianual",
+      "body": "A Xingu Verde Têxtil assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Porto Alegre. (CNPJ 49.980.835/0001-44)",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2026/03/xingu-verde-textil-fecha-contrato-plurianual",
+      "published_at": "2026-03-13",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0132",
+      "title": "Douro Nova Construções participa em feira do setor",
+      "body": "Representantes da Douro Nova Construções apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2026/03/douro-nova-construcoes-participa-em-feira-do-setor",
+      "published_at": "2026-03-10",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0120",
+      "title": "Atlântica Câmbios nomeia novo diretor financeiro",
+      "body": "A Atlântica Câmbios anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/03/atlantica-cambios-nomeia-novo-diretor-financeiro",
+      "published_at": "2026-03-08",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0134",
+      "title": "Quinta Nova Nova Câmbios regista crescimento sólido",
+      "body": "A Quinta Nova Nova Câmbios afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2026/03/quinta-nova-nova-cambios-regista-crescimento-solido",
+      "published_at": "2026-03-07",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0170",
+      "title": "Aurora Software registra crescimento sólido",
+      "body": "A Aurora Software informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2026/03/aurora-software-registra-crescimento-solido",
+      "published_at": "2026-03-05",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0160",
+      "title": "Serra Gaúcha Farma registra crescimento sólido",
+      "body": "A Serra Gaúcha Farma informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2026/03/serra-gaucha-farma-registra-crescimento-solido",
+      "published_at": "2026-03-04",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0009",
+      "title": "Supplier sues Carrick Meridian Energy Ltd over unpaid invoices",
+      "body": "A former supplier has filed a claim against Carrick Meridian Energy Ltd in the High Court, alleging unpaid invoices of around £352k. Carrick Meridian Energy Ltd said it would defend the claim.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2026/03/supplier-sues-carrick-meridian-energy-ltd-over-unpaid-invoices",
+      "published_at": "2026-03-02",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0125",
+      "title": "Bairrada Engenharia nomeia novo diretor financeiro",
+      "body": "A Bairrada Engenharia anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/03/bairrada-engenharia-nomeia-novo-diretor-financeiro",
+      "published_at": "2026-03-02",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0092",
+      "title": "Trabalhadores da Mondego Ibérica Engenharia anunciam greve",
+      "body": "Os trabalhadores da Mondego Ibérica Engenharia aprovaram uma greve por aumentos salariais. A administração diz que as negociações continuam.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2026/02/trabalhadores-da-mondego-iberica-engenharia-anunciam-greve",
+      "published_at": "2026-02-22",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0168",
+      "title": "Jequitibá Energia nomeia novo diretor financeiro",
+      "body": "A Jequitibá Energia anunciou um novo diretor financeiro, que assume no próximo mês.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2026/02/jequitiba-energia-nomeia-novo-diretor-financeiro",
+      "published_at": "2026-02-15",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0077",
+      "title": "Polícia Judiciária investiga Tejo Ibérica Engenharia por suspeitas de fraude",
+      "body": "A Polícia Judiciária realizou buscas nas instalações da Tejo Ibérica Engenharia no âmbito de uma investigação por fraude fiscal qualificada. A empresa diz estar a colaborar com as autoridades.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2026/02/policia-judiciaria-investiga-tejo-iberica-engenharia-por-suspeitas-de-",
+      "published_at": "2026-02-14",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0145",
+      "title": "Tropeiro Ativos Digitais fecha contrato plurianual",
+      "body": "A Tropeiro Ativos Digitais assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Salvador. (CNPJ 32.794.744/0001-11)",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2026/02/tropeiro-ativos-digitais-fecha-contrato-plurianual",
+      "published_at": "2026-02-09",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0181",
+      "title": "Buriti Têxtil fecha contrato plurianual",
+      "body": "A Buriti Têxtil assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Porto Alegre.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2026/02/buriti-textil-fecha-contrato-plurianual",
+      "published_at": "2026-02-06",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0111",
+      "title": "Polícia Judiciária investiga Sado Logística por suspeitas de fraude",
+      "body": "A Polícia Judiciária realizou buscas nas instalações da Sado Logística no âmbito de uma investigação por fraude fiscal qualificada. A empresa diz estar a colaborar com as autoridades.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/02/policia-judiciaria-investiga-sado-logistica-por-suspeitas-de-fraude",
+      "published_at": "2026-02-05",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0175",
+      "title": "Caatinga Têxtil registra crescimento sólido",
+      "body": "A Caatinga Têxtil informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2026/01/caatinga-textil-registra-crescimento-solido",
+      "published_at": "2026-01-19",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0007",
+      "title": "Glenrothes Harbour Gaming attends industry trade fair",
+      "body": "Representatives of Glenrothes Harbour Gaming presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2026/01/glenrothes-harbour-gaming-attends-industry-trade-fair",
+      "published_at": "2026-01-18",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0060",
+      "title": "Cheviot Anchor Media appoints new finance director",
+      "body": "Cheviot Anchor Media announced the appointment of a new finance director, effective next month. The previous holder of the role is retiring.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2026/01/cheviot-anchor-media-appoints-new-finance-director",
+      "published_at": "2026-01-17",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0112",
+      "title": "Quinta Nova Prime Farmacêutica regista crescimento sólido",
+      "body": "A Quinta Nova Prime Farmacêutica afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2026/01/quinta-nova-prime-farmaceutica-regista-crescimento-solido",
+      "published_at": "2026-01-17",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0028",
+      "title": "Kingsmere Pharma reports steady growth",
+      "body": "Kingsmere Pharma said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2026/01/kingsmere-pharma-reports-steady-growth",
+      "published_at": "2026-01-12",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0081",
+      "title": "Quinta Nova Nova Alimentar participa em feira do setor",
+      "body": "Representantes da Quinta Nova Nova Alimentar apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/01/quinta-nova-nova-alimentar-participa-em-feira-do-setor",
+      "published_at": "2026-01-11",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0047",
+      "title": "Fairholme Foods Ltd reports steady growth",
+      "body": "Fairholme Foods Ltd said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2026/01/fairholme-foods-ltd-reports-steady-growth",
+      "published_at": "2026-01-07",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0146",
+      "title": "Pantanal Engenharia fecha contrato plurianual",
+      "body": "A Pantanal Engenharia assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Curitiba.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2026/01/pantanal-engenharia-fecha-contrato-plurianual",
+      "published_at": "2026-01-07",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0095",
+      "title": "Mondego Ibérica Construções participa em feira do setor",
+      "body": "Representantes da Mondego Ibérica Construções apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2026/01/mondego-iberica-construcoes-participa-em-feira-do-setor",
+      "published_at": "2026-01-03",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0054",
+      "title": "Blackwater Lumen Construction opens new facility",
+      "body": "Blackwater Lumen Construction has opened a new facility, creating around 13 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/12/blackwater-lumen-construction-opens-new-facility",
+      "published_at": "2025-12-13",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0030",
+      "title": "Supplier sues Kingsmere Pharma over unpaid invoices",
+      "body": "A former supplier has filed a claim against Kingsmere Pharma in the High Court, alleging unpaid invoices of around £712k. Kingsmere Pharma said it would defend the claim.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/12/supplier-sues-kingsmere-pharma-over-unpaid-invoices",
+      "published_at": "2025-12-11",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0040",
+      "title": "Workers at Millbrook Vector Engineering Ltd vote to strike",
+      "body": "Staff at Millbrook Vector Engineering Ltd have voted to strike in a dispute over pay. The company said talks with the union were continuing.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/12/workers-at-millbrook-vector-engineering-ltd-vote-to-strike",
+      "published_at": "2025-12-05",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0158",
+      "title": "Xingu Verde Têxtil fecha contrato plurianual",
+      "body": "A Xingu Verde Têxtil assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Porto Alegre.",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2025/12/xingu-verde-textil-fecha-contrato-plurianual",
+      "published_at": "2025-12-03",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0025",
+      "title": "Marlow Harbour Pharma fined by regulator",
+      "body": "Marlow Harbour Pharma has been fined £103k by a regulator over record-keeping failures. The company said it had since strengthened its controls.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2025/11/marlow-harbour-pharma-fined-by-regulator",
+      "published_at": "2025-11-27",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0084",
+      "title": "Tejo Têxteis regista crescimento sólido",
+      "body": "A Tejo Têxteis afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/11/tejo-texteis-regista-crescimento-solido",
+      "published_at": "2025-11-26",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0043",
+      "title": "Netherby Harbour Logistics opens new facility",
+      "body": "Netherby Harbour Logistics has opened a new facility, creating around 80 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/11/netherby-harbour-logistics-opens-new-facility",
+      "published_at": "2025-11-22",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0204",
+      "title": "Mantiqueira Incorporadora é alvo de investigação por lavagem de dinheiro",
+      "body": "A Mantiqueira Incorporadora é investigada pelo Ministério Público por suspeita de lavagem de dinheiro, segundo documentos obtidos pela reportagem.",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2025/11/mantiqueira-incorporadora-e-alvo-de-investigacao-por-lavagem-de-dinhei",
+      "published_at": "2025-11-22",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0192",
+      "title": "Juriti Engenharia fecha contrato plurianual",
+      "body": "A Juriti Engenharia assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Rio de Janeiro.",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2025/11/juriti-engenharia-fecha-contrato-plurianual",
+      "published_at": "2025-11-21",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0004",
+      "title": "Netherby Construction Limited wins multi-year contract",
+      "body": "Netherby Construction Limited has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Edinburgh site.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/11/netherby-construction-limited-wins-multi-year-contract",
+      "published_at": "2025-11-18",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0123",
+      "title": "Cávado Ibérica Media fecha contrato plurianual",
+      "body": "A Cávado Ibérica Media assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Braga.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/11/cavado-iberica-media-fecha-contrato-plurianual",
+      "published_at": "2025-11-17",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0012",
+      "title": "Ashford Summit Textiles Ltd wins multi-year contract",
+      "body": "Ashford Summit Textiles Ltd has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Leeds site.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/11/ashford-summit-textiles-ltd-wins-multi-year-contract",
+      "published_at": "2025-11-15",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0001",
+      "title": "Hawksmoor Meridian Textiles reports steady growth",
+      "body": "Hawksmoor Meridian Textiles said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/11/hawksmoor-meridian-textiles-reports-steady-growth",
+      "published_at": "2025-11-05",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0083",
+      "title": "Tejo Têxteis participa em feira do setor",
+      "body": "Representantes da Tejo Têxteis apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/11/tejo-texteis-participa-em-feira-do-setor",
+      "published_at": "2025-11-05",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0161",
+      "title": "Serra Gaúcha Farma registra crescimento sólido",
+      "body": "A Serra Gaúcha Farma informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior. (CNPJ 02.575.988/0001-42)",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2025/11/serra-gaucha-farma-registra-crescimento-solido",
+      "published_at": "2025-11-01",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0171",
+      "title": "Aurora Software registra crescimento sólido",
+      "body": "A Aurora Software informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior. (CNPJ 97.931.996/0001-90)",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/10/aurora-software-registra-crescimento-solido",
+      "published_at": "2025-10-31",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0136",
+      "title": "Tâmega Construções fecha contrato plurianual",
+      "body": "A Tâmega Construções assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Faro.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/10/tamega-construcoes-fecha-contrato-plurianual",
+      "published_at": "2025-10-30",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0116",
+      "title": "Alvorada Engenharia nomeia novo diretor financeiro",
+      "body": "A Alvorada Engenharia anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/10/alvorada-engenharia-nomeia-novo-diretor-financeiro",
+      "published_at": "2025-10-28",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0108",
+      "title": "Nogueira Nova Farmacêutica regista crescimento sólido",
+      "body": "A Nogueira Nova Farmacêutica afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/10/nogueira-nova-farmaceutica-regista-crescimento-solido",
+      "published_at": "2025-10-26",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0079",
+      "title": "Portela Ibérica Software fecha contrato plurianual",
+      "body": "A Portela Ibérica Software assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Faro.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/10/portela-iberica-software-fecha-contrato-plurianual",
+      "published_at": "2025-10-19",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0048",
+      "title": "Fairholme Foods Ltd reports steady growth",
+      "body": "Fairholme Foods Ltd said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/10/fairholme-foods-ltd-reports-steady-growth",
+      "published_at": "2025-10-18",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0051",
+      "title": "Davenport Software PLC wins multi-year contract",
+      "body": "Davenport Software PLC has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its London site.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/10/davenport-software-plc-wins-multi-year-contract",
+      "published_at": "2025-10-13",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0099",
+      "title": "Espinhaço Nova Logística ligada a entidade sob sanções internacionais",
+      "body": "Documentos consultados por este jornal mostram pagamentos da Espinhaço Nova Logística a uma entidade sujeita a sanções financeiras da União Europeia. A empresa não comentou.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/10/espinhaco-nova-logistica-ligada-a-entidade-sob-sancoes-internacionais",
+      "published_at": "2025-10-08",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0091",
+      "title": "Polícia Judiciária investiga Mondego Ibérica Engenharia por suspeitas de fraude",
+      "body": "A Polícia Judiciária realizou buscas nas instalações da Mondego Ibérica Engenharia no âmbito de uma investigação por fraude fiscal qualificada. A empresa diz estar a colaborar com as autoridades.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/10/policia-judiciaria-investiga-mondego-iberica-engenharia-por-suspeitas-",
+      "published_at": "2025-10-05",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0159",
+      "title": "Sabiá Mídia fecha contrato plurianual",
+      "body": "A Sabiá Mídia assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de São Paulo.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2025/10/sabia-midia-fecha-contrato-plurianual",
+      "published_at": "2025-10-05",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0046",
+      "title": "Yarrow Digital Assets Ltd reports steady growth",
+      "body": "Yarrow Digital Assets Ltd said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/10/yarrow-digital-assets-ltd-reports-steady-growth",
+      "published_at": "2025-10-04",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0185",
+      "title": "Jatobá Software fecha contrato plurianual",
+      "body": "A Jatobá Software assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Goiânia.",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2025/10/jatoba-software-fecha-contrato-plurianual",
+      "published_at": "2025-10-04",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0018",
+      "title": "Stanmore Harbour Foods Ltd appoints new finance director",
+      "body": "Stanmore Harbour Foods Ltd announced the appointment of a new finance director, effective next month. The previous holder of the role is retiring.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/09/stanmore-harbour-foods-ltd-appoints-new-finance-director",
+      "published_at": "2025-09-30",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0122",
+      "title": "Belém Norte Prime Alimentar regista crescimento sólido",
+      "body": "A Belém Norte Prime Alimentar afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/09/belem-norte-prime-alimentar-regista-crescimento-solido",
+      "published_at": "2025-09-23",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0078",
+      "title": "Portela Ibérica Software regista crescimento sólido",
+      "body": "A Portela Ibérica Software afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/09/portela-iberica-software-regista-crescimento-solido",
+      "published_at": "2025-09-20",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0062",
+      "title": "Hollins Construction reports steady growth",
+      "body": "Hollins Construction said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/09/hollins-construction-reports-steady-growth",
+      "published_at": "2025-09-19",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0102",
+      "title": "Espinhaço Prime Energia participa em feira do setor",
+      "body": "Representantes da Espinhaço Prime Energia apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/09/espinhaco-prime-energia-participa-em-feira-do-setor",
+      "published_at": "2025-09-18",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0109",
+      "title": "Sado Logística fecha contrato plurianual",
+      "body": "A Sado Logística assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Guimarães.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/09/sado-logistica-fecha-contrato-plurianual",
+      "published_at": "2025-09-12",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0098",
+      "title": "Espinhaço Nova Logística fecha contrato plurianual",
+      "body": "A Espinhaço Nova Logística assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Porto.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/09/espinhaco-nova-logistica-fecha-contrato-plurianual",
+      "published_at": "2025-09-09",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0189",
+      "title": "Polícia Federal investiga Vale Azul Energia por fraude em licitações",
+      "body": "A Polícia Federal cumpriu mandados de busca na sede da Vale Azul Energia em operação que apura fraude em licitações. A empresa afirma colaborar com as investigações. (CNPJ 20.595.174/0001-51)",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2025/09/policia-federal-investiga-vale-azul-energia-por-fraude-em-licitacoes",
+      "published_at": "2025-09-08",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0061",
+      "title": "Kingsmere Vector Engineering reports steady growth",
+      "body": "Kingsmere Vector Engineering said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/09/kingsmere-vector-engineering-reports-steady-growth",
+      "published_at": "2025-09-07",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0148",
+      "title": "Jequitibá Têxtil fecha contrato plurianual",
+      "body": "A Jequitibá Têxtil assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Belo Horizonte.",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2025/09/jequitiba-textil-fecha-contrato-plurianual",
+      "published_at": "2025-09-06",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0200",
+      "title": "Mandacaru Alimentos fecha contrato plurianual",
+      "body": "A Mandacaru Alimentos assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Florianópolis. (CNPJ 49.782.686/0001-09)",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/09/mandacaru-alimentos-fecha-contrato-plurianual",
+      "published_at": "2025-09-02",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0066",
+      "title": "Thornbury Pharma Ltd attends industry trade fair",
+      "body": "Representatives of Thornbury Pharma Ltd presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/08/thornbury-pharma-ltd-attends-industry-trade-fair",
+      "published_at": "2025-08-30",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0153",
+      "title": "Buriti Alimentos teria ligação com entidade sancionada",
+      "body": "Documentos obtidos pela reportagem indicam pagamentos da Buriti Alimentos a empresa incluída em lista de sanções internacionais. A empresa não se manifestou. (CNPJ 93.489.927/0001-18)",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2025/08/buriti-alimentos-teria-ligacao-com-entidade-sancionada",
+      "published_at": "2025-08-22",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0167",
+      "title": "Itapuã Logística registra crescimento sólido",
+      "body": "A Itapuã Logística informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2025/08/itapua-logistica-registra-crescimento-solido",
+      "published_at": "2025-08-21",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0169",
+      "title": "Vale Azul Logística nomeia novo diretor financeiro",
+      "body": "A Vale Azul Logística anunciou um novo diretor financeiro, que assume no próximo mês. (CNPJ 50.485.550/0001-16)",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2025/08/vale-azul-logistica-nomeia-novo-diretor-financeiro",
+      "published_at": "2025-08-20",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0129",
+      "title": "Zêzere Imobiliária visada em inquérito por branqueamento de capitais",
+      "body": "A Zêzere Imobiliária é visada num inquérito do Ministério Público por suspeitas de branqueamento de capitais, segundo documentos consultados por este jornal.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/08/zezere-imobiliaria-visada-em-inquerito-por-branqueamento-de-capitais",
+      "published_at": "2025-08-18",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0196",
+      "title": "Carnaúba Alimentos fecha contrato plurianual",
+      "body": "A Carnaúba Alimentos assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Recife. (CNPJ 86.390.578/0001-17)",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2025/08/carnauba-alimentos-fecha-contrato-plurianual",
+      "published_at": "2025-08-13",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0019",
+      "title": "Fairholme Harbour Construction attends industry trade fair",
+      "body": "Representatives of Fairholme Harbour Construction presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/08/fairholme-harbour-construction-attends-industry-trade-fair",
+      "published_at": "2025-08-08",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0165",
+      "title": "Maracanã Sul Farma fecha contrato plurianual",
+      "body": "A Maracanã Sul Farma assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de São Paulo.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/08/maracana-sul-farma-fecha-contrato-plurianual",
+      "published_at": "2025-08-08",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0094",
+      "title": "Tejo Farmacêutica regista crescimento sólido",
+      "body": "A Tejo Farmacêutica afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/08/tejo-farmaceutica-regista-crescimento-solido",
+      "published_at": "2025-08-07",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0163",
+      "title": "Polícia Federal investiga Maracanã Sul Software por fraude em licitações",
+      "body": "A Polícia Federal cumpriu mandados de busca na sede da Maracanã Sul Software em operação que apura fraude em licitações. A empresa afirma colaborar com as investigações.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/08/policia-federal-investiga-maracana-sul-software-por-fraude-em-licitaco",
+      "published_at": "2025-08-07",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0105",
+      "title": "Lezíria Ibérica Energia nomeia novo diretor financeiro",
+      "body": "A Lezíria Ibérica Energia anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/08/leziria-iberica-energia-nomeia-novo-diretor-financeiro",
+      "published_at": "2025-08-06",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0124",
+      "title": "Estrela Alimentar regista crescimento sólido",
+      "body": "A Estrela Alimentar afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/07/estrela-alimentar-regista-crescimento-solido",
+      "published_at": "2025-07-29",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0115",
+      "title": "Sado Farmacêutica fecha contrato plurianual",
+      "body": "A Sado Farmacêutica assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Setúbal.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/07/sado-farmaceutica-fecha-contrato-plurianual",
+      "published_at": "2025-07-27",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0090",
+      "title": "Costa Verde Nova Engenharia fecha contrato plurianual",
+      "body": "A Costa Verde Nova Engenharia assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Aveiro.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/07/costa-verde-nova-engenharia-fecha-contrato-plurianual",
+      "published_at": "2025-07-22",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0011",
+      "title": "Hollins Anchor Textiles opens new facility",
+      "body": "Hollins Anchor Textiles has opened a new facility, creating around 58 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/07/hollins-anchor-textiles-opens-new-facility",
+      "published_at": "2025-07-21",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0190",
+      "title": "Jacarandá Câmbio registra crescimento sólido",
+      "body": "A Jacarandá Câmbio informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/07/jacaranda-cambio-registra-crescimento-solido",
+      "published_at": "2025-07-19",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0033",
+      "title": "Elmstead Software attends industry trade fair",
+      "body": "Representatives of Elmstead Software presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2025/07/elmstead-software-attends-industry-trade-fair",
+      "published_at": "2025-07-11",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0074",
+      "title": "Algarvia Energia multada pelo regulador",
+      "body": "A Algarvia Energia foi multada em 228 mil euros por falhas no registo de operações. A empresa afirma ter reforçado os controlos internos.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/07/algarvia-energia-multada-pelo-regulador",
+      "published_at": "2025-07-10",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0010",
+      "title": "Hollins Anchor Textiles attends industry trade fair",
+      "body": "Representatives of Hollins Anchor Textiles presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/07/hollins-anchor-textiles-attends-industry-trade-fair",
+      "published_at": "2025-07-05",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0156",
+      "title": "Ipê Roxo Ativos Digitais registra crescimento sólido",
+      "body": "A Ipê Roxo Ativos Digitais informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2025/07/ipe-roxo-ativos-digitais-registra-crescimento-solido",
+      "published_at": "2025-07-02",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0097",
+      "title": "Espinhaço Nova Logística nomeia novo diretor financeiro",
+      "body": "A Espinhaço Nova Logística anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/06/espinhaco-nova-logistica-nomeia-novo-diretor-financeiro",
+      "published_at": "2025-06-27",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0174",
+      "title": "Coqueiral Software participa de feira do setor",
+      "body": "Representantes da Coqueiral Software apresentaram seus serviços em uma feira do setor nesta semana.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2025/06/coqueiral-software-participa-de-feira-do-setor",
+      "published_at": "2025-06-25",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0177",
+      "title": "Serra Gaúcha Software participa de feira do setor",
+      "body": "Representantes da Serra Gaúcha Software apresentaram seus serviços em uma feira do setor nesta semana.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/06/serra-gaucha-software-participa-de-feira-do-setor",
+      "published_at": "2025-06-25",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0014",
+      "title": "Supplier sues Ashford Summit Textiles Ltd over unpaid invoices",
+      "body": "A former supplier has filed a claim against Ashford Summit Textiles Ltd in the High Court, alleging unpaid invoices of around £387k. Ashford Summit Textiles Ltd said it would defend the claim.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/06/supplier-sues-ashford-summit-textiles-ltd-over-unpaid-invoices",
+      "published_at": "2025-06-24",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0197",
+      "title": "Cerrado Software registra crescimento sólido",
+      "body": "A Cerrado Software informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/06/cerrado-software-registra-crescimento-solido",
+      "published_at": "2025-06-23",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0133",
+      "title": "Portela Prime Construções fecha contrato plurianual",
+      "body": "A Portela Prime Construções assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Faro.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/06/portela-prime-construcoes-fecha-contrato-plurianual",
+      "published_at": "2025-06-21",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0140",
+      "title": "Nogueira Global Construções participa em feira do setor",
+      "body": "Representantes da Nogueira Global Construções apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/06/nogueira-global-construcoes-participa-em-feira-do-setor",
+      "published_at": "2025-06-15",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0164",
+      "title": "Maracanã Sul Software é multada por órgão regulador",
+      "body": "A Maracanã Sul Software recebeu multa de R$ 1461 mil por falhas em registros obrigatórios. A empresa afirma que já corrigiu os processos.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2025/06/maracana-sul-software-e-multada-por-orgao-regulador",
+      "published_at": "2025-06-15",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0186",
+      "title": "Tropeiro Energia registra crescimento sólido",
+      "body": "A Tropeiro Energia informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2025/06/tropeiro-energia-registra-crescimento-solido",
+      "published_at": "2025-06-15",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0017",
+      "title": "Oakridge Harbour Media Ltd attends industry trade fair",
+      "body": "Representatives of Oakridge Harbour Media Ltd presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/06/oakridge-harbour-media-ltd-attends-industry-trade-fair",
+      "published_at": "2025-06-13",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0059",
+      "title": "Ashford Anchor Construction Ltd reports steady growth",
+      "body": "Ashford Anchor Construction Ltd said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/06/ashford-anchor-construction-ltd-reports-steady-growth",
+      "published_at": "2025-06-12",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0026",
+      "title": "Oakridge Textiles PLC reports steady growth",
+      "body": "Oakridge Textiles PLC said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/06/oakridge-textiles-plc-reports-steady-growth",
+      "published_at": "2025-06-08",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0071",
+      "title": "Davenport Vector Software wins multi-year contract",
+      "body": "Davenport Vector Software has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Glasgow site.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/06/davenport-vector-software-wins-multi-year-contract",
+      "published_at": "2025-06-08",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0003",
+      "title": "Stanmore Summit Gaming attends industry trade fair",
+      "body": "Representatives of Stanmore Summit Gaming presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/05/stanmore-summit-gaming-attends-industry-trade-fair",
+      "published_at": "2025-05-30",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0065",
+      "title": "Police investigate Ashford Logistics Limited over alleged invoice fraud",
+      "body": "Police have opened an investigation into alleged invoice fraud at Ashford Logistics Limited. Two people have been interviewed under caution. Ashford Logistics Limited said it was cooperating fully.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/05/police-investigate-ashford-logistics-limited-over-alleged-invoice-frau",
+      "published_at": "2025-05-27",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0150",
+      "title": "Buriti Software fecha contrato plurianual",
+      "body": "A Buriti Software assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de São Paulo.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2025/05/buriti-software-fecha-contrato-plurianual",
+      "published_at": "2025-05-25",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0121",
+      "title": "Barroso Câmbios regista crescimento sólido",
+      "body": "A Barroso Câmbios afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/05/barroso-cambios-regista-crescimento-solido",
+      "published_at": "2025-05-24",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0139",
+      "title": "Foz Nova Prime Engenharia participa em feira do setor",
+      "body": "Representantes da Foz Nova Prime Engenharia apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/05/foz-nova-prime-engenharia-participa-em-feira-do-setor",
+      "published_at": "2025-05-18",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0087",
+      "title": "Zêzere Imobiliária visada em inquérito por branqueamento de capitais",
+      "body": "A Zêzere Imobiliária é visada num inquérito do Ministério Público por suspeitas de branqueamento de capitais, segundo documentos consultados por este jornal.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/05/zezere-imobiliaria-visada-em-inquerito-por-branqueamento-de-capitais",
+      "published_at": "2025-05-17",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0166",
+      "title": "Maracanã Sul Farma registra crescimento sólido",
+      "body": "A Maracanã Sul Farma informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior. (CNPJ 49.031.083/0001-75)",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2025/05/maracana-sul-farma-registra-crescimento-solido",
+      "published_at": "2025-05-16",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0201",
+      "title": "Mandacaru Alimentos participa de feira do setor",
+      "body": "Representantes da Mandacaru Alimentos apresentaram seus serviços em uma feira do setor nesta semana.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/05/mandacaru-alimentos-participa-de-feira-do-setor",
+      "published_at": "2025-05-15",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0118",
+      "title": "Barroso Global Jogos regista crescimento sólido",
+      "body": "A Barroso Global Jogos afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/05/barroso-global-jogos-regista-crescimento-solido",
+      "published_at": "2025-05-09",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0113",
+      "title": "Quinta Nova Prime Farmacêutica regista crescimento sólido",
+      "body": "A Quinta Nova Prime Farmacêutica afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/05/quinta-nova-prime-farmaceutica-regista-crescimento-solido",
+      "published_at": "2025-05-06",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0176",
+      "title": "Caatinga Têxtil registra crescimento sólido",
+      "body": "A Caatinga Têxtil informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2025/05/caatinga-textil-registra-crescimento-solido",
+      "published_at": "2025-05-02",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0198",
+      "title": "Cerrado Software fecha contrato plurianual",
+      "body": "A Cerrado Software assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Florianópolis.",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2025/05/cerrado-software-fecha-contrato-plurianual",
+      "published_at": "2025-05-01",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0135",
+      "title": "Quinta Nova Nova Câmbios participa em feira do setor",
+      "body": "Representantes da Quinta Nova Nova Câmbios apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/04/quinta-nova-nova-cambios-participa-em-feira-do-setor",
+      "published_at": "2025-04-21",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0021",
+      "title": "Fairholme Group Services named in money laundering probe",
+      "body": "Fairholme Group Services has been named in a money laundering investigation led by the National Crime Agency, according to court documents seen by this newspaper.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/04/fairholme-group-services-named-in-money-laundering-probe",
+      "published_at": "2025-04-20",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0038",
+      "title": "Millbrook Vector Engineering Ltd opens new facility",
+      "body": "Millbrook Vector Engineering Ltd has opened a new facility, creating around 61 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2025/04/millbrook-vector-engineering-ltd-opens-new-facility",
+      "published_at": "2025-04-17",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0055",
+      "title": "Blackwater Lumen Construction opens new facility",
+      "body": "Blackwater Lumen Construction has opened a new facility, creating around 14 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/04/blackwater-lumen-construction-opens-new-facility",
+      "published_at": "2025-04-17",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0020",
+      "title": "Fairholme Harbour Construction wins multi-year contract",
+      "body": "Fairholme Harbour Construction has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Newcastle upon Tyne site.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/04/fairholme-harbour-construction-wins-multi-year-contract",
+      "published_at": "2025-04-13",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0029",
+      "title": "Workers at Kingsmere Pharma vote to strike",
+      "body": "Staff at Kingsmere Pharma have voted to strike in a dispute over pay. The company said talks with the union were continuing.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/04/workers-at-kingsmere-pharma-vote-to-strike",
+      "published_at": "2025-04-12",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0016",
+      "title": "Oakridge Harbour Media Ltd reports steady growth",
+      "body": "Oakridge Harbour Media Ltd said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/04/oakridge-harbour-media-ltd-reports-steady-growth",
+      "published_at": "2025-04-08",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0178",
+      "title": "Coqueiral Mídia registra crescimento sólido",
+      "body": "A Coqueiral Mídia informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior. (CNPJ 57.934.274/0001-75)",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/04/coqueiral-midia-registra-crescimento-solido",
+      "published_at": "2025-04-03",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0179",
+      "title": "Iguaçu Têxtil nomeia novo diretor financeiro",
+      "body": "A Iguaçu Têxtil anunciou um novo diretor financeiro, que assume no próximo mês.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/03/iguacu-textil-nomeia-novo-diretor-financeiro",
+      "published_at": "2025-03-22",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0031",
+      "title": "Ashford Textiles wins multi-year contract",
+      "body": "Ashford Textiles has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Glasgow site.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/03/ashford-textiles-wins-multi-year-contract",
+      "published_at": "2025-03-16",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0034",
+      "title": "Millbrook Media Ltd linked to sanctioned entity",
+      "body": "Documents reviewed by this newspaper show that Millbrook Media Ltd made repeated payments to a company designated under UK financial sanctions. Millbrook Media Ltd declined to comment.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2025/03/millbrook-media-ltd-linked-to-sanctioned-entity",
+      "published_at": "2025-03-08",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0128",
+      "title": "Zêzere Prime Engenharia regista crescimento sólido",
+      "body": "A Zêzere Prime Engenharia afirmou que a atividade se manteve dentro das expectativas, com a carteira de encomendas em alta face ao ano anterior.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/03/zezere-prime-engenharia-regista-crescimento-solido",
+      "published_at": "2025-03-03",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0075",
+      "title": "Caramulo Lux Logística fecha contrato plurianual",
+      "body": "A Caramulo Lux Logística assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Porto.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/03/caramulo-lux-logistica-fecha-contrato-plurianual",
+      "published_at": "2025-03-02",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0076",
+      "title": "Tejo Ibérica Engenharia nomeia novo diretor financeiro",
+      "body": "A Tejo Ibérica Engenharia anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/03/tejo-iberica-engenharia-nomeia-novo-diretor-financeiro",
+      "published_at": "2025-03-02",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0191",
+      "title": "Juriti Engenharia nomeia novo diretor financeiro",
+      "body": "A Juriti Engenharia anunciou um novo diretor financeiro, que assume no próximo mês.",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2025/03/juriti-engenharia-nomeia-novo-diretor-financeiro",
+      "published_at": "2025-03-02",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0036",
+      "title": "Thornbury Meridian Media appoints new finance director",
+      "body": "Thornbury Meridian Media announced the appointment of a new finance director, effective next month. The previous holder of the role is retiring.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2025/02/thornbury-meridian-media-appoints-new-finance-director",
+      "published_at": "2025-02-27",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0173",
+      "title": "Aurora Mídia fecha contrato plurianual",
+      "body": "A Aurora Mídia assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Curitiba. (CNPJ 83.532.501/0001-46)",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/02/aurora-midia-fecha-contrato-plurianual",
+      "published_at": "2025-02-26",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0044",
+      "title": "Cheviot Lumen Pharma Ltd wins multi-year contract",
+      "body": "Cheviot Lumen Pharma Ltd has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Leeds site.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/02/cheviot-lumen-pharma-ltd-wins-multi-year-contract",
+      "published_at": "2025-02-23",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0110",
+      "title": "Sado Logística fecha contrato plurianual",
+      "body": "A Sado Logística assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Guimarães.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/02/sado-logistica-fecha-contrato-plurianual",
+      "published_at": "2025-02-22",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0027",
+      "title": "Kingsmere Pharma wins multi-year contract",
+      "body": "Kingsmere Pharma has secured a multi-year supply agreement, its chief executive said on Tuesday. The company expects the deal to support hiring at its Newcastle upon Tyne site.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2025/02/kingsmere-pharma-wins-multi-year-contract",
+      "published_at": "2025-02-21",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0143",
+      "title": "Carnaúba Logística registra crescimento sólido",
+      "body": "A Carnaúba Logística informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/02/carnauba-logistica-registra-crescimento-solido",
+      "published_at": "2025-02-21",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0184",
+      "title": "Fornecedor processa Buriti Têxtil por dívida",
+      "body": "Um ex-fornecedor entrou com ação contra a Buriti Têxtil cobrando cerca de R$ 1 milhões em notas não pagas. A empresa disse que vai recorrer. (CNPJ 11.168.312/0001-25)",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/02/fornecedor-processa-buriti-textil-por-divida",
+      "published_at": "2025-02-19",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0089",
+      "title": "Alvorada Energia nomeia novo diretor financeiro",
+      "body": "A Alvorada Energia anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/02/alvorada-energia-nomeia-novo-diretor-financeiro",
+      "published_at": "2025-02-17",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0202",
+      "title": "Mantiqueira Logística participa de feira do setor",
+      "body": "Representantes da Mantiqueira Logística apresentaram seus serviços em uma feira do setor nesta semana. (CNPJ 11.694.497/0001-01)",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2025/02/mantiqueira-logistica-participa-de-feira-do-setor",
+      "published_at": "2025-02-17",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0126",
+      "title": "Polícia Judiciária investiga Bairrada Engenharia por suspeitas de fraude",
+      "body": "A Polícia Judiciária realizou buscas nas instalações da Bairrada Engenharia no âmbito de uma investigação por fraude fiscal qualificada. A empresa diz estar a colaborar com as autoridades.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2025/02/policia-judiciaria-investiga-bairrada-engenharia-por-suspeitas-de-frau",
+      "published_at": "2025-02-14",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0002",
+      "title": "Hawksmoor Meridian Textiles reports steady growth",
+      "body": "Hawksmoor Meridian Textiles said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2025/02/hawksmoor-meridian-textiles-reports-steady-growth",
+      "published_at": "2025-02-06",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0073",
+      "title": "Algarvia Energia ligada a entidade sob sanções internacionais",
+      "body": "Documentos consultados por este jornal mostram pagamentos da Algarvia Energia a uma entidade sujeita a sanções financeiras da União Europeia. A empresa não comentou.",
+      "source": "Jornal Económico do Tejo",
+      "url": "https://jetejo.example/2025/01/algarvia-energia-ligada-a-entidade-sob-sancoes-internacionais",
+      "published_at": "2025-01-25",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0050",
+      "title": "Yarrow Energy attends industry trade fair",
+      "body": "Representatives of Yarrow Energy presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/01/yarrow-energy-attends-industry-trade-fair",
+      "published_at": "2025-01-22",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0155",
+      "title": "Ipê Roxo Ativos Digitais participa de feira do setor",
+      "body": "Representantes da Ipê Roxo Ativos Digitais apresentaram seus serviços em uma feira do setor nesta semana.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2025/01/ipe-roxo-ativos-digitais-participa-de-feira-do-setor",
+      "published_at": "2025-01-21",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0032",
+      "title": "Ashford Textiles reports steady growth",
+      "body": "Ashford Textiles said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "The Financial Courier",
+      "url": "https://fincourier.example/2025/01/ashford-textiles-reports-steady-growth",
+      "published_at": "2025-01-16",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0141",
+      "title": "Pitanga Alimentos participa de feira do setor",
+      "body": "Representantes da Pitanga Alimentos apresentaram seus serviços em uma feira do setor nesta semana. (CNPJ 85.970.294/0001-37)",
+      "source": "Diário do Agronegócio",
+      "url": "https://diarioagro.example/2025/01/pitanga-alimentos-participa-de-feira-do-setor",
+      "published_at": "2025-01-11",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0096",
+      "title": "Mondego Ibérica Construções participa em feira do setor",
+      "body": "Representantes da Mondego Ibérica Construções apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2025/01/mondego-iberica-construcoes-participa-em-feira-do-setor",
+      "published_at": "2025-01-09",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0035",
+      "title": "Supplier sues Millbrook Media Ltd over unpaid invoices",
+      "body": "A former supplier has filed a claim against Millbrook Media Ltd in the High Court, alleging unpaid invoices of around £366k. Millbrook Media Ltd said it would defend the claim.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2024/12/supplier-sues-millbrook-media-ltd-over-unpaid-invoices",
+      "published_at": "2024-12-28",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0088",
+      "title": "Alvorada Energia nomeia novo diretor financeiro",
+      "body": "A Alvorada Energia anunciou a nomeação de um novo diretor financeiro, com efeitos a partir do próximo mês.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2024/12/alvorada-energia-nomeia-novo-diretor-financeiro",
+      "published_at": "2024-12-28",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0151",
+      "title": "Buriti Software teria ligação com entidade sancionada",
+      "body": "Documentos obtidos pela reportagem indicam pagamentos da Buriti Software a empresa incluída em lista de sanções internacionais. A empresa não se manifestou.",
+      "source": "Gazeta Mercantil Paulista",
+      "url": "https://gazetamp.example/2024/12/buriti-software-teria-ligacao-com-entidade-sancionada",
+      "published_at": "2024-12-28",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0042",
+      "title": "Netherby Harbour Logistics attends industry trade fair",
+      "body": "Representatives of Netherby Harbour Logistics presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2024/12/netherby-harbour-logistics-attends-industry-trade-fair",
+      "published_at": "2024-12-24",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0199",
+      "title": "Ubatuba Farma registra crescimento sólido",
+      "body": "A Ubatuba Farma informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2024/12/ubatuba-farma-registra-crescimento-solido",
+      "published_at": "2024-12-16",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0194",
+      "title": "Pantanal Apostas registra crescimento sólido",
+      "body": "A Pantanal Apostas informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior.",
+      "source": "Valor da Semana",
+      "url": "https://valorsemana.example/2024/12/pantanal-apostas-registra-crescimento-solido",
+      "published_at": "2024-12-15",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0093",
+      "title": "Tejo Farmacêutica participa em feira do setor",
+      "body": "Representantes da Tejo Farmacêutica apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2024/12/tejo-farmaceutica-participa-em-feira-do-setor",
+      "published_at": "2024-12-12",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0041",
+      "title": "Supplier sues Millbrook Vector Engineering Ltd over unpaid invoices",
+      "body": "A former supplier has filed a claim against Millbrook Vector Engineering Ltd in the High Court, alleging unpaid invoices of around £787k. Millbrook Vector Engineering Ltd said it would defend the claim.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2024/12/supplier-sues-millbrook-vector-engineering-ltd-over-unpaid-invoices",
+      "published_at": "2024-12-11",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0193",
+      "title": "Pantanal Apostas registra crescimento sólido",
+      "body": "A Pantanal Apostas informou que os resultados vieram dentro do esperado, com carteira de pedidos maior que no ano anterior. (CNPJ 57.202.382/0001-53)",
+      "source": "Folha do Comércio",
+      "url": "https://folhacomercio.example/2024/12/pantanal-apostas-registra-crescimento-solido",
+      "published_at": "2024-12-08",
+      "language": "pt",
+      "country": "BR"
+    },
+    {
+      "id": "news-0117",
+      "title": "Alvorada Engenharia fecha contrato plurianual",
+      "body": "A Alvorada Engenharia assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Faro.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2024/11/alvorada-engenharia-fecha-contrato-plurianual",
+      "published_at": "2024-11-30",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0104",
+      "title": "Lezíria Ibérica Energia fecha contrato plurianual",
+      "body": "A Lezíria Ibérica Energia assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Viseu.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2024/11/leziria-iberica-energia-fecha-contrato-plurianual",
+      "published_at": "2024-11-29",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0052",
+      "title": "Brockley Vector Foods appoints new finance director",
+      "body": "Brockley Vector Foods announced the appointment of a new finance director, effective next month. The previous holder of the role is retiring.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2024/11/brockley-vector-foods-appoints-new-finance-director",
+      "published_at": "2024-11-26",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0100",
+      "title": "Fornecedor processa Espinhaço Nova Logística por faturas em atraso",
+      "body": "Um antigo fornecedor intentou uma ação judicial contra a Espinhaço Nova Logística, alegando faturas por pagar de cerca de 599 mil euros. A empresa diz que vai contestar.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2024/11/fornecedor-processa-espinhaco-nova-logistica-por-faturas-em-atraso",
+      "published_at": "2024-11-26",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0022",
+      "title": "Elmstead Harbour Digital Assets reports steady growth",
+      "body": "Elmstead Harbour Digital Assets said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2024/11/elmstead-harbour-digital-assets-reports-steady-growth",
+      "published_at": "2024-11-18",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0005",
+      "title": "Netherby Construction Limited reports steady growth",
+      "body": "Netherby Construction Limited said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2024/11/netherby-construction-limited-reports-steady-growth",
+      "published_at": "2024-11-16",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0053",
+      "title": "Elmstead Lumen Pharma PLC reports steady growth",
+      "body": "Elmstead Lumen Pharma PLC said trading remained in line with expectations, with order books up on the previous year. Management highlighted investment in new equipment.",
+      "source": "Northern Business Post",
+      "url": "https://nbpost.example/2024/11/elmstead-lumen-pharma-plc-reports-steady-growth",
+      "published_at": "2024-11-12",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0086",
+      "title": "Zêzere Global Media fecha contrato plurianual",
+      "body": "A Zêzere Global Media assinou um contrato plurianual de fornecimento, segundo o seu presidente executivo. A empresa prevê reforçar a equipa na unidade de Braga.",
+      "source": "Diário dos Negócios",
+      "url": "https://diarionegocios.example/2024/11/zezere-global-media-fecha-contrato-plurianual",
+      "published_at": "2024-11-10",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0085",
+      "title": "Zêzere Global Media participa em feira do setor",
+      "body": "Representantes da Zêzere Global Media apresentaram os seus serviços numa feira do setor esta semana.",
+      "source": "Expresso Empresarial",
+      "url": "https://expresso-emp.example/2024/11/zezere-global-media-participa-em-feira-do-setor",
+      "published_at": "2024-11-05",
+      "language": "pt",
+      "country": "PT"
+    },
+    {
+      "id": "news-0070",
+      "title": "Davenport Vector Software opens new facility",
+      "body": "Davenport Vector Software has opened a new facility, creating around 79 jobs. The company described the investment as a long-term commitment to the region.",
+      "source": "Trade & Industry Weekly",
+      "url": "https://tiweekly.example/2024/11/davenport-vector-software-opens-new-facility",
+      "published_at": "2024-11-03",
+      "language": "en",
+      "country": "UK"
+    },
+    {
+      "id": "news-0049",
+      "title": "Oakridge Harbour Foods attends industry trade fair",
+      "body": "Representatives of Oakridge Harbour Foods presented the company's latest services at an industry trade fair in Birmingham this week.",
+      "source": "The City Ledger",
+      "url": "https://cityledger.example/2024/10/oakridge-harbour-foods-attends-industry-trade-fair",
+      "published_at": "2024-10-31",
+      "language": "en",
+      "country": "UK"
+    }
+  ]
+}

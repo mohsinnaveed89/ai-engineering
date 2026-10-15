@@ -1,0 +1,714 @@
+{
+  "$defs": {
+    "CompanyDetails": {
+      "additionalProperties": false,
+      "properties": {
+        "legal_name": {
+          "$ref": "#/$defs/SourcedValue"
+        },
+        "registration_number": {
+          "$ref": "#/$defs/SourcedValue"
+        },
+        "status": {
+          "$ref": "#/$defs/SourcedValue",
+          "description": "Register status as reported, e.g. 'active', 'ativa', 'ATIVA', 'dissolved'"
+        },
+        "address": {
+          "$ref": "#/$defs/SourcedValue",
+          "description": "Registered address as one string"
+        },
+        "incorporation_date": {
+          "$ref": "#/$defs/SourcedValue"
+        },
+        "sector": {
+          "$ref": "#/$defs/SourcedValue",
+          "description": "Sector code and description"
+        }
+      },
+      "required": [
+        "legal_name",
+        "registration_number",
+        "status",
+        "address"
+      ],
+      "title": "CompanyDetails",
+      "type": "object"
+    },
+    "FinancialSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Year"
+        },
+        "currency": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Currency"
+        },
+        "revenue": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Revenue"
+        },
+        "net_profit": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Net Profit"
+        },
+        "total_assets": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total Assets"
+        },
+        "going_concern_uncertainty": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Going Concern Uncertainty"
+        },
+        "summary": {
+          "default": "",
+          "title": "Summary",
+          "type": "string"
+        },
+        "sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "title": "FinancialSummary",
+      "type": "object"
+    },
+    "Flag": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "conflicting_data",
+            "missing_data",
+            "complex_ownership",
+            "high_risk_jurisdiction",
+            "ubo_unidentified",
+            "adverse_media",
+            "high_risk_sector",
+            "prohibited_sector",
+            "inactive_company",
+            "other"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "severity": {
+          "default": "medium",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "type",
+        "message"
+      ],
+      "title": "Flag",
+      "type": "object"
+    },
+    "NewsItem": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "published_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Published At"
+        },
+        "language": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Language"
+        },
+        "summary": {
+          "default": "",
+          "title": "Summary",
+          "type": "string"
+        },
+        "sentiment": {
+          "default": "neutral",
+          "enum": [
+            "positive",
+            "neutral",
+            "adverse"
+          ],
+          "title": "Sentiment",
+          "type": "string"
+        },
+        "severity": {
+          "default": "none",
+          "enum": [
+            "none",
+            "medium",
+            "high"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "title",
+        "url"
+      ],
+      "title": "NewsItem",
+      "type": "object"
+    },
+    "Officer": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "role": {
+          "description": "e.g. director, secretary, Gerente, Administrador, S\u00f3cio-Administrador",
+          "title": "Role",
+          "type": "string"
+        },
+        "appointed_on": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Appointed On"
+        },
+        "sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "role"
+      ],
+      "title": "Officer",
+      "type": "object"
+    },
+    "Owner": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "person",
+            "company"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "ownership_pct": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Effective (look-through) percentage if known",
+          "title": "Ownership Pct"
+        },
+        "is_ultimate_beneficial_owner": {
+          "default": false,
+          "title": "Is Ultimate Beneficial Owner",
+          "type": "boolean"
+        },
+        "jurisdiction": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Jurisdiction"
+        },
+        "via": {
+          "description": "Chain of intermediate companies, nearest first",
+          "items": {
+            "type": "string"
+          },
+          "title": "Via",
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "type"
+      ],
+      "title": "Owner",
+      "type": "object"
+    },
+    "PackQuery": {
+      "additionalProperties": false,
+      "properties": {
+        "company_name": {
+          "title": "Company Name",
+          "type": "string"
+        },
+        "country": {
+          "enum": [
+            "UK",
+            "PT",
+            "BR"
+          ],
+          "title": "Country",
+          "type": "string"
+        }
+      },
+      "required": [
+        "company_name",
+        "country"
+      ],
+      "title": "PackQuery",
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "default": "pending",
+          "enum": [
+            "pending",
+            "approved",
+            "declined",
+            "sent_back"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "comments": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Comments"
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewer"
+        },
+        "reviewed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewed At"
+        }
+      },
+      "title": "Review",
+      "type": "object"
+    },
+    "Risk": {
+      "additionalProperties": false,
+      "properties": {
+        "rating": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Rating",
+          "type": "string"
+        },
+        "recommendation": {
+          "enum": [
+            "approve",
+            "decline",
+            "investigate_further"
+          ],
+          "title": "Recommendation",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "factors": {
+          "items": {
+            "$ref": "#/$defs/RiskFactor"
+          },
+          "title": "Factors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "rating",
+        "recommendation",
+        "rationale"
+      ],
+      "title": "Risk",
+      "type": "object"
+    },
+    "RiskFactor": {
+      "additionalProperties": false,
+      "properties": {
+        "factor": {
+          "title": "Factor",
+          "type": "string"
+        },
+        "points": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Points"
+        },
+        "detail": {
+          "default": "",
+          "title": "Detail",
+          "type": "string"
+        },
+        "sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "factor"
+      ],
+      "title": "RiskFactor",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "description": "Where a fact came from. Reference it from facts by `id`.",
+      "properties": {
+        "id": {
+          "description": "Short unique id, e.g. 'src-1' or 'uk-register-12345678'",
+          "title": "Id",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "registry",
+            "news",
+            "bank_system",
+            "document",
+            "web",
+            "other"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "title": {
+          "description": "Human-readable label, e.g. 'UK register: company profile'",
+          "title": "Title",
+          "type": "string"
+        },
+        "reference": {
+          "description": "URL, API path or document id the reviewer can open",
+          "title": "Reference",
+          "type": "string"
+        },
+        "excerpt": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional quote supporting the fact(s)",
+          "title": "Excerpt"
+        },
+        "retrieved_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retrieved At"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "title",
+        "reference"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "SourcedValue": {
+      "additionalProperties": false,
+      "description": "A single fact. A non-null value must cite at least one source.",
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "title": "SourcedValue",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "query": {
+      "$ref": "#/$defs/PackQuery"
+    },
+    "company": {
+      "$ref": "#/$defs/CompanyDetails"
+    },
+    "officers": {
+      "items": {
+        "$ref": "#/$defs/Officer"
+      },
+      "title": "Officers",
+      "type": "array"
+    },
+    "owners": {
+      "items": {
+        "$ref": "#/$defs/Owner"
+      },
+      "title": "Owners",
+      "type": "array"
+    },
+    "news": {
+      "items": {
+        "$ref": "#/$defs/NewsItem"
+      },
+      "title": "News",
+      "type": "array"
+    },
+    "financial_summary": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/FinancialSummary"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "risk": {
+      "$ref": "#/$defs/Risk"
+    },
+    "flags": {
+      "items": {
+        "$ref": "#/$defs/Flag"
+      },
+      "title": "Flags",
+      "type": "array"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "array"
+    },
+    "review": {
+      "$ref": "#/$defs/Review"
+    },
+    "generated_by": {
+      "default": "unknown",
+      "description": "Which pipeline produced the pack, e.g. 'placeholder' or 'agents-v3'",
+      "title": "Generated By",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "query",
+    "company",
+    "risk"
+  ],
+  "title": "KycPack",
+  "type": "object"
+}

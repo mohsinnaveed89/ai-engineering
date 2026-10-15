@@ -1,0 +1,4113 @@
+{
+  "source": "Mock UK company register (Companies House style)",
+  "companies": [
+    {
+      "company_number": "07912712",
+      "company_name": "DUNMORE BEACON ENGINEERING LIMITED",
+      "company_status": "dissolved",
+      "type": "ltd",
+      "date_of_creation": "1993-09-28",
+      "sic_codes": [
+        "71129"
+      ],
+      "registered_office_address": {
+        "address_line_1": "64 Victoria Road",
+        "locality": "Belfast",
+        "postal_code": "BT1 7QQ",
+        "country": "Northern Ireland"
+      },
+      "officers": [
+        {
+          "name": "TAYLOR, Bethan",
+          "officer_role": "director",
+          "appointed_on": "1993-09-28",
+          "date_of_birth": {
+            "month": 10,
+            "year": 1977
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Bethan Taylor",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 10,
+            "year": 1977
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "14771363",
+      "company_name": "IVYBRIDGE BEACON ENERGY LIMITED",
+      "company_status": "dissolved",
+      "type": "ltd",
+      "date_of_creation": "2003-03-17",
+      "sic_codes": [
+        "35110"
+      ],
+      "registered_office_address": {
+        "address_line_1": "45 Market Street",
+        "locality": "Belfast",
+        "postal_code": "BT1 3GT",
+        "country": "Northern Ireland"
+      },
+      "officers": [
+        {
+          "name": "EVANS, Emily",
+          "officer_role": "director",
+          "appointed_on": "2003-03-17",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1961
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Emily Evans",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1961
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "02991439",
+      "company_name": "PENROSE SOFTWARE LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1999-12-25",
+      "sic_codes": [
+        "62012"
+      ],
+      "registered_office_address": {
+        "address_line_1": "160 Church Lane",
+        "locality": "Bristol",
+        "postal_code": "BS1 7TT",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "PATEL, Oliver",
+          "officer_role": "director",
+          "appointed_on": "2005-03-10",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1973
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "TAYLOR, Rhys",
+          "officer_role": "director",
+          "appointed_on": "2005-11-14",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1976
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Oliver Patel",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1973
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Rhys Taylor",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1976
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "09065933",
+      "company_name": "HOLLINS ANCHOR TEXTILES LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2002-10-27",
+      "sic_codes": [
+        "13921"
+      ],
+      "registered_office_address": {
+        "address_line_1": "239 Church Lane",
+        "locality": "Manchester",
+        "postal_code": "M1 6GL",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "SMITH, Oliver",
+          "officer_role": "director",
+          "appointed_on": "2005-06-16",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1981
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WOOD, Alistair",
+          "officer_role": "secretary",
+          "appointed_on": "2008-01-26",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1962
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "YARROW HARBOUR HOLDINGS LIMITED",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "identification": {
+            "registration_number": "07622914",
+            "country_registered": "England"
+          },
+          "ownership_percentage": 75
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Oliver Smith",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1981
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "SC895685",
+      "company_name": "KINGSMERE MERIDIAN HOLDINGS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2006-07-27",
+      "sic_codes": [
+        "64209"
+      ],
+      "registered_office_address": {
+        "address_line_1": "51 King Street",
+        "locality": "Edinburgh",
+        "postal_code": "EH2 8JQ",
+        "country": "Scotland"
+      },
+      "officers": [
+        {
+          "name": "WILLIAMS, Rachel",
+          "officer_role": "director",
+          "appointed_on": "2006-07-27",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1992
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Rachel Williams",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1992
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Matthew Williams",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1991
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "10128074",
+      "company_name": "ASHFORD ANCHOR CONSTRUCTION LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1988-11-04",
+      "sic_codes": [
+        "41201"
+      ],
+      "registered_office_address": {
+        "address_line_1": "151 Market Street",
+        "locality": "Newcastle upon Tyne",
+        "postal_code": "NE1 9TA",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "JONES, Imogen",
+          "officer_role": "director",
+          "appointed_on": "1991-06-17",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1962
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WILLIAMS, Sophie",
+          "officer_role": "director",
+          "appointed_on": "1993-02-24",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1969
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Imogen Jones",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1962
+          },
+          "ownership_percentage": 70
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Sophie Williams",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1969
+          },
+          "ownership_percentage": 20
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Imogen Hall",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1967
+          },
+          "ownership_percentage": 10
+        }
+      ]
+    },
+    {
+      "company_number": "04145423",
+      "company_name": "NORTHCOTE BEACON HOLDINGS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1995-07-03",
+      "sic_codes": [
+        "64209"
+      ],
+      "registered_office_address": {
+        "address_line_1": "205 Bridge Street",
+        "locality": "Leeds",
+        "postal_code": "LS1 6GU",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "KHAN, Alistair",
+          "officer_role": "director",
+          "appointed_on": "1995-07-03",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1986
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "MERIDIAN BAY VENTURES S.A.",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "identification": {
+            "registration_number": "KY-814765",
+            "country_registered": "Cayman Islands"
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "03230719",
+      "company_name": "LANGLEY LUMEN LOGISTICS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2012-12-13",
+      "sic_codes": [
+        "49410"
+      ],
+      "registered_office_address": {
+        "address_line_1": "152 Park Road",
+        "locality": "Newcastle upon Tyne",
+        "postal_code": "NE1 3GT",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "HUGHES, Alistair",
+          "officer_role": "director",
+          "appointed_on": "2018-06-07",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1967
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "SMITH, Zara",
+          "officer_role": "director",
+          "appointed_on": "2020-02-09",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1960
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "CLARKE, William",
+          "officer_role": "director",
+          "appointed_on": "2018-06-15",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1994
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "GREEN, Alistair",
+          "officer_role": "secretary",
+          "appointed_on": "2015-10-04",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1976
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Alistair Hughes",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1967
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Zara Smith",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1960
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "SC906908",
+      "company_name": "NETHERBY CONSTRUCTION LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1987-09-09",
+      "sic_codes": [
+        "41201"
+      ],
+      "registered_office_address": {
+        "address_line_1": "2 King Street",
+        "locality": "Edinburgh",
+        "postal_code": "EH2 6YY",
+        "country": "Scotland"
+      },
+      "officers": [
+        {
+          "name": "GREEN, Alistair",
+          "officer_role": "director",
+          "appointed_on": "1994-05-24",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1963
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WHITE, Niamh",
+          "officer_role": "director",
+          "appointed_on": "1989-03-16",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1987
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Alistair Green",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1963
+          },
+          "ownership_percentage": 40
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Niamh White",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1987
+          },
+          "ownership_percentage": 35
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Bethan Walker",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1974
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "06612969",
+      "company_name": "DUNMORE BEACON ENGINEERING LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1990-03-25",
+      "sic_codes": [
+        "71129"
+      ],
+      "registered_office_address": {
+        "address_line_1": "122 Queen Street",
+        "locality": "Belfast",
+        "postal_code": "BT1 1PU",
+        "country": "Northern Ireland"
+      },
+      "officers": [
+        {
+          "name": "CLARKE, Samuel",
+          "officer_role": "director",
+          "appointed_on": "1992-05-12",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1994
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "FRASER, Thomas",
+          "officer_role": "director",
+          "appointed_on": "1997-11-25",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1967
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "BROWN, Charlotte",
+          "officer_role": "director",
+          "appointed_on": "1991-09-30",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1961
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Samuel Clarke",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1994
+          },
+          "ownership_percentage": 40
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Thomas Fraser",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1967
+          },
+          "ownership_percentage": 35
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Charlotte Brown",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1961
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "12997195",
+      "company_name": "OAKRIDGE HARBOUR MEDIA LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1985-11-08",
+      "sic_codes": [
+        "59111"
+      ],
+      "registered_office_address": {
+        "address_line_1": "57 High Street",
+        "locality": "Cardiff",
+        "postal_code": "CF10 9FR",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "LLOYD, Amelia",
+          "officer_role": "director",
+          "appointed_on": "1989-11-17",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1990
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Amelia Lloyd",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1990
+          },
+          "ownership_percentage": 70
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Alistair Khan",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1990
+          },
+          "ownership_percentage": 20
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Matthew Patel",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 4,
+            "year": 1974
+          },
+          "ownership_percentage": 10
+        }
+      ]
+    },
+    {
+      "company_number": "12625950",
+      "company_name": "ASHFORD SUMMIT TEXTILES LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1988-12-04",
+      "sic_codes": [
+        "13921"
+      ],
+      "registered_office_address": {
+        "address_line_1": "32 Wharf Road",
+        "locality": "Leeds",
+        "postal_code": "LS1 2BF",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "JACKSON, Thomas",
+          "officer_role": "director",
+          "appointed_on": "1993-08-01",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1974
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "MORGAN, Matthew",
+          "officer_role": "director",
+          "appointed_on": "1990-04-30",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1979
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "KHAN, Callum",
+          "officer_role": "director",
+          "appointed_on": "1991-10-14",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1966
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Thomas Jackson",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1974
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Matthew Morgan",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1979
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "10877047",
+      "company_name": "BRAMLEY CREST HOLDINGS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2008-04-23",
+      "sic_codes": [
+        "64209"
+      ],
+      "registered_office_address": {
+        "address_line_1": "10 Castle Street",
+        "locality": "Birmingham",
+        "postal_code": "B3 9PX",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "HALL, Emily",
+          "officer_role": "director",
+          "appointed_on": "2008-04-23",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1995
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Emily Hall",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1995
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Charlotte Fraser",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1994
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "10154804",
+      "company_name": "NORTHCOTE ANCHOR FOODS PLC",
+      "company_status": "active",
+      "type": "plc",
+      "date_of_creation": "1995-10-17",
+      "sic_codes": [
+        "10890"
+      ],
+      "registered_office_address": {
+        "address_line_1": "18 Station Road",
+        "locality": "Cardiff",
+        "postal_code": "CF10 3AZ",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "CLARKE, Emily",
+          "officer_role": "director",
+          "appointed_on": "2000-01-25",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1971
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "ROBERTS, Alistair",
+          "officer_role": "director",
+          "appointed_on": "1996-11-14",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1995
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "TAYLOR, Samuel",
+          "officer_role": "secretary",
+          "appointed_on": "1997-12-13",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1975
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Emily Clarke",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1971
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Alistair Roberts",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1995
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "13563399",
+      "company_name": "WHITLOCK HARBOUR HOLDINGS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1997-11-21",
+      "sic_codes": [
+        "64209"
+      ],
+      "registered_office_address": {
+        "address_line_1": "66 Market Street",
+        "locality": "Bristol",
+        "postal_code": "BS1 9WQ",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "ELLISON, Niamh",
+          "officer_role": "director",
+          "appointed_on": "1997-11-21",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1956
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Niamh Ellison",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1956
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "04049335",
+      "company_name": "FAIRHOLME FOODS LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2014-07-03",
+      "sic_codes": [
+        "10890"
+      ],
+      "registered_office_address": {
+        "address_line_1": "16 Queen Street",
+        "locality": "Cardiff",
+        "postal_code": "CF10 8UQ",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "TAYLOR, Isla",
+          "officer_role": "director",
+          "appointed_on": "2019-04-07",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1966
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "SMITH, Samuel",
+          "officer_role": "director",
+          "appointed_on": "2021-04-04",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1961
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Isla Taylor",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1966
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Samuel Smith",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1961
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "07622914",
+      "company_name": "YARROW HARBOUR HOLDINGS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2009-07-22",
+      "sic_codes": [
+        "64209"
+      ],
+      "registered_office_address": {
+        "address_line_1": "161 Wharf Road",
+        "locality": "Cardiff",
+        "postal_code": "CF10 1RP",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "LLOYD, Graham",
+          "officer_role": "director",
+          "appointed_on": "2009-07-22",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1962
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "TIDEWATER INVESTMENTS INC",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "identification": {
+            "registration_number": "KY-160430",
+            "country_registered": "Cayman Islands"
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "10228898",
+      "company_name": "OAKRIDGE TEXTILES PLC",
+      "company_status": "active",
+      "type": "plc",
+      "date_of_creation": "2015-06-09",
+      "sic_codes": [
+        "13921"
+      ],
+      "registered_office_address": {
+        "address_line_1": "95 Victoria Road",
+        "locality": "Cardiff",
+        "postal_code": "CF10 5WR",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "TAYLOR, Eleanor",
+          "officer_role": "director",
+          "appointed_on": "2020-11-05",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1958
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "HALL, Graham",
+          "officer_role": "director",
+          "appointed_on": "2020-12-02",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1994
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "EVANS, William",
+          "officer_role": "director",
+          "appointed_on": "2021-09-27",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1975
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Eleanor Taylor",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1958
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Graham Hall",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1994
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "01882809",
+      "company_name": "FAIRHOLME HARBOUR CONSTRUCTION LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1986-03-11",
+      "sic_codes": [
+        "41201"
+      ],
+      "registered_office_address": {
+        "address_line_1": "42 King Street",
+        "locality": "Newcastle upon Tyne",
+        "postal_code": "NE1 1EW",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "JOHNSON, Fiona",
+          "officer_role": "director",
+          "appointed_on": "1992-11-29",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1959
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "BROWN, Sophie",
+          "officer_role": "director",
+          "appointed_on": "1987-05-24",
+          "date_of_birth": {
+            "month": 4,
+            "year": 1994
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Fiona Johnson",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1959
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "03072388",
+      "company_name": "ELMSTEAD HARBOUR DIGITAL ASSETS PLC",
+      "company_status": "active",
+      "type": "plc",
+      "date_of_creation": "1992-09-17",
+      "sic_codes": [
+        "64999"
+      ],
+      "registered_office_address": {
+        "address_line_1": "175 Mill Lane",
+        "locality": "Bristol",
+        "postal_code": "BS1 8YQ",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "MORGAN, Niamh",
+          "officer_role": "director",
+          "appointed_on": "1994-08-07",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1986
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "THOMPSON, Owen",
+          "officer_role": "secretary",
+          "appointed_on": "1997-09-30",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1987
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "KINGSMERE MERIDIAN HOLDINGS LIMITED",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "identification": {
+            "registration_number": "SC895685",
+            "country_registered": "England"
+          },
+          "ownership_percentage": 80
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Niamh Morgan",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1986
+          },
+          "ownership_percentage": 20
+        }
+      ]
+    },
+    {
+      "company_number": "03899112",
+      "company_name": "GREYSTONE LUMEN MEDIA LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2003-01-04",
+      "sic_codes": [
+        "59111"
+      ],
+      "registered_office_address": {
+        "address_line_1": "99 Queen Street",
+        "locality": "Bristol",
+        "postal_code": "BS1 2QR",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "TAYLOR, Isla",
+          "officer_role": "director",
+          "appointed_on": "2005-03-10",
+          "date_of_birth": {
+            "month": 10,
+            "year": 1978
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WOOD, George",
+          "officer_role": "secretary",
+          "appointed_on": "2007-08-18",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1960
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Isla Taylor",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 10,
+            "year": 1978
+          },
+          "ownership_percentage": 40
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Fiona Roberts",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1959
+          },
+          "ownership_percentage": 35
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Amelia Williams",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1977
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "12001837",
+      "company_name": "NETHERBY DIGITAL ASSETS LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1998-02-13",
+      "sic_codes": [
+        "64999"
+      ],
+      "registered_office_address": {
+        "address_line_1": "50 High Street",
+        "locality": "Manchester",
+        "postal_code": "M1 1FG",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "WILSON, James",
+          "officer_role": "director",
+          "appointed_on": "2006-03-03",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1961
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "CLARKE, Arjun",
+          "officer_role": "secretary",
+          "appointed_on": "1999-07-11",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1972
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "James Wilson",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1961
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "09653080",
+      "company_name": "IVYBRIDGE BEACON ENERGY LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1999-11-04",
+      "sic_codes": [
+        "35110"
+      ],
+      "registered_office_address": null,
+      "officers": [
+        {
+          "name": "LEWIS, Amelia",
+          "officer_role": "director",
+          "appointed_on": "2000-11-29",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1978
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "ROBERTS, Amelia",
+          "officer_role": "director",
+          "appointed_on": "2007-10-02",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1964
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WHITE, Callum",
+          "officer_role": "director",
+          "appointed_on": "2001-01-19",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1974
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WOOD, Eleanor",
+          "officer_role": "secretary",
+          "appointed_on": "2002-09-20",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1981
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Amelia Lewis",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1978
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Amelia Roberts",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1964
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "05278808",
+      "company_name": "MARLOW VECTOR TEXTILES LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2003-03-19",
+      "sic_codes": [
+        "13921"
+      ],
+      "registered_office_address": null,
+      "officers": [
+        {
+          "name": "WALKER, Harry",
+          "officer_role": "director",
+          "appointed_on": "2007-09-28",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1980
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "HARRISON, Fiona",
+          "officer_role": "director",
+          "appointed_on": "2003-12-28",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1990
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "PATEL, Sophie",
+          "officer_role": "secretary",
+          "appointed_on": "2006-10-08",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1956
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Harry Walker",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1980
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Fiona Harrison",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1990
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "SC816190",
+      "company_name": "NETHERBY SOFTWARE LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1997-01-21",
+      "sic_codes": [
+        "62012"
+      ],
+      "registered_office_address": {
+        "address_line_1": "65 Station Road",
+        "locality": "Edinburgh",
+        "postal_code": "EH2 8WS",
+        "country": "Scotland"
+      },
+      "officers": [
+        {
+          "name": "DAVIES, Oliver",
+          "officer_role": "director",
+          "appointed_on": "2004-08-21",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1989
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "ELLISON, Niamh",
+          "officer_role": "director",
+          "appointed_on": "2004-10-17",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1991
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "WHITLOCK HARBOUR HOLDINGS LIMITED",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "identification": {
+            "registration_number": "13563399",
+            "country_registered": "England"
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "03941739",
+      "company_name": "BLACKWATER LUMEN CONSTRUCTION LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2017-08-15",
+      "sic_codes": [
+        "41201"
+      ],
+      "registered_office_address": {
+        "address_line_1": "197 Castle Street",
+        "locality": "Newcastle upon Tyne",
+        "postal_code": "NE1 2SR",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "EVANS, Harry",
+          "officer_role": "director",
+          "appointed_on": "2017-09-04",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1974
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "JONES, Oliver",
+          "officer_role": "secretary",
+          "appointed_on": "2022-05-21",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1970
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Harry Evans",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1974
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "James Smith",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1955
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "SC298716",
+      "company_name": "YARROW DIGITAL ASSETS LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1996-08-20",
+      "sic_codes": [
+        "64999"
+      ],
+      "registered_office_address": {
+        "address_line_1": "209 Queen Street",
+        "locality": "Glasgow",
+        "postal_code": "G2 3SW",
+        "country": "Scotland"
+      },
+      "officers": [
+        {
+          "name": "BROWN, George",
+          "officer_role": "director",
+          "appointed_on": "2001-02-03",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1956
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "EVANS, Arjun",
+          "officer_role": "director",
+          "appointed_on": "2001-04-21",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1962
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "HUGHES, Harry",
+          "officer_role": "secretary",
+          "appointed_on": "2000-11-27",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1974
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "George Brown",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1956
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Arjun Evans",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1962
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "03563719",
+      "company_name": "CALDER BEACON SOFTWARE LTD",
+      "company_status": "dissolved",
+      "type": "ltd",
+      "date_of_creation": "2002-08-15",
+      "sic_codes": [
+        "62012"
+      ],
+      "registered_office_address": {
+        "address_line_1": "50 Park Road",
+        "locality": "Cardiff",
+        "postal_code": "CF10 9WR",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "LLOYD, Callum",
+          "officer_role": "director",
+          "appointed_on": "2003-06-18",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1974
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Callum Lloyd",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1974
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "01905627",
+      "company_name": "YARROW ENERGY LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2007-05-26",
+      "sic_codes": [
+        "35110"
+      ],
+      "registered_office_address": {
+        "address_line_1": "93 High Street",
+        "locality": "Cardiff",
+        "postal_code": "CF10 7TB",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "KENNEDY, Oliver",
+          "officer_role": "director",
+          "appointed_on": "2011-02-09",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1973
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WRIGHT, Owen",
+          "officer_role": "director",
+          "appointed_on": "2007-06-04",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1982
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "TAYLOR, Olivia",
+          "officer_role": "director",
+          "appointed_on": "2007-12-15",
+          "date_of_birth": {
+            "month": 4,
+            "year": 1968
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Oliver Kennedy",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1973
+          },
+          "ownership_percentage": 40
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Owen Wright",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1982
+          },
+          "ownership_percentage": 35
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Olivia Taylor",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 4,
+            "year": 1968
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "SC860077",
+      "company_name": "CHEVIOT BEACON FOODS PLC",
+      "company_status": "active",
+      "type": "plc",
+      "date_of_creation": "2018-03-27",
+      "sic_codes": [
+        "10890"
+      ],
+      "registered_office_address": {
+        "address_line_1": "119 Wharf Road",
+        "locality": "Edinburgh",
+        "postal_code": "EH2 4LX",
+        "country": "Scotland"
+      },
+      "officers": [
+        {
+          "name": "ROBERTS, Zara",
+          "officer_role": "director",
+          "appointed_on": "2022-06-14",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1963
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WILLIAMS, Graham",
+          "officer_role": "secretary",
+          "appointed_on": "2022-10-14",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1981
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Zara Roberts",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1963
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Priya Lloyd",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1991
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "09635854",
+      "company_name": "THORNBURY CONSTRUCTION PLC",
+      "company_status": "active",
+      "type": "plc",
+      "date_of_creation": "2003-03-09",
+      "sic_codes": [
+        "41201"
+      ],
+      "registered_office_address": {
+        "address_line_1": "68 Church Lane",
+        "locality": "Cardiff",
+        "postal_code": "CF10 9AP",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "EVANS, Charlotte",
+          "officer_role": "director",
+          "appointed_on": "2008-02-02",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1957
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WOOD, Isla",
+          "officer_role": "director",
+          "appointed_on": "2008-01-23",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1963
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WHITE, Callum",
+          "officer_role": "director",
+          "appointed_on": "2006-02-12",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1959
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "JOHNSON, Charlotte",
+          "officer_role": "secretary",
+          "appointed_on": "2005-12-16",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1977
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Charlotte Evans",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1957
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Isla Wood",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1963
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "SC507579",
+      "company_name": "HOLLINS CONSTRUCTION LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2000-03-27",
+      "sic_codes": [
+        "41201"
+      ],
+      "registered_office_address": {
+        "address_line_1": "174 Park Road",
+        "locality": "Glasgow",
+        "postal_code": "G2 1UP",
+        "country": "Scotland"
+      },
+      "officers": [
+        {
+          "name": "TAYLOR, Matthew",
+          "officer_role": "director",
+          "appointed_on": "2006-05-12",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1992
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "HALL, William",
+          "officer_role": "director",
+          "appointed_on": "2007-08-27",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1958
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WILSON, Bethan",
+          "officer_role": "director",
+          "appointed_on": "2000-08-12",
+          "date_of_birth": {
+            "month": 10,
+            "year": 1970
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Matthew Taylor",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1992
+          },
+          "ownership_percentage": 40
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "William Hall",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1958
+          },
+          "ownership_percentage": 35
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Bethan Wilson",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 10,
+            "year": 1970
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "09885499",
+      "company_name": "HAWKSMOOR MERIDIAN TEXTILES LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2020-08-28",
+      "sic_codes": [
+        "13921"
+      ],
+      "registered_office_address": {
+        "address_line_1": "130 Park Road",
+        "locality": "Manchester",
+        "postal_code": "M1 8RW",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "HALL, Bethan",
+          "officer_role": "director",
+          "appointed_on": "2026-09-01",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1991
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "JONES, Callum",
+          "officer_role": "director",
+          "appointed_on": "2026-09-01",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1969
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Bethan Hall",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1991
+          },
+          "ownership_percentage": 70
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Callum Jones",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1969
+          },
+          "ownership_percentage": 20
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Zara Lloyd",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1964
+          },
+          "ownership_percentage": 10
+        }
+      ]
+    },
+    {
+      "company_number": "15842580",
+      "company_name": "STANMORE SUMMIT GAMING PLC",
+      "company_status": "active",
+      "type": "plc",
+      "date_of_creation": "2010-07-07",
+      "sic_codes": [
+        "92000"
+      ],
+      "registered_office_address": {
+        "address_line_1": "3 Church Lane",
+        "locality": "Birmingham",
+        "postal_code": "B3 1FZ",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "ROBINSON, Callum",
+          "officer_role": "director",
+          "appointed_on": "2015-09-30",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1986
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WHITE, Fiona",
+          "officer_role": "director",
+          "appointed_on": "2013-10-07",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1987
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "BROWN, Rachel",
+          "officer_role": "director",
+          "appointed_on": "2015-08-05",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1975
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Callum Robinson",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1986
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Fiona White",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1987
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "09327666",
+      "company_name": "ASHFORD LOGISTICS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1985-08-01",
+      "sic_codes": [
+        "49410"
+      ],
+      "registered_office_address": {
+        "address_line_1": "236 Bridge Street",
+        "locality": "Manchester",
+        "postal_code": "M1 7ZF",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "JONES, Callum",
+          "officer_role": "director",
+          "appointed_on": "1987-04-20",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1986
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "LLOYD, Rachel",
+          "officer_role": "secretary",
+          "appointed_on": "1989-12-07",
+          "date_of_birth": {
+            "month": 4,
+            "year": 1972
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "GLENROTHES VECTOR HOLDINGS LIMITED",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "identification": {
+            "registration_number": "SC218505",
+            "country_registered": "England"
+          },
+          "ownership_percentage": 80
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Callum Jones",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1986
+          },
+          "ownership_percentage": 20
+        }
+      ]
+    },
+    {
+      "company_number": "05679679",
+      "company_name": "ELMSTEAD SOFTWARE LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1995-02-06",
+      "sic_codes": [
+        "62012"
+      ],
+      "registered_office_address": {
+        "address_line_1": "111 Bridge Street",
+        "locality": "Bristol",
+        "postal_code": "BS1 4SA",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "EVANS, Daniel",
+          "officer_role": "director",
+          "appointed_on": "2000-06-11",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1972
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "FRASER, Charlotte",
+          "officer_role": "director",
+          "appointed_on": "1996-08-24",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1988
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "DAVIES, Charlotte",
+          "officer_role": "director",
+          "appointed_on": "1999-05-01",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1961
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Daniel Evans",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1972
+          },
+          "ownership_percentage": 40
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Charlotte Fraser",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1988
+          },
+          "ownership_percentage": 35
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Charlotte Davies",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1961
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "11706862",
+      "company_name": "MARLOW HARBOUR PHARMA LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1992-05-10",
+      "sic_codes": [
+        "21200"
+      ],
+      "registered_office_address": {
+        "address_line_1": "163 Queen Street",
+        "locality": "Belfast",
+        "postal_code": "BT1 7RA",
+        "country": "Northern Ireland"
+      },
+      "officers": [
+        {
+          "name": "MORGAN, Owen",
+          "officer_role": "director",
+          "appointed_on": "1999-12-17",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1976
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WOOD, Graham",
+          "officer_role": "director",
+          "appointed_on": "1997-02-11",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1995
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Owen Morgan",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1976
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Graham Wood",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1995
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "13798885",
+      "company_name": "DAVENPORT ENERGY LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2007-07-02",
+      "sic_codes": [
+        "35110"
+      ],
+      "registered_office_address": {
+        "address_line_1": "6 High Street",
+        "locality": "Cardiff",
+        "postal_code": "CF10 3FH",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "HUGHES, Sophie",
+          "officer_role": "director",
+          "appointed_on": "2010-06-01",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1992
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WRIGHT, Rhys",
+          "officer_role": "director",
+          "appointed_on": "2011-01-26",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1969
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "JOHNSON, Samuel",
+          "officer_role": "director",
+          "appointed_on": "2008-11-01",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1975
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "HUGHES, Zara",
+          "officer_role": "secretary",
+          "appointed_on": "2011-07-14",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1958
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Sophie Hughes",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1992
+          },
+          "ownership_percentage": 70
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Rhys Wright",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1969
+          },
+          "ownership_percentage": 20
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Samuel Johnson",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1975
+          },
+          "ownership_percentage": 10
+        }
+      ]
+    },
+    {
+      "company_number": "05836045",
+      "company_name": "KINGSMERE PHARMA LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2010-09-20",
+      "sic_codes": [
+        "21200"
+      ],
+      "registered_office_address": {
+        "address_line_1": "39 Victoria Road",
+        "locality": "Newcastle upon Tyne",
+        "postal_code": "NE1 9FF",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "KHAN, Samuel",
+          "officer_role": "director",
+          "appointed_on": "2013-11-11",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1991
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "ROBINSON, Fiona",
+          "officer_role": "director",
+          "appointed_on": "2012-02-26",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1974
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "LEWIS, Oliver",
+          "officer_role": "director",
+          "appointed_on": "2018-05-05",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1984
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "SMITH, Emily",
+          "officer_role": "secretary",
+          "appointed_on": "2011-12-16",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1994
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Samuel Khan",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1991
+          },
+          "ownership_percentage": 40
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Fiona Robinson",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1974
+          },
+          "ownership_percentage": 35
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Oliver Lewis",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1984
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "04552863",
+      "company_name": "CARRICK MERIDIAN ENERGY LTD",
+      "company_status": "dissolved",
+      "type": "ltd",
+      "date_of_creation": "2016-07-10",
+      "sic_codes": [
+        "35110"
+      ],
+      "registered_office_address": {
+        "address_line_1": "84 King Street",
+        "locality": "Cardiff",
+        "postal_code": "CF10 9UT",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "JOHNSON, Olivia",
+          "officer_role": "director",
+          "appointed_on": "2017-07-26",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1972
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WHITE, Fiona",
+          "officer_role": "director",
+          "appointed_on": "2016-10-29",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1984
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WOOD, Niamh",
+          "officer_role": "director",
+          "appointed_on": "2017-10-02",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1977
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Olivia Johnson",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1972
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Fiona White",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1984
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "02582379",
+      "company_name": "BROCKLEY VECTOR FOODS PLC",
+      "company_status": "active",
+      "type": "plc",
+      "date_of_creation": "1997-03-12",
+      "sic_codes": [
+        "10890"
+      ],
+      "registered_office_address": {
+        "address_line_1": "233 Station Road",
+        "locality": "Cardiff",
+        "postal_code": "CF10 3ZN",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "GREEN, Arjun",
+          "officer_role": "director",
+          "appointed_on": "2000-08-13",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1969
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WALKER, Zara",
+          "officer_role": "director",
+          "appointed_on": "1999-07-11",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1964
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WHITE, Harry",
+          "officer_role": "secretary",
+          "appointed_on": "1999-11-17",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1971
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Arjun Green",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1969
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Zara Walker",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1964
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "13399069",
+      "company_name": "STANMORE HARBOUR FOODS LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1991-01-18",
+      "sic_codes": [
+        "10890"
+      ],
+      "registered_office_address": {
+        "address_line_1": "150 Castle Street",
+        "locality": "Bristol",
+        "postal_code": "BS1 5YB",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "WILSON, Graham",
+          "officer_role": "director",
+          "appointed_on": "1992-01-03",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1988
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "THOMPSON, Fiona",
+          "officer_role": "director",
+          "appointed_on": "1994-07-12",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1964
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "KHAN, Bethan",
+          "officer_role": "director",
+          "appointed_on": "1992-11-12",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1957
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Graham Wilson",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1988
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Fiona Thompson",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1964
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "01523192",
+      "company_name": "THORNBURY MERIDIAN MEDIA LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1996-08-07",
+      "sic_codes": [
+        "59111"
+      ],
+      "registered_office_address": {
+        "address_line_1": "122 Wharf Road",
+        "locality": "Manchester",
+        "postal_code": "M1 7UW",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "HALL, Rachel",
+          "officer_role": "director",
+          "appointed_on": "1999-11-26",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1979
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "MORGAN, Matthew",
+          "officer_role": "secretary",
+          "appointed_on": "2001-06-10",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1988
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "ASHFORD HARBOUR HOLDINGS LIMITED",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "identification": {
+            "registration_number": "12844984",
+            "country_registered": "England"
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "10956275",
+      "company_name": "CHEVIOT LUMEN PHARMA LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1991-04-13",
+      "sic_codes": [
+        "21200"
+      ],
+      "registered_office_address": {
+        "address_line_1": "86 Wharf Road",
+        "locality": "Leeds",
+        "postal_code": "LS1 9RH",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "ROBINSON, Charlotte",
+          "officer_role": "director",
+          "appointed_on": "1993-12-31",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1989
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "JONES, Eleanor",
+          "officer_role": "director",
+          "appointed_on": "1994-08-25",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1966
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "JACKSON, Thomas",
+          "officer_role": "director",
+          "appointed_on": "1995-06-27",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1965
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "BRAMLEY CREST HOLDINGS LIMITED",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "identification": {
+            "registration_number": "10877047",
+            "country_registered": "England"
+          },
+          "ownership_percentage": 75
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Charlotte Robinson",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1989
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "10433490",
+      "company_name": "OAKRIDGE HARBOUR FOODS PLC",
+      "company_status": "liquidation",
+      "type": "plc",
+      "date_of_creation": "2018-07-09",
+      "sic_codes": [
+        "10890"
+      ],
+      "registered_office_address": {
+        "address_line_1": "157 Market Street",
+        "locality": "London",
+        "postal_code": "EC2A 5WT",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "ELLISON, Rhys",
+          "officer_role": "director",
+          "appointed_on": "2020-05-06",
+          "date_of_birth": {
+            "month": 4,
+            "year": 1971
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "ROBINSON, Emily",
+          "officer_role": "director",
+          "appointed_on": "2025-04-26",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1977
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "CLARKE, Priya",
+          "officer_role": "director",
+          "appointed_on": "2026-05-03",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1970
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "THOMPSON, Daniel",
+          "officer_role": "secretary",
+          "appointed_on": "2022-02-22",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1995
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Rhys Ellison",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 4,
+            "year": 1971
+          },
+          "ownership_percentage": 70
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Emily Robinson",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1977
+          },
+          "ownership_percentage": 20
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Priya Clarke",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1970
+          },
+          "ownership_percentage": 10
+        }
+      ]
+    },
+    {
+      "company_number": "SC793761",
+      "company_name": "ASHFORD TEXTILES LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1990-07-22",
+      "sic_codes": [
+        "13921"
+      ],
+      "registered_office_address": {
+        "address_line_1": "214 Victoria Road",
+        "locality": "Glasgow",
+        "postal_code": "G2 3JJ",
+        "country": "Scotland"
+      },
+      "officers": [
+        {
+          "name": "WOOD, Samuel",
+          "officer_role": "director",
+          "appointed_on": "1998-08-22",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1968
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "EVANS, Callum",
+          "officer_role": "director",
+          "appointed_on": "1994-01-06",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1982
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Samuel Wood",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1968
+          },
+          "ownership_percentage": 70
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Callum Evans",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1982
+          },
+          "ownership_percentage": 20
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Zara Taylor",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 10,
+            "year": 1990
+          },
+          "ownership_percentage": 10
+        }
+      ]
+    },
+    {
+      "company_number": "SC500860",
+      "company_name": "DAVENPORT VECTOR SOFTWARE LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2008-05-24",
+      "sic_codes": [
+        "62012"
+      ],
+      "registered_office_address": {
+        "address_line_1": "131 Station Road",
+        "locality": "Glasgow",
+        "postal_code": "G2 1TQ",
+        "country": "Scotland"
+      },
+      "officers": [
+        {
+          "name": "WILLIAMS, Callum",
+          "officer_role": "director",
+          "appointed_on": "2016-03-19",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1989
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "TAYLOR, William",
+          "officer_role": "director",
+          "appointed_on": "2008-07-15",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1979
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "WILLIAMS, Niamh",
+          "officer_role": "secretary",
+          "appointed_on": "2010-04-04",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1972
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Callum Williams",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1989
+          },
+          "ownership_percentage": 40
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "William Taylor",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1979
+          },
+          "ownership_percentage": 35
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Zara Evans",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1956
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "16368174",
+      "company_name": "ELMSTEAD LUMEN PHARMA PLC",
+      "company_status": "active",
+      "type": "plc",
+      "date_of_creation": "1998-05-07",
+      "sic_codes": [
+        "21200"
+      ],
+      "registered_office_address": {
+        "address_line_1": "3 Bridge Street",
+        "locality": "Cardiff",
+        "postal_code": "CF10 2BW",
+        "country": "Wales"
+      },
+      "officers": [
+        {
+          "name": "FRASER, Amelia",
+          "officer_role": "director",
+          "appointed_on": "2000-05-10",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1980
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "FRASER, Matthew",
+          "officer_role": "secretary",
+          "appointed_on": "2001-06-19",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1982
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Amelia Fraser",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1980
+          },
+          "ownership_percentage": 70
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Samuel Walker",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 2,
+            "year": 1967
+          },
+          "ownership_percentage": 20
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Eleanor Wood",
+          "natures_of_control": [],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 4,
+            "year": 1978
+          },
+          "ownership_percentage": 10
+        }
+      ]
+    },
+    {
+      "company_number": "08410272",
+      "company_name": "KINGSMERE VECTOR ENGINEERING LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2013-07-13",
+      "sic_codes": [
+        "71129"
+      ],
+      "registered_office_address": {
+        "address_line_1": "213 Church Lane",
+        "locality": "London",
+        "postal_code": "EC2A 8DJ",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "THOMPSON, James",
+          "officer_role": "director",
+          "appointed_on": "2019-12-22",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1958
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "SMITH, Alistair",
+          "officer_role": "director",
+          "appointed_on": "2014-01-25",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1980
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "LEWIS, Olivia",
+          "officer_role": "director",
+          "appointed_on": "2015-10-23",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1976
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "James Thompson",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1958
+          },
+          "ownership_percentage": 40
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Alistair Smith",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1980
+          },
+          "ownership_percentage": 35
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Olivia Lewis",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1976
+          },
+          "ownership_percentage": 25
+        }
+      ]
+    },
+    {
+      "company_number": "13214702",
+      "company_name": "CHEVIOT ANCHOR MEDIA LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2008-03-24",
+      "sic_codes": [
+        "59111"
+      ],
+      "registered_office_address": {
+        "address_line_1": "34 Castle Street",
+        "locality": "Manchester",
+        "postal_code": "M1 3GH",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "WALKER, Oliver",
+          "officer_role": "director",
+          "appointed_on": "2016-03-23",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1989
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "ELLISON, William",
+          "officer_role": "director",
+          "appointed_on": "2012-07-28",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1955
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Oliver Walker",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1989
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "William Ellison",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1955
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "13837953",
+      "company_name": "MILLBROOK MEDIA LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1990-10-02",
+      "sic_codes": [
+        "59111"
+      ],
+      "registered_office_address": {
+        "address_line_1": "237 Market Street",
+        "locality": "Manchester",
+        "postal_code": "M1 8YE",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "GREEN, Fiona",
+          "officer_role": "director",
+          "appointed_on": "1992-06-20",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1991
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "BROWN, Daniel",
+          "officer_role": "director",
+          "appointed_on": "1992-08-20",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1975
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "JONES, Eleanor",
+          "officer_role": "director",
+          "appointed_on": "1997-07-02",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1989
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Fiona Green",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1991
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Daniel Brown",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1975
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "12925554",
+      "company_name": "MILLBROOK VECTOR ENGINEERING LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "1995-01-07",
+      "sic_codes": [
+        "71129"
+      ],
+      "registered_office_address": {
+        "address_line_1": "231 Station Road",
+        "locality": "Newcastle upon Tyne",
+        "postal_code": "NE1 8XB",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "ELLISON, Oliver",
+          "officer_role": "director",
+          "appointed_on": "2002-04-24",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1984
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "TAYLOR, William",
+          "officer_role": "director",
+          "appointed_on": "1998-02-23",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1985
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "CLARKE, Arjun",
+          "officer_role": "director",
+          "appointed_on": "2000-04-20",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1968
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Oliver Ellison",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1984
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "SC218505",
+      "company_name": "GLENROTHES VECTOR HOLDINGS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2008-12-16",
+      "sic_codes": [
+        "64209"
+      ],
+      "registered_office_address": {
+        "address_line_1": "70 Park Road",
+        "locality": "Glasgow",
+        "postal_code": "G2 4GH",
+        "country": "Scotland"
+      },
+      "officers": [
+        {
+          "name": "WILSON, Harry",
+          "officer_role": "director",
+          "appointed_on": "2008-12-16",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1983
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "HALCYON INVESTMENTS LTD",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "identification": {
+            "registration_number": "KY-896536",
+            "country_registered": "Cayman Islands"
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "10345089",
+      "company_name": "THORNBURY PHARMA LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2008-10-25",
+      "sic_codes": [
+        "21200"
+      ],
+      "registered_office_address": {
+        "address_line_1": "9 Park Road",
+        "locality": "Birmingham",
+        "postal_code": "B3 7QX",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "PATEL, Isla",
+          "officer_role": "director",
+          "appointed_on": "2010-02-09",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1957
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "SMITH, George",
+          "officer_role": "director",
+          "appointed_on": "2011-06-27",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1973
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "JONES, Isla",
+          "officer_role": "director",
+          "appointed_on": "2015-01-12",
+          "date_of_birth": {
+            "month": 6,
+            "year": 1959
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Isla Patel",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1957
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "George Smith",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1973
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "12844984",
+      "company_name": "ASHFORD HARBOUR HOLDINGS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2001-10-03",
+      "sic_codes": [
+        "64209"
+      ],
+      "registered_office_address": {
+        "address_line_1": "43 Market Street",
+        "locality": "Belfast",
+        "postal_code": "BT1 9EY",
+        "country": "Northern Ireland"
+      },
+      "officers": [
+        {
+          "name": "WALKER, Bethan",
+          "officer_role": "director",
+          "appointed_on": "2001-10-03",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1990
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Bethan Walker",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1990
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "15148228",
+      "company_name": "NETHERBY CONSTRUCTION LTD",
+      "company_status": "dissolved",
+      "type": "ltd",
+      "date_of_creation": "1990-07-08",
+      "sic_codes": [
+        "41201"
+      ],
+      "registered_office_address": {
+        "address_line_1": "19 Queen Street",
+        "locality": "Birmingham",
+        "postal_code": "B3 3DT",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "WILSON, Eleanor",
+          "officer_role": "director",
+          "appointed_on": "1990-07-08",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1955
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Eleanor Wilson",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1955
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "06368151",
+      "company_name": "STANMORE MERIDIAN PHARMA LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2007-08-12",
+      "sic_codes": [
+        "21200"
+      ],
+      "registered_office_address": {
+        "address_line_1": "162 Wharf Road",
+        "locality": "Bristol",
+        "postal_code": "BS1 3DB",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "LLOYD, Arjun",
+          "officer_role": "director",
+          "appointed_on": "2014-12-02",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1991
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "HALL, Priya",
+          "officer_role": "director",
+          "appointed_on": "2010-10-15",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1959
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Arjun Lloyd",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 12,
+            "year": 1991
+          },
+          "ownership_percentage": 50
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Priya Hall",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 9,
+            "year": 1959
+          },
+          "ownership_percentage": 50
+        }
+      ]
+    },
+    {
+      "company_number": "11481104",
+      "company_name": "GLENROTHES HARBOUR GAMING LTD",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2014-10-20",
+      "sic_codes": [
+        "92000"
+      ],
+      "registered_office_address": {
+        "address_line_1": "152 King Street",
+        "locality": "Leeds",
+        "postal_code": "LS1 9HS",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "TAYLOR, Fiona",
+          "officer_role": "director",
+          "appointed_on": "2015-03-08",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1969
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "JONES, Arjun",
+          "officer_role": "director",
+          "appointed_on": "2019-11-13",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1967
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "KHAN, Zara",
+          "officer_role": "director",
+          "appointed_on": "2016-03-31",
+          "date_of_birth": {
+            "month": 8,
+            "year": 1967
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Fiona Taylor",
+          "natures_of_control": [
+            "ownership-of-shares-50-to-75-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1969
+          },
+          "ownership_percentage": 60
+        },
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Arjun Jones",
+          "natures_of_control": [
+            "ownership-of-shares-25-to-50-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 11,
+            "year": 1967
+          },
+          "ownership_percentage": 40
+        }
+      ]
+    },
+    {
+      "company_number": "15707650",
+      "company_name": "NETHERBY HARBOUR LOGISTICS LIMITED",
+      "company_status": "active",
+      "type": "ltd",
+      "date_of_creation": "2014-02-08",
+      "sic_codes": [
+        "49410"
+      ],
+      "registered_office_address": {
+        "address_line_1": "106 High Street",
+        "locality": "London",
+        "postal_code": "EC2A 7XD",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "WILSON, Fiona",
+          "officer_role": "director",
+          "appointed_on": "2019-10-07",
+          "date_of_birth": {
+            "month": 3,
+            "year": 1966
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "PATEL, Arjun",
+          "officer_role": "director",
+          "appointed_on": "2019-05-10",
+          "date_of_birth": {
+            "month": 7,
+            "year": 1976
+          },
+          "nationality": "British"
+        },
+        {
+          "name": "TAYLOR, Eleanor",
+          "officer_role": "director",
+          "appointed_on": "2020-06-17",
+          "date_of_birth": {
+            "month": 1,
+            "year": 1960
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "corporate-entity-person-with-significant-control",
+          "name": "NORTHCOTE BEACON HOLDINGS LIMITED",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "identification": {
+            "registration_number": "04145423",
+            "country_registered": "England"
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    },
+    {
+      "company_number": "07976005",
+      "company_name": "DAVENPORT SOFTWARE PLC",
+      "company_status": "active",
+      "type": "plc",
+      "date_of_creation": "2013-09-24",
+      "sic_codes": [
+        "62012"
+      ],
+      "registered_office_address": {
+        "address_line_1": "105 Church Lane",
+        "locality": "London",
+        "postal_code": "EC2A 6XT",
+        "country": "England"
+      },
+      "officers": [
+        {
+          "name": "ROBINSON, Arjun",
+          "officer_role": "director",
+          "appointed_on": "2020-07-13",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1981
+          },
+          "nationality": "British"
+        }
+      ],
+      "persons_with_significant_control": [
+        {
+          "kind": "individual-person-with-significant-control",
+          "name": "Arjun Robinson",
+          "natures_of_control": [
+            "ownership-of-shares-75-to-100-percent"
+          ],
+          "nationality": "British",
+          "date_of_birth": {
+            "month": 5,
+            "year": 1981
+          },
+          "ownership_percentage": 100
+        }
+      ]
+    }
+  ]
+}

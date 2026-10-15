@@ -1,0 +1,904 @@
+{
+  "companies": [
+    {
+      "company_id": "UK-001",
+      "name": "Hawksmoor Meridian Textiles",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-002",
+      "name": "Stanmore Summit Gaming",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-003",
+      "name": "Netherby Construction Limited",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-004",
+      "name": "Glenrothes Harbour Gaming",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-005",
+      "name": "Carrick Meridian Energy Ltd",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-006",
+      "name": "Hollins Anchor Textiles",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-007",
+      "name": "Ashford Summit Textiles Ltd",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-008",
+      "name": "Oakridge Harbour Media Ltd",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-009",
+      "name": "Stanmore Harbour Foods Ltd",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-010",
+      "name": "Fairholme Harbour Construction",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-011",
+      "name": "Elmstead Harbour Digital Assets",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-012",
+      "name": "Marlow Harbour Pharma",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-013",
+      "name": "Ivybridge Beacon Energy Ltd",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-014",
+      "name": "Oakridge Textiles PLC",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-015",
+      "name": "Kingsmere Pharma",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-016",
+      "name": "Ashford Textiles",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-017",
+      "name": "Elmstead Software",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-018",
+      "name": "Millbrook Media Ltd",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-019",
+      "name": "Thornbury Meridian Media",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-020",
+      "name": "Millbrook Vector Engineering Ltd",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-021",
+      "name": "Netherby Harbour Logistics",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-022",
+      "name": "Northcote Anchor Foods",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-023",
+      "name": "Cheviot Lumen Pharma Ltd",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-024",
+      "name": "Yarrow Digital Assets Ltd",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-025",
+      "name": "Fairholme Foods Ltd",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-026",
+      "name": "Oakridge Harbour Foods",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-027",
+      "name": "Yarrow Energy",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-028",
+      "name": "Davenport Software PLC",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-029",
+      "name": "Greystone Lumen Media Ltd",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-030",
+      "name": "Brockley Vector Foods",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-031",
+      "name": "Netherby Software",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-032",
+      "name": "Elmstead Lumen Pharma PLC",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-033",
+      "name": "Penrose Software",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-034",
+      "name": "Marlow Vector Textiles Ltd",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-035",
+      "name": "Blackwater Lumen Construction",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-036",
+      "name": "Dunmore Beacon Engineering",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-037",
+      "name": "Cheviot Beacon Foods",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-038",
+      "name": "Ashford Anchor Construction Ltd",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-039",
+      "name": "Davenport Energy Ltd",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-040",
+      "name": "Netherby Digital Assets",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-041",
+      "name": "Cheviot Anchor Media",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-042",
+      "name": "Kingsmere Vector Engineering",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-043",
+      "name": "Hollins Construction",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-044",
+      "name": "Ashford Logistics Limited",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-045",
+      "name": "Langley Lumen Logistics Limited",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-046",
+      "name": "Thornbury Pharma Ltd",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-047",
+      "name": "Stanmore Meridian Pharma",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-048",
+      "name": "Thornbury Construction",
+      "country": "UK",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "UK-049",
+      "name": "Calder Beacon Software",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "UK-050",
+      "name": "Davenport Vector Software",
+      "country": "UK",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-001",
+      "name": "Algarvia Energia",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-002",
+      "name": "Serra Alta Ibérica Farmacêutica",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-003",
+      "name": "Tâmega Global Têxteis",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-004",
+      "name": "Dão Vivo Lux Têxteis",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-005",
+      "name": "Caramulo Lux Logística",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-006",
+      "name": "Tejo Ibérica Engenharia",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-007",
+      "name": "Portela Ibérica Software",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-008",
+      "name": "Quinta Nova Nova Alimentar",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-009",
+      "name": "Alcoa Global Alimentar",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-010",
+      "name": "Tejo Têxteis",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-011",
+      "name": "Zêzere Global Media",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-012",
+      "name": "Alvorada Energia",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-013",
+      "name": "Costa Verde Nova Engenharia",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-014",
+      "name": "Mondego Ibérica Engenharia",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-015",
+      "name": "Tejo Farmacêutica",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-016",
+      "name": "Mondego Ibérica Construções",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-017",
+      "name": "Espinhaço Nova Logística",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-018",
+      "name": "Lusitânia Ibérica Logística",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-019",
+      "name": "Espinhaço Prime Energia",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-020",
+      "name": "Lusitânia Global Têxteis",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-021",
+      "name": "Lezíria Ibérica Energia",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-022",
+      "name": "Zêzere Ibérica Farmacêutica",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-023",
+      "name": "Ferreira Global Engenharia",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-024",
+      "name": "Serra Alta Ibérica Alimentar",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-025",
+      "name": "Nogueira Nova Farmacêutica",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-026",
+      "name": "Atlântica Ibérica Farmacêutica",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-027",
+      "name": "Sado Logística",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-028",
+      "name": "Quinta Nova Prime Farmacêutica",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-029",
+      "name": "Sado Farmacêutica",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-030",
+      "name": "Sado Ibérica Jogos",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-031",
+      "name": "Alvorada Engenharia",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-032",
+      "name": "Alcoa Nova Engenharia",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-033",
+      "name": "Barroso Global Jogos",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-034",
+      "name": "Vouga Têxteis",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-035",
+      "name": "Atlântica Câmbios",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-036",
+      "name": "Barroso Câmbios",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-037",
+      "name": "Belém Norte Prime Alimentar",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-038",
+      "name": "Cávado Ibérica Media",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-039",
+      "name": "Estrela Alimentar",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-040",
+      "name": "Bairrada Engenharia",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-041",
+      "name": "Marão Nova Farmacêutica",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-042",
+      "name": "Zêzere Prime Engenharia",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-043",
+      "name": "Atlântica Logística",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-044",
+      "name": "Douro Nova Construções",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-045",
+      "name": "Tâmega Farmacêutica",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-046",
+      "name": "Portela Prime Construções",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-047",
+      "name": "Quinta Nova Nova Câmbios",
+      "country": "PT",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "PT-048",
+      "name": "Tâmega Construções",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-049",
+      "name": "Foz Nova Prime Engenharia",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "PT-050",
+      "name": "Nogueira Global Construções",
+      "country": "PT",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-001",
+      "name": "Anhumas Energia",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-002",
+      "name": "Pitanga Alimentos",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-003",
+      "name": "Serra Gaúcha Têxtil",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-004",
+      "name": "Taquari Farma",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-005",
+      "name": "Carnaúba Logística",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-006",
+      "name": "Tropeiro Ativos Digitais",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-007",
+      "name": "Pantanal Engenharia",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-008",
+      "name": "Jequitibá Têxtil",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-009",
+      "name": "Tropeiro Farma",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-010",
+      "name": "Buriti Software",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-011",
+      "name": "Buriti Alimentos",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-012",
+      "name": "Vale Azul Construtora",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-013",
+      "name": "Ipê Roxo Ativos Digitais",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-014",
+      "name": "Xingu Verde Têxtil",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-015",
+      "name": "Guanabara Alimentos",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-016",
+      "name": "Sabiá Mídia",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-017",
+      "name": "Serra Gaúcha Farma",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-018",
+      "name": "Maracanã Sul Software",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-019",
+      "name": "Xingu Verde Construtora",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-020",
+      "name": "Maracanã Sul Farma",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-021",
+      "name": "Itapuã Logística",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-022",
+      "name": "Jequitibá Energia",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-023",
+      "name": "Sertão Novo Alimentos",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-024",
+      "name": "Ipê Roxo Têxtil",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-025",
+      "name": "Vale Azul Logística",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-026",
+      "name": "Aurora Software",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-027",
+      "name": "Aurora Mídia",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-028",
+      "name": "Coqueiral Software",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-029",
+      "name": "Pitanga Farma",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-030",
+      "name": "Caatinga Têxtil",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-031",
+      "name": "Serra Gaúcha Software",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-032",
+      "name": "Bandeirantes Apostas",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-033",
+      "name": "Coqueiral Mídia",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-034",
+      "name": "Araucária Construtora",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-035",
+      "name": "Iguaçu Têxtil",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-036",
+      "name": "Buriti Têxtil",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-037",
+      "name": "Jatobá Software",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-038",
+      "name": "Tropeiro Energia",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-039",
+      "name": "Itapuã Energia",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-040",
+      "name": "Vale Azul Energia",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-041",
+      "name": "Jacarandá Câmbio",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-042",
+      "name": "Tapajós Software",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-043",
+      "name": "Juriti Engenharia",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-044",
+      "name": "Pantanal Apostas",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-045",
+      "name": "Pantanal Software",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-046",
+      "name": "Carnaúba Alimentos",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-047",
+      "name": "Cerrado Software",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-048",
+      "name": "Ubatuba Farma",
+      "country": "BR",
+      "difficulty": "hard"
+    },
+    {
+      "company_id": "BR-049",
+      "name": "Mandacaru Alimentos",
+      "country": "BR",
+      "difficulty": "straightforward"
+    },
+    {
+      "company_id": "BR-050",
+      "name": "Mantiqueira Logística",
+      "country": "BR",
+      "difficulty": "hard"
+    }
+  ]
+}

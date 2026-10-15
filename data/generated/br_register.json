@@ -1,0 +1,2357 @@
+{
+  "source": "Cadastro CNPJ simulado (Brasil)",
+  "empresas": [
+    {
+      "cnpj": "08.645.633/0001-69",
+      "razao_social": "COQUEIRAL NORTE SOFTWARE LTDA",
+      "nome_fantasia": "COQUEIRAL SOFTWARE",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2009-06-01",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Rua das Palmeiras",
+      "numero": "215",
+      "bairro": "Centro",
+      "municipio": "CURITIBA",
+      "uf": "PR",
+      "cep": "80020-852",
+      "qsa": [
+        {
+          "nome_socio": "GABRIEL FREITAS VIEIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***937303**",
+          "data_entrada_sociedade": "2012-02-19",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "BIANCA MOREIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***495643**",
+          "data_entrada_sociedade": "2009-06-04",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "BIANCA NUNES LOPES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***676420**",
+          "data_entrada_sociedade": "2015-10-13",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "13.982.658/0001-98",
+      "razao_social": "TROPEIRO ENERGIA LTDA",
+      "nome_fantasia": "TROPEIRO ENERGIA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2011-07-01",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "3511-5/01",
+        "descricao": "Produção de eletricidade"
+      },
+      "logradouro": null,
+      "numero": null,
+      "bairro": null,
+      "municipio": null,
+      "uf": null,
+      "cep": null,
+      "qsa": [
+        {
+          "nome_socio": "MATEUS SANTOS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***767299**",
+          "data_entrada_sociedade": "2013-11-17",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "DEBORA SANTOS VIEIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***249187**",
+          "data_entrada_sociedade": "2014-10-13",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "77.432.988/0001-92",
+      "razao_social": "GUANABARA PRIME ALIMENTOS S.A.",
+      "nome_fantasia": "GUANABARA ALIMENTOS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2014-10-18",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "1099-6/99",
+        "descricao": "Fabricação de produtos alimentares"
+      },
+      "logradouro": "Avenida Atlântica",
+      "numero": "51",
+      "bairro": "Savassi",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-317",
+      "qsa": [
+        {
+          "nome_socio": "LUCAS FERREIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***730274**",
+          "data_entrada_sociedade": "2019-04-13",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "ISABELA MOREIRA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***771440**",
+          "data_entrada_sociedade": "2014-10-18",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "49.980.835/0001-44",
+      "razao_social": "XINGU VERDE SUL TEXTIL LTDA",
+      "nome_fantasia": "XINGU VERDE TÊXTIL",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2013-01-09",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "1351-1/00",
+        "descricao": "Fabricação de têxteis"
+      },
+      "logradouro": "Rua Augusta",
+      "numero": "27",
+      "bairro": "Moinhos de Vento",
+      "municipio": "PORTO ALEGRE",
+      "uf": "RS",
+      "cep": "90010-868",
+      "qsa": [
+        {
+          "nome_socio": "ALINE NASCIMENTO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***977527**",
+          "data_entrada_sociedade": "2015-06-12",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "CAIO MACHADO LIMA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***489826**",
+          "data_entrada_sociedade": "2013-01-09",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LUANA VIEIRA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***984237**",
+          "data_entrada_sociedade": "2013-01-09",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "86.390.578/0001-17",
+      "razao_social": "CARNAUBA NOVA ALIMENTOS S.A.",
+      "nome_fantasia": "CARNAÚBA ALIMENTOS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2014-11-08",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "1099-6/99",
+        "descricao": "Fabricação de produtos alimentares"
+      },
+      "logradouro": "Rua Sete de Setembro",
+      "numero": "35",
+      "bairro": "Boa Viagem",
+      "municipio": "RECIFE",
+      "uf": "PE",
+      "cep": "50030-457",
+      "qsa": [
+        {
+          "nome_socio": "LUCAS BARBOSA SOUZA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***816148**",
+          "data_entrada_sociedade": "2017-11-30",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "HENRIQUE NASCIMENTO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***286113**",
+          "data_entrada_sociedade": "2019-02-20",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "FERNANDA SOARES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***686551**",
+          "data_entrada_sociedade": "2020-12-25",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "16.289.439/0001-16",
+      "razao_social": "JURITI SUL ENGENHARIA S.A.",
+      "nome_fantasia": "JURITI ENGENHARIA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1987-03-07",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "7112-0/00",
+        "descricao": "Atividades de engenharia"
+      },
+      "logradouro": "Rua Augusta",
+      "numero": "118",
+      "bairro": "Jardins",
+      "municipio": "RIO DE JANEIRO",
+      "uf": "RJ",
+      "cep": "20040-977",
+      "qsa": [
+        {
+          "nome_socio": "NATALIA RIBEIRO ROCHA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***828615**",
+          "data_entrada_sociedade": "1987-03-27",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "MARIANA MARTINS FREITAS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***438304**",
+          "data_entrada_sociedade": "1992-04-15",
+          "percentual_capital_social": 35,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LUANA RODRIGUES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***277882**",
+          "data_entrada_sociedade": "1991-10-31",
+          "percentual_capital_social": 25,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "63.197.321/0001-48",
+      "razao_social": "VALE AZUL PRIME CONSTRUTORA LTDA",
+      "nome_fantasia": "VALE AZUL CONSTRUTORA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1992-11-26",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "4120-4/00",
+        "descricao": "Construção de edifícios"
+      },
+      "logradouro": "Rua XV de Novembro",
+      "numero": "163",
+      "bairro": "Moinhos de Vento",
+      "municipio": "RIO DE JANEIRO",
+      "uf": "RJ",
+      "cep": "20040-119",
+      "qsa": [
+        {
+          "nome_socio": "CARLOS FREITAS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***392196**",
+          "data_entrada_sociedade": "1998-03-08",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "VINICIUS OLIVEIRA MARQUES",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***314577**",
+          "data_entrada_sociedade": "1992-11-26",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "06.397.327/0001-25",
+      "razao_social": "ITAPUA NORTE ENERGIA LTDA",
+      "nome_fantasia": "ITAPUÃ ENERGIA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1995-02-22",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "3511-5/01",
+        "descricao": "Produção de eletricidade"
+      },
+      "logradouro": "Avenida Brasil",
+      "numero": "39",
+      "bairro": "Bela Vista",
+      "municipio": "PORTO ALEGRE",
+      "uf": "RS",
+      "cep": "90010-774",
+      "qsa": [
+        {
+          "nome_socio": "PATRICIA VIEIRA MACHADO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***295821**",
+          "data_entrada_sociedade": "1997-03-13",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "BRUNO PEREIRA CARVALHO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***344174**",
+          "data_entrada_sociedade": "1999-04-25",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "11.168.312/0001-25",
+      "razao_social": "BURITI PRIME TEXTIL LTDA",
+      "nome_fantasia": "BURITI TÊXTIL",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2011-02-04",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "1351-1/00",
+        "descricao": "Fabricação de têxteis"
+      },
+      "logradouro": "Rua Sete de Setembro",
+      "numero": "182",
+      "bairro": "Batel",
+      "municipio": "PORTO ALEGRE",
+      "uf": "RS",
+      "cep": "90010-981",
+      "qsa": [
+        {
+          "nome_socio": "FERNANDA OLIVEIRA SOARES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***442297**",
+          "data_entrada_sociedade": "2014-11-20",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "GUSTAVO CARVALHO ROCHA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***203288**",
+          "data_entrada_sociedade": "2014-11-09",
+          "percentual_capital_social": 35,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LARISSA MOREIRA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***585681**",
+          "data_entrada_sociedade": "2011-02-04",
+          "percentual_capital_social": 25,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "18.113.272/0001-63",
+      "razao_social": "PITANGA FARMA S.A.",
+      "nome_fantasia": "PITANGA FARMA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2006-04-07",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "2121-1/01",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "logradouro": "Rua Sete de Setembro",
+      "numero": "225",
+      "bairro": "Centro",
+      "municipio": "RIO DE JANEIRO",
+      "uf": "RJ",
+      "cep": "20040-374",
+      "qsa": [
+        {
+          "nome_socio": "RAFAEL MOREIRA VIEIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***249901**",
+          "data_entrada_sociedade": "2013-07-07",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "FERNANDA DIAS SOARES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***832632**",
+          "data_entrada_sociedade": "2011-05-09",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "MATEUS COSTA FREITAS",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***231608**",
+          "data_entrada_sociedade": "2008-07-19",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "68.335.719/0001-17",
+      "razao_social": "UBATUBA FARMA LTDA",
+      "nome_fantasia": "UBATUBA FARMA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1997-06-04",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "2121-1/01",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "logradouro": "Rua da Consolação",
+      "numero": "104",
+      "bairro": "Boa Viagem",
+      "municipio": "BELO HORIZONTE",
+      "uf": "MG",
+      "cep": "30130-946",
+      "qsa": [
+        {
+          "nome_socio": "LETICIA CARVALHO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***179497**",
+          "data_entrada_sociedade": "1998-07-09",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "GUSTAVO LOPES MACHADO",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***349932**",
+          "data_entrada_sociedade": "1997-06-04",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "32.794.744/0001-11",
+      "razao_social": "TROPEIRO SUL ATIVOS DIGITAIS S.A.",
+      "nome_fantasia": "TROPEIRO ATIVOS DIGITAIS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2004-05-26",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "6619-3/99",
+        "descricao": "Negociação de ativos digitais"
+      },
+      "logradouro": "Rua XV de Novembro",
+      "numero": "88",
+      "bairro": "Jardins",
+      "municipio": "SALVADOR",
+      "uf": "BA",
+      "cep": "40020-311",
+      "qsa": [
+        {
+          "nome_socio": "FERNANDA VIEIRA NASCIMENTO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***614754**",
+          "data_entrada_sociedade": "2006-03-25",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "PAULO FREITAS FERREIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***646160**",
+          "data_entrada_sociedade": "2006-11-04",
+          "percentual_capital_social": 35,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "PATRICIA SANTOS",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***982943**",
+          "data_entrada_sociedade": "2004-05-26",
+          "percentual_capital_social": 25,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "90.527.174/0001-08",
+      "razao_social": "BURITI SOFTWARE LTDA",
+      "nome_fantasia": "BURITI SOFTWARE",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2010-08-04",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Avenida Atlântica",
+      "numero": "176",
+      "bairro": "Centro",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-253",
+      "qsa": [
+        {
+          "nome_socio": "CARLOS MENDES ALMEIDA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***564245**",
+          "data_entrada_sociedade": "2014-06-15",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "JULIANA LOPES FREITAS",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***274568**",
+          "data_entrada_sociedade": "2010-08-04",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "PATRICIA ANDRADE",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***594292**",
+          "data_entrada_sociedade": "2010-08-04",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "48.599.545/0001-92",
+      "razao_social": "CERRADO SUL SOFTWARE S.A.",
+      "nome_fantasia": "CERRADO SOFTWARE",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2001-11-10",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Avenida Paulista",
+      "numero": "61",
+      "bairro": "Jardins",
+      "municipio": "FLORIANOPOLIS",
+      "uf": "SC",
+      "cep": "88010-652",
+      "qsa": [
+        {
+          "nome_socio": "FELIPE SILVA FREITAS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***763195**",
+          "data_entrada_sociedade": "2009-09-05",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LETICIA RIBEIRO COSTA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***316824**",
+          "data_entrada_sociedade": "2008-03-30",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "GUSTAVO FREITAS LIMA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***678766**",
+          "data_entrada_sociedade": "2008-08-04",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "97.931.996/0001-90",
+      "razao_social": "AURORA SOFTWARE LTDA",
+      "nome_fantasia": "AURORA SOFTWARE",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1985-09-16",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Rua Sete de Setembro",
+      "numero": "240",
+      "bairro": "Centro",
+      "municipio": "PORTO ALEGRE",
+      "uf": "RS",
+      "cep": "90010-149",
+      "qsa": [
+        {
+          "nome_socio": "PATRICIA RIBEIRO SOUZA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***402630**",
+          "data_entrada_sociedade": "1993-02-20",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "BEATRIZ FREITAS",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***169330**",
+          "data_entrada_sociedade": "1985-09-16",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "06.205.345/0001-68",
+      "razao_social": "TAQUARI NORTE PARTICIPACOES LTDA",
+      "nome_fantasia": "TAQUARI PARTICIPAÇÕES",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2003-08-04",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6462-0/00",
+        "descricao": "Holdings de instituições não financeiras"
+      },
+      "logradouro": "Rua Augusta",
+      "numero": "131",
+      "bairro": "Jardins",
+      "municipio": "BELO HORIZONTE",
+      "uf": "MG",
+      "cep": "30130-363",
+      "qsa": [
+        {
+          "nome_socio": "RENATA MOREIRA OLIVEIRA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***313680**",
+          "data_entrada_sociedade": "2003-08-04",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "TIDEWATER VENTURES INC",
+          "qualificacao_socio": "37-Sócio Pessoa Jurídica Domiciliado no Exterior",
+          "cnpj_cpf_do_socio": null,
+          "data_entrada_sociedade": "2003-08-04",
+          "percentual_capital_social": 100,
+          "pais": "PANAMA"
+        }
+      ]
+    },
+    {
+      "cnpj": "11.694.497/0001-01",
+      "razao_social": "MANTIQUEIRA SUL LOGISTICA LTDA",
+      "nome_fantasia": "MANTIQUEIRA LOGÍSTICA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2006-01-19",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "4930-2/02",
+        "descricao": "Transportes rodoviários de mercadorias"
+      },
+      "logradouro": "Avenida Afonso Pena",
+      "numero": "65",
+      "bairro": "Centro",
+      "municipio": "CURITIBA",
+      "uf": "PR",
+      "cep": "80020-754",
+      "qsa": [
+        {
+          "nome_socio": "FERNANDA SILVA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***796572**",
+          "data_entrada_sociedade": "2007-05-03",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "DEBORA ALVES",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***923117**",
+          "data_entrada_sociedade": "2009-04-10",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "79.915.109/0001-09",
+      "razao_social": "BANDEIRANTES SUL APOSTAS LTDA",
+      "nome_fantasia": "BANDEIRANTES APOSTAS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2020-02-26",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "9200-3/99",
+        "descricao": "Jogos de fortuna e azar e apostas"
+      },
+      "logradouro": "Rua XV de Novembro",
+      "numero": "154",
+      "bairro": "Savassi",
+      "municipio": "GOIANIA",
+      "uf": "GO",
+      "cep": "74003-995",
+      "qsa": [
+        {
+          "nome_socio": "GABRIEL GOMES LOPES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***967272**",
+          "data_entrada_sociedade": "2026-05-29",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "FELIPE MARQUES DIAS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***495846**",
+          "data_entrada_sociedade": "2026-07-13",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "ALINE DIAS",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***694681**",
+          "data_entrada_sociedade": "2020-05-29",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "85.034.513/0001-76",
+      "razao_social": "JATOBA SUL SOFTWARE LTDA",
+      "nome_fantasia": "JATOBÁ SOFTWARE",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1988-02-05",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Rua Augusta",
+      "numero": "212",
+      "bairro": "Moinhos de Vento",
+      "municipio": "GOIANIA",
+      "uf": "GO",
+      "cep": "74003-397",
+      "qsa": [
+        {
+          "nome_socio": "CARLOS PEREIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***398558**",
+          "data_entrada_sociedade": "1992-06-04",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "JULIANA SILVA MACHADO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***873873**",
+          "data_entrada_sociedade": "1994-12-06",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LUCAS OLIVEIRA MARTINS",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***151815**",
+          "data_entrada_sociedade": "1992-01-12",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "22.654.341/0001-13",
+      "razao_social": "IPE ROXO ATIVOS DIGITAIS S.A.",
+      "nome_fantasia": "IPÊ ROXO ATIVOS DIGITAIS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1990-09-26",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "6619-3/99",
+        "descricao": "Negociação de ativos digitais"
+      },
+      "logradouro": "Rua Augusta",
+      "numero": "166",
+      "bairro": "Jardins",
+      "municipio": "RIO DE JANEIRO",
+      "uf": "RJ",
+      "cep": "20040-601",
+      "qsa": [
+        {
+          "nome_socio": "BEATRIZ CARVALHO DIAS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***298497**",
+          "data_entrada_sociedade": "1995-06-22",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "MARIANA ROCHA MARTINS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***757264**",
+          "data_entrada_sociedade": "1993-08-20",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LUCAS SOUZA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***680696**",
+          "data_entrada_sociedade": "1992-12-13",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "72.404.933/0001-55",
+      "razao_social": "SERRA GAUCHA SOFTWARE LTDA",
+      "nome_fantasia": "SERRA GAÚCHA SOFTWARE",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1997-09-06",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Rua XV de Novembro",
+      "numero": "92",
+      "bairro": "Centro",
+      "municipio": "CURITIBA",
+      "uf": "PR",
+      "cep": "80020-694",
+      "qsa": [
+        {
+          "nome_socio": "PATRICIA CARVALHO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***295370**",
+          "data_entrada_sociedade": "2001-02-14",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "95.977.338/0001-04",
+      "razao_social": "MARACANA SUL SOFTWARE LTDA",
+      "nome_fantasia": "MARACANÃ SUL SOFTWARE",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1998-11-20",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Rua das Palmeiras",
+      "numero": "228",
+      "bairro": "Jardins",
+      "municipio": "BELO HORIZONTE",
+      "uf": "MG",
+      "cep": "30130-924",
+      "qsa": [
+        {
+          "nome_socio": "PATRICIA SOARES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***184361**",
+          "data_entrada_sociedade": "2003-01-13",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "FELIPE OLIVEIRA MARTINS",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***141540**",
+          "data_entrada_sociedade": "2002-06-13",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "31.197.424/0001-11",
+      "razao_social": "TAPAJOS PRIME PARTICIPACOES LTDA",
+      "nome_fantasia": "TAPAJÓS PARTICIPAÇÕES",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1999-06-12",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6462-0/00",
+        "descricao": "Holdings de instituições não financeiras"
+      },
+      "logradouro": "Rua Sete de Setembro",
+      "numero": "75",
+      "bairro": "Jardins",
+      "municipio": "CAMPINAS",
+      "uf": "SP",
+      "cep": "13010-716",
+      "qsa": [
+        {
+          "nome_socio": "MARIANA MENDES ROCHA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***245978**",
+          "data_entrada_sociedade": "1999-06-12",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "PAULO SOARES",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***992719**",
+          "data_entrada_sociedade": "1999-06-12",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "77.996.933/0001-05",
+      "razao_social": "SERTAO NOVO PRIME ALIMENTOS LTDA",
+      "nome_fantasia": "SERTÃO NOVO ALIMENTOS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1989-08-22",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "1099-6/99",
+        "descricao": "Fabricação de produtos alimentares"
+      },
+      "logradouro": "Rua da Consolação",
+      "numero": "95",
+      "bairro": "Boa Viagem",
+      "municipio": "BELO HORIZONTE",
+      "uf": "MG",
+      "cep": "30130-185",
+      "qsa": [
+        {
+          "nome_socio": "MATEUS MACHADO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***374373**",
+          "data_entrada_sociedade": "1991-09-05",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "CARLOS ALVES GOMES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***520766**",
+          "data_entrada_sociedade": "1990-05-11",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "02.261.950/0001-03",
+      "razao_social": "COQUEIRAL NORTE SOFTWARE S.A.",
+      "nome_fantasia": "COQUEIRAL SOFTWARE",
+      "situacao_cadastral": "BAIXADA",
+      "data_inicio_atividade": "2003-06-11",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Rua das Palmeiras",
+      "numero": "88",
+      "bairro": "Centro",
+      "municipio": "RIO DE JANEIRO",
+      "uf": "RJ",
+      "cep": "20040-817",
+      "qsa": [
+        {
+          "nome_socio": "GABRIEL ANDRADE BARBOSA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***582401**",
+          "data_entrada_sociedade": "2003-06-11",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "05.467.768/0001-93",
+      "razao_social": "ARAUCARIA SUL CONSTRUTORA LTDA",
+      "nome_fantasia": "ARAUCÁRIA CONSTRUTORA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1987-03-13",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "4120-4/00",
+        "descricao": "Construção de edifícios"
+      },
+      "logradouro": "Avenida Ipiranga",
+      "numero": "28",
+      "bairro": "Jardins",
+      "municipio": "PORTO ALEGRE",
+      "uf": "RS",
+      "cep": "90010-451",
+      "qsa": [
+        {
+          "nome_socio": "BEATRIZ SANTOS FERNANDES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***238267**",
+          "data_entrada_sociedade": "1993-04-18",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "FERNANDA CARVALHO PEREIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***251774**",
+          "data_entrada_sociedade": "1989-01-22",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "PAULO PEREIRA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***748793**",
+          "data_entrada_sociedade": "1987-03-13",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "49.782.686/0001-09",
+      "razao_social": "MANDACARU NOVA ALIMENTOS LTDA",
+      "nome_fantasia": "MANDACARU ALIMENTOS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2005-01-11",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "1099-6/99",
+        "descricao": "Fabricação de produtos alimentares"
+      },
+      "logradouro": "Rua das Palmeiras",
+      "numero": "11",
+      "bairro": "Jardins",
+      "municipio": "FLORIANOPOLIS",
+      "uf": "SC",
+      "cep": "88010-141",
+      "qsa": [
+        {
+          "nome_socio": "BEATRIZ ROCHA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***119159**",
+          "data_entrada_sociedade": "2012-04-15",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "GABRIEL VIEIRA MARQUES",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***137976**",
+          "data_entrada_sociedade": "2005-01-11",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "CAMILA NASCIMENTO SILVA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***275817**",
+          "data_entrada_sociedade": "2005-01-11",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "64.280.314/0001-78",
+      "razao_social": "UBATUBA NORTE PARTICIPACOES LTDA",
+      "nome_fantasia": "UBATUBA PARTICIPAÇÕES",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1995-01-16",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6462-0/00",
+        "descricao": "Holdings de instituições não financeiras"
+      },
+      "logradouro": "Avenida Brasil",
+      "numero": "164",
+      "bairro": "Moinhos de Vento",
+      "municipio": "GOIANIA",
+      "uf": "GO",
+      "cep": "74003-108",
+      "qsa": [
+        {
+          "nome_socio": "PATRICIA COSTA RODRIGUES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***755674**",
+          "data_entrada_sociedade": "1995-01-16",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "MATEUS RODRIGUES GOMES",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***922912**",
+          "data_entrada_sociedade": "1995-01-16",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "21.852.213/0001-11",
+      "razao_social": "SABIA SUL MIDIA LTDA",
+      "nome_fantasia": "SABIÁ MÍDIA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1990-10-01",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "5911-1/99",
+        "descricao": "Produção de conteúdos"
+      },
+      "logradouro": "Rua XV de Novembro",
+      "numero": "105",
+      "bairro": "Batel",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-566",
+      "qsa": [
+        {
+          "nome_socio": "LARISSA VIEIRA RIBEIRO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***626952**",
+          "data_entrada_sociedade": "1997-01-07",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "BEATRIZ MOREIRA SILVA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***768197**",
+          "data_entrada_sociedade": "1997-09-08",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "29.696.663/0001-74",
+      "razao_social": "IPE ROXO NOVA TEXTIL LTDA",
+      "nome_fantasia": "IPÊ ROXO TÊXTIL",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1998-08-07",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "1351-1/00",
+        "descricao": "Fabricação de têxteis"
+      },
+      "logradouro": "Rua das Palmeiras",
+      "numero": "135",
+      "bairro": "Batel",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-654",
+      "qsa": [
+        {
+          "nome_socio": "LETICIA MARTINS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***641916**",
+          "data_entrada_sociedade": "2004-01-04",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "ISABELA MARQUES LOPES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***875259**",
+          "data_entrada_sociedade": "2004-06-26",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "41.157.763/0001-28",
+      "razao_social": "ANHUMAS PRIME ENERGIA LTDA",
+      "nome_fantasia": "ANHUMAS ENERGIA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2008-10-02",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "3511-5/01",
+        "descricao": "Produção de eletricidade"
+      },
+      "logradouro": "Rua XV de Novembro",
+      "numero": "128",
+      "bairro": "Boa Viagem",
+      "municipio": "RECIFE",
+      "uf": "PE",
+      "cep": "50030-773",
+      "qsa": [
+        {
+          "nome_socio": "FELIPE SOUZA RIBEIRO",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***359609**",
+          "data_entrada_sociedade": "2010-07-01",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "JULIANA COSTA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***285757**",
+          "data_entrada_sociedade": "2015-07-16",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "HENRIQUE VIEIRA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***589474**",
+          "data_entrada_sociedade": "2013-09-25",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "TAQUARI NORTE PARTICIPACOES LTDA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "06.205.345/0001-68",
+          "data_entrada_sociedade": "2008-10-02",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "21.475.531/0001-00",
+      "razao_social": "JEQUITIBA SUL TEXTIL S.A.",
+      "nome_fantasia": "JEQUITIBÁ TÊXTIL",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1993-12-12",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "1351-1/00",
+        "descricao": "Fabricação de têxteis"
+      },
+      "logradouro": "Avenida Atlântica",
+      "numero": "92",
+      "bairro": "Jardins",
+      "municipio": "BELO HORIZONTE",
+      "uf": "MG",
+      "cep": "30130-604",
+      "qsa": [
+        {
+          "nome_socio": "LETICIA NUNES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***832712**",
+          "data_entrada_sociedade": "1994-10-30",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "BIANCA ROCHA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***304428**",
+          "data_entrada_sociedade": "1993-12-12",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "20.595.174/0001-51",
+      "razao_social": "VALE AZUL ENERGIA LTDA",
+      "nome_fantasia": "VALE AZUL ENERGIA",
+      "situacao_cadastral": "INAPTA",
+      "data_inicio_atividade": "2019-02-11",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "3511-5/01",
+        "descricao": "Produção de eletricidade"
+      },
+      "logradouro": "Avenida Paulista",
+      "numero": "93",
+      "bairro": "Savassi",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-148",
+      "qsa": [
+        {
+          "nome_socio": "CAIO RIBEIRO NUNES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***758859**",
+          "data_entrada_sociedade": "2022-06-23",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "FELIPE FREITAS MOREIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***287964**",
+          "data_entrada_sociedade": "2019-10-04",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "91.306.162/0001-08",
+      "razao_social": "TAPAJOS SUL SOFTWARE LTDA",
+      "nome_fantasia": "TAPAJÓS SOFTWARE",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2011-06-21",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": null,
+      "numero": null,
+      "bairro": null,
+      "municipio": null,
+      "uf": null,
+      "cep": null,
+      "qsa": [
+        {
+          "nome_socio": "LARISSA MARQUES RODRIGUES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***404890**",
+          "data_entrada_sociedade": "2013-04-24",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LARISSA ROCHA ANDRADE",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***777835**",
+          "data_entrada_sociedade": "2018-09-21",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "83.532.501/0001-46",
+      "razao_social": "AURORA SUL MIDIA LTDA",
+      "nome_fantasia": "AURORA MÍDIA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1997-12-16",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "5911-1/99",
+        "descricao": "Produção de conteúdos"
+      },
+      "logradouro": "Rua das Palmeiras",
+      "numero": "108",
+      "bairro": "Jardins",
+      "municipio": "CURITIBA",
+      "uf": "PR",
+      "cep": "80020-747",
+      "qsa": [
+        {
+          "nome_socio": "BIANCA DIAS LOPES",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***561476**",
+          "data_entrada_sociedade": "1999-03-21",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "MATEUS LIMA RIBEIRO",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***156170**",
+          "data_entrada_sociedade": "2004-09-09",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "TAPAJOS PRIME PARTICIPACOES LTDA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "31.197.424/0001-11",
+          "data_entrada_sociedade": "1997-12-16",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "69.757.973/0001-76",
+      "razao_social": "CARNAUBA BRASIL LOGISTICA LTDA",
+      "nome_fantasia": "CARNAÚBA LOGÍSTICA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1997-11-27",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "4930-2/02",
+        "descricao": "Transportes rodoviários de mercadorias"
+      },
+      "logradouro": "Rua Augusta",
+      "numero": "54",
+      "bairro": "Boa Viagem",
+      "municipio": "BELO HORIZONTE",
+      "uf": "MG",
+      "cep": "30130-280",
+      "qsa": [
+        {
+          "nome_socio": "BEATRIZ MOREIRA SOUZA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***455360**",
+          "data_entrada_sociedade": "1999-04-16",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "PATRICIA MENDES",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***569570**",
+          "data_entrada_sociedade": "2002-03-21",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "IGUACU NOVA PARTICIPACOES LTDA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "86.915.893/0001-10",
+          "data_entrada_sociedade": "1997-11-27",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "50.485.550/0001-16",
+      "razao_social": "VALE AZUL SUL LOGISTICA LTDA",
+      "nome_fantasia": "VALE AZUL LOGÍSTICA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2014-12-24",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "4930-2/02",
+        "descricao": "Transportes rodoviários de mercadorias"
+      },
+      "logradouro": "Rua Sete de Setembro",
+      "numero": "217",
+      "bairro": "Moinhos de Vento",
+      "municipio": "BELO HORIZONTE",
+      "uf": "MG",
+      "cep": "30130-409",
+      "qsa": [
+        {
+          "nome_socio": "LUCAS MOREIRA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***555133**",
+          "data_entrada_sociedade": "2020-11-21",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LARISSA BARBOSA SOARES",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***440847**",
+          "data_entrada_sociedade": "2016-11-21",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "RODRIGO ALMEIDA COSTA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***269519**",
+          "data_entrada_sociedade": "2022-08-28",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "SERRA GAUCHA PARTICIPACOES LTDA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "52.220.453/0001-27",
+          "data_entrada_sociedade": "2014-12-24",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "05.465.076/0001-06",
+      "razao_social": "JACARANDA CAMBIO S.A.",
+      "nome_fantasia": "JACARANDÁ CÂMBIO",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2004-11-12",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "6619-3/99",
+        "descricao": "Serviços de câmbio e pagamentos"
+      },
+      "logradouro": "Avenida Ipiranga",
+      "numero": "114",
+      "bairro": "Centro",
+      "municipio": "CAMPINAS",
+      "uf": "SP",
+      "cep": "13010-539",
+      "qsa": [
+        {
+          "nome_socio": "VINICIUS RIBEIRO LOPES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***899613**",
+          "data_entrada_sociedade": "2008-06-05",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "ALINE PEREIRA MACHADO",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***308713**",
+          "data_entrada_sociedade": "2007-10-10",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "UBATUBA NORTE PARTICIPACOES LTDA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "64.280.314/0001-78",
+          "data_entrada_sociedade": "2004-11-12",
+          "percentual_capital_social": 80,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "93.489.927/0001-18",
+      "razao_social": "BURITI NOVA ALIMENTOS S.A.",
+      "nome_fantasia": "BURITI ALIMENTOS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2006-05-02",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "1099-6/99",
+        "descricao": "Fabricação de produtos alimentares"
+      },
+      "logradouro": "Avenida Atlântica",
+      "numero": "54",
+      "bairro": "Jardins",
+      "municipio": "SALVADOR",
+      "uf": "BA",
+      "cep": "40020-928",
+      "qsa": [
+        {
+          "nome_socio": "FELIPE ANDRADE MARQUES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***567748**",
+          "data_entrada_sociedade": "2013-12-02",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "CARLOS NUNES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***522463**",
+          "data_entrada_sociedade": "2014-02-19",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "JULIANA ALMEIDA SOARES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***598563**",
+          "data_entrada_sociedade": "2010-05-10",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "51.938.261/0001-98",
+      "razao_social": "ITAPUA LOGISTICA S.A.",
+      "nome_fantasia": "ITAPUÃ LOGÍSTICA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2004-04-17",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "4930-2/02",
+        "descricao": "Transportes rodoviários de mercadorias"
+      },
+      "logradouro": "Avenida Brasil",
+      "numero": "38",
+      "bairro": "Moinhos de Vento",
+      "municipio": "FLORIANOPOLIS",
+      "uf": "SC",
+      "cep": "88010-980",
+      "qsa": [
+        {
+          "nome_socio": "BIANCA VIEIRA OLIVEIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***381783**",
+          "data_entrada_sociedade": "2009-06-23",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "57.202.382/0001-53",
+      "razao_social": "PANTANAL BRASIL APOSTAS LTDA",
+      "nome_fantasia": "PANTANAL APOSTAS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2015-06-28",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "9200-3/99",
+        "descricao": "Jogos de fortuna e azar e apostas"
+      },
+      "logradouro": "Avenida Paulista",
+      "numero": "20",
+      "bairro": "Centro",
+      "municipio": "GOIANIA",
+      "uf": "GO",
+      "cep": "74003-556",
+      "qsa": [
+        {
+          "nome_socio": "GABRIEL VIEIRA NUNES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***469445**",
+          "data_entrada_sociedade": "2017-02-12",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "GUSTAVO CARVALHO",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***703220**",
+          "data_entrada_sociedade": "2015-06-28",
+          "percentual_capital_social": 35,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "PAULO MOREIRA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***793189**",
+          "data_entrada_sociedade": "2015-06-28",
+          "percentual_capital_social": 25,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "22.370.731/0001-61",
+      "razao_social": "TROPEIRO ENERGIA S.A.",
+      "nome_fantasia": "TROPEIRO ENERGIA",
+      "situacao_cadastral": "BAIXADA",
+      "data_inicio_atividade": "2003-07-03",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "3511-5/01",
+        "descricao": "Produção de eletricidade"
+      },
+      "logradouro": "Avenida Paulista",
+      "numero": "29",
+      "bairro": "Moinhos de Vento",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-468",
+      "qsa": [
+        {
+          "nome_socio": "ALINE ROCHA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***138186**",
+          "data_entrada_sociedade": "2003-07-03",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "57.934.274/0001-75",
+      "razao_social": "COQUEIRAL NOVA MIDIA LTDA",
+      "nome_fantasia": "COQUEIRAL MÍDIA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2004-06-16",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "5911-1/99",
+        "descricao": "Produção de conteúdos"
+      },
+      "logradouro": "Rua Sete de Setembro",
+      "numero": "190",
+      "bairro": "Batel",
+      "municipio": "BELO HORIZONTE",
+      "uf": "MG",
+      "cep": "30130-350",
+      "qsa": [
+        {
+          "nome_socio": "HENRIQUE SOUZA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***227551**",
+          "data_entrada_sociedade": "2010-10-26",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "FERNANDA FERREIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***938556**",
+          "data_entrada_sociedade": "2005-12-16",
+          "percentual_capital_social": 50,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "DEBORA MENDES",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***186773**",
+          "data_entrada_sociedade": "2007-06-07",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "07.569.422/0001-21",
+      "razao_social": "PANTANAL SOFTWARE LTDA",
+      "nome_fantasia": "PANTANAL SOFTWARE",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1993-12-28",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Avenida Atlântica",
+      "numero": "109",
+      "bairro": "Bela Vista",
+      "municipio": "GOIANIA",
+      "uf": "GO",
+      "cep": "74003-616",
+      "qsa": [
+        {
+          "nome_socio": "LUCAS ALVES SOUZA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***633306**",
+          "data_entrada_sociedade": "2000-11-01",
+          "percentual_capital_social": 25,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "DEBORA RIBEIRO",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***597879**",
+          "data_entrada_sociedade": "1995-08-27",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "JURITI PARTICIPACOES LTDA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "05.549.195/0001-47",
+          "data_entrada_sociedade": "1993-12-28",
+          "percentual_capital_social": 75,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "05.549.195/0001-47",
+      "razao_social": "JURITI PARTICIPACOES LTDA",
+      "nome_fantasia": "JURITI PARTICIPAÇÕES",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2001-07-12",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6462-0/00",
+        "descricao": "Holdings de instituições não financeiras"
+      },
+      "logradouro": "Rua Augusta",
+      "numero": "139",
+      "bairro": "Bela Vista",
+      "municipio": "PORTO ALEGRE",
+      "uf": "RS",
+      "cep": "90010-831",
+      "qsa": [
+        {
+          "nome_socio": "FERNANDA BARBOSA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***594790**",
+          "data_entrada_sociedade": "2001-07-12",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "75.731.716/0001-68",
+      "razao_social": "AURORA SOFTWARE S.A.",
+      "nome_fantasia": "AURORA SOFTWARE",
+      "situacao_cadastral": "BAIXADA",
+      "data_inicio_atividade": "1994-02-18",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "6201-5/01",
+        "descricao": "Desenvolvimento de software"
+      },
+      "logradouro": "Avenida Ipiranga",
+      "numero": "47",
+      "bairro": "Moinhos de Vento",
+      "municipio": "CURITIBA",
+      "uf": "PR",
+      "cep": "80020-365",
+      "qsa": [
+        {
+          "nome_socio": "MARIANA OLIVEIRA LOPES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***108997**",
+          "data_entrada_sociedade": "1994-02-18",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "11.045.755/0001-29",
+      "razao_social": "CARNAUBA PARTICIPACOES LTDA",
+      "nome_fantasia": "CARNAÚBA PARTICIPAÇÕES",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2007-01-16",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6462-0/00",
+        "descricao": "Holdings de instituições não financeiras"
+      },
+      "logradouro": "Rua das Palmeiras",
+      "numero": "221",
+      "bairro": "Savassi",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-329",
+      "qsa": [
+        {
+          "nome_socio": "RAFAEL SANTOS SOUZA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***177638**",
+          "data_entrada_sociedade": "2007-01-16",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "01.258.348/0001-46",
+      "razao_social": "PANTANAL ENGENHARIA LTDA",
+      "nome_fantasia": "PANTANAL ENGENHARIA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2007-10-03",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "7112-0/00",
+        "descricao": "Atividades de engenharia"
+      },
+      "logradouro": "Rua Augusta",
+      "numero": "159",
+      "bairro": "Moinhos de Vento",
+      "municipio": "CURITIBA",
+      "uf": "PR",
+      "cep": "80020-152",
+      "qsa": [
+        {
+          "nome_socio": "LARISSA MACHADO DIAS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***290409**",
+          "data_entrada_sociedade": "2009-07-25",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LUANA ANDRADE DIAS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***708752**",
+          "data_entrada_sociedade": "2015-11-26",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "DEBORA DIAS VIEIRA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***880914**",
+          "data_entrada_sociedade": "2014-09-24",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "86.915.893/0001-10",
+      "razao_social": "IGUACU NOVA PARTICIPACOES LTDA",
+      "nome_fantasia": "IGUAÇU PARTICIPAÇÕES",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2010-06-14",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6462-0/00",
+        "descricao": "Holdings de instituições não financeiras"
+      },
+      "logradouro": "Avenida Atlântica",
+      "numero": "146",
+      "bairro": "Bela Vista",
+      "municipio": "GOIANIA",
+      "uf": "GO",
+      "cep": "74003-207",
+      "qsa": [
+        {
+          "nome_socio": "NATALIA NASCIMENTO",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***379512**",
+          "data_entrada_sociedade": "2010-06-14",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "KINGFISHER INVESTMENTS LTD",
+          "qualificacao_socio": "37-Sócio Pessoa Jurídica Domiciliado no Exterior",
+          "cnpj_cpf_do_socio": null,
+          "data_entrada_sociedade": "2010-06-14",
+          "percentual_capital_social": 100,
+          "pais": "CAYMAN ISLANDS"
+        }
+      ]
+    },
+    {
+      "cnpj": "87.848.299/0001-17",
+      "razao_social": "IGUACU SUL TEXTIL S.A.",
+      "nome_fantasia": "IGUAÇU TÊXTIL",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2019-01-08",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "1351-1/00",
+        "descricao": "Fabricação de têxteis"
+      },
+      "logradouro": "Rua da Consolação",
+      "numero": "205",
+      "bairro": "Jardins",
+      "municipio": "PORTO ALEGRE",
+      "uf": "RS",
+      "cep": "90010-519",
+      "qsa": [
+        {
+          "nome_socio": "MATEUS RODRIGUES ALMEIDA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***919998**",
+          "data_entrada_sociedade": "2024-05-30",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LUANA NASCIMENTO GOMES",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***413418**",
+          "data_entrada_sociedade": "2019-01-08",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "02.167.309/0001-04",
+      "razao_social": "JEQUITIBA ENERGIA LTDA",
+      "nome_fantasia": "JEQUITIBÁ ENERGIA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2012-04-24",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "3511-5/01",
+        "descricao": "Produção de eletricidade"
+      },
+      "logradouro": "Rua da Consolação",
+      "numero": "106",
+      "bairro": "Batel",
+      "municipio": "FLORIANOPOLIS",
+      "uf": "SC",
+      "cep": "88010-913",
+      "qsa": [
+        {
+          "nome_socio": "MARIANA GOMES LOPES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***488171**",
+          "data_entrada_sociedade": "2017-02-12",
+          "percentual_capital_social": 25,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "BIANCA ANDRADE LOPES",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***475651**",
+          "data_entrada_sociedade": "2016-01-17",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "CARNAUBA PARTICIPACOES LTDA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "11.045.755/0001-29",
+          "data_entrada_sociedade": "2012-04-24",
+          "percentual_capital_social": 75,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "49.031.083/0001-75",
+      "razao_social": "MARACANA SUL FARMA LTDA",
+      "nome_fantasia": "MARACANÃ SUL FARMA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "1996-01-21",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "2121-1/01",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "logradouro": "Rua da Consolação",
+      "numero": "121",
+      "bairro": "Centro",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-152",
+      "qsa": [
+        {
+          "nome_socio": "PATRICIA MARTINS ALMEIDA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***661948**",
+          "data_entrada_sociedade": "2003-01-12",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "GABRIEL GOMES LOPES",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***542453**",
+          "data_entrada_sociedade": "1996-01-21",
+          "percentual_capital_social": 35,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "NATALIA MARTINS BARBOSA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***505965**",
+          "data_entrada_sociedade": "1996-01-21",
+          "percentual_capital_social": 25,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "02.575.988/0001-42",
+      "razao_social": "SERRA GAUCHA NOVA FARMA LTDA",
+      "nome_fantasia": "SERRA GAÚCHA FARMA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2011-10-28",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "2121-1/01",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "logradouro": "Avenida Paulista",
+      "numero": "230",
+      "bairro": "Centro",
+      "municipio": "CURITIBA",
+      "uf": "PR",
+      "cep": "80020-807",
+      "qsa": [
+        {
+          "nome_socio": "RAFAEL FREITAS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***501826**",
+          "data_entrada_sociedade": "2016-10-19",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "BRUNO SILVA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***362147**",
+          "data_entrada_sociedade": "2018-06-25",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "85.970.294/0001-37",
+      "razao_social": "PITANGA NORTE ALIMENTOS LTDA",
+      "nome_fantasia": "PITANGA ALIMENTOS",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2015-11-09",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "1099-6/99",
+        "descricao": "Fabricação de produtos alimentares"
+      },
+      "logradouro": "Avenida Paulista",
+      "numero": "25",
+      "bairro": "Boa Viagem",
+      "municipio": "PORTO ALEGRE",
+      "uf": "RS",
+      "cep": "90010-653",
+      "qsa": [
+        {
+          "nome_socio": "CAIO GOMES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***234609**",
+          "data_entrada_sociedade": "2023-09-22",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "CAIO ALMEIDA BARBOSA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***462775**",
+          "data_entrada_sociedade": "2015-11-09",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "21.393.392/0001-76",
+      "razao_social": "CAATINGA NORTE TEXTIL LTDA",
+      "nome_fantasia": "CAATINGA TÊXTIL",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2013-11-10",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "1351-1/00",
+        "descricao": "Fabricação de têxteis"
+      },
+      "logradouro": "Rua Sete de Setembro",
+      "numero": "134",
+      "bairro": "Jardins",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-288",
+      "qsa": [
+        {
+          "nome_socio": "PATRICIA MARQUES RODRIGUES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***688193**",
+          "data_entrada_sociedade": "2019-01-27",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "RODRIGO LIMA RODRIGUES",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***477692**",
+          "data_entrada_sociedade": "2013-11-10",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "59.835.409/0001-70",
+      "razao_social": "TROPEIRO BRASIL FARMA LTDA",
+      "nome_fantasia": "TROPEIRO FARMA",
+      "situacao_cadastral": "INAPTA",
+      "data_inicio_atividade": "2003-01-12",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "2121-1/01",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "logradouro": "Rua XV de Novembro",
+      "numero": "239",
+      "bairro": "Boa Viagem",
+      "municipio": "SAO PAULO",
+      "uf": "SP",
+      "cep": "01310-166",
+      "qsa": [
+        {
+          "nome_socio": "LARISSA RODRIGUES COSTA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***723102**",
+          "data_entrada_sociedade": "2010-05-18",
+          "percentual_capital_social": 100,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "RENATA LIMA DIAS",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***923922**",
+          "data_entrada_sociedade": "2005-06-15",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "LUANA MARQUES FERNANDES",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***612783**",
+          "data_entrada_sociedade": "2006-08-27",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "41.537.418/0001-10",
+      "razao_social": "SERRA GAUCHA PRIME TEXTIL LTDA",
+      "nome_fantasia": "SERRA GAÚCHA TÊXTIL",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2006-08-01",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "1351-1/00",
+        "descricao": "Fabricação de têxteis"
+      },
+      "logradouro": "Rua das Palmeiras",
+      "numero": "40",
+      "bairro": "Bela Vista",
+      "municipio": "CAMPINAS",
+      "uf": "SP",
+      "cep": "13010-703",
+      "qsa": [
+        {
+          "nome_socio": "MARIANA MOREIRA SANTOS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***547240**",
+          "data_entrada_sociedade": "2008-08-20",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "ALINE CARVALHO MARQUES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***928123**",
+          "data_entrada_sociedade": "2013-09-27",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "MARIANA ALVES CARVALHO",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***200782**",
+          "data_entrada_sociedade": "2006-11-23",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "35.035.161/0001-03",
+      "razao_social": "TAQUARI BRASIL FARMA S.A.",
+      "nome_fantasia": "TAQUARI FARMA",
+      "situacao_cadastral": "INAPTA",
+      "data_inicio_atividade": "2009-08-28",
+      "natureza_juridica": "205-1 - Sociedade Anônima Fechada",
+      "cnae_fiscal": {
+        "codigo": "2121-1/01",
+        "descricao": "Fabricação de medicamentos"
+      },
+      "logradouro": "Avenida Afonso Pena",
+      "numero": "147",
+      "bairro": "Savassi",
+      "municipio": "SALVADOR",
+      "uf": "BA",
+      "cep": "40020-479",
+      "qsa": [
+        {
+          "nome_socio": "LARISSA VIEIRA MARQUES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***201634**",
+          "data_entrada_sociedade": "2015-08-11",
+          "percentual_capital_social": 70,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "GABRIEL CARVALHO SOARES",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***673238**",
+          "data_entrada_sociedade": "2011-08-15",
+          "percentual_capital_social": 20,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "FERNANDA ALMEIDA",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***280633**",
+          "data_entrada_sociedade": "2011-05-17",
+          "percentual_capital_social": 10,
+          "pais": "BRASIL"
+        }
+      ]
+    },
+    {
+      "cnpj": "52.220.453/0001-27",
+      "razao_social": "SERRA GAUCHA PARTICIPACOES LTDA",
+      "nome_fantasia": "SERRA GAÚCHA PARTICIPAÇÕES",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2017-07-05",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "6462-0/00",
+        "descricao": "Holdings de instituições não financeiras"
+      },
+      "logradouro": "Rua XV de Novembro",
+      "numero": "153",
+      "bairro": "Bela Vista",
+      "municipio": "FLORIANOPOLIS",
+      "uf": "SC",
+      "cep": "88010-572",
+      "qsa": [
+        {
+          "nome_socio": "NATALIA SILVA",
+          "qualificacao_socio": "05-Administrador",
+          "cnpj_cpf_do_socio": "***349607**",
+          "data_entrada_sociedade": "2017-07-05",
+          "percentual_capital_social": 0,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "SABLE TRUST INC",
+          "qualificacao_socio": "37-Sócio Pessoa Jurídica Domiciliado no Exterior",
+          "cnpj_cpf_do_socio": null,
+          "data_entrada_sociedade": "2017-07-05",
+          "percentual_capital_social": 100,
+          "pais": "BRITISH VIRGIN ISLANDS"
+        }
+      ]
+    },
+    {
+      "cnpj": "96.928.635/0001-22",
+      "razao_social": "XINGU VERDE CONSTRUTORA LTDA",
+      "nome_fantasia": "XINGU VERDE CONSTRUTORA",
+      "situacao_cadastral": "ATIVA",
+      "data_inicio_atividade": "2021-06-25",
+      "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+      "cnae_fiscal": {
+        "codigo": "4120-4/00",
+        "descricao": "Construção de edifícios"
+      },
+      "logradouro": "Avenida Brasil",
+      "numero": "32",
+      "bairro": "Batel",
+      "municipio": "CAMPINAS",
+      "uf": "SP",
+      "cep": "13010-274",
+      "qsa": [
+        {
+          "nome_socio": "DEBORA PEREIRA MARTINS",
+          "qualificacao_socio": "49-Sócio-Administrador",
+          "cnpj_cpf_do_socio": "***795741**",
+          "data_entrada_sociedade": "2024-02-01",
+          "percentual_capital_social": 60,
+          "pais": "BRASIL"
+        },
+        {
+          "nome_socio": "THIAGO PEREIRA",
+          "qualificacao_socio": "22-Sócio",
+          "cnpj_cpf_do_socio": "***221605**",
+          "data_entrada_sociedade": "2021-06-25",
+          "percentual_capital_social": 40,
+          "pais": "BRASIL"
+        }
+      ]
+    }
+  ]
+}
