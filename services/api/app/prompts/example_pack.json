@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "query": {
+    "company_name": "Quillfeather Harbour Logistics",
+    "country": "UK"
+  },
+  "company": {
+    "legal_name": {
+      "value": "QUILLFEATHER HARBOUR LOGISTICS LIMITED",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "registration_number": {
+      "value": "EX000001",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "status": {
+      "value": "active",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "address": {
+      "value": "1 Quay Road, Bristol, BS1 4AA",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "incorporation_date": {
+      "value": "2014-03-11",
+      "sources": [
+        "src-1"
+      ]
+    },
+    "sector": {
+      "value": "52290 - Other transportation support activities",
+      "sources": [
+        "src-1"
+      ]
+    }
+  },
+  "officers": [
+    {
+      "name": "Ada Quillfeather",
+      "role": "director",
+      "appointed_on": "2014-03-11",
+      "sources": [
+        "src-2"
+      ]
+    },
+    {
+      "name": "Jonas Brandt",
+      "role": "director",
+      "appointed_on": "2017-09-01",
+      "sources": [
+        "src-2"
+      ]
+    }
+  ],
+  "owners": [
+    {
+      "name": "Harbour Holdings Limited",
+      "type": "company",
+      "ownership_pct": 100.0,
+      "is_ultimate_beneficial_owner": false,
+      "jurisdiction": "UK",
+      "via": [],
+      "sources": [
+        "src-2"
+      ]
+    },
+    {
+      "name": "Ada Quillfeather",
+      "type": "person",
+      "ownership_pct": 60.0,
+      "is_ultimate_beneficial_owner": true,
+      "jurisdiction": "UK",
+      "via": [
+        "Harbour Holdings Limited"
+      ],
+      "sources": [
+        "src-2",
+        "src-3"
+      ]
+    },
+    {
+      "name": "Jonas Brandt",
+      "type": "person",
+      "ownership_pct": 40.0,
+      "is_ultimate_beneficial_owner": true,
+      "jurisdiction": "UK",
+      "via": [
+        "Harbour Holdings Limited"
+      ],
+      "sources": [
+        "src-2",
+        "src-3"
+      ]
+    }
+  ],
+  "news": [],
+  "financial_summary": {
+    "year": 2025,
+    "currency": "GBP",
+    "revenue": 4210000,
+    "net_profit": 318000,
+    "total_assets": 5960000,
+    "going_concern_uncertainty": false,
+    "summary": "Figures are reported in thousands of pounds and are shown here in full pounds. Turnover £4.21m with a profit of £318k; the report states the accounts are prepared on a going concern basis with no material uncertainty.",
+    "sources": [
+      "src-5"
+    ]
+  },
+  "risk": {
+    "rating": "medium",
+    "recommendation": "investigate_further",
+    "rationale": "Identity, ownership and accounts are fully sourced, with two UBOs traced, no adverse media about this company and no prohibited or high-risk sector. Two policy factors apply (2 points, medium): a corporate shareholder and a register/bank address difference. Under the policy a medium rating means investigate further; the reviewer should confirm the correct address before deciding.",
+    "factors": [
+      {
+        "factor": "Complex ownership (corporate shareholder)",
+        "points": 1,
+        "detail": "100% held by Harbour Holdings Limited, itself owned by two individuals.",
+        "sources": [
+          "src-2",
+          "src-3"
+        ]
+      },
+      {
+        "factor": "Conflicting data",
+        "points": 1,
+        "detail": "Registered address differs between the register and the bank's own record.",
+        "sources": [
+          "src-1",
+          "src-4"
+        ]
+      }
+    ]
+  },
+  "flags": [
+    {
+      "type": "complex_ownership",
+      "severity": "low",
+      "message": "The company is wholly owned by Harbour Holdings Limited (EX000002, UK). Look-through of that holding shows Ada Quillfeather (60%) and Jonas Brandt (40%) as the ultimate beneficial owners.",
+      "sources": [
+        "src-2",
+        "src-3"
+      ]
+    },
+    {
+      "type": "conflicting_data",
+      "severity": "medium",
+      "message": "The register gives the address as '1 Quay Road, Bristol, BS1 4AA' (src-1); the bank's existing-customer record gives '1 Quay Rd, Bristol, BS1 4AB' (src-4). The register prevails under the KYC policy; the reviewer should confirm which is current.",
+      "sources": [
+        "src-1",
+        "src-4"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-1",
+      "type": "registry",
+      "title": "UK register: company profile",
+      "reference": "mockdata/uk/company/EX000001"
+    },
+    {
+      "id": "src-2",
+      "type": "registry",
+      "title": "UK register: officers and persons with significant control",
+      "reference": "mockdata/uk/company/EX000001"
+    },
+    {
+      "id": "src-3",
+      "type": "registry",
+      "title": "UK register: Harbour Holdings Limited persons with significant control",
+      "reference": "mockdata/uk/company/EX000002"
+    },
+    {
+      "id": "src-4",
+      "type": "bank_system",
+      "title": "Bank relationship record",
+      "reference": "mockdata/bank/relationships/EX000001"
+    },
+    {
+      "id": "src-5",
+      "type": "document",
+      "title": "Annual report and financial statements, year ended 31 December 2025",
+      "reference": "mockdata/documents/EX-AR-0001",
+      "excerpt": "All figures in £'000. Turnover 4,210; profit for the year 318; total assets 5,960. Prepared on a going concern basis."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "comments": null,
+    "reviewer": null,
+    "reviewed_at": null
+  },
+  "generated_by": "example",
+  "notes": "Illustrative example. One news article about a similarly named company in another sector was reviewed and excluded as not about this company."
+}
