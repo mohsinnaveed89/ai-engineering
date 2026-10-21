@@ -14,12 +14,10 @@ from .placeholder import build_placeholder_pack
 
 
 async def run_pipeline(ctx: PipelineContext) -> KycPack:
-    if not ctx.settings.anthropic_api_key:
-        await ctx.emit("agent", "No ANTHROPIC_API_KEY set: returning the placeholder pack")
-        return await build_placeholder_pack(ctx)
 
     pack = await run_kyc_agent(ctx)
     if pack is not None:
         return pack
+
 
     return pack

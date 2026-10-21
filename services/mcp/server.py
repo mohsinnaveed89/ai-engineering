@@ -17,13 +17,61 @@ Tips from 'Writing effective tools for agents':
 """
 from __future__ import annotations
 
+import json
 import os
+import sys
+from pathlib import Path
+from typing import Any
 
 import httpx
 from mcp.server.fastmcp import FastMCP
 from mcp.server.transport_security import TransportSecuritySettings
 
+from kyc_common.mockdata_client import MockDataClient
+from kyc_common.schema import NewsItem
+
 MOCKDATA_URL = os.getenv("MOCKDATA_URL", "http://localhost:8001").rstrip("/")
+# Registry lookup path per country. The PT/BR record carries the people; the UK splits them out.
+_LOOKUP = {"UK": "/uk/company/{}", "PT": "/pt/entidade/{}", "BR": "/br/cnpj/{}"}
+_PEOPLE_KEYS = {"UK": ("officers", "persons_with_significant_control"), "PT": ("orgaos_sociais", "socios"), "BR": ("qsa",)}
+_BAD_COUNTRY = "country must be one of UK, PT, BR."
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
+_NEWS_LANG = {"UK": "en", "PT": "pt", "BR":"pt"}   # ISO 639-1 codes
+
+
+def _reg_path(country: str, reg: str) -> str:
+    """Registry path for a number. PT/BR numbers are reduced to digits: a CNPJ's '/' would otherwise split the URL path."""
+    reg = reg.strip()
+    reg = "".join(c for c in reg if c.isdigit()) if country in ("PT", "BR") else reg.upper()
+    return _LOOKUP[country].format(reg)
+
+
+def _ok(data: Any) -> dict:
+    return data
+
+
+def _err(msg: str) -> dict:
+    return {"error": msg}
+
+
+async def _fetch(path: str, **params: Any) -> tuple[Any | None, dict | None]:
+    """One call through the retrying client. Returns (data, None), (None, None) for 404, or (None, error_result)."""
+    try:
+        async with MockDataClient(MOCKDATA_URL) as api:
+            return await api.get(path, **params), None
+    except httpx.HTTPStatusError as e:
+        if e.response.status_code < 500:  # e.g. 400 for a malformed CNPJ: the API message is already actionable
+            try:
+                detail = e.response.json().get("detail", "")
+            except ValueError:
+                detail = ""
+            return None, _err(f"The request was rejected: {detail or e.response.status_code}")
+    except httpx.TransportError:
+        pass
+    return None, _err(
+        "This data source is temporarily unavailable (retried several times). "
+        "Do not assume the company has no record there; say in your report that this source could not be checked."
+    )
 
 mcp = FastMCP(
     "kyc-data",
@@ -34,6 +82,39 @@ mcp = FastMCP(
     transport_security=TransportSecuritySettings(enable_dns_rebinding_protection=False),
 )
 
+@mcp.tool(
+    name="summary_get_financial_statements",
+    description="Get the annual-report extract for a company, by registration number (UK number, PT NIPC or BR CNPJ). Returns "
+    "the most recent year's report text in `reports` and the metadata of every year on file in `available`. "
+    "Read the report's own unit line before copying numbers: tables are often 'in thousands' (milhares / R$ mil), "
+    "so multiply to full currency units for revenue, net_profit and total_assets, and say so in the summary. "
+    "Use the revenue line (turnover / volume de negocios / receita operacional liquida) and keep the sign of a loss. "
+    "If `consolidated` is true the figures are for the whole group, not the company alone: say that in the summary. "
+    "going_concern_uncertainty is true only if the report states a material uncertainty about continuing; "
+    "the standard 'prepared on a going concern basis' wording is false. An empty `reports` list means no accounts "
+    "were found: leave financial_summary null and raise a missing_data flag. Cite the doc_id as the source.",
+)
+async def get_financial_statements(registration_number: str, country: str) -> dict:
+    country = country.upper()
+    if country not in _LOOKUP:
+        return _err(_BAD_COUNTRY)
+    data, err = await _fetch("/documents", type="annual_report", country=country,
+                             registration_number=registration_number)
+    if err:
+        return err
+    docs = sorted(data["items"], key=lambda d: d["year"], reverse=True)
+    if not docs:
+        return _ok({"available": [], "reports": []})
+    reports = []
+    for d in (d for d in docs if d["year"] == docs[0]["year"]):
+        full, err = await _fetch(f"/documents/{d['doc_id']}")
+        if err:
+            return err
+        reports.append({"doc_id": d["doc_id"], "year": d["year"], "language": d["language"],
+                        "consolidated": d["consolidated"], "content": full["content"],
+                        "source": f"mockdata/documents/{d['doc_id']}"})
+    return _ok({"available": [{k: d[k] for k in ("doc_id", "year", "consolidated")} for d in docs],
+                "reports": reports})
 
 @mcp.tool()
 async def uk_search_companies(name: str, limit: int = 5) -> dict:
@@ -58,9 +139,224 @@ async def uk_search_companies(name: str, limit: int = 5) -> dict:
     return {"matches": data["items"], "source": f"{MOCKDATA_URL}/uk/search?q={name}"}
 
 
-# TODO (Day 3): add tools for the UK profile, officers and PSCs, the PT register, the BR CNPJ
-# lookup, news search, bank systems and document search. Add resources (e.g. the KYC policy)
-# and prompts (e.g. a pack review template) too.
+@mcp.tool(
+    name="registry_search_company",
+    description="Find a company's registration number from its name. Call this first when you only have a name. "
+    "UK and PT only: searches the official register and returns candidates (registration_number, legal_name, status). "
+    "Similar names are common, so compare name, status and address with what you were given before choosing one; "
+    "if two stay plausible, report the ambiguity instead of guessing. "
+    "For BR use br_find_prospect_cnpj instead: the CNPJ register cannot be searched by name. "
+    "An empty list means no plausible match; it does not prove the company does not exist.",
+)
+async def registry_search_company(name: str, country: str) -> dict:
+    country = country.upper()
+    if country == "UK":
+        data, err = await _fetch("/uk/search", q=name, limit=5)
+        rows = data and [{"registration_number": i["company_number"], "legal_name": i["title"],
+                          "status": i["company_status"], "incorporated": i["date_of_creation"],
+                          "address": i["address_snippet"]} for i in data["items"]]
+    elif country == "PT":
+        data, err = await _fetch("/pt/pesquisa", nome=name, limite=5)
+        rows = data and [{"registration_number": i["nipc"], "legal_name": i["denominacao"],
+                          "status": i["estado"], "locality": i["localidade"]} for i in data["resultados"]]
+    elif country == "BR":
+        return _err("BR companies cannot be searched by name in the register. Use br_find_prospect_cnpj.")
+    else:
+        return _err(_BAD_COUNTRY)
+    return err or _ok({"country": country, "matches": rows or []})
+
+
+@mcp.tool(
+    name="br_find_prospect_cnpj",
+    description="BR only: find the CNPJ a prospect declared, from the company name. The Brazilian CNPJ register cannot be "
+    "searched by name, so this searches the bank's onboarding requests instead. "
+    "The returned data is declared by the prospect and unverified, and may differ from the register: always confirm "
+    "the CNPJ with registry_get_company (country BR) and take identity, status and address from that record. "
+    "Similar names are possible: if two candidates stay plausible, report the ambiguity instead of guessing. "
+    "An empty list means no onboarding request matches; it does not prove the company does not exist.",
+)
+async def br_find_prospect_cnpj(name: str) -> dict:
+    data, err = await _fetch("/bank/prospects", name=name, country="BR", limit=5)
+    return err or _ok({"country": "BR", "source": "bank onboarding requests (declared, unverified)",
+                       "matches": (data and data["items"]) or []})
+
+
+@mcp.tool(
+    name="registry_get_company",
+    description="Get the official register record for one company by registration number: legal name, status, incorporation "
+    "date, address, activity/sector code and legal form. Use it after registry_search_company (UK/PT) or br_find_prospect_cnpj (BR), or directly if you already "
+    "have the number. Formats: UK 8 characters (01234567 or SC123456); PT NIPC 9 digits; BR CNPJ 14 digits, "
+    "punctuation optional. This is the authoritative record: when it conflicts with prospect-declared data or "
+    "news, prefer it and flag the conflict. It does not include people; use registry_get_officers_and_owners for that.",
+)
+async def registry_get_company(country: str, registration_number: str) -> dict:
+    country, reg = country.upper(), registration_number
+    if country not in _LOOKUP:
+        return _err(_BAD_COUNTRY)
+    path = _reg_path(country, reg)
+    data, err = await _fetch(path)
+    if err:
+        return err
+    if data is None:
+        return _err(f"No {country} company with registration number '{reg}'. "
+                    "Check the format, or find the number with registry_search_company (UK/PT) or br_find_prospect_cnpj (BR).")
+    record = {k: v for k, v in data.items() if k not in _PEOPLE_KEYS[country]}
+    return _ok({"record": record, "source": f"mockdata{path}"})
+
+
+@mcp.tool(
+    name="registry_get_officers_and_owners",
+    description="List who runs and who owns a company: directors/officers and owners (UK: persons with significant control; "
+    "PT: orgaos_sociais and socios; BR: the QSA partner list). Needs the registration number. An owner can itself be "
+    "a company (holding chain): call this tool again with that owner's registration number to reach the real "
+    "people. Two different people can share a name; match on date of birth or nationality before treating "
+    "them as the same person. Report owners from offshore jurisdictions as found; do not judge them here.",
+)
+async def registry_get_officers_and_owners(country: str, registration_number: str) -> dict:
+    country, reg = country.upper(), registration_number
+    if country not in _LOOKUP:
+        return _err(_BAD_COUNTRY)
+    if country == "UK":
+        base = _reg_path("UK", reg)
+        officers, e1 = await _fetch(f"{base}/officers")
+        owners, e2 = await _fetch(f"{base}/persons-with-significant-control")
+        if e1 or e2:
+            return e1 or e2
+        if officers is None or owners is None:
+            return _err(f"No UK company with number '{reg}'. Find it with registry_search_company first.")
+        return _ok({"officers": officers["items"], "owners": owners["items"], "source": f"mockdata/uk/company/{reg}"})
+    path = _reg_path(country, reg)
+    data, err = await _fetch(path)
+    if err:
+        return err
+    if data is None:
+        return _err(f"No {country} company with registration number '{reg}'. Find it with "
+                    f"{'br_find_prospect_cnpj' if country == 'BR' else 'registry_search_company'} first.")
+    return _ok({**{k: data.get(k, []) for k in _PEOPLE_KEYS[country]}, "source": f"mockdata{path}"})
+
+
+def _news_article(item: NewsItem, source_type: str, title: str, reference: str) -> dict:
+    """Validate an article against the pack's NewsItem schema (extra fields are rejected) and pair it with the
+    pack `Source` fields (type 'news' = offline archive, 'web' = live) so the origin travels in the schema."""
+    return {"news_item": item.model_dump(),
+            "source": {"type": source_type, "title": title, "reference": reference}}
+
+
+@mcp.tool(
+    name="news_search",
+    description="Search news articles that mention a company. Each article is a `news_item` (the pack's NewsItem: title, url, published_at, language, summary) plus the "
+    "`source` fields (type 'news', title, reference = article id) to register it in pack.sources. Matching is by words, so an article can be about a DIFFERENT company with a similar name: check the "
+    "sector, city or people in the article against the register record before treating it as adverse media about "
+    "this company. Pass country to narrow results (PT and BR articles are in Portuguese). No results means no "
+    "coverage was found, not that the company is clean. Copy `news_item` into pack.news unchanged, then set sentiment, severity and sources yourself (the tool does not "
+    "judge). Add NO other fields: the schema rejects them. Cite the article id as the source.",
+)
+async def news_search(company_name: str, country: str | None = None) -> dict:
+    data, err = await _fetch("/news/search", q=company_name, country=(country or "").upper() or None, limit=10)
+    if err:
+        return err
+    articles = [_news_article(
+        NewsItem(title=a["title"], url=a["url"], published_at=a["published_at"], language=a["language"],
+                 summary=a["body"][:400]),
+        source_type="news", title=f'{a["source"]}: {a["title"]}', reference=a["id"]) for a in data["items"]]
+    return _ok({"total_results": data["total_results"], "articles": articles})
+
+
+@mcp.tool(
+    name="bank_get_relationship",
+    description="Check whether the bank already has a relationship with this company, by registration number (UK number, PT "
+    "NIPC or BR CNPJ). Returns existing_customer true/false and, if true, customer_since, products, "
+    "internal_risk_rating and last_kyc_review. existing_customer false is a normal answer, not an error. "
+    "Bank-held data can disagree with the register; if it does, report both versions and do not pick one.",
+)
+async def bank_get_relationship(registration_number: str) -> dict:
+    data, err = await _fetch(f"/bank/relationships/{registration_number}")
+    return err or _ok(data)
+
+
+@mcp.tool(
+    name="bank_get_risk_appetite",
+    description="Get the bank's risk appetite: prohibited sectors, high-risk sectors, high-risk jurisdictions and the "
+    "ownership threshold for beneficial owners. Takes no input and is the same for every company, so call it "
+    "once per run. Compare the company's sector and the countries of its owners against it, and raise matches as "
+    "flags in neutral wording. Do not decide on the recommendation from this alone.",
+)
+async def bank_get_risk_appetite() -> dict:
+    data, err = await _fetch("/bank/risk-appetite")
+    return err or _ok(data)
+
+
+# TODO (Day 3): add document search and more resources.
+@mcp.resource(
+    "policy://kyc",
+    name="kyc_policy",
+    title="Business Customer KYC Policy",
+    description="The bank's KYC policy: identification, ownership, risk-point rules, recommendation thresholds.",
+    mime_type="text/markdown",
+)
+async def kyc_policy() -> str:
+    data, err = await _fetch("/documents/kyc_policy")
+    if err:
+        raise RuntimeError(err["error"])
+    return data["content"]
+
+@mcp.tool(
+    name="news_search_web",
+    description="Search LIVE web news about a company, in the local language of its country "
+    "(English for UK, Portuguese for PT and BR). Each article is a `news_item` (the pack's NewsItem) plus the `source` fields (type 'web', title, reference = url) "
+    "to register it in pack.sources. Use it in addition to news_search. Matching is by words, so an article can be about "
+    "a DIFFERENT company with a similar name: check sector, city or people against the register record. "
+    "No results means no coverage was found, not that the company is clean. Source type 'web' marks it as live, "
+    "outside the bank's archive: say so when you report it. Copy `news_item` into pack.news unchanged, then set "
+    "sentiment, severity and sources yourself. Add NO other fields. Cite the url as the source.",
+)
+async def news_search_web(company_name: str, country: str) -> dict:
+    country = country.upper()
+    if country not in _NEWS_LANG:
+        return _err(_BAD_COUNTRY)
+    if not TAVILY_API_KEY:
+        return _err("Live news search is not configured (TAVILY_API_KEY missing). "
+                    "Say in your report that live news could not be checked.")
+    body = {"query": f'"{company_name}"', "topic": "news", "max_results": 8, "time_range": "year",
+            "language": _NEWS_LANG[country], "filter_by_language": True, "exact_match": True}
+    try:
+        async with httpx.AsyncClient(timeout=20) as client:
+            r = await client.post("https://api.tavily.com/search", json=body,
+                                  headers={"Authorization": f"Bearer {TAVILY_API_KEY}"})
+            r.raise_for_status()
+    except httpx.HTTPError:
+        return _err("Live news search is temporarily unavailable. "
+                    "Say in your report that live news could not be checked.")
+    articles = [_news_article(
+        NewsItem(title=a["title"], url=a["url"], published_at=a.get("published_date"), language=_NEWS_LANG[country],
+                 summary=a["content"][:400]),
+        source_type="web", title=f'[Live web] {a["title"]}', reference=a["url"]) for a in r.json()["results"]]
+    return _ok({"language": _NEWS_LANG[country], "articles": articles})
+
+
+@mcp.prompt(
+    name="kyc_pack_review",
+    title="KYC Pack Review",
+    description="Template for a human reviewer (or agent) to review a generated KYC pack and decide approve, decline or send back.",
+)
+def kyc_pack_review(company_name: str, country: str, pack_json: str = "") -> str:
+    pack = f"\n\n<kyc_pack>\n{pack_json}\n</kyc_pack>" if pack_json.strip() else ""
+    return f"""You are reviewing the KYC pack for {company_name} ({country}) before it goes to a decision.
+
+Read the bank's KYC policy (resource policy://kyc) first, and call bank_get_risk_appetite once. Then check the pack:
+
+1. Identification: do the company name, registration number, status and address agree with the registry (registry_get_company)?
+2. Ownership: are all owners above the policy's ownership threshold listed, with nationality and percentage? Are officers and owners complete against registry_get_officers_and_owners?
+3. Risk points: recompute the risk points from the policy's rules and compare with the pack's risk score and level.
+4. Flags: is every flag backed by a listed source, in neutral wording, with a sensible severity? Is anything in the risk appetite (sectors, jurisdictions) or in news_search results missing as a flag?
+5. Recommendation: does it follow from the policy thresholds and the evidence, not from one signal alone?
+
+Report, in this order:
+- Verdict: approved, declined or sent_back
+- Findings: each issue with the pack field it concerns and the source that shows it
+- Comments: 2-3 sentences for the review record
+
+Do not guess. If evidence is missing, say what is missing and send the pack back.{pack}"""
 
 
 if __name__ == "__main__":
