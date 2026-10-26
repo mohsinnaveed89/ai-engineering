@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+description: KYC RAG mini retrieval eval (recall@5 + answer alignment)
+
+prompts:
+  - '{{item.model_answer}}'
+
+providers:
+  - id: echo
+    label: Generated RAG answer
+
+defaultTest:
+  assert:
+    # Retrieval: 1 when the gold chunk is in the top 5 hits. The mean of this metric is recall@5.
+    - type: javascript
+      metric: 'recall@5'
+      threshold: 0
+      value: 'context.vars.item.recall_hit'
+
+    - type: llm-rubric
+      metric: 'Alignment: expected vs model'
+      provider:
+        id: anthropic:messages:claude-opus-5-5
+        config:
+          # promptfoo 0.121.18 doesn't know this model and would send temperature: 0, which it rejects.
+          # Enabling thinking makes promptfoo omit temperature.
+          thinking:
+            type: adaptive
+          max_tokens: 4000
+      threshold: 0.7142857142857143
+      value: |
+        Grade how well the model output aligns with EXPECTED_ANSWER given
+        QUESTION. Consider factual agreement, completeness and directness.
+        The output may be in English or Portuguese; judge meaning, not language.
+
+        QUESTION: {{item.input}}
+        EXPECTED_ANSWER: {{item.expected_answer}}
+
+        Use an integer rating from 1 to 7, then set score to that rating
+        divided by 7, using these normalized values: 1=0.142857, 2=0.285714,
+        3=0.428571, 4=0.571429, 5=0.714286, 6=0.857143, and 7=1. Set pass
+        to true only when the raw rating is at least 5. Start the reason with
+        "Raw rating: N/7", replacing N with the rating.
+
+tests:
+  - path: file://load_tests.py:generate_tests
+    config:
+      dataset: results.jsonl

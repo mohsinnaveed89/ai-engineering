@@ -20,5 +20,13 @@ CREATE TABLE IF NOT EXISTS runs (
 CREATE INDEX IF NOT EXISTS runs_created_at_idx ON runs (created_at DESC);
 CREATE INDEX IF NOT EXISTS runs_company_idx ON runs (company_name, country);
 
--- pgvector is enabled. Create your own tables for document chunks and embeddings, for example:
---   CREATE TABLE document_chunks (id BIGSERIAL PRIMARY KEY, doc_id TEXT, chunk TEXT, metadata JSONB, embedding vector(1024));
+-- Chunks of the annual reports and policies, filled by `python -m kyc_common.RAG.ingest` (bge-m3, 1024 dimensions).
+CREATE TABLE IF NOT EXISTS document_chunks (
+    id         BIGSERIAL PRIMARY KEY,
+    doc_id     TEXT  NOT NULL,
+    chunk_idx  INT   NOT NULL,
+    text       TEXT  NOT NULL,
+    metadata   JSONB NOT NULL,
+    embedding  vector(1024) NOT NULL,
+    UNIQUE (doc_id, chunk_idx)
+);

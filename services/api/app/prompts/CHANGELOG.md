@@ -35,3 +35,15 @@ One entry per prompt change: what changed, why, and the score before and after.
 - **Hypothesis:** `beneficial_owners` rises from 0% (the placeholder never sets the UBO flag; the earlier prompt never asked for it) to near the directors score.
 - **Before:** 0.0% beneficial_owners (`report-20261019-161453-baseline`).
 - **After:** pending. Run `docker compose run --rm scoring --run-all --label ubo --compare scoring/reports/report-20261019-161453-baseline.json`.
+
+## 2026-10-25 · Country KYC procedures as Agent Skills
+
+- **Change:** the UK, PT and BR procedures (`data/documents/policies/procedures_uk.md`, `procedimentos_pt.md`, `procedimentos_br.md`) are now Skills `kyc-uk`, `kyc-pt`, `kyc-br` in `agent_home/.claude/skills/`, with the matching tool name added to each step. `kyc_agent.py` runs with `cwd=agent_home` and `skills="all"`. `orchestrator.md` mentions the Skills and step 1 tells the agent to load the one for the company's country first.
+- **Hypothesis:** identity, directors and UBO scores rise for BR (CNPJ-only lookup) and for PT/UK chain look-through, because the country procedure is followed explicitly instead of inferred.
+- **Before / After:** pending (no scored agent run yet).
+
+## 2026-10-25 · Trim orchestrator steps now covered by the Skills
+
+- **Change:** `orchestrator.md` workflow steps 1-7 no longer repeat the lookup procedure (search, register record, officers and owners, status, news language, which financial figures). Step 1 defers to the country Skill; the remaining steps keep only pack-filling rules (UBO marking, news matching and demo exception, bank comparison, financial conversions). Steps 8-9 unchanged.
+- **Hypothesis:** scores hold with a shorter prompt and the procedure lives in one place; risk is the agent skipping the Skill.
+- **Before / After:** pending. Compare against the run before this trim; if scores drop, restore the previous steps.

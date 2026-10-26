@@ -7,7 +7,7 @@ name = "kyc-common"
 version = "1.0.0"
 description = "Shared KYC pack schema and helpers for the AI Academy starter kit"
 requires-python = ">=3.10"
-dependencies = ["pydantic>=2.7,<3"]
+dependencies = ["pydantic>=2.7,<3", "httpx", "psycopg[binary]>=3.2,<4", "rank-bm25>=0.2.2"]
 
 [tool.setuptools.packages.find]
 where = ["."]

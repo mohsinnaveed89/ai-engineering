@@ -213,7 +213,7 @@ function renderPack(p, events) {
   </div></div></div>
 
   <div class="card section"><div class="h"><h2>Financial summary</h2></div><div class="b">
-    ${fs ? `<dl class="kv"><dt>Year</dt><dd>${esc(fs.year ?? "n/a")}</dd><dt>Revenue</dt><dd>${esc(fs.currency || "")} ${money(fs.revenue)}</dd><dt>Net profit</dt><dd>${esc(fs.currency || "")} ${money(fs.net_profit)}</dd><dt>Total assets</dt><dd>${esc(fs.currency || "")} ${money(fs.total_assets)}</dd><dt>Going concern</dt><dd>${fs.going_concern_uncertainty == null ? "n/a" : fs.going_concern_uncertainty ? "Material uncertainty" : "No uncertainty reported"}</dd></dl>
+    ${fs ? `<dl class="kv"><dt>Year</dt><dd>${esc(fs.year ?? "n/a")} ${srcChips(fs.sources, known)}</dd><dt>Revenue</dt><dd>${esc(fs.currency || "")} ${money(fs.revenue)} ${srcChips(fs.sources, known)}</dd><dt>Net profit</dt><dd>${esc(fs.currency || "")} ${money(fs.net_profit)} ${srcChips(fs.sources, known)}</dd><dt>Total assets</dt><dd>${esc(fs.currency || "")} ${money(fs.total_assets)} ${srcChips(fs.sources, known)}</dd><dt>Going concern</dt><dd>${fs.going_concern_uncertainty == null ? "n/a" : fs.going_concern_uncertainty ? "Material uncertainty" : "No uncertainty reported"} ${srcChips(fs.sources, known)}</dd></dl>
       <p>${esc(fs.summary)} ${srcChips(fs.sources, known)}</p>` : `<div class="empty">No financial summary</div>`}
   </div></div>
 

@@ -125,7 +125,8 @@
         "detail": "100% held by Harbour Holdings Limited, itself owned by two individuals.",
         "sources": [
           "src-2",
-          "src-3"
+          "src-3",
+          "src-6"
         ]
       },
       {
@@ -134,7 +135,8 @@
         "detail": "Registered address differs between the register and the bank's own record.",
         "sources": [
           "src-1",
-          "src-4"
+          "src-4",
+          "src-7"
         ]
       }
     ]
@@ -190,6 +192,20 @@
       "title": "Annual report and financial statements, year ended 31 December 2025",
       "reference": "mockdata/documents/EX-AR-0001",
       "excerpt": "All figures in £'000. Turnover 4,210; profit for the year 318; total assets 5,960. Prepared on a going concern basis."
+    },
+    {
+      "id": "src-6",
+      "type": "document",
+      "title": "KYC policy, section 8 Risk rating",
+      "reference": "kyc_policy.md#8",
+      "excerpt": "| Complex ownership (any corporate shareholder) | 1 |"
+    },
+    {
+      "id": "src-7",
+      "type": "document",
+      "title": "KYC policy, section 8 Risk rating",
+      "reference": "kyc_policy.md#8",
+      "excerpt": "| Conflicting data | 1 |"
     }
   ],
   "review": {

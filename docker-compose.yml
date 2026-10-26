@@ -82,11 +82,17 @@ services:
         required: false     # e.g. TAVILY_API_KEY for a web search tool
     environment:
       MOCKDATA_URL: http://mockdata:8001
+      DATABASE_URL: postgresql://${POSTGRES_USER:-academy}:${POSTGRES_PASSWORD:-academy}@db:5432/${POSTGRES_DB:-academy}
+      OLLAMA_URL: http://ollama:11434
+      DATA_DIR: /data
     volumes:
       - ./services/mcp/server.py:/app/server.py
+      - ./data:/data:ro
     ports:
       - "8100:8100"
     depends_on:
+      db:
+        condition: service_healthy
       mockdata:
         condition: service_healthy
 

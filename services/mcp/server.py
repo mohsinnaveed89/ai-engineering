@@ -17,16 +17,24 @@ Tips from 'Writing effective tools for agents':
 """
 from __future__ import annotations
 
+import asyncio
 import json
+import math
 import os
+import re
 import sys
+import unicodedata
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
 import httpx
+import psycopg
 from mcp.server.fastmcp import FastMCP
+from pydantic import BaseModel
 from mcp.server.transport_security import TransportSecuritySettings
 
+from kyc_common.RAG.search import search
 from kyc_common.mockdata_client import MockDataClient
 from kyc_common.schema import NewsItem
 
@@ -73,6 +81,24 @@ async def _fetch(path: str, **params: Any) -> tuple[Any | None, dict | None]:
         "Do not assume the company has no record there; say in your report that this source could not be checked."
     )
 
+class FinancialFields(BaseModel):
+    """The fields every financial summary must populate, each with the search_documents query that finds it."""
+    year: str = "Give me the financial year of the most recent annual report for the company"
+    revenue: str = "Give me revenue (turnover) for the company"
+    net_profit: str = "Give me net profit or loss for the company"
+    total_assets: str = "Give me total assets for the company"
+    going_concern: str = ("Does the report state a material uncertainty about the company continuing as a "
+                          "going concern?")
+
+
+async def _financial_fields(company_name: str, country: str) -> dict:
+    """Run one search_documents call per field; each field gets its best chunks as evidence."""
+    queries = FinancialFields().model_dump()
+    results = await asyncio.gather(*(search_documents(q, company_name, country, limit=1) for q in queries.values()))
+    return {name: {"query": q, **r, "source": (r.get("results") or [{}])[0].get("citation_id")}
+            for (name, q), r in zip(queries.items(), results)}
+
+
 mcp = FastMCP(
     "kyc-data",
     instructions="Tools for KYC research on companies in the UK, Portugal and Brazil. All data is fictional.",
@@ -92,9 +118,14 @@ mcp = FastMCP(
     "If `consolidated` is true the figures are for the whole group, not the company alone: say that in the summary. "
     "going_concern_uncertainty is true only if the report states a material uncertainty about continuing; "
     "the standard 'prepared on a going concern basis' wording is false. An empty `reports` list means no accounts "
-    "were found: leave financial_summary null and raise a missing_data flag. Cite the doc_id as the source.",
+    "were found: leave financial_summary null and raise a missing_data flag. Cite the doc_id as the source. "
+    "Also needs company_name (as in the register). `fields` holds, for each of year, revenue, net_profit, "
+    "total_assets and going_concern, the query used and the best matching report chunks (search_documents "
+    "results, each with a citation_id) and a `source` (the citation_id of the chunk backing that field, null if none): "
+    "fill each field from its own chunks, check company, country and year, and cite each field's `source` "
+    "in financial_summary.sources.",
 )
-async def get_financial_statements(registration_number: str, country: str) -> dict:
+async def get_financial_statements(registration_number: str, country: str, company_name: str) -> dict:
     country = country.upper()
     if country not in _LOOKUP:
         return _err(_BAD_COUNTRY)
@@ -104,7 +135,8 @@ async def get_financial_statements(registration_number: str, country: str) -> di
         return err
     docs = sorted(data["items"], key=lambda d: d["year"], reverse=True)
     if not docs:
-        return _ok({"available": [], "reports": []})
+        return _ok({"available": [], "reports": [], "fields": {}})
+    fields = await _financial_fields(company_name, country)
     reports = []
     for d in (d for d in docs if d["year"] == docs[0]["year"]):
         full, err = await _fetch(f"/documents/{d['doc_id']}")
@@ -114,7 +146,7 @@ async def get_financial_statements(registration_number: str, country: str) -> di
                         "consolidated": d["consolidated"], "content": full["content"],
                         "source": f"mockdata/documents/{d['doc_id']}"})
     return _ok({"available": [{k: d[k] for k in ("doc_id", "year", "consolidated")} for d in docs],
-                "reports": reports})
+                "reports": reports, "fields": fields})
 
 @mcp.tool()
 async def uk_search_companies(name: str, limit: int = 5) -> dict:
@@ -273,6 +305,27 @@ async def bank_get_relationship(registration_number: str) -> dict:
     data, err = await _fetch(f"/bank/relationships/{registration_number}")
     return err or _ok(data)
 
+@mcp.tool(
+    name="search_documents",
+    description="Search the annual reports and KYC policy documents by company name and content (not by registration "
+    "number: many reports have none in the index). Put the company name in the query together with what you need, "
+    "e.g. 'Hawksmoor Meridian Textiles turnover 2024' or 'ownership threshold beneficial owner'. Returns the best "
+    "chunks, each with `text`, a `citation_id` (cite it as the source), and company, country, year and section. "
+    "Names can collide: check company, country and year against the register record before using a chunk. "
+    "Read the report's unit line before copying numbers (see summary_get_financial_statements). "
+    "An empty list means nothing matched; it does not prove the company has no report.",
+)
+async def search_documents(query: str, company_name:str, country:str, limit: int = 5) -> dict:
+    try:
+        hits = await asyncio.to_thread(search, f"{country}/{company_name}: {query}", max(1, min(limit, 10)))
+    except (psycopg.Error, httpx.HTTPError):
+        return _err("The document index is unavailable (database or embedding service down, or not yet ingested). "
+                    "Say in your report that documents could not be searched.")
+    return _ok({"results": [
+        {"citation_id": f"{h['doc_id']}#{h['chunk_idx']}", "text": h["text"],
+         **{k: h["metadata"].get(k) for k in ("company", "country", "year", "section")},
+         "score": round(h["score"], 4)} for h in hits]})
+
 
 @mcp.tool(
     name="bank_get_risk_appetite",
@@ -284,6 +337,38 @@ async def bank_get_relationship(registration_number: str) -> dict:
 async def bank_get_risk_appetite() -> dict:
     data, err = await _fetch("/bank/risk-appetite")
     return err or _ok(data)
+
+
+_POLICY_DOC = "kyc_policy.md"
+
+
+@mcp.tool(
+    name="policy_search",
+    description="Look up the exact text of the bank's KYC policy by describing what you need, e.g. 'Get me the risk "
+    "rating points system' or 'recommendation rules' or 'ownership threshold for UBOs'. Returns the best matching "
+    "section as `section_id`, `heading`, the full section `text` and a `source` (e.g. 'kyc_policy.md#8'), plus the "
+    "headings of other possibly relevant sections in `also_relevant` (search again to read one). The policy is only "
+    "available through this tool. Apply the rules exactly as written. To cite it, add a pack source of type "
+    "'document' with `reference` = `source` and `excerpt` = the rule you applied copied verbatim from `text`, and "
+    "list that source id on each risk factor that applies the rule.",
+)
+async def policy_search(query: str) -> dict:
+    try:
+        hits = await asyncio.to_thread(search, f"KYC policy: {query}", 6, doc_id="kyc_policy")
+    except (psycopg.Error, httpx.HTTPError):
+        return _err("The document index is unavailable (database or embedding service down, or not yet ingested). "
+                    "Say in your report that the policy could not be searched.")
+    sections = []
+    for h in hits:  # numbered policy sections only; the title preamble has no number to cite
+        m = re.match(r"(\d+)\.\s*(.*)", h["metadata"].get("section") or "")
+        if m:
+            sections.append({"section_id": m.group(1), "heading": m.group(2), "text": h["text"]})
+    if not sections:
+        return _err("No policy section matches. Rephrase using policy words, e.g. 'risk rating points', "
+                    "'recommendation', 'ownership and control', 'adverse media', 'flag types'.")
+    top = sections[0]
+    return _ok({**top, "source": f"{_POLICY_DOC}#{top['section_id']}",
+                "also_relevant": [f"{s['section_id']}. {s['heading']}" for s in sections[1:3]]})
 
 
 # TODO (Day 3): add document search and more resources.
