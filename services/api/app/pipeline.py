@@ -8,7 +8,9 @@ reviewer is never handed a half-analysed pack that looks finished.
 """
 from kyc_common import Flag, KycPack
 
+# Two alternates: `kyc_agent` (SDK `agents={}` subagents) or `kyc_agent_tools` (specialists wrapped as tools).
 from .agents.kyc_agent import run_kyc_agent
+# from .agents.kyc_agent_tools import run_kyc_agent
 from .context import PipelineContext
 from .placeholder import build_placeholder_pack
 

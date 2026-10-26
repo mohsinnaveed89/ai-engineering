@@ -267,6 +267,15 @@ async def registry_get_officers_and_owners(country: str, registration_number: st
     return _ok({**{k: data.get(k, []) for k in _PEOPLE_KEYS[country]}, "source": f"mockdata{path}"})
 
 
+_LEGAL_SUFFIX = re.compile(r"[\s,]+(?:ltda|s\.?\s?a|lda|ltd|limited|plc)\.?$", re.I)
+
+
+def _short_name(name: str) -> str:
+    """Drop the legal-form suffix (Ltd, Limited, PLC, Lda, Ltda, S.A.): articles use the short name, and the archive
+    only matches articles that contain every query word."""
+    return _LEGAL_SUFFIX.sub("", name.strip()).strip(" ,") or name.strip()
+
+
 def _news_article(item: NewsItem, source_type: str, title: str, reference: str) -> dict:
     """Validate an article against the pack's NewsItem schema (extra fields are rejected) and pair it with the
     pack `Source` fields (type 'news' = offline archive, 'web' = live) so the origin travels in the schema."""
@@ -276,22 +285,24 @@ def _news_article(item: NewsItem, source_type: str, title: str, reference: str) 
 
 @mcp.tool(
     name="news_search",
-    description="Search news articles that mention a company. Each article is a `news_item` (the pack's NewsItem: title, url, published_at, language, summary) plus the "
-    "`source` fields (type 'news', title, reference = article id) to register it in pack.sources. Matching is by words, so an article can be about a DIFFERENT company with a similar name: check the "
+    description="Search news articles that mention a company in the bank's archive. Returns a list of the pack's NewsItem "
+    "(title, url, published_at, language, summary), up to 10. Each item's `sources` already holds the article id: "
+    "register that id in pack.sources (type 'news', reference = the id, title = the article title) and keep it in "
+    "`sources`. Matching is by words, so an article can be about a DIFFERENT company with a similar name: check the "
     "sector, city or people in the article against the register record before treating it as adverse media about "
-    "this company. Pass country to narrow results (PT and BR articles are in Portuguese). No results means no "
-    "coverage was found, not that the company is clean. Copy `news_item` into pack.news unchanged, then set sentiment, severity and sources yourself (the tool does not "
-    "judge). Add NO other fields: the schema rejects them. Cite the article id as the source.",
+    "this company. Pass country to narrow results (PT and BR articles are in Portuguese). Legal suffixes (Ltd, Lda, S.A.) "
+    "are dropped for you, and every word of the name must appear in an article, so use the trading name without "
+    "extra words. An empty list means no "
+    "coverage was found, not that the company is clean. Copy the items into pack.news unchanged, then set sentiment "
+    "and severity yourself (the tool does not judge). Add NO other fields: the schema rejects them.",
 )
-async def news_search(company_name: str, country: str | None = None) -> dict:
-    data, err = await _fetch("/news/search", q=company_name, country=(country or "").upper() or None, limit=10)
+async def news_search(company_name: str, country: str | None = None) -> list[NewsItem]:
+    data, err = await _fetch("/news/search", q=_short_name(company_name), country=(country or "").upper() or None,
+                             limit=10)
     if err:
-        return err
-    articles = [_news_article(
-        NewsItem(title=a["title"], url=a["url"], published_at=a["published_at"], language=a["language"],
-                 summary=a["body"][:400]),
-        source_type="news", title=f'{a["source"]}: {a["title"]}', reference=a["id"]) for a in data["items"]]
-    return _ok({"total_results": data["total_results"], "articles": articles})
+        raise RuntimeError(err["error"])
+    return [NewsItem(title=a["title"], url=a["url"], published_at=a["published_at"], language=a["language"],
+                     summary=a["body"][:400], sources=[a["id"]]) for a in data["items"]]
 
 
 @mcp.tool(
