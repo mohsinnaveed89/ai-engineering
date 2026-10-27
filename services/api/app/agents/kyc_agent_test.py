@@ -85,7 +85,7 @@ def build_orchestrator_options(ctx: PipelineContext) -> ClaudeAgentOptions:
         allowed_tools=[*mine, *_tools("news_search", "news_search_web"), "Agent", "Skill"],
         # allowed_tools does not hide the other tools of the `kyc` server: block the ones this orchestrator must not use.
         disallowed_tools=_tools("bank_get_risk_appetite", "summary_get_financial_statements",
-                                "registry_get_officers_and_owners", "search_documents", "policy_search"),
+                                "registry_get_officers_and_owners", "registry_trace_ultimate_owners", "search_documents", "policy_search"),
         max_turns=MAX_TURNS,
         output_format={"type": "json_schema", "schema": KycPack.model_json_schema()},
     )

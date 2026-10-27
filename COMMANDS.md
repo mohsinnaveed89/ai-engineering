@@ -21,6 +21,10 @@ All commands run from the repo root (`ai-academy-starter-kit/`).
 | `docker compose exec api python -m app.cli "Hawksmoor Meridian Textiles" UK` | Runs the pipeline for one company and scores it. No web app or DB is needed. This is the fastest loop. |
 | `docker compose exec api python -m app.cli --company-id BR-012 --out /tmp/pack.json` | Runs a company by its challenge id and saves the pack. |
 | `docker compose exec api python -m app.cli --company-id BR-012 --previous /tmp/pack.json --feedback "Check the UBOs"` | Simulates a human sending the pack back with feedback. |
+| `docker compose exec api python -m app.cli --company-id UK-001 --compare-out /tmp/UK-001.md` | Runs a test-set company and writes a Markdown table of expected (`answers.json`) vs. actual values, with a score per field. Skipped if the company is not in the test set. |
+| `docker compose exec -T api cat /tmp/UK-001.md > UK-001-compare.md` | Copies a file from the container's `/tmp` to your machine. `-T` avoids terminal artefacts in the redirect. Also works for `--out` packs. |
+| `docker compose cp api:/tmp/pack.json ./pack.json` | Another way to copy a file out of the container. |
+| `docker compose exec -T api python -m app.cli --company-id UK-001 --json > UK-001.json` | Prints the pack JSON to stdout and saves it locally. Progress and scores go to stderr and stay out of the file. |
 | Web app at http://localhost:3000 | Submits a company, then approve, decline or send back. |
 
 ## Scoring

@@ -37,6 +37,7 @@ from mcp.server.transport_security import TransportSecuritySettings
 from kyc_common.RAG.search import search
 from kyc_common.mockdata_client import MockDataClient
 from kyc_common.schema import NewsItem
+from kyc_common.ownership import RawOwner, normalize_owners, trace_ownership
 
 MOCKDATA_URL = os.getenv("MOCKDATA_URL", "http://localhost:8001").rstrip("/")
 # Registry lookup path per country. The PT/BR record carries the people; the UK splits them out.
@@ -265,6 +266,46 @@ async def registry_get_officers_and_owners(country: str, registration_number: st
         return _err(f"No {country} company with registration number '{reg}'. Find it with "
                     f"{'br_find_prospect_cnpj' if country == 'BR' else 'registry_search_company'} first.")
     return _ok({**{k: data.get(k, []) for k in _PEOPLE_KEYS[country]}, "source": f"mockdata{path}"})
+
+
+async def _owners_lookup(country: str, reg: str) -> tuple[list[RawOwner] | None, str]:
+    """One register hop for the chain walker: (owners, source) or (None, source) for a 404; LookupError if unavailable."""
+    if country == "UK":
+        path = f"{_reg_path('UK', reg)}/persons-with-significant-control"
+        data, err = await _fetch(path)
+        records = (data or {}).get("items")
+        ref = f"mockdata/uk/company/{reg}"
+    else:
+        path = _reg_path(country, reg)
+        data, err = await _fetch(path)
+        records = (data or {}).get(_PEOPLE_KEYS[country][-1])
+        ref = f"mockdata{path}"
+    if err:
+        raise LookupError(err["error"])
+    return (normalize_owners(country, records or []) if data is not None else None), ref
+
+
+@mcp.tool(
+    name="registry_trace_ultimate_owners",
+    description="Walk a company's ownership through holding companies to the natural persons behind it, for you. Needs the "
+    "country and registration number. Does the look-through in code: calls the register for each corporate owner, "
+    "multiplies percentages along the chain, stops at max_depth (default 3, max 10), cuts loops, and applies the "
+    "policy's 25% UBO threshold. Each owner comes with `status` (ultimate, below_threshold, intermediate, or an "
+    "unresolved_*/depth_limit/cycle dead end), the effective `ownership_pct`, `via` (intermediate companies, nearest "
+    "first) and `sources` (the register lookups behind it: register each in pack.sources, using `reference` as given "
+    "and citing them on the owner). Dead ends are reported, never guessed: `untraced_pct` and `ubo_unidentified` tell "
+    "you whether to raise the ubo_unidentified flag; `has_corporate_owner` is the complex_ownership condition. "
+    "Jurisdictions are reported, not judged. Use it instead of repeated registry_get_officers_and_owners calls for owners.",
+)
+async def registry_trace_ultimate_owners(country: str, registration_number: str, max_depth: int = 3) -> dict:
+    country = country.upper()
+    if country not in _LOOKUP:
+        return _err(_BAD_COUNTRY)
+    result = await trace_ownership(country, registration_number.strip(), _owners_lookup, max_depth)
+    if "error" in result:
+        return _err(result["error"] + " Find the number with registry_search_company first; "
+                    "if a source was unavailable, say it could not be checked.")
+    return _ok(result)
 
 
 _LEGAL_SUFFIX = re.compile(r"[\s,]+(?:ltda|s\.?\s?a|lda|ltd|limited|plc)\.?$", re.I)

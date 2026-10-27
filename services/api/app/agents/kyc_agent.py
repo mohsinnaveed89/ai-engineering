@@ -18,7 +18,8 @@ from pydantic import ValidationError
 from kyc_common import KycPack, sourcing_problems
 
 from ..context import PipelineContext
-from .risk_check import risk_problems, risk_warnings, ubo_problems
+from .bank_conflicts import FULL_TOOL_NAME as BANK_CHECK_TOOL, SERVER_NAME as BANK_CHECK_SERVER, build_bank_check_server
+from .risk_check import _quoted_in, risk_problems, risk_warnings, ubo_problems
 
 AGENT_HOME = Path(__file__).resolve().parent.parent / "agent_home"
 MAX_TURNS = 30  # orchestrator turns only; each subagent has its own limit
@@ -56,21 +57,23 @@ SUBAGENTS = {
             "You are the ownership specialist on a bank KYC team. The company is already identified; you establish who "
             "runs it and who ultimately owns it. The orchestrator gives you the country procedure for officers and owners.\n"
             "1. Officers: fill `officers` from the register (`registry_get_officers_and_owners`).\n"
-            "2. Owners: fill `owners` for the whole chain, one entry per corporate shareholder (`type` company, "
-            "`is_ultimate_beneficial_owner` false) and one per natural person reached. For a corporate owner, call the "
-            "owners tool again with its registration number and continue up the chain. Multiply percentages along the "
-            "chain. Set `is_ultimate_beneficial_owner` true, with `type` person, only for a natural person whose "
+            "2. Owners: call `registry_trace_ultimate_owners` once with the country and registration number (depth limit 3). It walks the "
+            "chain through holding companies in code and multiplies the percentages; trust its arithmetic and do not repeat its "
+            "register calls. Fill `owners` from its result: one entry per corporate shareholder (`type` company, "
+            "`is_ultimate_beneficial_owner` false) and one per natural person reached. Set `is_ultimate_beneficial_owner` true, with `type` person, only for a natural person whose "
             "effective percentage is 25% or more (the policy's ownership section, via `policy_search`); put the "
-            "intermediate companies in `via`, nearest first, and the look-through percentage in `ownership_pct`. Do not "
+            "intermediate companies in `via`, nearest first, and the look-through percentage in `ownership_pct`. Every owner cites "
+            "the lookups in its result's `sources`, each registered in your `sources` (type registry, `reference` as returned). Do not "
             "mark companies, or persons under 25%, as UBOs. A UK PSC band (for example 25 to 50%) is a range: use its "
             "lower bound for the threshold and say so in a flag if it decides the outcome. If 25% or more cannot be "
-            "traced to natural persons, mark no one and raise a `ubo_unidentified` flag. Raise `complex_ownership` only if at "
+            "traced to natural persons (the result's `ubo_unidentified` is true: a dead end such as a company in a jurisdiction with no "
+            "register here, the depth limit, or a loop), raise a `ubo_unidentified` flag; keep the dead-end company as an owner, never guess a person. Raise `complex_ownership` only if at "
             "least one corporate shareholder appears in the chain (a company owned directly by natural persons is not "
             "complex); raise `high_risk_jurisdiction` only for a shareholder in a jurisdiction listed in the bank's "
             "risk appetite, which you do not have, so report the jurisdiction in `jurisdiction` and leave the flag to "
             "the evaluator; report offshore jurisdictions in `jurisdiction` and leave judging them to the evaluator."
             + RULES.format(prefix="own", keys="officers, owners, flags, sources")),
-        tools=_tools("registry_get_officers_and_owners", "registry_get_company", "policy_search"),
+        tools=_tools("registry_get_officers_and_owners", "registry_trace_ultimate_owners", "registry_get_company", "policy_search"),
         maxTurns=15, background=True),
     "news": AgentDefinition(
         description="Adverse-media search for a company. Needs the company name, country, and sector/city/directors to match articles.",
@@ -87,16 +90,20 @@ SUBAGENTS = {
             + RULES.format(prefix="news", keys="news, flags, sources")),
         tools=_tools("news_search", "news_search_web"), maxTurns=12, background=True),
     "bank": AgentDefinition(
-        description="Compares what the bank holds on a company (existing relationship) with the register record. Needs the registration number and register record.",
+        description="Compares what the bank holds on a company with the register record, and notes any existing relationship. Needs the country and registration number.",
         prompt=(
             "You are the bank-data specialist on a bank KYC team. The company is already identified from the register.\n"
-            "Bank data: call `bank_get_relationship` with the registration number and compare it with the register record "
-            "you were given (name, status, address, sector). The register prevails for identity. When the bank data "
-            "disagrees on a field, report both values with their sources in a `conflicting_data` flag; matching data or "
-            "no bank record is not a conflict. State in a flag of type `other` whether the company is an existing "
-            "customer and its internal risk rating if any."
+            f"1. Call `{BANK_CHECK_TOOL}` once with the country and registration number. It fetches the register record and "
+            "the bank's own record (onboarding request) and compares name, registration number, address and directors in "
+            "code. Copy its `flags` into your `flags` and its `sources` into your `sources` EXACTLY as returned: never "
+            "rephrase, merge, drop, downgrade or resolve a conflict, even if one side looks obviously right. No conflict "
+            "flags means none were found; a bank with no record of the company is not a conflict. If the tool reports an "
+            "error, add a flag of type `other` saying the register/bank comparison could not be done.\n"
+            "2. Call `bank_get_relationship` with the registration number. State in a flag of type `other` whether the "
+            "company is an existing customer and its internal risk rating if any (cite a `bank-rel` source of type "
+            "`bank_system`, `reference` as the tool returned). Do not compare its data with the register."
             + RULES.format(prefix="bank", keys="flags, sources")),
-        tools=_tools("bank_get_relationship"), maxTurns=5, background=True),
+        tools=[BANK_CHECK_TOOL, *_tools("bank_get_relationship")], maxTurns=6, background=True),
     "financials": AgentDefinition(
         description="Financial summary from the latest annual report. Needs the registration number, country and register company name.",
         prompt=(
@@ -130,7 +137,9 @@ SUBAGENTS = {
             "recommendation rules. Call `bank_get_risk_appetite` once for prohibited and high-risk sectors and "
             "jurisdictions. For each policy section you apply, add a `sources` entry of type `document` with `reference` = "
             "the tool's `source` (e.g. `kyc_policy.md#8`), `title` naming the section, and `excerpt` = the rule you applied "
-            "copied verbatim from the returned `text`. Then apply the policy to produce flags and risk. Cite that source id, "
+            "copied verbatim from the returned `text`: one contiguous span (a sentence, or one table row), never "
+            "paraphrased and never joined with `...` across lines or rows. For the points table in section 8, quote just "
+            "the row you applied, or the `Rating:` line, as separate sources if you need both. Then apply the policy to produce flags and risk. Cite that source id, "
             "together with the evidence source ids already in the evidence, on every `risk.factors` entry that uses the "
             "rule. List every policy factor that applies as a `risk.factors` entry with its exact points and sources; add "
             "the points; derive the rating from the total (0-1 low, 2-3 medium, 4+ high); then derive the recommendation "
@@ -200,15 +209,15 @@ def build_options(ctx: PipelineContext) -> ClaudeAgentOptions:
             "4. Merge their JSON into the pack: concatenate `sources` and `flags`; take `officers`, `owners`, `news` and "
             "`financial_summary` as returned.\n"
             "5. Start the `evaluator` subagent once, with all the evidence so far pasted into its prompt as JSON. Take its "
-            "`risk`, add its `flags`, and add its `sources` to the pack. Every flag must cite at least one source id that exists in `sources`; if a flag has none, cite the source it is about or drop it. Drop any typed flag whose condition the "
-            "evidence does not support (policy sections 3 to 7), and remove duplicates of the same type and fact.\n"
+            "`risk`, add its `flags`, and add its `sources` to the pack exactly as returned: never retype or shorten the `excerpt` of its policy sources, and you cannot call `policy_search` yourself (if a policy excerpt is rejected, ask the evaluator to correct it). Every flag must cite at least one source id that exists in `sources`; if a flag has none, cite the source it is about or drop it. Drop any typed flag whose condition the "
+            "evidence does not support (policy sections 3 to 7), and remove duplicates of the same type and fact. Never drop or merge a `conflicting_data` flag from the `bank` subagent: each one shows a register vs bank difference for a human to see.\n"
             "6. Return the pack as structured output. Do not change what the subagents returned, except to drop exact "
             "duplicates and unsupported typed flags (step 5)."),
         model=ctx.settings.claude_model,
         cwd=AGENT_HOME,
         skills="all",
         agents=SUBAGENTS,
-        mcp_servers={"kyc": {"type": "http", "url": ctx.settings.mcp_url}},
+        mcp_servers={"kyc": {"type": "http", "url": ctx.settings.mcp_url}, BANK_CHECK_SERVER: build_bank_check_server(ctx)},
         tools=["Agent", "Skill"],                                   # the only built-in: delegating to subagents
         # Permissions are session-wide: the subagents' tools must be allowed here or their calls are denied.
         # Which agent may use which tool is limited by each AgentDefinition's `tools`; the orchestrator is told
@@ -228,24 +237,65 @@ def build_user_message(ctx: PipelineContext) -> str:
     return "\n".join(parts)
 
 
-def _record_policy_result(block: ToolResultBlock, retrieved: dict[str, str]) -> None:
-    """Remember the text of each policy section a (sub)agent actually received, keyed by its `source`."""
+def _record_policy_result(block: ToolResultBlock, retrieved: dict[str, str]) -> str | None:
+    """Remember the text of each policy section a (sub)agent actually received, keyed by its `source`.
+    Returns a short description of what came back, for debug logging."""
     content = block.content
     if isinstance(content, list):
         content = "".join(c.get("text", "") for c in content if isinstance(c, dict))
     try:
         data = json.loads(content or "")
     except ValueError:
-        return
+        return f"unparseable result ({len(content or '')} chars): {(content or '')[:120]!r}"
     if isinstance(data, dict) and "source" in data and "text" in data:
         retrieved[data["source"]] = data["text"]
+        return f"{data['source']} ({len(data['text'])} chars)"
+    return f"no source/text in result, keys={list(data) if isinstance(data, dict) else type(data).__name__}"
+
+
+def _first_divergence(excerpt: str, text: str) -> str:
+    """Where the excerpt stops matching the section text (whitespace-normalised, like the validator)."""
+    e, t = " ".join(excerpt.split()), " ".join(text.split())
+    n = next((i for i, (a, b) in enumerate(zip(e, t)) if a != b), min(len(e), len(t)))
+    return f"excerpt[{n}:]={e[n:n + 60]!r} vs section[{n}:]={t[n:n + 60]!r}"
+
+
+async def _log_policy_mismatch(ctx: PipelineContext, attempt: int, result: ResultMessage | None,
+                               retrieved: dict[str, str]) -> None:
+    """Debug aid: when the risk check fails, show each cited policy excerpt next to the section text it should match,
+    and dump everything to /tmp/kyc_debug_attempt<N>.json for a full diff."""
+    if result is None or result.structured_output is None:
+        return
+    try:
+        pack = KycPack.model_validate(result.structured_output)
+    except ValidationError:
+        return
+    by_id = {s.id: s for s in pack.sources}
+    cited = {sid for f in pack.risk.factors for sid in f.sources}
+    dump = {"retrieved_sources": {k: v for k, v in retrieved.items()}, "cited": {}}
+    await ctx.emit("debug", f"attempt {attempt}: retrieved sections = {sorted(retrieved)}")
+    for sid in sorted(cited):
+        src = by_id.get(sid)
+        if src is None or not src.reference.startswith("kyc_policy.md#"):
+            continue
+        text = retrieved.get(src.reference)
+        dump["cited"][sid] = {"reference": src.reference, "excerpt": src.excerpt, "section_text": text}
+        if text is None:
+            await ctx.emit("debug", f"attempt {attempt}: {sid} cites {src.reference}, never retrieved")
+        elif _quoted_in(src.excerpt or "", text):
+            await ctx.emit("debug", f"attempt {attempt}: {sid} excerpt OK ({len(src.excerpt or '')} chars)")
+        else:
+            await ctx.emit("debug", f"attempt {attempt}: {sid} MISMATCH {src.reference}: excerpt "
+                                    f"{len(src.excerpt or '')} chars, section {len(text)} chars; "
+                                    f"{_first_divergence(src.excerpt or '', text)}")
+    Path(f"/tmp/kyc_debug_attempt{attempt}.json").write_text(json.dumps(dump, indent=2, ensure_ascii=False))
 
 
 async def _run_turn(client: ClaudeSDKClient, ctx: PipelineContext, prompt: str,
                     retrieved: dict[str, str]) -> ResultMessage | None:
     await client.query(prompt)
     result = None
-    policy_calls: set[str] = set()
+    policy_calls: dict[str, tuple[str, str]] = {}  # policy_search tool_use id -> (who, query), for debug logging
     subagent_calls: dict[str, str] = {}  # Agent tool_use id -> subagent name, to report when each one returns
     async for msg in client.receive_response():
         if isinstance(msg, AssistantMessage):
@@ -255,13 +305,15 @@ async def _run_turn(client: ClaudeSDKClient, ctx: PipelineContext, prompt: str,
                     detail = block.input.get("subagent_type", "") if block.name == "Agent" else ""
                     await ctx.emit(who, f"Calling {block.name.removeprefix('mcp__kyc__')} {detail}".strip())
                     if block.name.endswith("policy_search"):
-                        policy_calls.add(block.id)
+                        policy_calls[block.id] = (who, json.dumps(block.input, ensure_ascii=False)[:200])
                     if block.name == "Agent":
                         subagent_calls[block.id] = detail
         elif isinstance(msg, UserMessage) and isinstance(msg.content, list):
             for block in msg.content:
                 if isinstance(block, ToolResultBlock) and block.tool_use_id in policy_calls:
-                    _record_policy_result(block, retrieved)
+                    who, query = policy_calls[block.tool_use_id]
+                    got = _record_policy_result(block, retrieved)
+                    await ctx.emit("debug", f"policy_search by {who} {query} -> {got}")
                 if isinstance(block, ToolResultBlock) and block.tool_use_id in subagent_calls:
                     name = subagent_calls.pop(block.tool_use_id)
                     await ctx.emit("orchestrator", f"Agent {name} returned{' (error)' if block.is_error else ''}")
@@ -298,10 +350,14 @@ async def run_kyc_agent(ctx: PipelineContext) -> KycPack | None:
     async with ClaudeSDKClient(options=build_options(ctx)) as client:
         result = await _run_turn(client, ctx, build_user_message(ctx), retrieved)
         pack, problem = _check(result, retrieved)
+        if pack is None:
+            await _log_policy_mismatch(ctx, 1, result, retrieved)
         if pack is None and result is not None and result.terminal_reason != "max_turns":
             await ctx.emit("agent", f"Pack invalid, asking the agent to fix it once: {(problem or '')[:300]}")
             result = await _run_turn(client, ctx, f"{problem}\nReturn the corrected pack.", retrieved)
             pack, problem = _check(result, retrieved)
+            if pack is None:
+                await _log_policy_mismatch(ctx, 2, result, retrieved)
     if pack is None:
         await ctx.emit("agent", f"Agent did not produce a valid pack: {(problem or '')[:200]}")
         return None

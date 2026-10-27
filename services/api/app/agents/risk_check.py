@@ -1,6 +1,8 @@
 """Deterministic check of `risk` against KYC policy sections 8 and 9, so the model's arithmetic is never trusted blindly."""
 from __future__ import annotations
 
+import re
+
 from kyc_common import KycPack
 
 POLICY_PREFIX = "kyc_policy.md#"
@@ -21,8 +23,18 @@ def ubo_problems(pack: KycPack) -> list[str]:
     return problems
 
 
-def _norm(s: str) -> str:
-    return " ".join(s.split())
+MIN_WORD_OVERLAP = 0.8  # share of the excerpt's words that must appear in the section text
+
+
+def _words(s: str) -> list[str]:
+    return re.findall(r"\w+", s.lower())
+
+
+def _quoted_in(excerpt: str, text: str) -> bool:
+    """True when at least MIN_WORD_OVERLAP of the excerpt's words appear in the section text. Order, punctuation,
+    markdown and '...' are ignored, so a trimmed or reformatted quote passes but an invented rule does not."""
+    words, section = _words(excerpt), set(_words(text))
+    return bool(words) and sum(w in section for w in words) / len(words) >= MIN_WORD_OVERLAP
 
 
 def _policy_sources(pack: KycPack) -> list:
@@ -49,9 +61,12 @@ def citation_problems(pack: KycPack, retrieved: dict[str, str]) -> list[str]:
         text = retrieved.get(src.reference)
         if text is None:
             problems.append(f"sources: '{src.id}' cites '{src.reference}', which policy_search did not return.")
-        elif not src.excerpt or _norm(src.excerpt) not in _norm(text):
+        elif not src.excerpt or not _quoted_in(src.excerpt, text):
             problems.append(f"sources: '{src.id}' excerpt is not quoted verbatim from the text of "
-                            f"'{src.reference}' returned by policy_search.")
+                            f"'{src.reference}' returned by policy_search: fewer than {MIN_WORD_OVERLAP:.0%} of its "
+                            f"words appear in that text. Copy the rule from that text. "
+                            f"Do not call policy_search yourself if you are the orchestrator: keep the evaluator's "
+                            f"excerpt unchanged or ask the evaluator for a corrected one.")
     return problems
 
 

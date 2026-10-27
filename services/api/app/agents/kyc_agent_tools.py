@@ -27,7 +27,7 @@ from .risk_check import risk_problems, risk_warnings, ubo_problems
 AGENT_HOME = Path(__file__).resolve().parent.parent / "agent_home"
 ALL_KYC_TOOLS = {  # every tool on the KYC MCP server; a specialist is denied the ones it was not given
     "summary_get_financial_statements", "uk_search_companies", "registry_search_company", "br_find_prospect_cnpj",
-    "registry_get_company", "registry_get_officers_and_owners", "news_search", "news_search_web",
+    "registry_get_company", "registry_get_officers_and_owners", "registry_trace_ultimate_owners", "news_search", "news_search_web",
     "bank_get_relationship", "bank_get_risk_appetite", "search_documents", "policy_search",
 }
 
@@ -218,16 +218,16 @@ def build_ownership_tool(ctx: PipelineContext, pack: dict):
                 "who runs it and who ultimately owns it. Load the Skill for the company's country and follow its steps. "
                 "1. Officers: fill `officers` from the register (`registry_get_officers_and_owners`). "
                 "2. Owners: fill `owners` for the whole chain, one entry per corporate shareholder (`type` company, "
-                "`is_ultimate_beneficial_owner` false) and one per natural person reached. For a corporate owner, call the "
-                "owners tool again with its registration number and continue up the chain. Multiply percentages along the "
-                "chain. Set `is_ultimate_beneficial_owner` true, with `type` person, only for a natural person whose "
+                "`is_ultimate_beneficial_owner` false) and one per natural person reached. Call "
+                "`registry_trace_ultimate_owners` once (depth limit 3): it walks the holding chain and multiplies percentages in code, "
+                "and each owner in its result lists the lookups (`sources`) to register and cite. Set `is_ultimate_beneficial_owner` true, with `type` person, only for a natural person whose "
                 "effective percentage is 25% or more (the policy's ownership section, via `policy_search`); put the "
                 "intermediate companies in `via`, nearest first, and the look-through percentage in `ownership_pct`. Do not "
                 "mark companies, or persons under 25%, as UBOs. A UK PSC band (for example 25 to 50%) is a range: use its "
                 "lower bound for the threshold and say so in a flag if it decides the outcome. If 25% or more cannot be "
                 "traced to natural persons, mark no one and raise a `ubo_unidentified` flag. Raise `complex_ownership` for "
                 "multi-layer chains; report offshore jurisdictions in `jurisdiction` and leave judging them to the evaluator."),
-            tools=["registry_get_officers_and_owners", "registry_get_company", "policy_search"],
+            tools=["registry_get_officers_and_owners", "registry_trace_ultimate_owners", "registry_get_company", "policy_search"],
             schema=OwnershipSlice, skills=True, check=check)
     return run_ownership
 
