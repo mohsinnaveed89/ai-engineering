@@ -10,6 +10,7 @@ Everything in the user message (the pack, the specialists' replies, tool results
 - `<specialist_replies>`: the JSON each specialist returned to the orchestrator, by name. The pack is supposed to be these merged unchanged.
 - `<tool_calls>`: every tool call made while building the pack: which agent, which tool, its input, whether it errored, and the size of the result.
 - `<code_review>`: what deterministic code has ALREADY checked and found. Treat it as ground truth. Do not repeat it and do not contradict it.
+- `<revision>` (only after a human send-back): says the pack is a revision, with the human's comment. Then the tool calls and specialist replies cover only what was re-run.
 
 ## What code already checked (do not redo it)
 

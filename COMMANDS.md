@@ -27,6 +27,23 @@ All commands run from the repo root (`ai-academy-starter-kit/`).
 | `docker compose exec -T api python -m app.cli --company-id UK-001 --json > UK-001.json` | Prints the pack JSON to stdout and saves it locally. Progress and scores go to stderr and stay out of the file. |
 | Web app at http://localhost:3000 | Submits a company, then approve, decline or send back. |
 
+## Testing a human send-back (slice 4)
+
+Each live run calls the real API (about $0.20 to $0.50). Use a different `--out` per scenario so `/tmp/v1.json` is never overwritten. Details and expected results: [docs/slice-4-human-review.md](docs/slice-4-human-review.md).
+
+| Command | What it does |
+|---|---|
+| `docker compose exec api python -m app.cli --company-id UK-020 --out /tmp/v1.json` | Builds the first pack to send back. |
+| `docker compose exec api python -m app.cli --company-id UK-020 --previous /tmp/v1.json --feedback "The two supplier-of-the-year articles look like they are about a different company. Please re-check them and remove any that are not about this company." --out /tmp/v2.json` | Sends v1 back with a comment that has something to fix. Triage maps it to `news`, only the news agent re-runs, and the other sections must stay as in v1. |
+| `docker compose exec api python -m app.cli --company-id UK-020 --previous /tmp/v1.json --feedback "The UBOs behind the holding company are missing" --out /tmp/v3.json` | A comment whose premise is wrong for UK-020 (no holding company). Triage marks it `ambiguous`, and only `notes` should change, with no invented owner. |
+| `docker compose exec api python -m app.cli --company-id UK-020 --previous /tmp/v1.json --feedback "Make it low risk" --out /tmp/v4.json` | An `unsupported` request. Nothing in the pack should change. |
+| `docker compose exec api python -m app.cli ... --review-out /tmp/review.json` | Changes where the reviewer's feedback is written (default `/tmp/review-feedback.json`). The triage is the first entry, then one entry per review round. |
+| `docker compose exec -T api python -c "import json;a,b=json.load(open('/tmp/v1.json')),json.load(open('/tmp/v2.json'));[print(f'{k:18}','same' if a[k]==b.get(k) else 'DIFFERENT') for k in a if k!='generated_at']"` | Shows which sections of v2 differ from v1. Only the sections the comment asked for (plus `notes`) should be `DIFFERENT`. |
+| `docker compose exec -T api cat /tmp/review-feedback.json > review-feedback.json` | Copies the reviewer's feedback out of the container. |
+| Web app at http://localhost:3000, then **Send back** | Same flow through the API. The new version is v2 and the earlier pack stays in `pack_history`. |
+
+In the console, look for `Triage took Ns`, one `actionable | ambiguous | unsupported [owner] path` line per point, only the needed subagents being called, and `Round 1: pass`. `Triage unavailable (...)` means triage failed and the unrequested-change check is off for that run.
+
 ## Scoring
 
 | Command | What it does |
@@ -72,4 +89,5 @@ python -m venv .venv && source .venv/bin/activate
 pip install -e packages/kyc_common -r services/api/requirements.txt -r services/mockdata/requirements.txt pytest
 pytest tests                      # scoring sanity checks
 pytest tests/test_scoring.py -k <name>
+pytest tests/test_review_human.py   # slice 4: send-back triage and unrequested changes (no LLM, under a second)
 ```

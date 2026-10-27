@@ -95,7 +95,21 @@ def build_system_prompt(team: str, sections: dict[str, str]) -> str:
     return PROMPT_FILE.read_text().replace("{{TEAM}}", team).replace("{{POLICY}}", policy)
 
 
-def build_user_message(structured_output: dict, capture: RunCapture, code_feedback: ReviewFeedback) -> str:
+def revision_note(ctx: PipelineContext) -> str:
+    """Tells the reviewer this pack is a revision after a human send-back, so what it sees is partial by design."""
+    if not (ctx.feedback and ctx.previous_pack):
+        return ""
+    return (f"<revision>This pack is a revision after a human send-back; the comment was: {ctx.feedback[:1000]!r}. "
+            "Only the specialists that were re-run appear in `<tool_calls>` and `<specialist_replies>`: every other "
+            "section was kept from the previous pack on purpose and was reviewed in an earlier version, so do not "
+            "report missing calls or replies for it. The team's answer to the comment belongs in the pack's `notes`. "
+            "A flag or source that refers to the send-back, the comment or the reviewer's point, instead of reporting "
+            "evidence, is a defect (category `flags`, advisory). Ordinary wording such as asking the approver to "
+            "confirm a match is not: judge only text that responds to the comment.</revision>\n")
+
+
+def build_user_message(structured_output: dict, capture: RunCapture, code_feedback: ReviewFeedback,
+                       revision: str = "") -> str:
     calls = [{"agent": c.agent, "tool": c.tool, "input": c.input, "error": c.is_error, "result_chars": c.result_chars}
              for c in capture.tool_calls[:MAX_TOOL_CALLS_SHOWN]]
     code = code_feedback.model_dump(mode="json", include={"findings", "missing", "suggestions"})
@@ -104,6 +118,7 @@ def build_user_message(structured_output: dict, capture: RunCapture, code_feedba
             f"<specialist_replies>{dump(capture.subagents)}</specialist_replies>\n"
             f"<tool_calls>{dump(calls)}</tool_calls>\n"
             f"<code_review>{dump(code)}</code_review>\n"
+            f"{revision}"
             "Review this pack as instructed and return your findings.")
 
 
@@ -120,7 +135,8 @@ async def _reviewer_tool_guard(input_data, tool_use_id, context):
                                     f"{', '.join(t.rsplit('__', 1)[-1] for t in ALLOWED_TOOLS)}."}}
 
 
-def build_reviewer_options(ctx: PipelineContext, system_prompt: str) -> ClaudeAgentOptions:
+def build_reviewer_options(ctx: PipelineContext, system_prompt: str,
+                           output_model: type[BaseModel] = LlmReview) -> ClaudeAgentOptions:
     return ClaudeAgentOptions(
         system_prompt=system_prompt,
         model=ctx.settings.reviewer_model,
@@ -131,7 +147,7 @@ def build_reviewer_options(ctx: PipelineContext, system_prompt: str) -> ClaudeAg
         hooks={"PreToolUse": [HookMatcher(matcher=".*", hooks=[_reviewer_tool_guard])]},
         env={"CLAUDE_CODE_DISABLE_BACKGROUND_TASKS": "1"},
         max_turns=REVIEWER_MAX_TURNS,
-        output_format={"type": "json_schema", "schema": LlmReview.model_json_schema()},
+        output_format={"type": "json_schema", "schema": output_model.model_json_schema()},
     )
 
 
@@ -169,7 +185,7 @@ async def run_llm_review(ctx: PipelineContext, structured_output: dict, capture:
     try:
         async with ClaudeSDKClient(options=build_reviewer_options(ctx, build_system_prompt(team, sections))) as client:
             result = await asyncio.wait_for(
-                _converse(client, ctx, build_user_message(structured_output, capture, code_feedback)),
+                _converse(client, ctx, build_user_message(structured_output, capture, code_feedback, revision_note(ctx))),
                 timeout=ctx.settings.reviewer_timeout_s)
     except asyncio.TimeoutError:
         return None, f"timed out after {ctx.settings.reviewer_timeout_s}s"

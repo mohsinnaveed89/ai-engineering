@@ -21,7 +21,7 @@ from kyc_common import KycPack, sourcing_problems
 
 from .review_capture import RunCapture
 from .review_checks import (Missing, coverage, flag_producers, log_notes, merge_findings, news_flag_findings,
-                            reply_schema_findings)
+                            reply_schema_findings, unrequested_changes)
 from .risk_check import MIN_WORD_OVERLAP, POLICY_PREFIX, Problem, risk_findings, ubo_findings
 
 Trigger = Literal["auto_review", "human_feedback"]
@@ -161,11 +161,13 @@ def _roll_up(findings: list[Finding], missing: list[MissingItem]) -> list[FieldS
 def review_output(structured_output: dict | None, *, sections: dict[str, str], round_no: int, max_sendbacks: int,
                   no_pack_reason: str | None = None, fatal: bool = False, min_overlap: float = MIN_WORD_OVERLAP,
                   trigger: Trigger = "auto_review", suggestions: list[Suggestion] | None = None,
-                  capture: RunCapture | None = None,
-                  expect_all_specialists: bool = False) -> tuple[ReviewFeedback, KycPack | None]:
+                  capture: RunCapture | None = None, expect_all_specialists: bool = False,
+                  previous_pack: KycPack | None = None,
+                  requested: set[str] | None = None) -> tuple[ReviewFeedback, KycPack | None]:
     """The code stage. Returns the feedback and, when nothing blocks, the validated pack.
     `capture` (what each specialist returned and every tool call) enables the merge and tool-log checks;
-    `expect_all_specialists` is true for a fresh run, where every specialist should have run."""
+    `expect_all_specialists` is true for a fresh run, where every specialist should have run. In a human revision,
+    `previous_pack` and `requested` (the top-level fields the human's comment names) enable the unrequested-change check."""
     problems: list[Problem] = []
     missing: list[Missing] = []
     flag_owner: dict[str, str] = {}
@@ -188,6 +190,8 @@ def review_output(structured_output: dict | None, *, sections: dict[str, str], r
             problems += merge_findings(pack, capture) + reply_schema_findings(capture)
             flag_owner = flag_producers(pack, capture)
             notes += [Suggestion(about=n.about, text=n.text, based_on=n.based_on) for n in log_notes(capture)]
+        if previous_pack is not None:
+            problems += unrequested_changes(previous_pack, pack, requested or set())
     findings = [_finding(p, flag_owner) for p in problems]
     for i, f in enumerate(findings, 1):
         f.id = f"F{i}"

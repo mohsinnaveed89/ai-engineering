@@ -3,6 +3,7 @@ flags against news sources, whether the orchestrator merged the specialists' out
 tool-call log. Each returns plain data; reviewer.py turns it into the feedback object."""
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
 
 from pydantic import ValidationError
@@ -285,6 +286,62 @@ def flag_producers(pack: KycPack, capture: RunCapture) -> dict[str, str]:
         for flag in _dicts(output.get("flags")):
             seen.setdefault((flag.get("type"), _norm(flag.get("message", ""))), name)
     return {f"flags[{i}]": seen.get((f.type, _norm(f.message)), "orchestrator") for i, f in enumerate(pack.flags)}
+
+
+# --- unrequested changes: a human revision must change only what was asked --------------------------------------------
+
+REGRESSION_RULE = "human send-back: change only what was asked"
+# Sections compared against the previous pack. A change nobody asked for blocks in the first four; the others start as
+# advisory (promote them once real diffs show it is safe). `sources`, and the source-id lists inside items, may change.
+BLOCKING_SECTIONS = ("company", "officers", "owners", "financial_summary")
+ADVISORY_SECTIONS = ("news", "flags", "risk")
+# Evidence that feeds the risk score: if one of these legitimately changed, `risk` may change with it.
+RISK_INPUTS = ("company", "owners", "news", "flags", "financial_summary")
+ANY_SECTION = "*"   # in `requested`: the human's request could not be mapped to a section, so nothing can be judged
+
+
+def _canon(value: object) -> object:
+    """A form to compare: key and list order ignored, source-id lists dropped."""
+    if isinstance(value, dict):
+        return {k: _canon(v) for k, v in sorted(value.items()) if k != "sources"}
+    if isinstance(value, list):
+        return sorted((_canon(v) for v in value), key=lambda v: json.dumps(v, sort_keys=True, default=str))
+    return value
+
+
+def _describe_change(old: object, new: object) -> str:
+    if isinstance(old, list) and isinstance(new, list):
+        dump = lambda v: json.dumps(v, ensure_ascii=False, sort_keys=True, default=str)  # noqa: E731
+        old_items, new_items = {dump(v) for v in old}, {dump(v) for v in new}
+        parts = [f"{label} {len(items)}: " + " | ".join(i[:70] for i in sorted(items)[:2])
+                 for label, items in (("removed", old_items - new_items), ("added", new_items - old_items)) if items]
+        return "; ".join(parts)
+    if isinstance(old, dict) and isinstance(new, dict):
+        return "differs in " + ", ".join(sorted(k for k in old.keys() | new.keys() if old.get(k) != new.get(k)))
+    return f"{str(old)[:70]} -> {str(new)[:70]}"
+
+
+def unrequested_changes(previous: KycPack, pack: KycPack, requested: set[str]) -> list[Problem]:
+    """What changed between the previous pack and the new one that nobody asked for. `requested` holds the top-level
+    pack fields the human's triaged points (and earlier send-backs in this run) name, or ANY_SECTION."""
+    if ANY_SECTION in requested:
+        return []
+    before, after = previous.model_dump(mode="json"), pack.model_dump(mode="json")
+    changed = {s: (before[s], after[s]) for s in (*BLOCKING_SECTIONS, *ADVISORY_SECTIONS)
+               if _canon(before[s]) != _canon(after[s])}
+    allowed = set(requested)
+    if any(s in RISK_INPUTS for s in changed if s in allowed):
+        allowed.add("risk")
+    problems = []
+    for section, (old, new) in changed.items():
+        if section in allowed:
+            continue
+        problems.append(Problem(
+            f"{section}: changed but nothing in the human's comment asked for it ({_describe_change(old, new)}). "
+            f"Restore it exactly as in the previous pack.", "merge", section, REGRESSION_RULE,
+            "unchanged from the previous pack", _describe_change(old, new)[:300], cause="merge_changed",
+            blocking=section in BLOCKING_SECTIONS, produced_by="orchestrator", suggested_owner="orchestrator"))
+    return problems
 
 
 # --- notes from the tool-call log: advisory only -------------------------------------------------------------------

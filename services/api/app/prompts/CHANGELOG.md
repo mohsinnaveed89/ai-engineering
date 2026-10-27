@@ -150,3 +150,21 @@ One company, one run each, so read these as observations, not a benchmark. The o
 - **Hypothesis:** no more `ownership.officers[n].role: Field required` in the reply-schema check. The prompt never named `role`, and the agent left it out on UK-001 and UK-020, costing a send-back round.
 - **Before:** UK-001 / UK-020 round 1: ownership officers without `role` on every run.
 - **After:** pending. Rerun UK-001 and check that round 1 has no `ownership` findings.
+
+## 2026-10-27 · Human send-back: triage prompt and "revise, don't rebuild" (`reviewer_triage.md`, `REVISION_PROMPT` in `kyc_agent.py`)
+
+- **Change:** a send-back no longer rebuilds the pack from a free-text `<feedback>` tag. The reviewer first triages the comment (`prompts/reviewer_triage.md`): each point is mapped to pack paths, a suggested owner and a status (`actionable`, `ambiguous`, `unsupported`). The orchestrator gets the raw comment, that triage as `<review_feedback>`, and the previous pack, and its system prompt gains a "Revising after a human send-back" section (only when there is a comment): re-run only the needed subagents, re-run the evaluator only if the evidence feeding risk changed, copy every other section exactly, explain unaddressed points in `notes`. The code stage then flags any section that changed without being asked for.
+- **Hypothesis:** a send-back such as "the UBOs are missing" re-runs ownership (and the evaluator) and leaves company, financials and news byte-for-byte as they were, so the human's second read is only the part they asked about, and a revision is cheaper than a full rebuild.
+- **Before / After:** pending. Try the three CLI scenarios in `docs/reviewer-design.md` section 13 against a saved UK-020 pack.
+
+## 2026-10-27 · Revision: keep the comment out of the evidence, tell the reviewer it is a revision (`REVISION_PROMPT`, `<revision>` in the LLM review)
+
+- **Change:** (1) `REVISION_PROMPT` now says to word a subagent's task as a task, never to quote the comment or triage to it, to answer the comment only in `notes`, and to drop any flag that responds to the comment. (2) The LLM review stage gets a `<revision>` note after a send-back (partial tool log is by design; a flag addressed to the reviewer is a defect). (3) Code: `requested_sections` lets `ambiguous` points change their section and keeps the regression check on when only `unsupported` points exist (it used to switch off).
+- **Observed on UK-020** ("The UBOs behind the holding company are missing", no holding company exists): an `other` flag, "The reviewer's point ... is not supported by the register", replaced the earlier ownership flag; the LLM review asked to confirm provenance because only ownership ran; the regression check was off.
+- **Before / After:** pending. Rerun the same command: expect no flag that mentions the reviewer, no provenance suggestion, and `notes` as the only answer.
+
+## 2026-10-27 · Revision: take a re-run specialist's output as returned (`REVISION_PROMPT`)
+
+- **Change:** step (c) now says that for a specialist that was re-run, its output for the fields it owns is taken exactly as returned (sentiment and severity included), and the previous pack's values are kept only for sections that were not re-run.
+- **Observed on UK-020** ("re-check the supplier-of-the-year articles"): the news specialist returned the two articles as `neutral`; the orchestrator kept v1's `positive`; the merge check blocked it and a second round (about 30s, $0.25) fixed it.
+- **Before / After:** pending. Rerun the same comment and expect round 1 to pass.
