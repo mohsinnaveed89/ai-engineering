@@ -25,6 +25,7 @@ from pathlib import Path
 
 from kyc_common import KycPack, sourcing_problems
 
+from .agents.reviewer import PackRejected
 from .context import PipelineContext
 from .pipeline import run_pipeline
 from .settings import settings
@@ -97,9 +98,12 @@ async def _main(args: argparse.Namespace) -> int:
         return 2
 
     metrics: dict = {}
+    review_rounds: list[dict] = []  # the reviewer's feedback for every round, from its progress events
     started = time.time()
 
     async def emit(event: dict):
+        if (event.get("data") or {}).get("feedback"):
+            review_rounds.append(event["data"]["feedback"])
         if event.get("type") == "metrics":
             for k, v in (event.get("data") or {}).items():
                 metrics[k] = metrics.get(k, 0) + v if isinstance(v, (int, float)) else v
@@ -111,9 +115,17 @@ async def _main(args: argparse.Namespace) -> int:
                           version=2 if args.feedback else 1, feedback=args.feedback, previous_pack=previous,
                           settings=settings, _emit=emit)
     print(f"Running pipeline for {args.name} ({args.country})", file=sys.stderr)
-    result = await run_pipeline(ctx)
+    try:
+        result = await run_pipeline(ctx)
+    except PackRejected as e:
+        Path(args.review_out).write_text(json.dumps(review_rounds or [e.feedback.model_dump(mode="json")], indent=2))
+        print(f"\n{e}\n\nReview feedback for {max(len(review_rounds), 1)} round(s) written to {args.review_out}",
+              file=sys.stderr)
+        return 1
     pack = result if isinstance(result, KycPack) else KycPack.model_validate(result)
     elapsed = time.time() - started
+    if review_rounds:
+        Path(args.review_out).write_text(json.dumps(review_rounds, indent=2))
 
     problems = sourcing_problems(pack)
     print(f"\nDone in {elapsed:.1f}s. Risk {pack.risk.rating}, recommendation {pack.risk.recommendation}, "
@@ -158,6 +170,8 @@ def main() -> None:
     ap.add_argument("--compare-out", help="Write a Markdown table of expected (answers.json) vs. actual values")
     ap.add_argument("--feedback", help="Reviewer comments, as if the pack had been sent back")
     ap.add_argument("--previous", help="Pack JSON file the feedback refers to")
+    ap.add_argument("--review-out", default="/tmp/review-feedback.json",
+                    help="Where to write the reviewer's feedback JSON: a list with one entry per round")
     sys.exit(asyncio.run(_main(ap.parse_args())))
 
 

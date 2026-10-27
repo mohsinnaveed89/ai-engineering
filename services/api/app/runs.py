@@ -11,6 +11,7 @@ from kyc_common import KycPack, Review, sourcing_problems
 from pydantic import ValidationError
 
 from . import db
+from .agents.reviewer import PackRejected, render_summary
 from .context import PipelineContext
 from .pipeline import run_pipeline
 from .settings import settings
@@ -92,15 +93,17 @@ async def _execute(run_id: str, company_name: str, country: str, version: int,
             await publish(run_id, {"type": "done", "message": "Pack ready for review"})
         except asyncio.TimeoutError:
             await _fail(run_id, f"Pipeline timed out after {settings.pipeline_timeout_s}s")
+        except PackRejected as e:
+            await _fail(run_id, render_summary(e.feedback), data=e.feedback.model_dump(mode="json"))
         except ValidationError as e:
             await _fail(run_id, f"Pipeline returned an invalid pack: {e.error_count()} schema error(s). First: {e.errors()[0]['loc']} {e.errors()[0]['msg']}")
         except Exception as e:  # noqa: BLE001 - surface any pipeline error to the user
             await _fail(run_id, f"{type(e).__name__}: {e}")
 
 
-async def _fail(run_id: str, message: str) -> None:
+async def _fail(run_id: str, message: str, data: dict | None = None) -> None:
     await set_status(run_id, "failed", error=message)
-    await publish(run_id, {"type": "error", "message": message})
+    await publish(run_id, {"type": "error", "message": message, **({"data": data} if data else {})})
     await publish(run_id, {"type": "done", "message": "Run failed"})
 
 

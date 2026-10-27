@@ -62,6 +62,91 @@ One entry per prompt change: what changed, why, and the score before and after.
 
 ## 2026-10-27 · Policy excerpt quoting (evaluator prompt, orchestrator step 5, `risk_check` validator)
 
-- **Change:** debug logging showed the pack was rejected twice because `eval-policy-3` / `eval-policy-8` excerpts dropped markdown bold (`**conflicting data**`) and `eval-policy-8` joined a table row to the `Rating:` line with `...`. The orchestrator then tried `policy_search` (denied by the tool guard) and re-ran the evaluator. `risk_check._quoted_in` now ignores `*` and backticks and accepts `...` / `…` between pieces that appear in order (still no paraphrase). The `evaluator` prompt asks for one contiguous span per source (one row or sentence), the orchestrator must add the evaluator's policy sources unchanged and may not search, and the rejection message says so.
+- **Change:** debug logging showed the pack was rejected twice because `eval-policy-3` / `eval-policy-8` excerpts dropped markdown bold (`**conflicting data**`) and `eval-policy-8` joined a table row to the `Rating:` line with `...`. The orchestrator then tried `policy_search` (denied by the tool guard) and re-ran the evaluator. The `evaluator` prompt now asks for one contiguous span per source (one row or sentence), the orchestrator must add the evaluator's policy sources unchanged and may not search, and the rejection message says so. The validator's quote check is now a word-overlap test: at least 80% of an excerpt's words must appear in the section it cites (case, markdown, order, punctuation and `...` ignored); `REVIEW_QUOTE_OVERLAP` sets the share.
 - **Hypothesis:** the first `StructuredOutput` validates, so the fix round and the extra evaluator runs disappear (UK-020 latency drops by ~30s) with no change in risk scores.
 - **Before / After:** pending. Rerun UK-020 and confirm no `Pack invalid` line.
+
+## 2026-10-27 · Reviewer replaces `_check`; structured send-back message (slice 1)
+
+- **Change:** `agents/reviewer.py` checks every candidate pack (schema, sourcing, UBO rules, risk arithmetic, policy citations against the sections in the vector DB) and returns one `ReviewFeedback` (findings with path, producer, rule, cause, suggested owner). `run_kyc_agent` sends a failing pack back into the same session, `REVIEW_MAX_SENDBACKS` times (default 1), as `<review_feedback>` JSON plus an instruction: decide which subagent, if any, to re-run for each blocking finding, change nothing else, do not call `policy_search`, return the full pack. This replaces the old `"{problem}\nReturn the corrected pack."` text. A pack that still fails raises `PackRejected` with the feedback (CLI prints it and exits 1; the API stores a readable summary and publishes the JSON). Design: `docs/reviewer-design.md`. No LLM reviewer stage yet.
+- **Hypothesis:** the orchestrator fixes the right section on the send-back because each finding names the path and the agent that produced it, so fewer blind evaluator re-runs; a failed run now says exactly which fields failed and why instead of crashing on `None`.
+- **Before / After:** pending. UK-020 first (after `docker compose restart mcp`); full scoring only with approval.
+
+## 2026-10-27 · Reviewer checks what the specialists returned (slice 2)
+
+- **Change:** the reviewer now also sees every subagent's reply and tool call. New checks: a policy coverage checklist (`missing[]`: null identity field, inactive status, corporate owner, officers or financials with no `missing_data` / `inactive_company` / `complex_ownership` flag, or a specialist that never ran), news flags that must match news sources (adverse article without an `adverse_media` flag and the reverse, severity per policy section 5, `decline` needs a high-severity article), and merge fidelity (officers, owners, news, financials, the evaluator's risk and policy excerpts, and the bank's `conflicting_data` flags must reach the pack unchanged). Each finding names the specialist that produced it. The send-back message now also says to act on `missing` items.
+- **Hypothesis:** the orchestrator is sent back to the right specialist for gaps like UK-020's missing `adverse_media` flag (when the article was retrieved), and merge mistakes by the orchestrator itself are caught and attributed to it.
+- **Before / After:** pending. Rerun UK-020, then a few other companies; watch for false positives from the new checks before running the full scoring.
+
+## 2026-10-27 · Reviewer LLM stage and prompt (`prompts/reviewer.md`, slice 3)
+
+- **Change:** a separate reviewer session (no built-in tools; read-only `policy_search` and `bank_get_risk_appetite`; model `REVIEWER_MODEL`, default `CLAUDE_MODEL`) judges what the code stage cannot: typed flags against the evidence and the bank's risk appetite, risk factors against flags, the rationale, gaps left unflagged, and which agent caused each problem. Its prompt holds the team (generated from `SUBAGENTS`), the field-ownership table, the attribution rules and the full policy from the DB; it is given the pack, each specialist's reply, the tool-call log and the code stage's findings, and must not repeat them. A finding blocks only in the flags or policy category with evidence (a pack source id or a policy section) and a concrete contradiction; otherwise it is a warning. It runs every round on any parseable pack. If it fails or times out, the code verdict stands. `REVIEW_LLM=0` turns it off.
+- **Hypothesis:** judgement errors the rules cannot see (a namesake article kept as adverse, a prohibited sector with no flag, a risk factor with no evidence) are caught and sent to the right specialist, at the cost of one extra LLM call per round (~15 to 30s).
+- **Before / After:** pending. Run UK-020 and one or two harder cases (holding chain, namesake news, prohibited sector); check the `reviewer:` lines for false blocks before full scoring.
+
+## 2026-10-27 · Orchestrator: one complete StructuredOutput call (step 6 of the system prompt)
+
+- **Change:** step 6 of the orchestrator's inline system prompt in `agents/kyc_agent.py` now ends with: call `StructuredOutput` once, only when the whole pack is complete, never with a partial object. The debug log showed the orchestrator first submitting a stub (28 and 72 characters, missing `company` and `risk`) that the SDK refused before it submitted the real pack.
+- **Hypothesis:** the refused stub call disappears from the log (one `StructuredOutput ... accepted` line per turn) and each run saves one round trip. No effect on pack content or score expected.
+- **Before / After:** before, two of the three logs we looked at had a refused stub. After, first run: the stub is still there (104 chars, invented key `query_placeholder`), so the instruction does not reliably stop it on this model. Cost is one quick refused round trip; do not spend more effort on it unless it grows.
+
+## 2026-10-27 · Reviewer prompt: `other` is a valid flag type (`prompts/reviewer.md`)
+
+- **Change:** the first live LLM review blocked four `other` flags ("not a flag type the policy allows") because policy section 10 lists nine types and the prompt never said the pack schema also allows `other`, the catch-all the specialists are told to use for notes. The prompt now states that `other` is valid and must never be reported as an invalid type, that anything the schema already guarantees or any wording or style choice is not a finding, and that the reviewer has no register, news or bank-record tools (say so in a suggestion instead of guessing). The code stage's merge finding for a bank `conflicting_data` flag now also shows the flag's text and what the pack contains instead.
+- **Hypothesis:** no blocking finding about `other` flags, so the send-back goes only to real problems and the specialists keep the notes they are required to write.
+- **Before / After:** before, 4 of 5 blocking findings in the first live review were about `other`. After: pending, rerun UK-020.
+
+## 2026-10-27 · UK-020 results so far (reviewer slices 1 to 3)
+
+One company, one run each, so read these as observations, not a benchmark. The orchestrator and evaluator vary from run to run, and the first row also had a stale `mcp` container.
+
+| Run | Setup | Score | Notes |
+|---|---|---|---|
+| 1 | placeholder-era agent team, stale `mcp` (no short-name news search), old `_check` | 74% | `adverse_news`, `risk_rating`, `recommendation` wrong; article `news-0039` never retrieved |
+| 2 | after `docker compose restart mcp`, code-stage reviewer (slices 1 and 2) | not recorded | reviewer passed, one advisory |
+| 3 | slice 3, but the LLM stage was blocked by its own tool guard, so code checks only | 92% | a code finding sent the pack back once; final rating `high` instead of `medium` (`risk_rating` 0%) |
+| 4 | slice 3 working, `other` flags allowed in the prompt | 100% | one send-back for a code finding (bank `conflicting_data` flag not copied unchanged); round 2 passed with 3 warnings; 178s total, about $0.07 |
+
+## 2026-10-27 · LLM reviewer findings are advisory by default (`REVIEW_LLM_BLOCKS`)
+
+- **Change:** the LLM stage's findings no longer block or trigger a send-back unless `REVIEW_LLM_BLOCKS=1`; they are shown as warnings, with a `note` on any finding that asked to block ("kept as a warning: ..."). Code-stage findings block as before. Why: on UK-020 the code stage's severity check sent the pack back and the evaluator corrected it to the right rating (medium, 1 + 1); the LLM then blocked that correct pack in round 2 ("news-0038 fraud must be high severity, the policy has no victim exception"), the run was rejected and no pack was produced. In the previous round it had said counting that victim article as adverse is "a judgment the policy does not clearly support", and in the run before it computed a wrong total from the same article.
+- **Hypothesis:** no run is failed or steered by an LLM opinion; its observations still reach the approver as warnings and suggestions. A correct pack passes if the code stage passes it.
+- **Before / After:** before, 1 of 4 recent UK-020 runs ended rejected by an LLM finding on a correct pack. After: pending.
+
+## 2026-10-27 · News values and the victim-article reading (`news`, `evaluator`, `reviewer` prompts)
+
+- **Change:** the `news` specialist's prompt now spells out the schema's values (`sentiment` positive, neutral or adverse, never 'negative'; `severity` none, medium or high, never 'low') and states a policy reading: an article in which the company is the victim of a crime, or that is not about the company, is neutral with severity none and gets no `adverse_media` flag. The `evaluator` takes each article's sentiment and severity as the news specialist gave them (no re-classifying, adverse media counted once at the highest severity) and never states a policy reading the text does not contain. The reviewer's prompt carries the same reading, so it no longer flips on it. **This encodes an interpretation of policy section 5 (victim articles are not adverse); confirm it is the one you want.**
+- **Hypothesis:** the news specialist returns valid values and `news-0038` (the fraud article on UK-020) stays neutral/none; the evaluator no longer scores it 3 points, so the rating is medium (1 + 1). Before: the specialist returned `negative`/`low`, the orchestrator translated them into "adverse, severity none", three code checks fired, and in 3 of 6 recent runs the pack still counted the victim article as high severity (rating `high`, 92%, or a run rejected).
+- **Before / After:** pending.
+
+## 2026-10-27 · Merge check tolerates translations and rewording (`review_checks.py`)
+
+- **Change:** the news merge check compares articles by URL and only compares sentiment and severity when the specialist's values are valid, so the orchestrator is not blamed for translating `negative`/`low`; a new advisory check names the specialist for values outside the schema. A bank `conflicting_data` flag that is present with the same cited sources but other words is advisory ("reworded"); a missing or merged one still blocks.
+- **Hypothesis:** the five-run streak of a send-back for the bank flag's wording ends, saving about a round (60 to 90s) per run, while a dropped conflict still blocks.
+- **Before / After:** pending.
+
+## 2026-10-27 · News/flag source linkage is a warning, presence still blocks (`review_checks.py`)
+
+- **Change:** when an adverse article and an `adverse_media` flag both exist but the flag's cited source ids do not match the article's, the two findings ("flag cites no source that backs an article", "article not cited by any flag") are now advisory and show both sides' ids. No flag for an adverse article, or a flag with no adverse article, still blocks.
+- **Hypothesis:** no more send-backs over source-id bookkeeping, since the flag and the article are both there. Observed on UK-020: two blocking findings in one round for exactly this, in a pack that otherwise looked right.
+- **Before / After:** pending. The first pack on which this showed up is not saved; the next review JSON will show the two id lists.
+
+## 2026-10-27 · Fix: the LLM review was silently skipped after a specialist reply had a schema problem
+
+- **Change:** `run_kyc_agent` skipped the LLM stage when any finding had category `schema`, meant for "the pack itself is invalid". The advisory reply-schema findings added the same day also use that category, so a harmless warning (the bank specialist's flag severity outside low, medium or high) switched the LLM reviewer off. It now checks that the pack validates (`is_valid_pack`).
+- **Observed:** a UK-020 run at 123s with no `LLM review took` line and the `Usage:` model still the orchestrator's; nothing of the reviewer's ran in either round.
+- **Before / After:** pending.
+
+## 2026-10-27 · Shared specialist rules: allowed flag severities
+
+- **Change:** `RULES` in `kyc_agent.py` (appended to every specialist prompt) now states that a flag's `severity` is exactly `low`, `medium` or `high`, never `info` or `none`, and to use `low` for informational and `other` flags.
+- **Hypothesis:** no more `bank.flags[n].severity = "info"` (informational existing-customer note) or `news.flags[n].severity = "none"` (carried over from `NewsItem.severity`, which does allow `none`). Both were the only blocking reply-schema findings on UK-001 and UK-020 and cost a send-back round (~30s, ~3 agent re-runs).
+- **Before:** UK-001 round 1: bank `info` and news `none` flagged by the reply-schema check (with it temporarily blocking).
+- **After:** pending. Rerun UK-001 and check that no `bank`/`news` severity findings appear.
+
+## 2026-10-27 · Ownership specialist: officers always carry a `role`
+
+- **Change:** step 1 of the `ownership` prompt now lists the officer fields (`name`, `role` required and as the register states it, `appointed_on`, `sources`).
+- **Hypothesis:** no more `ownership.officers[n].role: Field required` in the reply-schema check. The prompt never named `role`, and the agent left it out on UK-001 and UK-020, costing a send-back round.
+- **Before:** UK-001 / UK-020 round 1: ownership officers without `role` on every run.
+- **After:** pending. Rerun UK-001 and check that round 1 has no `ownership` findings.

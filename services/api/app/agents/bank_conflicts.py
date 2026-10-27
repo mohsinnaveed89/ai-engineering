@@ -60,7 +60,8 @@ def common_from_register(country: str, rec: dict) -> dict:
         return {"name": rec.get("company_name"), "reg": rec.get("company_number"),
                 "line1": _join(a.get("premises"), a.get("address_line_1"), a.get("address_line_2")), "district": None,
                 "city": a.get("locality"), "postcode": a.get("postal_code"),
-                "directors": [o.get("name") for o in rec.get("officers") or []]}
+                "directors": [o.get("name") for o in rec.get("officers") or []
+                              if o.get("officer_role", "director") == "director"]}  # a company secretary is not a director
     if country == "PT":
         a = rec.get("sede") or {}
         return {"name": rec.get("denominacao"), "reg": rec.get("nipc"), "line1": a.get("morada"), "district": None,

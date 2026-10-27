@@ -52,3 +52,8 @@ def test_pick_prospect():
     other = {**PROSPECT, "prospect_id": "PRS-2", "declared_registration_number": "99999999"}
     assert pick_prospect(reg, [other, PROSPECT])["prospect_id"] == "PRS-1"
     assert pick_prospect(reg, [{**PROSPECT, "declared_name": "Totally Different Ltd"}]) is None
+
+
+def test_uk_secretary_is_not_a_director():
+    reg = {**UK_REG, "officers": [*UK_REG["officers"], {"name": "TAYLOR, Fiona", "officer_role": "secretary"}]}
+    assert "directors" not in _fields(reg, PROSPECT)
